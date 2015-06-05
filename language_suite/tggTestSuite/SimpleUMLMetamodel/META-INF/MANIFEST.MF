@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: SimpleUMLMetamodel;singleton:=true
+Export-Package: SimpleUMLMetamodel,
+ SimpleUMLMetamodel.util,
+ SimpleUMLMetamodel.impl
+Bundle-Name: SimpleUMLMetamodel
+Bundle-Version: 1.0
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ org.apache.log4j;bundle-version="1.2.15",
+ org.moflon.core.utilities
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TU Darmstadt

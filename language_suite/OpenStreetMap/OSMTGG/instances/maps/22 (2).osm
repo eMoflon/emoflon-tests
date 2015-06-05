@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.3.3 (5741 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="50.3254000" minlon="8.7033800" maxlat="50.3256800" maxlon="8.7039900"/>
+ <node id="1283269646" visible="true" version="2" changeset="13983798" timestamp="2012-11-22T10:35:30Z" user="be-ju" uid="302852" lat="50.3256454" lon="8.7033685"/>
+ <node id="1283269639" visible="true" version="3" changeset="15390059" timestamp="2013-03-16T23:02:39Z" user="HoloDuke" uid="75317" lat="50.3256561" lon="8.7041083"/>
+ <node id="1283269681" visible="true" version="3" changeset="15390059" timestamp="2013-03-16T23:02:39Z" user="HoloDuke" uid="75317" lat="50.3254027" lon="8.7036826"/>
+ <node id="1283269671" visible="true" version="2" changeset="13983798" timestamp="2012-11-22T10:35:33Z" user="be-ju" uid="302852" lat="50.3257973" lon="8.7032542"/>
+ <node id="1283269622" visible="true" version="2" changeset="13983798" timestamp="2012-11-22T10:35:26Z" user="be-ju" uid="302852" lat="50.3253901" lon="8.7034637"/>
+ <node id="1283269643" visible="true" version="2" changeset="13983798" timestamp="2012-11-22T10:35:30Z" user="be-ju" uid="302852" lat="50.3257102" lon="8.7032638"/>
+ <node id="1283269624" visible="true" version="3" changeset="15390059" timestamp="2013-03-16T23:02:39Z" user="HoloDuke" uid="75317" lat="50.3256672" lon="8.7043383"/>
+ <node id="2205929778" visible="true" version="1" changeset="15390059" timestamp="2013-03-16T23:02:19Z" user="HoloDuke" uid="75317" lat="50.3253473" lon="8.7039214"/>
+ <node id="2205929783" visible="true" version="1" changeset="15390059" timestamp="2013-03-16T23:02:19Z" user="HoloDuke" uid="75317" lat="50.3253727" lon="8.7036873"/>
+ <node id="2205929797" visible="true" version="1" changeset="15390059" timestamp="2013-03-16T23:02:19Z" user="HoloDuke" uid="75317" lat="50.3254843" lon="8.7048228"/>
+ <node id="2205929798" visible="true" version="1" changeset="15390059" timestamp="2013-03-16T23:02:19Z" user="HoloDuke" uid="75317" lat="50.3256092" lon="8.7038854"/>
+ <node id="2205929799" visible="true" version="1" changeset="15390059" timestamp="2013-03-16T23:02:19Z" user="HoloDuke" uid="75317" lat="50.3256145" lon="8.7040425"/>
+ <node id="2205929800" visible="true" version="1" changeset="15390059" timestamp="2013-03-16T23:02:19Z" user="HoloDuke" uid="75317" lat="50.3256771" lon="8.7045622"/>
+ <node id="2205929801" visible="true" version="1" changeset="15390059" timestamp="2013-03-16T23:02:20Z" user="HoloDuke" uid="75317" lat="50.3256859" lon="8.7047967"/>
+ <node id="1283269627" visible="true" version="3" changeset="15390059" timestamp="2013-03-16T23:02:39Z" user="HoloDuke" uid="75317" lat="50.3256249" lon="8.7034343"/>
+ <node id="1283269635" visible="true" version="3" changeset="15390059" timestamp="2013-03-16T23:02:39Z" user="HoloDuke" uid="75317" lat="50.3256017" lon="8.7036628"/>
+ <way id="113056673" visible="true" version="3" changeset="15390059" timestamp="2013-03-16T23:02:33Z" user="HoloDuke" uid="75317">
+  <nd ref="1283269671"/>
+  <nd ref="1283269643"/>
+  <nd ref="1283269646"/>
+  <nd ref="1283269627"/>
+  <nd ref="1283269622"/>
+  <tag k="highway" v="service"/>
+  <tag k="service" v="parking_aisle"/>
+ </way>
+ <way id="210508792" visible="true" version="1" changeset="15390059" timestamp="2013-03-16T23:02:20Z" user="HoloDuke" uid="75317">
+  <nd ref="1283269635"/>
+  <nd ref="1283269681"/>
+  <tag k="highway" v="service"/>
+  <tag k="service" v="parking_aisle"/>
+ </way>
+ <way id="210508802" visible="true" version="1" changeset="15390059" timestamp="2013-03-16T23:02:20Z" user="HoloDuke" uid="75317">
+  <nd ref="2205929798"/>
+  <nd ref="2205929778"/>
+  <tag k="highway" v="service"/>
+  <tag k="service" v="parking_aisle"/>
+ </way>
+ <way id="210508811" visible="true" version="1" changeset="15390059" timestamp="2013-03-16T23:02:21Z" user="HoloDuke" uid="75317">
+  <nd ref="2205929783"/>
+  <nd ref="1283269681"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="210508827" visible="true" version="1" changeset="15390059" timestamp="2013-03-16T23:02:22Z" user="HoloDuke" uid="75317">
+  <nd ref="2205929797"/>
+  <nd ref="2205929801"/>
+  <nd ref="2205929800"/>
+  <nd ref="1283269624"/>
+  <nd ref="1283269639"/>
+  <nd ref="2205929799"/>
+  <nd ref="2205929798"/>
+  <nd ref="1283269635"/>
+  <nd ref="1283269627"/>
+  <tag k="highway" v="service"/>
+  <tag k="service" v="parking_aisle"/>
+ </way>
+</osm>

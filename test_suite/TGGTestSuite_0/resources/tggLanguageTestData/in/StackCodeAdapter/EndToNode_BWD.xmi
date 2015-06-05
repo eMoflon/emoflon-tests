@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MocaTree:File xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MocaTree="platform:/plugin/MocaTree/model/MocaTree.ecore#/" name="stack.stack">
+  <rootNode name="Stack">
+    <children xsi:type="MocaTree:Node" name="End"/>
+  </rootNode>
+</MocaTree:File>

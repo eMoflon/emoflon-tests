@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<mCSPLanguage:CSP xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mCSPLanguage="platform:/plugin/mCSPLanguage/model/MCSPLanguage.ecore#/">
+  <variables>
+    <values requiresFrom="//@constraints.0 //@constraints.1" id="Communication"/>
+    <values id="CommunicationNOT"/>
+  </variables>
+  <variables>
+    <values requires="//@constraints.0" id="WLAN"/>
+    <values id="WLANNOT"/>
+  </variables>
+  <variables>
+    <values requires="//@constraints.1" id="UMTS"/>
+    <values id="UMTSNOT"/>
+  </variables>
+  <constraints xsi:type="mCSPLanguage:CSPRequire" source="//@variables.1/@values.0" target="//@variables.0/@values.0"/>
+  <constraints xsi:type="mCSPLanguage:CSPRequire" source="//@variables.2/@values.0" target="//@variables.0/@values.0"/>
+</mCSPLanguage:CSP>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ASCII"?>
+<PetriNetLanguage:Net
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:PetriNetLanguage="platform:/plugin/PetriNetLanguage/model/PetriNetLanguage.ecore">
+  <transitions
+      name="t2"
+      prep="//@places.2 //@places.1"
+      postp="//@places.3"/>
+  <transitions
+      name="t1"
+      prep="//@places.3"
+      postp="//@places.2 //@places.1 //@places.0"/>
+  <places name="p4"
+      pret="//@transitions.1"/>
+  <places name="p3"
+      pret="//@transitions.1"
+      postt="//@transitions.0"/>
+  <places name="p2"
+      pret="//@transitions.1"
+      postt="//@transitions.0"/>
+  <places name="p1"
+      pret="//@transitions.0"
+      postt="//@transitions.1"/>
+</PetriNetLanguage:Net>

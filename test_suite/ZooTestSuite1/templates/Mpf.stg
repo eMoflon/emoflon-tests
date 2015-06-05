@@ -1,0 +1,38 @@
+group mpf;
+
+mpf(statements) ::= <<
+<statements: emit(); separator="\n">
+
+>>
+
+emit() ::= <<
+N<i>0 <it>
+>>
+
+simpleLine(value) ::= <<
+<value>
+>>
+
+toolChange(tool) ::= <<
+T="<tool>"
+>>
+
+moveLine(coordinates, g0, extra, g1, feedrate) ::= <<
+<if(g0)>G0 <elseif(g1)>G1 <endif><coordinates()><extra()><feedrate()>
+>>
+
+coordinates() ::= <<
+<coordinates; separator=" ">
+>>
+
+extra() ::= <<
+<if(extra)> <extra><endif>
+>>
+
+feedrate() ::= <<
+<if(feedrate)> M8 F<feedrate><endif>
+>>
+
+coordinate(coord, value) ::= <<
+<coord><value>
+>>

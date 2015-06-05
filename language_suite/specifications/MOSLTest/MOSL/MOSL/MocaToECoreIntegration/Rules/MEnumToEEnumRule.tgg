@@ -1,0 +1,52 @@
+rule MEnumToEEnumRule {
+	source {
+		packageNode : Node {
+			-children-> classesNode
+		}
+		
+		classesNode : Node {
+			classesNode.name == "classes"
+			
+			++ -children-> enumNode
+		}
+		
+		++ enumNode : Node {
+			enumNode.name := "EEnum"
+			
+			++ -attribute-> enumNodeName
+			++ -attribute-> enumNodeGuid
+			++ -children-> literalsNode
+		}
+		
+		++ enumNodeName : Attribute {
+			enumNodeName.name := "name"
+		}
+		
+		++ enumNodeGuid : Attribute {
+			enumNodeGuid.name := "guid"
+		}
+		
+		++ literalsNode : Node {
+			literalsNode.name := "literals"
+		}
+	}
+	
+	correspondence {
+		packageNode <- mPackageToEPackage : MPackageToEPackage -> epackage
+		++ enumNode <- mEnumToEEnum : MEnumToEEnum -> eenum
+	}
+	
+	target {
+		epackage : EPackage {
+			++ -eClassifiers-> eenum
+		}
+		
+		++ eenum : EEnum {}
+	}
+	
+	constraints {[
+		eq(enumNodeName.value, eenum.name)
+		generateGuid[B,F](String)
+		generateGuid(enumNodeGuid.value)
+	]}
+}

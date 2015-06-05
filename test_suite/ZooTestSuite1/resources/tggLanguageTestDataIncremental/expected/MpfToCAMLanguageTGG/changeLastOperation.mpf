@@ -1,0 +1,17 @@
+N310 ;First Tool
+N320 T="F_D40"
+N380 ;Initial Move
+N430 G0 X155. Y-51.667 Z38. S0 D0 M3
+N440 ;Approach Move
+N450 Z28.
+N450 Y30.
+N460 ;Engage Move
+N470 G1 Z25. M8 F250.
+N480 X135.
+N490 ;Cutting
+N500 X-125.
+N510 Y-23.333
+N580 X-120. Y42.
+N680 ;End of Program
+N690 T0
+N700 M30

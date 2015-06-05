@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="ASCII"?>
+<mCSPLanguage:CSP xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mCSPLanguage="platform:/plugin/mCSPLanguage/model/MCSPLanguage.ecore#/">
+  <variables>
+    <values tuples="//@tuples.0 //@tuples.1 //@tuples.2 //@tuples.3 //@tuples.4 //@tuples.5 //@tuples.6 //@tuples.7 //@tuples.8 //@tuples.9 //@tuples.10 //@tuples.11 //@tuples.12 //@tuples.13 //@tuples.14 //@tuples.15 //@tuples.16 //@tuples.17" id="BasicFunctionsMessageSMS"/>
+  </variables>
+  <variables>
+    <values requiresFrom="//@constraints.3 //@constraints.4 //@constraints.5" tuples="//@tuples.0 //@tuples.18 //@tuples.19 //@tuples.20 //@tuples.21 //@tuples.22 //@tuples.23 //@tuples.24 //@tuples.25 //@tuples.26 //@tuples.27 //@tuples.28 //@tuples.29 //@tuples.30 //@tuples.31 //@tuples.32 //@tuples.33" id="Communication"/>
+    <values tuples="//@tuples.1 //@tuples.34 //@tuples.35 //@tuples.36 //@tuples.37 //@tuples.38 //@tuples.39 //@tuples.40 //@tuples.41 //@tuples.42 //@tuples.43 //@tuples.44 //@tuples.45 //@tuples.46 //@tuples.47 //@tuples.48 //@tuples.49" id="CommunicationNOT"/>
+  </variables>
+  <variables>
+    <values excludes="//@constraints.12 //@constraints.15" requiresFrom="//@constraints.9 //@constraints.10 //@constraints.11 //@constraints.13 //@constraints.14" tuples="//@tuples.2 //@tuples.18 //@tuples.34 //@tuples.50 //@tuples.51 //@tuples.52 //@tuples.53 //@tuples.54 //@tuples.55 //@tuples.56 //@tuples.57 //@tuples.58 //@tuples.59 //@tuples.60 //@tuples.61 //@tuples.62 //@tuples.63" id="Extras"/>
+    <values tuples="//@tuples.3 //@tuples.19 //@tuples.35 //@tuples.64 //@tuples.65 //@tuples.66 //@tuples.67 //@tuples.68 //@tuples.69 //@tuples.70 //@tuples.71 //@tuples.72 //@tuples.73 //@tuples.74 //@tuples.75 //@tuples.76 //@tuples.77" id="ExtrasNOT"/>
+  </variables>
+  <variables>
+    <values excludes="//@constraints.2" requires="//@constraints.1" tuples="//@tuples.4 //@tuples.20 //@tuples.36 //@tuples.50 //@tuples.64 //@tuples.78 //@tuples.79 //@tuples.80 //@tuples.81 //@tuples.82 //@tuples.83 //@tuples.84 //@tuples.85 //@tuples.86 //@tuples.87 //@tuples.88" id="MMS"/>
+    <values tuples="//@tuples.5 //@tuples.21 //@tuples.37 //@tuples.51 //@tuples.65 //@tuples.89 //@tuples.90 //@tuples.91 //@tuples.92 //@tuples.93 //@tuples.94 //@tuples.95 //@tuples.96 //@tuples.97 //@tuples.98 //@tuples.99 //@tuples.100" id="MMSNOT"/>
+  </variables>
+  <variables>
+    <values requires="//@constraints.3" tuples="//@tuples.6 //@tuples.22 //@tuples.38 //@tuples.52 //@tuples.66 //@tuples.78 //@tuples.89 //@tuples.101 //@tuples.102 //@tuples.103 //@tuples.104 //@tuples.105 //@tuples.106 //@tuples.107 //@tuples.108 //@tuples.109 //@tuples.110" id="WLAN"/>
+    <values tuples="//@tuples.7 //@tuples.23 //@tuples.39 //@tuples.53 //@tuples.67 //@tuples.79 //@tuples.90 //@tuples.111 //@tuples.112 //@tuples.113 //@tuples.114 //@tuples.115 //@tuples.116 //@tuples.117 //@tuples.118 //@tuples.119 //@tuples.120" id="WLANNOT"/>
+  </variables>
+  <variables>
+    <values requires="//@constraints.4" tuples="//@tuples.8 //@tuples.24 //@tuples.40 //@tuples.54 //@tuples.68 //@tuples.80 //@tuples.91 //@tuples.101 //@tuples.111 //@tuples.121 //@tuples.122 //@tuples.123 //@tuples.124 //@tuples.125 //@tuples.126 //@tuples.127 //@tuples.128" id="UMTS"/>
+    <values tuples="//@tuples.9 //@tuples.25 //@tuples.41 //@tuples.55 //@tuples.69 //@tuples.81 //@tuples.92 //@tuples.102 //@tuples.112 //@tuples.129 //@tuples.130 //@tuples.131 //@tuples.132 //@tuples.133 //@tuples.134 //@tuples.135 //@tuples.136" id="UMTSNOT"/>
+  </variables>
+  <variables>
+    <values requires="//@constraints.5" tuples="//@tuples.10 //@tuples.26 //@tuples.42 //@tuples.56 //@tuples.70 //@tuples.82 //@tuples.93 //@tuples.103 //@tuples.113 //@tuples.121 //@tuples.129 //@tuples.137 //@tuples.138 //@tuples.139 //@tuples.140 //@tuples.141 //@tuples.142" id="Bluetooth"/>
+    <values tuples="//@tuples.11 //@tuples.27 //@tuples.43 //@tuples.57 //@tuples.71 //@tuples.83 //@tuples.94 //@tuples.104 //@tuples.114 //@tuples.122 //@tuples.130 //@tuples.143 //@tuples.144 //@tuples.145 //@tuples.146 //@tuples.147 //@tuples.148" id="BluetoothNOT"/>
+  </variables>
+  <variables>
+    <values requires="//@constraints.6 //@constraints.9" tuples="//@tuples.12 //@tuples.28 //@tuples.44 //@tuples.58 //@tuples.72 //@tuples.84 //@tuples.95 //@tuples.105 //@tuples.115 //@tuples.123 //@tuples.131 //@tuples.137 //@tuples.143 //@tuples.149 //@tuples.150 //@tuples.151 //@tuples.152" id="M_3"/>
+    <values excludes="//@constraints.2" requires="//@constraints.7 //@constraints.10" tuples="//@tuples.13 //@tuples.29 //@tuples.45 //@tuples.59 //@tuples.73 //@tuples.96 //@tuples.106 //@tuples.116 //@tuples.124 //@tuples.132 //@tuples.138 //@tuples.144 //@tuples.153 //@tuples.154 //@tuples.155 //@tuples.156" id="M_8"/>
+    <values excludes="//@constraints.8" requires="//@constraints.11" id="CameraM_3_NoComb_" combinationNeeded="false"/>
+    <values excludes="//@constraints.12" id="ExtrasM_3_NoComb_" combinationNeeded="false"/>
+  </variables>
+  <variables>
+    <values excludes="//@constraints.0" tuples="//@tuples.14 //@tuples.30 //@tuples.46 //@tuples.60 //@tuples.74 //@tuples.85 //@tuples.97 //@tuples.107 //@tuples.117 //@tuples.125 //@tuples.133 //@tuples.139 //@tuples.145 //@tuples.149 //@tuples.153 //@tuples.157 //@tuples.158" id="MP3NOT"/>
+    <values requires="//@constraints.13" tuples="//@tuples.15 //@tuples.31 //@tuples.47 //@tuples.61 //@tuples.75 //@tuples.86 //@tuples.98 //@tuples.108 //@tuples.118 //@tuples.126 //@tuples.134 //@tuples.140 //@tuples.146 //@tuples.150 //@tuples.154 //@tuples.159 //@tuples.160" id="MP3"/>
+  </variables>
+  <variables>
+    <values excludes="//@constraints.0" tuples="//@tuples.16 //@tuples.32 //@tuples.48 //@tuples.62 //@tuples.76 //@tuples.87 //@tuples.99 //@tuples.109 //@tuples.119 //@tuples.127 //@tuples.135 //@tuples.141 //@tuples.147 //@tuples.151 //@tuples.155 //@tuples.157 //@tuples.159" id="CameraNOT"/>
+    <values excludes="//@constraints.8" requires="//@constraints.14" requiresFrom="//@constraints.1 //@constraints.6 //@constraints.7" tuples="//@tuples.17 //@tuples.33 //@tuples.49 //@tuples.63 //@tuples.77 //@tuples.88 //@tuples.100 //@tuples.110 //@tuples.120 //@tuples.128 //@tuples.136 //@tuples.142 //@tuples.148 //@tuples.152 //@tuples.156 //@tuples.158 //@tuples.160" id="Camera"/>
+  </variables>
+  <variables>
+    <values excludes="//@constraints.0" id="ExtrasCamera_NoComb_NOT" combinationNeeded="false"/>
+    <values excludes="//@constraints.15" id="ExtrasCamera_NoComb_" combinationNeeded="false"/>
+  </variables>
+  <tuples values="//@variables.0/@values.0 //@variables.1/@values.0"/>
+  <tuples values="//@variables.0/@values.0 //@variables.1/@values.1"/>
+  <tuples values="//@variables.0/@values.0 //@variables.2/@values.0"/>
+  <tuples values="//@variables.0/@values.0 //@variables.2/@values.1"/>
+  <tuples values="//@variables.0/@values.0 //@variables.3/@values.0"/>
+  <tuples values="//@variables.0/@values.0 //@variables.3/@values.1"/>
+  <tuples values="//@variables.0/@values.0 //@variables.4/@values.0"/>
+  <tuples values="//@variables.0/@values.0 //@variables.4/@values.1"/>
+  <tuples values="//@variables.0/@values.0 //@variables.5/@values.0"/>
+  <tuples values="//@variables.0/@values.0 //@variables.5/@values.1"/>
+  <tuples values="//@variables.0/@values.0 //@variables.6/@values.0"/>
+  <tuples values="//@variables.0/@values.0 //@variables.6/@values.1"/>
+  <tuples values="//@variables.0/@values.0 //@variables.7/@values.0"/>
+  <tuples values="//@variables.0/@values.0 //@variables.7/@values.1"/>
+  <tuples values="//@variables.0/@values.0 //@variables.8/@values.0"/>
+  <tuples values="//@variables.0/@values.0 //@variables.8/@values.1"/>
+  <tuples values="//@variables.0/@values.0 //@variables.9/@values.0"/>
+  <tuples values="//@variables.0/@values.0 //@variables.9/@values.1"/>
+  <tuples values="//@variables.1/@values.0 //@variables.2/@values.0"/>
+  <tuples values="//@variables.1/@values.0 //@variables.2/@values.1"/>
+  <tuples values="//@variables.1/@values.0 //@variables.3/@values.0"/>
+  <tuples values="//@variables.1/@values.0 //@variables.3/@values.1"/>
+  <tuples values="//@variables.1/@values.0 //@variables.4/@values.0"/>
+  <tuples values="//@variables.1/@values.0 //@variables.4/@values.1"/>
+  <tuples values="//@variables.1/@values.0 //@variables.5/@values.0"/>
+  <tuples values="//@variables.1/@values.0 //@variables.5/@values.1"/>
+  <tuples values="//@variables.1/@values.0 //@variables.6/@values.0"/>
+  <tuples values="//@variables.1/@values.0 //@variables.6/@values.1"/>
+  <tuples values="//@variables.1/@values.0 //@variables.7/@values.0"/>
+  <tuples values="//@variables.1/@values.0 //@variables.7/@values.1"/>
+  <tuples values="//@variables.1/@values.0 //@variables.8/@values.0"/>
+  <tuples values="//@variables.1/@values.0 //@variables.8/@values.1"/>
+  <tuples values="//@variables.1/@values.0 //@variables.9/@values.0"/>
+  <tuples values="//@variables.1/@values.0 //@variables.9/@values.1"/>
+  <tuples values="//@variables.1/@values.1 //@variables.2/@values.0"/>
+  <tuples values="//@variables.1/@values.1 //@variables.2/@values.1"/>
+  <tuples values="//@variables.1/@values.1 //@variables.3/@values.0"/>
+  <tuples values="//@variables.1/@values.1 //@variables.3/@values.1"/>
+  <tuples values="//@variables.1/@values.1 //@variables.4/@values.0"/>
+  <tuples values="//@variables.1/@values.1 //@variables.4/@values.1"/>
+  <tuples values="//@variables.1/@values.1 //@variables.5/@values.0"/>
+  <tuples values="//@variables.1/@values.1 //@variables.5/@values.1"/>
+  <tuples values="//@variables.1/@values.1 //@variables.6/@values.0"/>
+  <tuples values="//@variables.1/@values.1 //@variables.6/@values.1"/>
+  <tuples values="//@variables.1/@values.1 //@variables.7/@values.0"/>
+  <tuples values="//@variables.1/@values.1 //@variables.7/@values.1"/>
+  <tuples values="//@variables.1/@values.1 //@variables.8/@values.0"/>
+  <tuples values="//@variables.1/@values.1 //@variables.8/@values.1"/>
+  <tuples values="//@variables.1/@values.1 //@variables.9/@values.0"/>
+  <tuples values="//@variables.1/@values.1 //@variables.9/@values.1"/>
+  <tuples values="//@variables.2/@values.0 //@variables.3/@values.0"/>
+  <tuples values="//@variables.2/@values.0 //@variables.3/@values.1"/>
+  <tuples values="//@variables.2/@values.0 //@variables.4/@values.0"/>
+  <tuples values="//@variables.2/@values.0 //@variables.4/@values.1"/>
+  <tuples values="//@variables.2/@values.0 //@variables.5/@values.0"/>
+  <tuples values="//@variables.2/@values.0 //@variables.5/@values.1"/>
+  <tuples values="//@variables.2/@values.0 //@variables.6/@values.0"/>
+  <tuples values="//@variables.2/@values.0 //@variables.6/@values.1"/>
+  <tuples values="//@variables.2/@values.0 //@variables.7/@values.0"/>
+  <tuples values="//@variables.2/@values.0 //@variables.7/@values.1"/>
+  <tuples values="//@variables.2/@values.0 //@variables.8/@values.0"/>
+  <tuples values="//@variables.2/@values.0 //@variables.8/@values.1"/>
+  <tuples values="//@variables.2/@values.0 //@variables.9/@values.0"/>
+  <tuples values="//@variables.2/@values.0 //@variables.9/@values.1"/>
+  <tuples values="//@variables.2/@values.1 //@variables.3/@values.0"/>
+  <tuples values="//@variables.2/@values.1 //@variables.3/@values.1"/>
+  <tuples values="//@variables.2/@values.1 //@variables.4/@values.0"/>
+  <tuples values="//@variables.2/@values.1 //@variables.4/@values.1"/>
+  <tuples values="//@variables.2/@values.1 //@variables.5/@values.0"/>
+  <tuples values="//@variables.2/@values.1 //@variables.5/@values.1"/>
+  <tuples values="//@variables.2/@values.1 //@variables.6/@values.0"/>
+  <tuples values="//@variables.2/@values.1 //@variables.6/@values.1"/>
+  <tuples values="//@variables.2/@values.1 //@variables.7/@values.0"/>
+  <tuples values="//@variables.2/@values.1 //@variables.7/@values.1"/>
+  <tuples values="//@variables.2/@values.1 //@variables.8/@values.0"/>
+  <tuples values="//@variables.2/@values.1 //@variables.8/@values.1"/>
+  <tuples values="//@variables.2/@values.1 //@variables.9/@values.0"/>
+  <tuples values="//@variables.2/@values.1 //@variables.9/@values.1"/>
+  <tuples values="//@variables.3/@values.0 //@variables.4/@values.0"/>
+  <tuples values="//@variables.3/@values.0 //@variables.4/@values.1"/>
+  <tuples values="//@variables.3/@values.0 //@variables.5/@values.0"/>
+  <tuples values="//@variables.3/@values.0 //@variables.5/@values.1"/>
+  <tuples values="//@variables.3/@values.0 //@variables.6/@values.0"/>
+  <tuples values="//@variables.3/@values.0 //@variables.6/@values.1"/>
+  <tuples values="//@variables.3/@values.0 //@variables.7/@values.0"/>
+  <tuples values="//@variables.3/@values.0 //@variables.8/@values.0"/>
+  <tuples values="//@variables.3/@values.0 //@variables.8/@values.1"/>
+  <tuples values="//@variables.3/@values.0 //@variables.9/@values.0"/>
+  <tuples values="//@variables.3/@values.0 //@variables.9/@values.1"/>
+  <tuples values="//@variables.3/@values.1 //@variables.4/@values.0"/>
+  <tuples values="//@variables.3/@values.1 //@variables.4/@values.1"/>
+  <tuples values="//@variables.3/@values.1 //@variables.5/@values.0"/>
+  <tuples values="//@variables.3/@values.1 //@variables.5/@values.1"/>
+  <tuples values="//@variables.3/@values.1 //@variables.6/@values.0"/>
+  <tuples values="//@variables.3/@values.1 //@variables.6/@values.1"/>
+  <tuples values="//@variables.3/@values.1 //@variables.7/@values.0"/>
+  <tuples values="//@variables.3/@values.1 //@variables.7/@values.1"/>
+  <tuples values="//@variables.3/@values.1 //@variables.8/@values.0"/>
+  <tuples values="//@variables.3/@values.1 //@variables.8/@values.1"/>
+  <tuples values="//@variables.3/@values.1 //@variables.9/@values.0"/>
+  <tuples values="//@variables.3/@values.1 //@variables.9/@values.1"/>
+  <tuples values="//@variables.4/@values.0 //@variables.5/@values.0"/>
+  <tuples values="//@variables.4/@values.0 //@variables.5/@values.1"/>
+  <tuples values="//@variables.4/@values.0 //@variables.6/@values.0"/>
+  <tuples values="//@variables.4/@values.0 //@variables.6/@values.1"/>
+  <tuples values="//@variables.4/@values.0 //@variables.7/@values.0"/>
+  <tuples values="//@variables.4/@values.0 //@variables.7/@values.1"/>
+  <tuples values="//@variables.4/@values.0 //@variables.8/@values.0"/>
+  <tuples values="//@variables.4/@values.0 //@variables.8/@values.1"/>
+  <tuples values="//@variables.4/@values.0 //@variables.9/@values.0"/>
+  <tuples values="//@variables.4/@values.0 //@variables.9/@values.1"/>
+  <tuples values="//@variables.4/@values.1 //@variables.5/@values.0"/>
+  <tuples values="//@variables.4/@values.1 //@variables.5/@values.1"/>
+  <tuples values="//@variables.4/@values.1 //@variables.6/@values.0"/>
+  <tuples values="//@variables.4/@values.1 //@variables.6/@values.1"/>
+  <tuples values="//@variables.4/@values.1 //@variables.7/@values.0"/>
+  <tuples values="//@variables.4/@values.1 //@variables.7/@values.1"/>
+  <tuples values="//@variables.4/@values.1 //@variables.8/@values.0"/>
+  <tuples values="//@variables.4/@values.1 //@variables.8/@values.1"/>
+  <tuples values="//@variables.4/@values.1 //@variables.9/@values.0"/>
+  <tuples values="//@variables.4/@values.1 //@variables.9/@values.1"/>
+  <tuples values="//@variables.5/@values.0 //@variables.6/@values.0"/>
+  <tuples values="//@variables.5/@values.0 //@variables.6/@values.1"/>
+  <tuples values="//@variables.5/@values.0 //@variables.7/@values.0"/>
+  <tuples values="//@variables.5/@values.0 //@variables.7/@values.1"/>
+  <tuples values="//@variables.5/@values.0 //@variables.8/@values.0"/>
+  <tuples values="//@variables.5/@values.0 //@variables.8/@values.1"/>
+  <tuples values="//@variables.5/@values.0 //@variables.9/@values.0"/>
+  <tuples values="//@variables.5/@values.0 //@variables.9/@values.1"/>
+  <tuples values="//@variables.5/@values.1 //@variables.6/@values.0"/>
+  <tuples values="//@variables.5/@values.1 //@variables.6/@values.1"/>
+  <tuples values="//@variables.5/@values.1 //@variables.7/@values.0"/>
+  <tuples values="//@variables.5/@values.1 //@variables.7/@values.1"/>
+  <tuples values="//@variables.5/@values.1 //@variables.8/@values.0"/>
+  <tuples values="//@variables.5/@values.1 //@variables.8/@values.1"/>
+  <tuples values="//@variables.5/@values.1 //@variables.9/@values.0"/>
+  <tuples values="//@variables.5/@values.1 //@variables.9/@values.1"/>
+  <tuples values="//@variables.6/@values.0 //@variables.7/@values.0"/>
+  <tuples values="//@variables.6/@values.0 //@variables.7/@values.1"/>
+  <tuples values="//@variables.6/@values.0 //@variables.8/@values.0"/>
+  <tuples values="//@variables.6/@values.0 //@variables.8/@values.1"/>
+  <tuples values="//@variables.6/@values.0 //@variables.9/@values.0"/>
+  <tuples values="//@variables.6/@values.0 //@variables.9/@values.1"/>
+  <tuples values="//@variables.6/@values.1 //@variables.7/@values.0"/>
+  <tuples values="//@variables.6/@values.1 //@variables.7/@values.1"/>
+  <tuples values="//@variables.6/@values.1 //@variables.8/@values.0"/>
+  <tuples values="//@variables.6/@values.1 //@variables.8/@values.1"/>
+  <tuples values="//@variables.6/@values.1 //@variables.9/@values.0"/>
+  <tuples values="//@variables.6/@values.1 //@variables.9/@values.1"/>
+  <tuples values="//@variables.7/@values.0 //@variables.8/@values.0"/>
+  <tuples values="//@variables.7/@values.0 //@variables.8/@values.1"/>
+  <tuples values="//@variables.7/@values.0 //@variables.9/@values.0"/>
+  <tuples values="//@variables.7/@values.0 //@variables.9/@values.1"/>
+  <tuples values="//@variables.7/@values.1 //@variables.8/@values.0"/>
+  <tuples values="//@variables.7/@values.1 //@variables.8/@values.1"/>
+  <tuples values="//@variables.7/@values.1 //@variables.9/@values.0"/>
+  <tuples values="//@variables.7/@values.1 //@variables.9/@values.1"/>
+  <tuples values="//@variables.8/@values.0 //@variables.9/@values.0"/>
+  <tuples values="//@variables.8/@values.0 //@variables.9/@values.1"/>
+  <tuples values="//@variables.8/@values.1 //@variables.9/@values.0"/>
+  <tuples values="//@variables.8/@values.1 //@variables.9/@values.1"/>
+  <constraints xsi:type="mCSPLanguage:NAryExclude" values="//@variables.8/@values.0 //@variables.9/@values.0 //@variables.10/@values.0"/>
+  <constraints xsi:type="mCSPLanguage:CSPRequire" source="//@variables.3/@values.0" target="//@variables.9/@values.1"/>
+  <constraints xsi:type="mCSPLanguage:BinaryExclude" values="//@variables.3/@values.0 //@variables.7/@values.1"/>
+  <constraints xsi:type="mCSPLanguage:CSPRequire" source="//@variables.4/@values.0" target="//@variables.1/@values.0"/>
+  <constraints xsi:type="mCSPLanguage:CSPRequire" source="//@variables.5/@values.0" target="//@variables.1/@values.0"/>
+  <constraints xsi:type="mCSPLanguage:CSPRequire" source="//@variables.6/@values.0" target="//@variables.1/@values.0"/>
+  <constraints xsi:type="mCSPLanguage:CSPRequire" source="//@variables.7/@values.0" target="//@variables.9/@values.1"/>
+  <constraints xsi:type="mCSPLanguage:CSPRequire" source="//@variables.7/@values.1" target="//@variables.9/@values.1"/>
+  <constraints xsi:type="mCSPLanguage:BinaryExclude" values="//@variables.9/@values.1 //@variables.7/@values.2"/>
+  <constraints xsi:type="mCSPLanguage:CSPRequire" source="//@variables.7/@values.0" target="//@variables.2/@values.0"/>
+  <constraints xsi:type="mCSPLanguage:CSPRequire" source="//@variables.7/@values.1" target="//@variables.2/@values.0"/>
+  <constraints xsi:type="mCSPLanguage:CSPRequire" source="//@variables.7/@values.2" target="//@variables.2/@values.0"/>
+  <constraints xsi:type="mCSPLanguage:BinaryExclude" values="//@variables.2/@values.0 //@variables.7/@values.3"/>
+  <constraints xsi:type="mCSPLanguage:CSPRequire" source="//@variables.8/@values.1" target="//@variables.2/@values.0"/>
+  <constraints xsi:type="mCSPLanguage:CSPRequire" source="//@variables.9/@values.1" target="//@variables.2/@values.0"/>
+  <constraints xsi:type="mCSPLanguage:BinaryExclude" values="//@variables.2/@values.0 //@variables.10/@values.1"/>
+</mCSPLanguage:CSP>

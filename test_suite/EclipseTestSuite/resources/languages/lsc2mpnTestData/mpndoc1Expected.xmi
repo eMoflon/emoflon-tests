@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MPNLanguage:MPNDocument xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MPNLanguage="platform:/plugin/MPNLanguage/model/MPNLanguage.ecore#/">
+  <mpns>
+    <places xsi:type="MPNLanguage:InitialPlace" lscObjectID="instance1" name="instance1" uniqueID="1">
+      <outgoing transition="//@mpns.0/@transitions.0"/>
+    </places>
+    <places xsi:type="MPNLanguage:InitialPlace" lscObjectID="instance2" name="instance2" uniqueID="2">
+      <outgoing transition="//@mpns.0/@transitions.1"/>
+    </places>
+    <places xsi:type="MPNLanguage:InitialPlace" lscObjectID="*" uniqueID="3">
+      <outgoing transition="//@mpns.0/@transitions.4"/>
+    </places>
+    <places xsi:type="MPNLanguage:StandardPlace" incoming="//@mpns.0/@transitions.0/@outgoing.1" lscObjectID="instance1" name="start1" uniqueID="6">
+      <outgoing transition="//@mpns.0/@transitions.3"/>
+    </places>
+    <places xsi:type="MPNLanguage:StandardPlace" incoming="//@mpns.0/@transitions.1/@outgoing.0" lscObjectID="instance2" name="end1" uniqueID="5">
+      <outgoing transition="//@mpns.0/@transitions.2"/>
+    </places>
+    <places xsi:type="MPNLanguage:StandardPlace" incoming="//@mpns.0/@transitions.0/@outgoing.0" lscObjectID="instance1:instance2" name="start1_sync" uniqueID="4">
+      <outgoing transition="//@mpns.0/@transitions.1"/>
+    </places>
+    <places xsi:type="MPNLanguage:StandardPlace" incoming="//@mpns.0/@transitions.2/@outgoing.1" lscObjectID="instance2:instance1" name="start2" uniqueID="11">
+      <outgoing transition="//@mpns.0/@transitions.4"/>
+    </places>
+    <places xsi:type="MPNLanguage:StandardPlace" incoming="//@mpns.0/@transitions.3/@outgoing.0" lscObjectID="instance1:instance2" name="end2" uniqueID="10">
+      <outgoing transition="//@mpns.0/@transitions.4"/>
+    </places>
+    <places xsi:type="MPNLanguage:StandardPlace" incoming="//@mpns.0/@transitions.2/@outgoing.0" lscObjectID="instance2:instance1" name="start2_sync" uniqueID="9">
+      <outgoing transition="//@mpns.0/@transitions.3"/>
+    </places>
+    <places xsi:type="MPNLanguage:EndPlace" incoming="//@mpns.0/@transitions.4/@outgoing.0" lscObjectID="*" name="endPlace" uniqueID="14"/>
+    <transitions comment="forward_start1_instance1" incoming="//@mpns.0/@places.0/@outgoing.0" event="send.null" uniqueID="7">
+      <outgoing place="//@mpns.0/@places.5"/>
+      <outgoing place="//@mpns.0/@places.3"/>
+    </transitions>
+    <transitions comment="forward_end1_instance2" incoming="//@mpns.0/@places.5/@outgoing.0 //@mpns.0/@places.1/@outgoing.0" event="recv.null" uniqueID="8">
+      <outgoing place="//@mpns.0/@places.4"/>
+    </transitions>
+    <transitions comment="backward_start2_end1" incoming="//@mpns.0/@places.4/@outgoing.0" event="send.null" uniqueID="12">
+      <outgoing place="//@mpns.0/@places.8"/>
+      <outgoing place="//@mpns.0/@places.6"/>
+    </transitions>
+    <transitions comment="backward_end2_start1" incoming="//@mpns.0/@places.8/@outgoing.0 //@mpns.0/@places.3/@outgoing.0" event="recv.null" uniqueID="13">
+      <outgoing place="//@mpns.0/@places.7"/>
+    </transitions>
+    <transitions comment="null_end2_start2" incoming="//@mpns.0/@places.7/@outgoing.0 //@mpns.0/@places.6/@outgoing.0 //@mpns.0/@places.2/@outgoing.0" event="stop" uniqueID="15">
+      <outgoing place="//@mpns.0/@places.9"/>
+    </transitions>
+    <metadata name="lsc1"/>
+  </mpns>
+</MPNLanguage:MPNDocument>

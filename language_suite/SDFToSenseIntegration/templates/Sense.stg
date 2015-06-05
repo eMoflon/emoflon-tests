@@ -1,0 +1,29 @@
+group sense;
+
+senseModel(actors, channels, capabilities, processors) ::= <<
+Sense { 
+  Actors:
+    <actors:name(); separator="\n">
+	
+  Channels:
+    <channels:channel(); separator="\n">
+	
+  Capabilities:
+    <capabilities:capability(); separator="\n">
+	
+  Processors:
+    <processors:name(); separator="\n">
+}
+>>
+
+name() ::= <<
+<it.name>
+>>
+
+channel() ::= <<
+<it.source.name> - <it.name> -> <it.target.name>
+>>
+
+capability() ::= <<
+Actor <it.performs.name> with processor <it.processor.name> in <it.time>s
+>>

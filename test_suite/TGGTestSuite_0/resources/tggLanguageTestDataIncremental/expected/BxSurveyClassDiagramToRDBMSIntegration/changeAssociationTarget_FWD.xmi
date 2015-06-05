@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<BxSurveyDatabase:BxSchema
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:BxSurveyDatabase="platform:/plugin/BxSurveyDatabase/model/BxSurveyDatabase.ecore#/">
+  <tables UID="employee_0">
+    <columns
+        name="PK"/>
+    <columns
+        ref="//@tables.2/@columns.0"
+        name="works for::0"/>
+  </tables>
+  <tables UID="chef_0">
+    <columns
+        name="PK"/>
+  </tables>
+  <tables UID="CEO_0">
+    <columns
+        name="PK"/>
+  </tables>
+</BxSurveyDatabase:BxSchema>

@@ -1,0 +1,15 @@
+
+partial class MemberImpl {
+
+
+
+@model countLikesFromContent () <--
+		int likes=0;
+		for(DigitalContent content : this.getCreatedContent()){
+			likes += content.getIsLiked().size();
+		}		
+		return likes;
+-->
+
+
+}

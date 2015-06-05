@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: BxSurveyClassDiagramToRDBMSIntegration;singleton:
+ =true
+Export-Package: BxSurveyClassDiagramToRDBMSIntegration.impl,
+ BxSurveyClassDiagramToRDBMSIntegration.Rules.util,
+ BxSurveyClassDiagramToRDBMSIntegration.Rules.impl,
+ BxSurveyClassDiagramToRDBMSIntegration,
+ BxSurveyClassDiagramToRDBMSIntegration.util,
+ BxSurveyClassDiagramToRDBMSIntegration.Rules
+Bundle-Name: BxSurveyClassDiagramToRDBMSIntegration
+Bundle-Version: 1.0
+Require-Bundle: BxSurveyClassDiagram,
+ BxSurveyDatabase,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ MocaTree,
+ SDMLanguage,
+ TGGLanguage,
+ TGGRuntime,
+ DebugLanguage,
+ org.apache.log4j;bundle-version="1.2.15",
+ org.moflon.core.utilities
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TU Darmstadt

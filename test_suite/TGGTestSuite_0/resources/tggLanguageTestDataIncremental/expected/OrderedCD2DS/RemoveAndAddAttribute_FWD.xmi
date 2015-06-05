@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<DSWithOrderedCols:Database
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:DSWithOrderedCols="platform:/plugin/DSWithOrderedCols/model/DSWithOrderedCols.ecore#/">
+  <table name="super">
+    <columns
+        next="//@table.0/@columns.1"
+        name="first"/>
+    <columns
+        next="//@table.0/@columns.2"
+        name="first"/>
+    <columns
+        next="//@table.0/@columns.3"
+        name="first"/>
+    <columns
+        next="//@table.0/@columns.4"
+        name="first"/>
+    <columns
+        name="first"/>
+  </table>
+</DSWithOrderedCols:Database>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ASCII"?>
+<StatechartLanguage:Statechart
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:StatechartLanguage="platform:/plugin/StatechartLanguage/model/StatechartLanguage.ecore">
+  <topState
+      name="top">
+    <contains
+        xsi:type="StatechartLanguage:HyperEdge"
+        next="//@topState/@contains.7/@contains.0 //@topState/@contains.8/@contains.0 //@topState/@contains.9/@contains.0"
+        rnext="//@topState/@contains.5/@contains.1"
+        name="needs pics, cannot walk"/>
+    <contains
+        xsi:type="StatechartLanguage:HyperEdge"
+        next="//@topState/@contains.6/@contains.0 //@topState/@contains.7/@contains.0 //@topState/@contains.8/@contains.0"
+        rnext="//@topState/@contains.5/@contains.1"
+        name="needs pics, can walk"/>
+    <contains
+        xsi:type="StatechartLanguage:HyperEdge"
+        next="//@topState/@contains.6/@contains.1"
+        rnext="//@topState/@contains.7/@contains.0 //@topState/@contains.9/@contains.0"
+        name="nurse picks up patient"/>
+    <contains
+        xsi:type="StatechartLanguage:HyperEdge"
+        next="//@topState/@contains.8/@contains.0 //@topState/@contains.6/@contains.5"
+        rnext="//@topState/@contains.5/@contains.1"
+        name="patient has high quality pics already"/>
+    <contains
+        xsi:type="StatechartLanguage:HyperEdge"
+        next="//@topState/@contains.10/@contains.0"
+        rnext="//@topState/@contains.8/@contains.0 //@topState/@contains.6/@contains.5"
+        name="dermatologist calls in patient"/>
+    <contains
+        xsi:type="StatechartLanguage:OR"
+        name="">
+      <contains
+          xsi:type="StatechartLanguage:Basic"
+          next="//@topState/@contains.5/@contains.3 //@topState/@contains.5/@contains.2"
+          name="patient arrived"/>
+      <contains
+          xsi:type="StatechartLanguage:Basic"
+          next="//@topState/@contains.3 //@topState/@contains.1 //@topState/@contains.0"
+          rnext="//@topState/@contains.5/@contains.2 //@topState/@contains.5/@contains.3"
+          name="patient registered in HIS"/>
+      <contains
+          xsi:type="StatechartLanguage:HyperEdge"
+          next="//@topState/@contains.5/@contains.1"
+          rnext="//@topState/@contains.5/@contains.0"
+          name="eID signin"/>
+      <contains
+          xsi:type="StatechartLanguage:HyperEdge"
+          next="//@topState/@contains.5/@contains.1"
+          rnext="//@topState/@contains.5/@contains.0"
+          name="secretary signin"/>
+    </contains>
+    <contains
+        xsi:type="StatechartLanguage:OR"
+        name="">
+      <contains
+          xsi:type="StatechartLanguage:Basic"
+          next="//@topState/@contains.6/@contains.2"
+          rnext="//@topState/@contains.1"
+          name="patient walking to dermatology"/>
+      <contains
+          xsi:type="StatechartLanguage:Basic"
+          next="//@topState/@contains.6/@contains.4"
+          rnext="//@topState/@contains.2 //@topState/@contains.6/@contains.2"
+          name="waiting for photographer"/>
+      <contains
+          xsi:type="StatechartLanguage:HyperEdge"
+          next="//@topState/@contains.6/@contains.1"
+          rnext="//@topState/@contains.6/@contains.0"
+          name="patient is sent to photographer"/>
+      <contains
+          xsi:type="StatechartLanguage:Basic"
+          next="//@topState/@contains.6/@contains.6"
+          rnext="//@topState/@contains.6/@contains.4"
+          name="take pictures"/>
+      <contains
+          xsi:type="StatechartLanguage:HyperEdge"
+          next="//@topState/@contains.6/@contains.3"
+          rnext="//@topState/@contains.6/@contains.1"
+          name="begin photography session"/>
+      <contains
+          xsi:type="StatechartLanguage:Basic"
+          next="//@topState/@contains.4"
+          rnext="//@topState/@contains.3 //@topState/@contains.6/@contains.6"
+          name="waiting for dermatologist"/>
+      <contains
+          xsi:type="StatechartLanguage:HyperEdge"
+          next="//@topState/@contains.6/@contains.5"
+          rnext="//@topState/@contains.6/@contains.3"
+          name="end photography session"/>
+    </contains>
+    <contains
+        xsi:type="StatechartLanguage:OR"
+        name="">
+      <contains
+          xsi:type="StatechartLanguage:Basic"
+          next="//@topState/@contains.2"
+          rnext="//@topState/@contains.1 //@topState/@contains.0"
+          name="photographs ordered"/>
+    </contains>
+    <contains
+        xsi:type="StatechartLanguage:OR"
+        name="">
+      <contains
+          xsi:type="StatechartLanguage:Basic"
+          next="//@topState/@contains.4"
+          rnext="//@topState/@contains.1 //@topState/@contains.0 //@topState/@contains.3"
+          name="biopsy ordered"/>
+    </contains>
+    <contains
+        xsi:type="StatechartLanguage:OR"
+        name="">
+      <contains
+          xsi:type="StatechartLanguage:Basic"
+          next="//@topState/@contains.2"
+          rnext="//@topState/@contains.0"
+          name="patient in hall"/>
+    </contains>
+    <contains
+        xsi:type="StatechartLanguage:OR"
+        name="">
+      <contains
+          xsi:type="StatechartLanguage:Basic"
+          rnext="//@topState/@contains.4"
+          name="dermatologist session"/>
+    </contains>
+  </topState>
+</StatechartLanguage:Statechart>

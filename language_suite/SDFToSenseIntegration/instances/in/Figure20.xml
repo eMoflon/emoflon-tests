@@ -1,0 +1,56 @@
+<sdf3 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" type="sdf" 
+      xsi:noNamespaceSchemaLocation="http://www.es.ele.tue.nl/sdf3/xsd/sdf3-sdf.xsd">
+    <applicationGraph name='example-app'>
+	<sdf name="example" type="Example">
+            <actor name='OUT' type='A'>
+               <port name='outAEC' type='out' rate='1'/>
+               <port name='inAEC' type='in' rate='1'/>
+            </actor>
+            <actor name='AEC' type='B'>
+                <port name='inOUT' type='in' rate='2'/>
+                <port name='outOUT' type='out' rate='2'/>
+                <port name='inADC' type='in' rate='2'/>
+                <port name='outADC' type='out' rate='2'/>
+                <port name='outSRC' type='out' rate='2'/>
+                <port name='inSRC' type='in' rate='2'/>
+            </actor>
+            <actor name='ADC' type='C'>
+                <port name='inAEC' type='in' rate='1'/>
+                <port name='outAEC' type='out' rate='1'/>
+            </actor>
+            <actor name='SRC' type='D'>
+                <port name='inAEC' type='in' rate='1'/>
+                <port name='outAEC' type='out' rate='1'/>
+            </actor>
+            <channel name='OUT2AEC' srcActor='OUT' srcPort='outAEC' dstActor='AEC' dstPort='inOUT' initialTokens='2'/>
+            <channel name='AEC2OUT' srcActor='AEC' srcPort='outOUT' dstActor='OUT' dstPort='inAEC' initialTokens='0'/>
+            <channel name='AEC2ADC' srcActor='AEC' srcPort='outADC' dstActor='ADC' dstPort='inAEC' initialTokens='2'/>
+            <channel name='ADC2AEC' srcActor='ADC' srcPort='outAEC' dstActor='AEC' dstPort='inADC' initialTokens='0'/>
+            <channel name='AEC2SRC' srcActor='AEC' srcPort='outSRC' dstActor='SRC' dstPort='inAEC' initialTokens='2'/>
+            <channel name='SRC2AEC' srcActor='SRC' srcPort='outAEC' dstActor='AEC' dstPort='inSRC' initialTokens='0'/>
+          </sdf>
+        <sdfProperties>
+                <actorProperties actor='OUT'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/> 
+                        <!-- worst-case execution time in time units -->
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='AEC'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='ADC'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='SRC'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+        </sdfProperties>
+    </applicationGraph>
+</sdf3>

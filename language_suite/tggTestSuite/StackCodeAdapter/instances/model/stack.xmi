@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<LIFOStack:Stack xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:LIFOStack="http://www.moflon.org/LIFOStack">
+  <elements xsi:type="LIFOStack:End"/>
+  <elements next="#//@elements.0"/>
+  <elements next="#//@elements.1"/>
+  <elements xsi:type="LIFOStack:End"/>
+  <elements next="#//@elements.2"/>
+  <elements next="#//@elements.3"/>
+</LIFOStack:Stack>

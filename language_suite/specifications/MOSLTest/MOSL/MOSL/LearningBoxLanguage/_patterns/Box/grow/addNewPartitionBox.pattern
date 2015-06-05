@@ -1,0 +1,25 @@
+pattern addNewPartitionBox {
+	@this : Box {
+		-containedPartition-> lastPartitionInBox
+		-containedPartition-> firstPartitionInBox
+	}
+	
+	lastPartitionInBox : Partition {
+		-next-> nextPartition
+		++ -next-> newPartition
+	}
+	
+	!nextPartition : Partition 
+	
+	firstPartitionInBox : Partition {
+		-previous-> previousPartition
+	}
+	!previousPartition : Partition
+	
+	++ newPartition : Partition {
+		newPartition.partitionSize := @this.determineNextSize()
+		
+		++ -box-> this
+		++ -previous-> firstPartitionInBox
+	}
+}

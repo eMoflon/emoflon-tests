@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MoflonPropertyContainer:MoflonPropertiesContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:MoflonPropertyContainer="platform:/plugin/MoflonPropertyContainer/model/MoflonPropertyContainer.ecore" projectName="LibraryToBibliographyIntegrationCSP">
+  <dependencies value="platform:/plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore"/>
+  <dependencies value="platform:/plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore"/>
+  <dependencies value="platform:/plugin/MocaTree/model/MocaTree.ecore"/>
+  <dependencies value="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore"/>
+  <dependencies value="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore"/>
+  <dependencies value="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore"/>
+  <dependencies value="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore"/>
+  <metaModelProject MetaModelProjectName="LibraryToBibliographyCSP"/>
+  <replaceGenModel/>
+  <genTracingInstrumentation/>
+  <sdmCodegeneratorHandlerId value="DEMOCLES_REVERSE_NAVI"/>
+  <tGGBuildMode/>
+  <debugMode/>
+  <strictSDMConditionalBranching bool="false"/>
+</MoflonPropertyContainer:MoflonPropertiesContainer>

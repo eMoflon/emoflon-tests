@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<RailwayControl:Railway
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:RailwayControl="platform:/plugin/RailwayControl/model/RailwayControl.ecore">
+  <tracks next="//@tracks.1"
+      trackNumber="1"
+      name="Hamburg-Frankfurt">
+    <start x="53.552776"
+        y="10.007956"/>
+    <end x="50.107452"
+        y="8.664249"/>
+  </tracks>
+  <tracks previous="//@tracks.0"
+      next="//@tracks.2"
+      trackNumber="2"
+      name="Frankfurt-Munich">
+    <start x="50.107452"
+        y="8.664249"/>
+    <end x="48.14182"
+        y="11.548786"/>
+  </tracks>
+  <tracks previous="//@tracks.1"
+      trackNumber="3"
+      name="Munich-Berlin">
+    <start x="48.14182"
+        y="11.548786"/>
+    <end x="52.525807"
+        y="13.368908"/>
+  </tracks>
+  <tracks trackNumber="4"
+      name="Bielefeld"/>
+</RailwayControl:Railway>

@@ -1,0 +1,38 @@
+
+import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.util.EcoreUtil;
+import BoardGameLanguage_eMoflonTutorial.BoardGameLanguage_eMoflonTutorialPackage;
+import BoardGameLanguage_eMoflonTutorial.Figure;
+
+partial class CreateFigureNodeImpl {
+
+
+
+@model postProcessBACKWARD (Node figureNode, Place place) <--
+		String firstLetterOfFigureClass = figureNode.getName();
+
+		EPackage boardPackage = BoardGameLanguage_eMoflonTutorialPackage.eINSTANCE;
+		for (EClassifier eClassifier : boardPackage.getEClassifiers()) {
+			if (eClassifier.getName().startsWith(firstLetterOfFigureClass)
+					&& eClassifier instanceof EClass) {
+				EClass eClass = (EClass) eClassifier;
+				if (eClass.getEAllSuperTypes().contains(
+						boardPackage.getEClassifier("Figure"))) {
+					Figure figure = (Figure) EcoreUtil.create(eClass);
+					place.setFigure(figure);
+					return;
+				}
+			}
+		}
+-->
+
+@model postProcessFORWARD (Node figureNode, Place place) <--
+		Figure figureOnPlace = place.getFigure();
+		String nameOfFigureClass = figureOnPlace.eClass().getName();
+
+		// Figure in tree is first letter of class
+		figureNode.setName(nameOfFigureClass.substring(0, 1));
+-->
+
+}

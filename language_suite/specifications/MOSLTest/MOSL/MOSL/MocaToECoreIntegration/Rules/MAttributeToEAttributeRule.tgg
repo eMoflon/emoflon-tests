@@ -1,0 +1,67 @@
+rule MAttributeToEAttributeRule {
+	source {
+		classNode : Node {
+			classNode.name == "EClass"
+			
+			-children-> attributesNode
+		}
+		
+		attributesNode : Node {
+			attributesNode.name == "attributes"
+			
+			++ -children-> attribute
+		}
+		
+		++ attribute : Node {
+			attribute.name := "EAttribute"
+			
+			++ -attribute-> attributeName
+			++ -attribute-> attributeGuid
+			++ -attribute-> attributeOrdered
+			++ -attribute-> attributeLowerBound
+			++ -attribute-> attributeUpperBound
+		}
+		
+		++ attributeName : Attribute {
+			attributeName.name := "name"
+		}
+	
+		++ attributeGuid : Attribute {
+			attributeGuid.name := "guid"
+		}
+		
+		++ attributeOrdered : Attribute {
+			attributeOrdered.name := "ordered"
+		}
+		++ attributeLowerBound : Attribute {
+			attributeLowerBound.name := "lowerBound"
+		}
+		++ attributeUpperBound : Attribute {
+			attributeUpperBound.name := "upperBound"
+		}
+	}
+	
+	correspondence {
+		classNode <- mClassToEclass : MClassToEClass -> eclass
+		++ attribute <- mAttributeToEAttribute : MAttributeToEAttribute -> eattribute 
+	}
+	
+	target {
+		eclass : EClass {
+			++ -eStructuralFeatures-> eattribute
+		}
+		
+		++ eattribute : EAttribute {
+		}
+	}
+	
+	constraints {[
+		eq(attributeName.value, eattribute.name)
+		generateGuid[B,F](String)
+		generateGuid(attributeGuid.value)
+		stringToBoolean[BF,FB,BB](String, boolean)
+		stringToBoolean(attributeOrdered.value, eattribute.ordered)
+		stringToNumber(attributeLowerBound.value, eattribute.lowerBound)
+		stringToNumber(attributeUpperBound.value, eattribute.upperBound)
+	]}
+}

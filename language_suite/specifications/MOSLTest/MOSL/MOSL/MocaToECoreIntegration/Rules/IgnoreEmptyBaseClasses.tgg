@@ -1,0 +1,25 @@
+rule IgnoreEmptyBaseClasses {
+	source {
+		classNode : Node {
+			++ -attribute-> baseClasses
+		}
+		
+		++ baseClasses : Attribute {
+			baseClasses.name := "baseClasses"
+			baseClasses.value := ""
+		}
+	}
+	
+	correspondence {
+	
+	}
+	
+	target {
+	
+	
+	}
+	
+	constraints {[
+	
+	]}
+}

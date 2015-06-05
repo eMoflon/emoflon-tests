@@ -1,0 +1,19 @@
+pattern promoteFastCard {
+	@fastcard : FastCard {
+		-- -cardContainer-> this
+		++ -cardContainer-> lastPartition
+	}
+	
+	@this : Partition {
+		-box-> box
+	}
+	
+	lastPartition : Partition {
+		-box-> box
+		-next-> next
+	}
+	
+	!next : Partition
+	
+	box : Box
+}

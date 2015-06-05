@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<mCSPLanguage:CSP xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mCSPLanguage="platform:/plugin/mCSPLanguage/model/MCSPLanguage.ecore#/">
+  <variables>
+    <values requiresFrom="//@constraints.0 //@constraints.1" products="//@solution.0/@subset.0 //@solution.0/@subset.1 //@solution.0/@subset.2" solutionSpace="//@variables.0/@solutionSpace" id="Communication"/>
+    <values tuples="//@invalidtuple/@tuples.0 //@invalidtuple/@tuples.1" products="//@solution.0/@subset.3" solutionSpace="//@variables.0/@solutionSpace" id="CommunicationNOT"/>
+    <solutionSpace values="//@variables.0/@values.0 //@variables.0/@values.1"/>
+  </variables>
+  <variables>
+    <values requires="//@constraints.0" tuples="//@invalidtuple/@tuples.0" products="//@solution.0/@subset.0 //@solution.0/@subset.2" solutionSpace="//@variables.1/@solutionSpace" id="WLAN"/>
+    <values products="//@solution.0/@subset.1 //@solution.0/@subset.3" solutionSpace="//@variables.1/@solutionSpace" id="WLANNOT"/>
+    <solutionSpace values="//@variables.1/@values.0 //@variables.1/@values.1"/>
+  </variables>
+  <variables>
+    <values requires="//@constraints.1" tuples="//@invalidtuple/@tuples.1" products="//@solution.0/@subset.0 //@solution.0/@subset.1" solutionSpace="//@variables.2/@solutionSpace" id="UMTS"/>
+    <values products="//@solution.0/@subset.2 //@solution.0/@subset.3" solutionSpace="//@variables.2/@solutionSpace" id="UMTSNOT"/>
+    <solutionSpace values="//@variables.2/@values.0 //@variables.2/@values.1"/>
+  </variables>
+  <constraints xsi:type="mCSPLanguage:CSPRequire" source="//@variables.1/@values.0" target="//@variables.0/@values.0"/>
+  <constraints xsi:type="mCSPLanguage:CSPRequire" source="//@variables.2/@values.0" target="//@variables.0/@values.0"/>
+  <solution isValid="true">
+    <subset values="//@variables.0/@values.0 //@variables.1/@values.0 //@variables.2/@values.0" isValid="true" isNew="false"/>
+    <subset values="//@variables.0/@values.0 //@variables.1/@values.1 //@variables.2/@values.0" isValid="true" isNew="false"/>
+    <subset values="//@variables.0/@values.0 //@variables.2/@values.1 //@variables.1/@values.0" isValid="true" isNew="false"/>
+    <subset values="//@variables.0/@values.1 //@variables.1/@values.1 //@variables.2/@values.1" isValid="true" isNew="false"/>
+  </solution>
+  <invalidtuple>
+    <tuples values="//@variables.0/@values.1 //@variables.1/@values.0"/>
+    <tuples values="//@variables.0/@values.1 //@variables.2/@values.0"/>
+  </invalidtuple>
+</mCSPLanguage:CSP>

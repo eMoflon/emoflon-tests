@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><plugin>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="LibraryToBibliographyIntegration.LibraryToBibliographyIntegrationPackage" genModel="model/LibraryToBibliographyIntegration.genmodel" uri="platform:/plugin/LibraryToBibliographyIntegration/model/LibraryToBibliographyIntegration.ecore"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="LibraryToBibliographyIntegration.Rules.RulesPackage" genModel="model/LibraryToBibliographyIntegration.genmodel" uri="platform:/plugin/LibraryToBibliographyIntegration/model/LibraryToBibliographyIntegration.ecore#//Rules"/>
+  </extension>
+</plugin>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DoubleLinkedListLanguage:List xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:DoubleLinkedListLanguage="platform:/plugin/DoubleLinkedListLanguage/model/DoubleLinkedListLanguage.ecore#/"
+    xsi:schemaLocation="platform:/plugin/DoubleLinkedListLanguage/model/DoubleLinkedListLanguage.ecore#/ ../model/DoubleLinkedListLanguage.ecore">
+  <elements previous="#//@elements.2" next="#//@elements.1" label="Ene"/>
+  <elements previous="#//@elements.0" next="#//@elements.2" label="Mene"/>
+  <elements previous="#//@elements.1" next="#//@elements.0" label="Moo"/>
+</DoubleLinkedListLanguage:List>

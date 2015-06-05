@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MocaTree:File xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MocaTree="platform:/plugin/MocaTree/model/MocaTree.ecore" name="source.xml">
+  <rootNode name="FIXML">
+    <children xsi:type="MocaTree:Node" name="Order">
+      <attribute name="ClOrdID" value="123456"/>
+      <attribute index="1" name="Side" value="2"/>
+      <attribute index="2" name="TransactTm" value="2001-09-11T09:30:47-05:00"/>
+      <attribute index="3" name="OrdTyp" value="2"/>
+      <attribute index="4" name="Px" value="93.25"/>
+      <attribute index="5" name="Acct" value="26522154"/>
+      <children xsi:type="MocaTree:Node" name="Hdr">
+        <attribute name="Snt" value="2001-09-11T09:30:47-05:00"/>
+        <attribute index="1" name="PosDup" value="N"/>
+        <attribute index="2" name="PosRsnd" value="N"/>
+        <attribute index="3" name="SeqNum" value="521"/>
+        <children xsi:type="MocaTree:Node" name="Sndr">
+          <attribute name="ID" value="AFUNDMGR"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="1" name="Tgt">
+          <attribute name="ID" value="ABROKER"/>
+        </children>
+      </children>
+      <children xsi:type="MocaTree:Node" index="1" name="Instrmt">
+        <attribute name="Sym" value="IBM"/>
+        <attribute index="1" name="ID" value="459200101"/>
+        <attribute index="2" name="IDSrc" value="1"/>
+      </children>
+      <children xsi:type="MocaTree:Node" index="2" name="OrdQty">
+        <attribute name="Qty" value="1000"/>
+      </children>
+    </children>
+  </rootNode>
+</MocaTree:File>

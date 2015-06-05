@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TGGLanguage.analysis:StaticAnalysis xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:TGGLanguage.analysis="http://www.moflon.org/TGGLanguage.analysis">
+  <sourceTable>
+    <types candidateRules="BlockDiagramCodeAdapter.gen.ecore#//Rules/SystemToNodeRule/isAppropriate_FWD_BlockSystem_0"
+        type="http://www.moflon.org/BlockDiagram#//BlockSystem"/>
+    <types candidateRules="BlockDiagramCodeAdapter.gen.ecore#//Rules/BlockToNodeRule/isAppropriate_FWD_Block_0"
+        type="http://www.moflon.org/BlockDiagram#//Block"/>
+    <types candidateRules="BlockDiagramCodeAdapter.gen.ecore#//Rules/ProvideToNodeRule/isAppropriate_FWD_Provide_0"
+        type="http://www.moflon.org/BlockDiagram#//Provide"/>
+    <types candidateRules="BlockDiagramCodeAdapter.gen.ecore#//Rules/RequireToNodeRule/isAppropriate_FWD_Require_0"
+        type="http://www.moflon.org/BlockDiagram#//Require"/>
+    <types candidateRules="BlockDiagramCodeAdapter.gen.ecore#//Rules/ConnectorToNodeRule/isAppropriate_FWD_Connector_0"
+        type="http://www.moflon.org/BlockDiagram#//Connector"/>
+  </sourceTable>
+  <targetTable>
+    <types candidateRules="BlockDiagramCodeAdapter.gen.ecore#//Rules/SystemToNodeRule/isAppropriate_BWD_Node_0 BlockDiagramCodeAdapter.gen.ecore#//Rules/BlockToNodeRule/isAppropriate_BWD_Node_1 BlockDiagramCodeAdapter.gen.ecore#//Rules/ProvideToNodeRule/isAppropriate_BWD_Node_2 BlockDiagramCodeAdapter.gen.ecore#//Rules/RequireToNodeRule/isAppropriate_BWD_Node_3 BlockDiagramCodeAdapter.gen.ecore#//Rules/ConnectorToNodeRule/isAppropriate_BWD_Node_4"
+        type="http://www.moflon.org/MocaTree#//Node"/>
+    <types candidateRules="BlockDiagramCodeAdapter.gen.ecore#//Rules/SystemToNodeRule/isAppropriate_BWD_File_0"
+        type="http://www.moflon.org/MocaTree#//File"/>
+    <types candidateRules="BlockDiagramCodeAdapter.gen.ecore#//Rules/BlockToNodeRule/isAppropriate_BWD_Attribute_0 BlockDiagramCodeAdapter.gen.ecore#//Rules/ConnectorToNodeRule/isAppropriate_BWD_Attribute_1 BlockDiagramCodeAdapter.gen.ecore#//Rules/ConnectorToNodeRule/isAppropriate_BWD_Attribute_2"
+        type="http://www.moflon.org/MocaTree#//Attribute"/>
+  </targetTable>
+  <sourceLNCCTable>
+    <entries edgeSourceType="http://www.moflon.org/BlockDiagram#//BlockSystem" edgeTargetType="http://www.moflon.org/BlockDiagram#//Block"
+        referenceName="blocks"/>
+    <entries edgeSourceType="http://www.moflon.org/BlockDiagram#//Block" edgeTargetType="http://www.moflon.org/BlockDiagram#//Provide"
+        referenceName="ports"/>
+    <entries edgeSourceType="http://www.moflon.org/BlockDiagram#//Block" edgeTargetType="http://www.moflon.org/BlockDiagram#//Require"
+        referenceName="ports"/>
+    <entries edgeSourceType="http://www.moflon.org/BlockDiagram#//Connector" edgeTargetType="http://www.moflon.org/BlockDiagram#//Provide"
+        referenceName="pub" creationContext="TARGET"/>
+    <entries edgeSourceType="http://www.moflon.org/BlockDiagram#//Require" edgeTargetType="http://www.moflon.org/BlockDiagram#//Connector"
+        referenceName="connector"/>
+  </sourceLNCCTable>
+  <targetLNCCTable>
+    <entries edgeSourceType="http://www.moflon.org/MocaTree#//Node" edgeTargetType="http://www.moflon.org/MocaTree#//Node"
+        referenceName="children"/>
+    <entries edgeSourceType="http://www.moflon.org/MocaTree#//Node" edgeTargetType="http://www.moflon.org/MocaTree#//Node"
+        referenceName="children"/>
+    <entries edgeSourceType="http://www.moflon.org/MocaTree#//Node" edgeTargetType="http://www.moflon.org/MocaTree#//Node"
+        referenceName="children"/>
+    <entries edgeSourceType="http://www.moflon.org/MocaTree#//Node" edgeTargetType="http://www.moflon.org/MocaTree#//Node"
+        referenceName="children"/>
+  </targetLNCCTable>
+</TGGLanguage.analysis:StaticAnalysis>

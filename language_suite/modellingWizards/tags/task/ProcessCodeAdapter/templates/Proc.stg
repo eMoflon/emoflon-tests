@@ -1,0 +1,19 @@
+group Proc;
+
+task(moduleImports, taskInvocations) ::= <<
+<moduleImports; separator="\n">
+
+task {
+  run(){
+    <taskInvocations; separator="\n">
+  }
+}
+>>
+
+moduleImport(name) ::= <<
+import <name>
+>>
+
+taskInvocation(id) ::= <<
+  <id>::run()
+>>

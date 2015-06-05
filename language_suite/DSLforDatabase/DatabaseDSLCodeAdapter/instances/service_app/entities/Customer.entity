@@ -1,0 +1,8 @@
+Customer -> [Job Machine] {
+	@mode[rw]
+	@properties[
+		_id!
+		name*
+		address?
+	]
+}

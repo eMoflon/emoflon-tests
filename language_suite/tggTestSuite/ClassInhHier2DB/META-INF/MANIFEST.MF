@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: ClassInhHier2DB;singleton:=true
+Export-Package: ClassInhHier2DB.util,
+ ClassInhHier2DB.impl,
+ ClassInhHier2DB,
+ ClassInhHier2DB.Rules,
+ ClassInhHier2DB.Rules.util,
+ ClassInhHier2DB.Rules.impl,
+ org.moflon.tie
+Bundle-Name: ClassInhHier2DB
+Bundle-Version: 1.0
+Require-Bundle: ClassInheritanceHierarchy,
+ Database,
+ org.eclipse.emf.ecore,
+ SDMLanguage,
+ TGGLanguage,
+ TGGRuntime,
+ org.eclipse.emf.ecore.xmi,
+ MocaTree,
+ DebugLanguage,
+ org.apache.log4j;bundle-version="1.2.15",
+ org.moflon.core.utilities
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TU Darmstadt

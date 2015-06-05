@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: ProcessCodeAdapter;singleton:=true
+Export-Package: ProcessCodeAdapter.Rules.util,
+ ProcessCodeAdapter.impl,
+ ProcessCodeAdapter.util,
+ ProcessCodeAdapter,
+ ProcessCodeAdapter.Rules,
+ ProcessCodeAdapter.Rules.impl
+Bundle-Name: ProcessCodeAdapter
+Bundle-Version: 1.0
+Require-Bundle: MocaTree,
+ ProcessDefinition,
+ org.eclipse.emf.ecore,
+ SDMLanguage,
+ TGGLanguage,
+ TGGRuntime,
+ Moca;bundle-version="1.0.0",
+ org.eclipse.emf.ecore.xmi,
+ DebugLanguage,
+ org.apache.log4j;bundle-version="1.2.15",
+ org.moflon.core.utilities
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TU Darmstadt

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<BxSurveyDatabase:BxSchema
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:BxSurveyDatabase="platform:/plugin/BxSurveyDatabase/model/BxSurveyDatabase.ecore#/"
+     >
+  <tables UID="Table_42">
+    <columns
+        name="PK"/>
+  </tables>
+</BxSurveyDatabase:BxSchema>

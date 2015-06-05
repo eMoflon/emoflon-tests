@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MocaTree:File xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MocaTree="http://www.moflon.org/MocaTree" name="stack.stack">
+  <rootNode name="Stack">
+    <children xsi:type="MocaTree:Node" name="End">
+      <children xsi:type="MocaTree:Node" name="Element">
+        <children xsi:type="MocaTree:Node" name="Element">
+          <children xsi:type="MocaTree:Node" name="Element"/>
+        </children>
+      </children>
+    </children>
+    <children xsi:type="MocaTree:Node" name="End">
+      <children xsi:type="MocaTree:Node" name="Element"/>
+    </children>
+  </rootNode>
+</MocaTree:File>

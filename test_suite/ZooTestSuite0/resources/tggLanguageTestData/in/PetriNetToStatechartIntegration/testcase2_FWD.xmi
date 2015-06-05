@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ASCII"?>
+<PetriNetLanguage:Net
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:PetriNetLanguage="platform:/plugin/PetriNetLanguage/model/PetriNetLanguage.ecore">
+  <transitions
+      name="n55"
+      prep="//@places.9 //@places.0"
+      postp="//@places.3"/>
+  <transitions
+      name="n54"
+      prep="//@places.11"
+      postp="//@places.8 //@places.7 //@places.0"/>
+  <transitions
+      name="n53"
+      prep="//@places.9 //@places.0"
+      postp="//@places.1"/>
+  <transitions
+      name="E3"
+      prep="//@places.6 //@places.5"
+      postp="//@places.9"/>
+  <transitions
+      name="n52"
+      prep="//@places.8"
+      postp="//@places.6"/>
+  <transitions
+      name="n51"
+      prep="//@places.7"
+      postp="//@places.5"/>
+  <transitions
+      name="n4F"
+      prep="//@places.3"
+      postp="//@places.10"/>
+  <transitions
+      name="n4E"
+      prep="//@places.2"
+      postp="//@places.10"/>
+  <transitions
+      name="n4D"
+      prep="//@places.1"
+      postp="//@places.2"/>
+  <transitions
+      name="n4C"
+      prep="//@places.10"
+      postp="//@places.4"/>
+  <places name="received"
+      pret="//@transitions.1"
+      postt="//@transitions.2 //@transitions.0"/>
+  <places name="assessed"
+      pret="//@transitions.2"
+      postt="//@transitions.8"/>
+  <places name="settled"
+      pret="//@transitions.8"
+      postt="//@transitions.7"/>
+  <places name="rejected"
+      pret="//@transitions.0"
+      postt="//@transitions.6"/>
+  <places name="archived"
+      pret="//@transitions.9"/>
+  <places name="policy checked"
+      pret="//@transitions.5"
+      postt="//@transitions.3"/>
+  <places name="damage checked"
+      pret="//@transitions.4"
+      postt="//@transitions.3"/>
+  <places name="pollicy unchecked"
+      pret="//@transitions.1"
+      postt="//@transitions.5"/>
+  <places name="damage unchecked"
+      pret="//@transitions.1"
+      postt="//@transitions.4"/>
+  <places name="E0"
+      pret="//@transitions.3"
+      postt="//@transitions.2 //@transitions.0"/>
+  <places name="E1"
+      pret="//@transitions.7 //@transitions.6"
+      postt="//@transitions.9"/>
+  <places name="E2"
+      postt="//@transitions.1"/>
+</PetriNetLanguage:Net>

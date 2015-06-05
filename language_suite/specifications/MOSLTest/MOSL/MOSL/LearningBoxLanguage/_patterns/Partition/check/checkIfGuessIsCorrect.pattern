@@ -1,0 +1,5 @@
+pattern checkIfGuessIsCorrect {
+	@card : Card {
+		card.back == $guessed
+	}
+}

@@ -1,0 +1,104 @@
+<sdf3 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" type="sdf" 
+      xsi:noNamespaceSchemaLocation="http://www.es.ele.tue.nl/sdf3/xsd/sdf3-sdf.xsd">
+    <applicationGraph name='example-app'>
+	<sdf name="example" type="Example">
+            <actor name='A' type='A'>
+                <port name='outb' type='out' rate='3'/>
+                <port name='inb' type='in' rate='3'/>
+                <port name='outf' type='out' rate='2'/>
+                <port name='inf' type='in' rate='2'/>
+                <port name='oute' type='out' rate='12'/>
+                <port name='ine' type='in' rate='12'/>
+            </actor>
+            <actor name='B' type='B'>
+                <port name='inc' type='in' rate='2'/>
+                <port name='outc' type='out' rate='2'/>
+                <port name='ina' type='in' rate='5'/>
+                <port name='outa' type='out' rate='5'/>
+                <port name='oute' type='out' rate='4'/>
+                <port name='ine' type='in' rate='4'/>
+                <port name='outb' type='out' rate='1'/>
+                <port name='inb' type='in' rate='1'/>
+            </actor>
+            <actor name='C' type='C'>
+                <port name='inb' type='in' rate='3'/>
+                <port name='outb' type='out' rate='3'/>
+                <port name='outd' type='out' rate='3'/>
+                <port name='ind' type='in' rate='3'/>
+            </actor>
+	    <actor name='D' type='D'>
+                <port name='inc' type='in' rate='1'/>
+                <port name='ine' type='in' rate='2'/>
+                <port name='outc' type='out' rate='1'/>
+                <port name='oute' type='out' rate='2'/>
+                <port name='outd' type='out' rate='1'/>
+                <port name='ind' type='in' rate='1'/>
+            </actor>
+            <actor name='E' type='E'>
+                <port name='inb' type='in' rate='1'/>
+                <port name='outb' type='out' rate='1'/>
+                <port name='ind' type='in' rate='1'/>
+                <port name='outd' type='out' rate='1'/>
+                <port name='outa' type='out' rate='5'/>
+                <port name='ina' type='in' rate='5'/>
+            </actor>
+            <actor name='F' type='F'>
+                <port name='ina' type='in' rate='1'/>
+                <port name='outa' type='out' rate='1'/>
+                <port name='outf' type='out' rate='1'/>
+                <port name='inf' type='in' rate='1'/>
+            </actor>
+            <channel name='a2b' srcActor='A' srcPort='outb' dstActor='B' dstPort='ina' initialTokens='0'/>
+            <channel name='b2a' srcActor='B' srcPort='outa' dstActor='A' dstPort='inb' initialTokens='9'/>
+            <channel name='a2f' srcActor='A' srcPort='outf' dstActor='F' dstPort='ina' initialTokens='0'/>
+            <channel name='f2a' srcActor='F' srcPort='outa' dstActor='A' dstPort='inf' initialTokens='4'/>
+            <channel name='b2c' srcActor='B' srcPort='outc' dstActor='C' dstPort='inb' initialTokens='0'/>
+            <channel name='c2b' srcActor='C' srcPort='outb' dstActor='B' dstPort='inc' initialTokens='6'/>
+            <channel name='c2d' srcActor='C' srcPort='outd' dstActor='D' dstPort='inc' initialTokens='0'/>
+            <channel name='d2c' srcActor='D' srcPort='outc' dstActor='C' dstPort='ind' initialTokens='5'/>
+            <channel name='b2e' srcActor='B' srcPort='oute' dstActor='E' dstPort='inb' initialTokens='0'/>
+            <channel name='e2b' srcActor='E' srcPort='outb' dstActor='B' dstPort='ine' initialTokens='8'/>
+            <channel name='e2d' srcActor='E' srcPort='outd' dstActor='D' dstPort='ine' initialTokens='0'/>
+            <channel name='d2e' srcActor='D' srcPort='oute' dstActor='E' dstPort='ind' initialTokens='4'/>
+            <channel name='e2a' srcActor='E' srcPort='outa' dstActor='A' dstPort='ine' initialTokens='35'/>
+            <channel name='a2e' srcActor='A' srcPort='oute' dstActor='E' dstPort='ina' initialTokens='16'/>
+            <channel name='f2f' srcActor='F' srcPort='outf' dstActor='F' dstPort='inf' initialTokens='1'/>
+            <channel name='b2b' srcActor='B' srcPort='outb' dstActor='B' dstPort='inb' initialTokens='1'/>
+            <channel name='d2d' srcActor='D' srcPort='outd' dstActor='D' dstPort='ind' initialTokens='1'/>
+     
+          </sdf>
+        <sdfProperties>
+                <actorProperties actor='A'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='2'/> 
+                        <!-- worst-case execution time in time units -->
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='B'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='2'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='C'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='2'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='D'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='2'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='E'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='2'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='F'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='2'/>
+                    </processor>
+                </actorProperties>
+        </sdfProperties>
+    </applicationGraph>
+</sdf3>

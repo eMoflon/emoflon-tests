@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ASCII"?>
+<FeatureModelLanguage:FeatureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:FeatureModelLanguage="platform:/plugin/FeatureModelLanguage/model/FeatureModelLanguage.ecore#/">
+  <constraints xsi:type="FeatureModelLanguage:Require" source="//@root/@childrenDependency.3/@childFeature/@childrenDependency.0/@childFeature.0" target="//@root/@childrenDependency.9/@childFeature/@childrenDependency.0/@childFeature.0"/>
+  <constraints xsi:type="FeatureModelLanguage:Exclude" features="//@root/@childrenDependency.3/@childFeature/@childrenDependency.0/@childFeature.0 //@root/@childrenDependency.7/@childFeature/@childrenDependency.0/@childFeature.1"/>
+  <constraints xsi:type="FeatureModelLanguage:Require" source="//@root/@childrenDependency.4/@childFeature/@childrenDependency.0/@childFeature.0" target="//@root/@childrenDependency.1/@childFeature/@childrenDependency.0/@childFeature.0"/>
+  <constraints xsi:type="FeatureModelLanguage:Require" source="//@root/@childrenDependency.5/@childFeature/@childrenDependency.0/@childFeature.0" target="//@root/@childrenDependency.1/@childFeature/@childrenDependency.0/@childFeature.0"/>
+  <constraints xsi:type="FeatureModelLanguage:Require" source="//@root/@childrenDependency.6/@childFeature/@childrenDependency.0/@childFeature.0" target="//@root/@childrenDependency.1/@childFeature/@childrenDependency.0/@childFeature.0"/>
+  <constraints xsi:type="FeatureModelLanguage:Require" source="//@root/@childrenDependency.7/@childFeature/@childrenDependency.0/@childFeature.0" target="//@root/@childrenDependency.9/@childFeature/@childrenDependency.0/@childFeature.0"/>
+  <constraints xsi:type="FeatureModelLanguage:Require" source="//@root/@childrenDependency.7/@childFeature/@childrenDependency.0/@childFeature.1" target="//@root/@childrenDependency.9/@childFeature/@childrenDependency.0/@childFeature.0"/>
+  <constraints xsi:type="FeatureModelLanguage:Exclude" features="//@root/@childrenDependency.9/@childFeature/@childrenDependency.0/@childFeature.0 //@root/@childrenDependency.7/@childFeature/@childrenDependency.0/@childFeature.2"/>
+  <constraints xsi:type="FeatureModelLanguage:Require" source="//@root/@childrenDependency.7/@childFeature/@childrenDependency.0/@childFeature.0" target="//@root/@childrenDependency.2/@childFeature/@childrenDependency.0/@childFeature.0"/>
+  <constraints xsi:type="FeatureModelLanguage:Require" source="//@root/@childrenDependency.7/@childFeature/@childrenDependency.0/@childFeature.1" target="//@root/@childrenDependency.2/@childFeature/@childrenDependency.0/@childFeature.0"/>
+  <constraints xsi:type="FeatureModelLanguage:Require" source="//@root/@childrenDependency.7/@childFeature/@childrenDependency.0/@childFeature.2" target="//@root/@childrenDependency.2/@childFeature/@childrenDependency.0/@childFeature.0"/>
+  <constraints xsi:type="FeatureModelLanguage:Exclude" features="//@root/@childrenDependency.2/@childFeature/@childrenDependency.0/@childFeature.0 //@root/@childrenDependency.7/@childFeature/@childrenDependency.0/@childFeature.3"/>
+  <constraints xsi:type="FeatureModelLanguage:Require" source="//@root/@childrenDependency.8/@childFeature/@childrenDependency.0/@childFeature.0" target="//@root/@childrenDependency.2/@childFeature/@childrenDependency.0/@childFeature.0"/>
+  <constraints xsi:type="FeatureModelLanguage:Require" source="//@root/@childrenDependency.9/@childFeature/@childrenDependency.0/@childFeature.0" target="//@root/@childrenDependency.2/@childFeature/@childrenDependency.0/@childFeature.0"/>
+  <constraints xsi:type="FeatureModelLanguage:Exclude" features="//@root/@childrenDependency.2/@childFeature/@childrenDependency.0/@childFeature.0 //@root/@childrenDependency.10/@childFeature/@childrenDependency.0/@childFeature.0"/>
+  <constraints xsi:type="FeatureModelLanguage:Exclude" features="//@root/@childrenDependency.8/@childFeature/@childrenDependency.0/@childFeature.1 //@root/@childrenDependency.9/@childFeature/@childrenDependency.0/@childFeature.1 //@root/@childrenDependency.10/@childFeature/@childrenDependency.0/@childFeature.1"/>
+  <root id="Feature Phone" name="Feature Phone">
+    <childrenDependency xsi:type="FeatureModelLanguage:Mandatory">
+      <childFeature parentDependency="//@root/@childrenDependency.0">
+        <childrenDependency xsi:type="FeatureModelLanguage:Alternative">
+          <childFeature parentDependency="//@root/@childrenDependency.0/@childFeature/@childrenDependency.0" id="BasicFunctionsMessageSMS" name="BasicFunctions"/>
+        </childrenDependency>
+      </childFeature>
+    </childrenDependency>
+    <childrenDependency xsi:type="FeatureModelLanguage:Mandatory">
+      <childFeature parentDependency="//@root/@childrenDependency.1">
+        <childrenDependency xsi:type="FeatureModelLanguage:Alternative">
+          <childFeature parentDependency="//@root/@childrenDependency.1/@childFeature/@childrenDependency.0" requireFrom="//@constraints.2 //@constraints.3 //@constraints.4" id="Communication" name="Communication"/>
+          <childFeature parentDependency="//@root/@childrenDependency.1/@childFeature/@childrenDependency.0" id="CommunicationNOT"/>
+        </childrenDependency>
+      </childFeature>
+    </childrenDependency>
+    <childrenDependency xsi:type="FeatureModelLanguage:Mandatory">
+      <childFeature parentDependency="//@root/@childrenDependency.2">
+        <childrenDependency xsi:type="FeatureModelLanguage:Alternative">
+          <childFeature parentDependency="//@root/@childrenDependency.2/@childFeature/@childrenDependency.0" excludes="//@constraints.11 //@constraints.14" requireFrom="//@constraints.8 //@constraints.9 //@constraints.10 //@constraints.12 //@constraints.13" id="Extras" name="Extras"/>
+          <childFeature parentDependency="//@root/@childrenDependency.2/@childFeature/@childrenDependency.0" id="ExtrasNOT"/>
+        </childrenDependency>
+      </childFeature>
+    </childrenDependency>
+    <childrenDependency xsi:type="FeatureModelLanguage:Mandatory">
+      <childFeature parentDependency="//@root/@childrenDependency.3">
+        <childrenDependency xsi:type="FeatureModelLanguage:Alternative">
+          <childFeature parentDependency="//@root/@childrenDependency.3/@childFeature/@childrenDependency.0" excludes="//@constraints.1" require="//@constraints.0" id="MMS" name="MMS"/>
+          <childFeature parentDependency="//@root/@childrenDependency.3/@childFeature/@childrenDependency.0" id="MMSNOT"/>
+        </childrenDependency>
+      </childFeature>
+    </childrenDependency>
+    <childrenDependency xsi:type="FeatureModelLanguage:Mandatory">
+      <childFeature parentDependency="//@root/@childrenDependency.4">
+        <childrenDependency xsi:type="FeatureModelLanguage:Alternative">
+          <childFeature parentDependency="//@root/@childrenDependency.4/@childFeature/@childrenDependency.0" require="//@constraints.2" id="WLAN" name="WLAN"/>
+          <childFeature parentDependency="//@root/@childrenDependency.4/@childFeature/@childrenDependency.0" id="WLANNOT"/>
+        </childrenDependency>
+      </childFeature>
+    </childrenDependency>
+    <childrenDependency xsi:type="FeatureModelLanguage:Mandatory">
+      <childFeature parentDependency="//@root/@childrenDependency.5">
+        <childrenDependency xsi:type="FeatureModelLanguage:Alternative">
+          <childFeature parentDependency="//@root/@childrenDependency.5/@childFeature/@childrenDependency.0" require="//@constraints.3" id="UMTS" name="UMTS"/>
+          <childFeature parentDependency="//@root/@childrenDependency.5/@childFeature/@childrenDependency.0" id="UMTSNOT"/>
+        </childrenDependency>
+      </childFeature>
+    </childrenDependency>
+    <childrenDependency xsi:type="FeatureModelLanguage:Mandatory">
+      <childFeature parentDependency="//@root/@childrenDependency.6">
+        <childrenDependency xsi:type="FeatureModelLanguage:Alternative">
+          <childFeature parentDependency="//@root/@childrenDependency.6/@childFeature/@childrenDependency.0" require="//@constraints.4" id="Bluetooth" name="Bluetooth"/>
+          <childFeature parentDependency="//@root/@childrenDependency.6/@childFeature/@childrenDependency.0" id="BluetoothNOT"/>
+        </childrenDependency>
+      </childFeature>
+    </childrenDependency>
+    <childrenDependency xsi:type="FeatureModelLanguage:Mandatory">
+      <childFeature parentDependency="//@root/@childrenDependency.7">
+        <childrenDependency xsi:type="FeatureModelLanguage:Alternative" name="1">
+          <childFeature parentDependency="//@root/@childrenDependency.7/@childFeature/@childrenDependency.0" require="//@constraints.5 //@constraints.8" id="M_3" name="M_3"/>
+          <childFeature parentDependency="//@root/@childrenDependency.7/@childFeature/@childrenDependency.0" excludes="//@constraints.1" require="//@constraints.6 //@constraints.9" id="M_8" name="M_8"/>
+          <childFeature parentDependency="//@root/@childrenDependency.7/@childFeature/@childrenDependency.0" excludes="//@constraints.7" require="//@constraints.10" id="CameraM_3_NoComb_"/>
+          <childFeature parentDependency="//@root/@childrenDependency.7/@childFeature/@childrenDependency.0" excludes="//@constraints.11" id="ExtrasM_3_NoComb_"/>
+        </childrenDependency>
+      </childFeature>
+    </childrenDependency>
+    <childrenDependency xsi:type="FeatureModelLanguage:Mandatory">
+      <childFeature parentDependency="//@root/@childrenDependency.8">
+        <childrenDependency xsi:type="FeatureModelLanguage:Alternative">
+          <childFeature parentDependency="//@root/@childrenDependency.8/@childFeature/@childrenDependency.0" require="//@constraints.12" id="MP3" name="MP3"/>
+          <childFeature parentDependency="//@root/@childrenDependency.8/@childFeature/@childrenDependency.0" excludes="//@constraints.15" id="MP3NOT"/>
+        </childrenDependency>
+      </childFeature>
+    </childrenDependency>
+    <childrenDependency xsi:type="FeatureModelLanguage:Mandatory">
+      <childFeature parentDependency="//@root/@childrenDependency.9">
+        <childrenDependency xsi:type="FeatureModelLanguage:Alternative">
+          <childFeature parentDependency="//@root/@childrenDependency.9/@childFeature/@childrenDependency.0" excludes="//@constraints.7" require="//@constraints.13" requireFrom="//@constraints.0 //@constraints.5 //@constraints.6" id="Camera" name="Camera"/>
+          <childFeature parentDependency="//@root/@childrenDependency.9/@childFeature/@childrenDependency.0" excludes="//@constraints.15" id="CameraNOT"/>
+        </childrenDependency>
+      </childFeature>
+    </childrenDependency>
+    <childrenDependency xsi:type="FeatureModelLanguage:Mandatory">
+      <childFeature parentDependency="//@root/@childrenDependency.10">
+        <childrenDependency xsi:type="FeatureModelLanguage:Alternative">
+          <childFeature parentDependency="//@root/@childrenDependency.10/@childFeature/@childrenDependency.0" excludes="//@constraints.14" id="ExtrasCamera_NoComb_"/>
+          <childFeature parentDependency="//@root/@childrenDependency.10/@childFeature/@childrenDependency.0" excludes="//@constraints.15" id="ExtrasCamera_NoComb_NOT"/>
+        </childrenDependency>
+      </childFeature>
+    </childrenDependency>
+  </root>
+</FeatureModelLanguage:FeatureModel>

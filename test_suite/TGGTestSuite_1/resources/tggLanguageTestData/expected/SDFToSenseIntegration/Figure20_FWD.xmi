@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Sense:SenseModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Sense="platform:/plugin/Sense/model/Sense.ecore">
+  <actors inChannels="//@channels.1" outChannels="//@channels.0" name="OUT"/>
+  <actors inChannels="//@channels.0 //@channels.3 //@channels.5" outChannels="//@channels.1 //@channels.2 //@channels.4" name="AEC"/>
+  <actors inChannels="//@channels.2" outChannels="//@channels.3" name="ADC"/>
+  <actors inChannels="//@channels.4" outChannels="//@channels.5" name="SRC"/>
+  <processors capabilities="//@capabilities.0 //@capabilities.1 //@capabilities.2 //@capabilities.3" name="p1"/>
+  <channels target="//@actors.1" source="//@actors.0" name="OUT2AEC"/>
+  <channels target="//@actors.0" source="//@actors.1" name="AEC2OUT"/>
+  <channels target="//@actors.2" source="//@actors.1" name="AEC2ADC"/>
+  <channels target="//@actors.1" source="//@actors.2" name="ADC2AEC"/>
+  <channels target="//@actors.3" source="//@actors.1" name="AEC2SRC"/>
+  <channels target="//@actors.1" source="//@actors.3" name="SRC2AEC"/>
+  <capabilities processor="//@processors.0" performs="//@actors.0" time="1"/>
+  <capabilities processor="//@processors.0" performs="//@actors.1" time="1"/>
+  <capabilities processor="//@processors.0" performs="//@actors.2" time="1"/>
+  <capabilities processor="//@processors.0" performs="//@actors.3" time="1"/>
+</Sense:SenseModel>

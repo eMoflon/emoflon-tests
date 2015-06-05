@@ -1,0 +1,26 @@
+Sense { 
+  Actors:
+    A
+    B
+    C
+    D
+	
+  Channels:
+    A - a2c -> C
+    A - a2d -> D
+    B - b2c -> C
+    B - b2d -> D
+    C - c2a -> A
+    C - c2b -> B
+    D - d2a -> A
+    D - d2b -> B
+	
+  Capabilities:
+    Actor A with processor p1 in s
+    Actor B with processor p1 in s
+    Actor C with processor p1 in s
+    Actor D with processor p1 in s
+	
+  Processors:
+    p1
+}

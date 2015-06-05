@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: StackCodeAdapter;singleton:=true
+Export-Package: StackCodeAdapter.util,
+ StackCodeAdapter.Rules.impl,
+ StackCodeAdapter.impl,
+ StackCodeAdapter,
+ StackCodeAdapter.Rules,
+ StackCodeAdapter.Rules.util
+Bundle-Name: StackCodeAdapter
+Bundle-Version: 1.0
+Require-Bundle: LIFOStack,
+ MocaTree,
+ org.eclipse.emf.ecore,
+ org.moflon.dependencies,
+ SDMLanguage,
+ TGGLanguage,
+ TGGRuntime,
+ org.eclipse.emf.ecore.xmi
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TU Darmstadt

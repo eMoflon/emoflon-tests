@@ -1,0 +1,9 @@
+pattern bookOfTheAuthor {
+
+	@currentAuthor : ../LibraryLanguage/Author {
+		-item-> aBookOfTheAuthor
+	}
+	
+	aBookOfTheAuthor : ../LibraryLanguage/Book
+
+}

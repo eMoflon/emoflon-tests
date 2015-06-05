@@ -1,0 +1,11 @@
+pattern generateNewResearcher {
+
+	@bibliography : ../BibliographyLanguage/Bibliography {
+		++ -researcher-> newResearcher
+	}
+	
+	++ newResearcher : ../BibliographyLanguage/Researcher {
+		newResearcher.name := currentAuthor.name
+	}
+
+}

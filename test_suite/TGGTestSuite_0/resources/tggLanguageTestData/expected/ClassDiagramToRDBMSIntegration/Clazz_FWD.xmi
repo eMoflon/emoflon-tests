@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<DatabaseLanguage:Schema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:DatabaseLanguage="platform:/plugin/DatabaseLanguage/model/DatabaseLanguage.ecore#/" description="example">
+  <tables UID="myClazz_1">
+    <columns name="PK"/>
+  </tables>
+</DatabaseLanguage:Schema>

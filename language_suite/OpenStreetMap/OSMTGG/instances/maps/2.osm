@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.3.3 (4880 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="50.3422000" minlon="8.7113000" maxlat="50.3440000" maxlon="8.7127000"/>
+ <node id="620869621" visible="true" version="3" changeset="16023219" timestamp="2013-05-08T05:23:17Z" user="kleinholz" uid="40627" lat="50.3427492" lon="8.7120641">
+  <tag k="natural" v="water"/>
+ </node>
+</osm>

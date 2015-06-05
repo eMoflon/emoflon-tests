@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<TGGRuntime:CorrespondenceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:StackCodeAdapter="http://www.moflon.org/StackCodeAdapter" xmlns:TGGRuntime="http://www.moflon.org/TGGRuntime">
+  <correspondences xsi:type="StackCodeAdapter:StackToFile">
+    <source href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/model/stack.xmi#/"/>
+    <target href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/tree.xmi#/"/>
+  </correspondences>
+  <correspondences xsi:type="StackCodeAdapter:StackElementToNode">
+    <source href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/model/stack.xmi#//@elements.0"/>
+    <target href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/tree.xmi#//@rootNode/@children.0"/>
+  </correspondences>
+  <correspondences xsi:type="StackCodeAdapter:StackElementToNode">
+    <source href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/model/stack.xmi#//@elements.1"/>
+    <target href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/tree.xmi#//@rootNode/@children.0/@children.0"/>
+  </correspondences>
+  <correspondences xsi:type="StackCodeAdapter:StackElementToNode">
+    <source href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/model/stack.xmi#//@elements.2"/>
+    <target href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/tree.xmi#//@rootNode/@children.0/@children.0/@children.0"/>
+  </correspondences>
+  <correspondences xsi:type="StackCodeAdapter:StackElementToNode">
+    <source href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/model/stack.xmi#//@elements.3"/>
+    <target href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/tree.xmi#//@rootNode/@children.1"/>
+  </correspondences>
+  <correspondences xsi:type="StackCodeAdapter:StackElementToNode">
+    <source href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/model/stack.xmi#//@elements.4"/>
+    <target href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/tree.xmi#//@rootNode/@children.0/@children.0/@children.0/@children.0"/>
+  </correspondences>
+  <correspondences xsi:type="StackCodeAdapter:StackElementToNode">
+    <source href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/model/stack.xmi#//@elements.5"/>
+    <target href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/tree.xmi#//@rootNode/@children.1/@children.0"/>
+  </correspondences>
+  <source href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/model/stack.xmi#/"/>
+  <target href="file:/C:/Users/anjorin/Documents/dev/workspaces/workspace_emoflon/StackCodeAdapter/./instances/tree.xmi#/"/>
+</TGGRuntime:CorrespondenceModel>

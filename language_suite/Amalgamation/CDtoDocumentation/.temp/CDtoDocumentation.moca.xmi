@@ -1,0 +1,1877 @@
+<MocaTree:Node xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MocaTree="platform:/plugin/MocaTree/model/MocaTree.ecore">
+  <children name="exportedTree" index="0" xsi:type="MocaTree:Node">
+    <children name="EPackage" index="0" xsi:type="MocaTree:Node">
+      <children name="classes" index="0" xsi:type="MocaTree:Node">
+        <children name="EClass" index="0" xsi:type="MocaTree:Node">
+          <children name="references" index="0" xsi:type="MocaTree:Node">
+            <children name="EReference" index="0" xsi:type="MocaTree:Node">
+              <attribute name="typeGuid" value="{B5EC543B-BF0C-41ed-B846-60975458FEAA}" index="0" />
+              <attribute name="name" value="classes" index="1" />
+              <attribute name="guid" value="{0B8AE868-98AC-4623-8F81-21FC70F9F1C9}Supplier" index="2" />
+              <attribute name="lowerBound" value="0" index="3" />
+              <attribute name="upperBound" value="-1" index="4" />
+              <attribute name="containment" value="true" index="5" />
+            </children>
+          </children>
+          <children name="attributes" index="1" xsi:type="MocaTree:Node" />
+          <children name="operations" index="2" xsi:type="MocaTree:Node" />
+          <attribute name="name" value="ClassDiagram" index="0" />
+          <attribute name="isAbstract" value="false" index="1" />
+          <attribute name="isInterface" value="false" index="2" />
+          <attribute name="guid" value="{F4FD0895-3DA0-44bf-A41D-638146594E3D}" index="3" />
+          <attribute name="alias" value="" index="4" />
+          <attribute name="baseClasses" value="" index="5" />
+        </children>
+        <children name="EClass" index="1" xsi:type="MocaTree:Node">
+          <children name="references" index="0" xsi:type="MocaTree:Node" />
+          <children name="attributes" index="1" xsi:type="MocaTree:Node">
+            <children name="EAttribute" index="0" xsi:type="MocaTree:Node">
+              <attribute name="type" value="EString" index="0" />
+              <attribute name="typeGuid" value="" index="1" />
+              <attribute name="name" value="name" index="2" />
+              <attribute name="guid" value="{192C49C8-E7CF-4f0c-B848-ED582FBBEEC5}" index="3" />
+              <attribute name="ordered" value="false" index="4" />
+              <attribute name="lowerBound" value="1" index="5" />
+              <attribute name="upperBound" value="1" index="6" />
+              <attribute name="isId" value="false" index="7" />
+            </children>
+          </children>
+          <children name="operations" index="2" xsi:type="MocaTree:Node" />
+          <attribute name="name" value="NamedElement" index="0" />
+          <attribute name="isAbstract" value="true" index="1" />
+          <attribute name="isInterface" value="false" index="2" />
+          <attribute name="guid" value="{A720B4D2-EB87-4550-B002-8BFA5E8B71B9}" index="3" />
+          <attribute name="alias" value="" index="4" />
+          <attribute name="baseClasses" value="" index="5" />
+        </children>
+        <children name="EClass" index="2" xsi:type="MocaTree:Node">
+          <children name="references" index="0" xsi:type="MocaTree:Node">
+            <children name="EReference" index="0" xsi:type="MocaTree:Node">
+              <attribute name="typeGuid" value="{B5EC543B-BF0C-41ed-B846-60975458FEAA}" index="0" />
+              <attribute name="name" value="superClasses" index="1" />
+              <attribute name="guid" value="{D089E349-2776-41bc-B187-5C49451E86FE}Supplier" index="2" />
+              <attribute name="lowerBound" value="0" index="3" />
+              <attribute name="upperBound" value="-1" index="4" />
+              <attribute name="containment" value="false" index="5" />
+            </children>
+          </children>
+          <children name="attributes" index="1" xsi:type="MocaTree:Node" />
+          <children name="operations" index="2" xsi:type="MocaTree:Node" />
+          <attribute name="name" value="Clazz" index="0" />
+          <attribute name="isAbstract" value="false" index="1" />
+          <attribute name="isInterface" value="false" index="2" />
+          <attribute name="guid" value="{B5EC543B-BF0C-41ed-B846-60975458FEAA}" index="3" />
+          <attribute name="alias" value="" index="4" />
+          <attribute name="baseClasses" value="{A720B4D2-EB87-4550-B002-8BFA5E8B71B9} " index="5" />
+        </children>
+      </children>
+      <children name="packages" index="1" xsi:type="MocaTree:Node" />
+      <children name="dependencies" index="2" xsi:type="MocaTree:Node" />
+      <attribute name="guid" value="{09A0B2FF-5F45-48de-8FEF-6C32F718ADAE}" index="0" />
+      <attribute name="Moflon::Name" value="ClassDiagramLanguage" index="1" />
+      <attribute name="Moflon::NsPrefix" value="ClassDiagramLanguage" index="2" />
+      <attribute name="Moflon::NsUri" value="platform:/plugin/ClassDiagramLanguage/model/ClassDiagramLanguage.ecore" index="3" />
+      <attribute name="Moflon::PluginID" value="ClassDiagramLanguage" index="4" />
+      <attribute name="Moflon::Export" value="true" index="5" />
+      <attribute name="Moflon::Validated" value="false" index="6" />
+      <attribute name="Moflon::WorkingSet" value="ClassDiagramToDocumentation" index="7" />
+    </children>
+    <children name="EPackage" index="1" xsi:type="MocaTree:Node">
+      <children name="classes" index="0" xsi:type="MocaTree:Node">
+        <children name="EClass" index="0" xsi:type="MocaTree:Node">
+          <children name="references" index="0" xsi:type="MocaTree:Node">
+            <children name="EReference" index="0" xsi:type="MocaTree:Node">
+              <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="0" />
+              <attribute name="name" value="docs" index="1" />
+              <attribute name="guid" value="{B018BEA5-0A4E-4564-BF09-D4709FDE7102}Supplier" index="2" />
+              <attribute name="lowerBound" value="0" index="3" />
+              <attribute name="upperBound" value="-1" index="4" />
+              <attribute name="containment" value="true" index="5" />
+            </children>
+          </children>
+          <children name="attributes" index="1" xsi:type="MocaTree:Node" />
+          <children name="operations" index="2" xsi:type="MocaTree:Node" />
+          <attribute name="name" value="Documentation" index="0" />
+          <attribute name="isAbstract" value="false" index="1" />
+          <attribute name="isInterface" value="false" index="2" />
+          <attribute name="guid" value="{48ABA926-107C-4249-BDD3-D5CA73DE4F25}" index="3" />
+          <attribute name="alias" value="" index="4" />
+          <attribute name="baseClasses" value="" index="5" />
+        </children>
+        <children name="EClass" index="1" xsi:type="MocaTree:Node">
+          <children name="references" index="0" xsi:type="MocaTree:Node" />
+          <children name="attributes" index="1" xsi:type="MocaTree:Node">
+            <children name="EAttribute" index="0" xsi:type="MocaTree:Node">
+              <attribute name="type" value="EString" index="0" />
+              <attribute name="typeGuid" value="" index="1" />
+              <attribute name="name" value="name" index="2" />
+              <attribute name="guid" value="{5E036B6B-3C49-4c70-BFAD-449D0A4E6603}" index="3" />
+              <attribute name="ordered" value="false" index="4" />
+              <attribute name="lowerBound" value="1" index="5" />
+              <attribute name="upperBound" value="1" index="6" />
+              <attribute name="isId" value="false" index="7" />
+            </children>
+          </children>
+          <children name="operations" index="2" xsi:type="MocaTree:Node" />
+          <attribute name="name" value="NamedElement" index="0" />
+          <attribute name="isAbstract" value="true" index="1" />
+          <attribute name="isInterface" value="false" index="2" />
+          <attribute name="guid" value="{E300DECA-4508-4031-89E1-3B4989AF8698}" index="3" />
+          <attribute name="alias" value="" index="4" />
+          <attribute name="baseClasses" value="" index="5" />
+        </children>
+        <children name="EClass" index="2" xsi:type="MocaTree:Node">
+          <children name="references" index="0" xsi:type="MocaTree:Node">
+            <children name="EReference" index="0" xsi:type="MocaTree:Node">
+              <attribute name="typeGuid" value="{FA6016AD-4853-41f6-8A76-24249313AFD4}" index="0" />
+              <attribute name="name" value="links" index="1" />
+              <attribute name="guid" value="{FA637359-3916-44e2-8384-C555603E18A4}Supplier" index="2" />
+              <attribute name="lowerBound" value="0" index="3" />
+              <attribute name="upperBound" value="-1" index="4" />
+              <attribute name="containment" value="true" index="5" />
+            </children>
+          </children>
+          <children name="attributes" index="1" xsi:type="MocaTree:Node" />
+          <children name="operations" index="2" xsi:type="MocaTree:Node" />
+          <attribute name="name" value="Document" index="0" />
+          <attribute name="isAbstract" value="false" index="1" />
+          <attribute name="isInterface" value="false" index="2" />
+          <attribute name="guid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="3" />
+          <attribute name="alias" value="" index="4" />
+          <attribute name="baseClasses" value="{E300DECA-4508-4031-89E1-3B4989AF8698} " index="5" />
+        </children>
+        <children name="EClass" index="3" xsi:type="MocaTree:Node">
+          <children name="references" index="0" xsi:type="MocaTree:Node">
+            <children name="EReference" index="0" xsi:type="MocaTree:Node">
+              <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="0" />
+              <attribute name="name" value="ref" index="1" />
+              <attribute name="guid" value="{4EA30CFB-8C96-4452-8A89-36BD2D4F0654}Supplier" index="2" />
+              <attribute name="lowerBound" value="0" index="3" />
+              <attribute name="upperBound" value="1" index="4" />
+              <attribute name="containment" value="false" index="5" />
+            </children>
+          </children>
+          <children name="attributes" index="1" xsi:type="MocaTree:Node" />
+          <children name="operations" index="2" xsi:type="MocaTree:Node" />
+          <attribute name="name" value="Link" index="0" />
+          <attribute name="isAbstract" value="false" index="1" />
+          <attribute name="isInterface" value="false" index="2" />
+          <attribute name="guid" value="{FA6016AD-4853-41f6-8A76-24249313AFD4}" index="3" />
+          <attribute name="alias" value="" index="4" />
+          <attribute name="baseClasses" value="{E300DECA-4508-4031-89E1-3B4989AF8698} " index="5" />
+        </children>
+      </children>
+      <children name="packages" index="1" xsi:type="MocaTree:Node" />
+      <children name="dependencies" index="2" xsi:type="MocaTree:Node" />
+      <attribute name="guid" value="{54C76D01-CEF4-47c0-8720-D6CC2A7233C7}" index="0" />
+      <attribute name="Moflon::Name" value="DocumentationLanguage" index="1" />
+      <attribute name="Moflon::NsPrefix" value="DocumentationLanguage" index="2" />
+      <attribute name="Moflon::NsUri" value="platform:/plugin/DocumentationLanguage/model/DocumentationLanguage.ecore" index="3" />
+      <attribute name="Moflon::PluginID" value="DocumentationLanguage" index="4" />
+      <attribute name="Moflon::Export" value="true" index="5" />
+      <attribute name="Moflon::Validated" value="false" index="6" />
+      <attribute name="Moflon::WorkingSet" value="ClassDiagramToDocumentation" index="7" />
+    </children>
+    <children name="TGG" index="2" xsi:type="MocaTree:Node">
+      <children name="classes" index="0" xsi:type="MocaTree:Node">
+        <children name="CorrespondenceType" index="0" xsi:type="MocaTree:Node">
+          <children name="references" index="0" xsi:type="MocaTree:Node">
+            <children name="EReference" index="0" xsi:type="MocaTree:Node">
+              <attribute name="typeGuid" value="{F4FD0895-3DA0-44bf-A41D-638146594E3D}" index="0" />
+              <attribute name="name" value="source" index="1" />
+              <attribute name="guid" value="{73251596-6194-4892-85C9-E632A87B1701}Supplier" index="2" />
+              <attribute name="lowerBound" value="1" index="3" />
+              <attribute name="upperBound" value="1" index="4" />
+              <attribute name="containment" value="false" index="5" />
+            </children>
+            <children name="EReference" index="1" xsi:type="MocaTree:Node">
+              <attribute name="typeGuid" value="{48ABA926-107C-4249-BDD3-D5CA73DE4F25}" index="0" />
+              <attribute name="name" value="target" index="1" />
+              <attribute name="guid" value="{F8911D3C-EDB0-47f6-BF9F-F64B929CCCAB}Supplier" index="2" />
+              <attribute name="lowerBound" value="1" index="3" />
+              <attribute name="upperBound" value="1" index="4" />
+              <attribute name="containment" value="false" index="5" />
+            </children>
+          </children>
+          <children name="attributes" index="1" xsi:type="MocaTree:Node" />
+          <children name="operations" index="2" xsi:type="MocaTree:Node" />
+          <attribute name="name" value="ClassDiagramToDocumentation" index="0" />
+          <attribute name="isAbstract" value="false" index="1" />
+          <attribute name="isInterface" value="false" index="2" />
+          <attribute name="guid" value="{ABD4A0EB-F391-4c74-B380-6C2FFF3FCFAD}" index="3" />
+          <attribute name="alias" value="" index="4" />
+          <attribute name="baseClasses" value="" index="5" />
+        </children>
+        <children name="CorrespondenceType" index="1" xsi:type="MocaTree:Node">
+          <children name="references" index="0" xsi:type="MocaTree:Node">
+            <children name="EReference" index="0" xsi:type="MocaTree:Node">
+              <attribute name="typeGuid" value="{B5EC543B-BF0C-41ed-B846-60975458FEAA}" index="0" />
+              <attribute name="name" value="source" index="1" />
+              <attribute name="guid" value="{09D3C8A9-4312-4c81-90AF-628C091BE94E}Supplier" index="2" />
+              <attribute name="lowerBound" value="1" index="3" />
+              <attribute name="upperBound" value="1" index="4" />
+              <attribute name="containment" value="false" index="5" />
+            </children>
+            <children name="EReference" index="1" xsi:type="MocaTree:Node">
+              <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="0" />
+              <attribute name="name" value="target" index="1" />
+              <attribute name="guid" value="{9467F142-7A8C-4acc-BC05-29BC28CE8214}Supplier" index="2" />
+              <attribute name="lowerBound" value="1" index="3" />
+              <attribute name="upperBound" value="1" index="4" />
+              <attribute name="containment" value="false" index="5" />
+            </children>
+          </children>
+          <children name="attributes" index="1" xsi:type="MocaTree:Node" />
+          <children name="operations" index="2" xsi:type="MocaTree:Node" />
+          <attribute name="name" value="ClazzToDocument" index="0" />
+          <attribute name="isAbstract" value="false" index="1" />
+          <attribute name="isInterface" value="false" index="2" />
+          <attribute name="guid" value="{CF692EA9-7BE5-43a0-8F06-C818AE025D6D}" index="3" />
+          <attribute name="alias" value="" index="4" />
+          <attribute name="baseClasses" value="" index="5" />
+        </children>
+      </children>
+      <children name="packages" index="1" xsi:type="MocaTree:Node">
+        <children name="RulePackage" index="0" xsi:type="MocaTree:Node">
+          <children name="classes" index="0" xsi:type="MocaTree:Node" />
+          <children name="packages" index="1" xsi:type="MocaTree:Node" />
+          <children name="rules" index="2" xsi:type="MocaTree:Node">
+            <children name="Rule" index="0" xsi:type="MocaTree:Node">
+              <children name="references" index="0" xsi:type="MocaTree:Node" />
+              <children name="attributes" index="1" xsi:type="MocaTree:Node" />
+              <children name="operations" index="2" xsi:type="MocaTree:Node" />
+              <children name="objectVariables" index="3" xsi:type="MocaTree:Node">
+                <children name="TGGObjectVariable" index="0" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node" />
+                  <attribute name="guid" value="{3A362259-EBAE-44c6-9B75-20B3A7EB856E}" index="0" />
+                  <attribute name="typeGuid" value="{F4FD0895-3DA0-44bf-A41D-638146594E3D}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="create" index="3" />
+                  <attribute name="name" value="cd" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="source" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="1" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node" />
+                  <attribute name="guid" value="{DA69519A-AC7D-47f2-A962-631583FC98F4}" index="0" />
+                  <attribute name="typeGuid" value="{48ABA926-107C-4249-BDD3-D5CA73DE4F25}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="create" index="3" />
+                  <attribute name="name" value="documentation" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGCorrespondence" index="2" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="source" index="0" />
+                      <attribute name="sourceGuid" value="{A0422CFE-E023-4c3f-B987-A60BF38E5FE0}" index="1" />
+                      <attribute name="targetGuid" value="{3A362259-EBAE-44c6-9B75-20B3A7EB856E}" index="2" />
+                      <attribute name="bindingOperator" value="create" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{73251596-6194-4892-85C9-E632A87B1701}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{3E6DA26E-0895-4369-BCCC-CA82A46D779F}" index="11" />
+                      <attribute name="domain" value="correspondence" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                    <children name="TGGLinkVariable" index="1" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="target" index="0" />
+                      <attribute name="sourceGuid" value="{A0422CFE-E023-4c3f-B987-A60BF38E5FE0}" index="1" />
+                      <attribute name="targetGuid" value="{DA69519A-AC7D-47f2-A962-631583FC98F4}" index="2" />
+                      <attribute name="bindingOperator" value="create" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{F8911D3C-EDB0-47f6-BF9F-F64B929CCCAB}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{24A38DAF-D6DF-4830-BA2D-41FBF7D51E96}" index="11" />
+                      <attribute name="domain" value="correspondence" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{A0422CFE-E023-4c3f-B987-A60BF38E5FE0}" index="0" />
+                  <attribute name="typeGuid" value="{ABD4A0EB-F391-4c74-B380-6C2FFF3FCFAD}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="create" index="3" />
+                  <attribute name="name" value="cdToDocumentation" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="correspondence" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+              </children>
+              <attribute name="name" value="CDToDocumentationRule" index="0" />
+              <attribute name="isAbstract" value="false" index="1" />
+              <attribute name="isInterface" value="false" index="2" />
+              <attribute name="guid" value="{720ABA7B-6142-467f-8CB9-8FB4BEED1CAA}" index="3" />
+              <attribute name="alias" value="" index="4" />
+              <attribute name="cspSpec" value="" index="5" />
+              <attribute name="refines" value="" index="6" />
+              <attribute name="baseClasses" value="" index="7" />
+              <attribute name="kernel" value="" index="8" />
+            </children>
+            <children name="Rule" index="1" xsi:type="MocaTree:Node">
+              <children name="references" index="0" xsi:type="MocaTree:Node" />
+              <children name="attributes" index="1" xsi:type="MocaTree:Node" />
+              <children name="operations" index="2" xsi:type="MocaTree:Node" />
+              <children name="objectVariables" index="3" xsi:type="MocaTree:Node">
+                <children name="TGGCorrespondence" index="0" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="source" index="0" />
+                      <attribute name="sourceGuid" value="{2FBB466F-9749-4bf6-A170-3C74CA47824E}" index="1" />
+                      <attribute name="targetGuid" value="{ADC1828F-ECB5-4a44-BDD5-76503A4051D0}" index="2" />
+                      <attribute name="bindingOperator" value="check_only" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{73251596-6194-4892-85C9-E632A87B1701}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{6887FC0E-043B-4fbf-8AE3-E87BAD3A6DC0}" index="11" />
+                      <attribute name="domain" value="correspondence" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                    <children name="TGGLinkVariable" index="1" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="target" index="0" />
+                      <attribute name="sourceGuid" value="{2FBB466F-9749-4bf6-A170-3C74CA47824E}" index="1" />
+                      <attribute name="targetGuid" value="{716CC9DE-9E00-44d1-ACB6-B23D24F1E508}" index="2" />
+                      <attribute name="bindingOperator" value="check_only" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{F8911D3C-EDB0-47f6-BF9F-F64B929CCCAB}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{B52316F4-B816-48bd-AC47-0DE147F57ACE}" index="11" />
+                      <attribute name="domain" value="correspondence" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{2FBB466F-9749-4bf6-A170-3C74CA47824E}" index="0" />
+                  <attribute name="typeGuid" value="{ABD4A0EB-F391-4c74-B380-6C2FFF3FCFAD}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="classDiagramToDocumentation" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="correspondence" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="1" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="classes" index="0" />
+                      <attribute name="sourceGuid" value="{ADC1828F-ECB5-4a44-BDD5-76503A4051D0}" index="1" />
+                      <attribute name="targetGuid" value="{E92E3C07-3C5F-4048-9EA6-1931B8981823}" index="2" />
+                      <attribute name="bindingOperator" value="create" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{0B8AE868-98AC-4623-8F81-21FC70F9F1C9}" index="9" />
+                      <attribute name="direction" value="left" index="10" />
+                      <attribute name="guid" value="{30811CA5-DAFE-4654-A3D4-08221126C73F}" index="11" />
+                      <attribute name="domain" value="source" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{ADC1828F-ECB5-4a44-BDD5-76503A4051D0}" index="0" />
+                  <attribute name="typeGuid" value="{F4FD0895-3DA0-44bf-A41D-638146594E3D}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="classDiagram" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="source" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="2" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="docs" index="0" />
+                      <attribute name="sourceGuid" value="{716CC9DE-9E00-44d1-ACB6-B23D24F1E508}" index="1" />
+                      <attribute name="targetGuid" value="{054E81F4-5AD2-4fd6-BDA2-0693AC0B72BA}" index="2" />
+                      <attribute name="bindingOperator" value="create" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{B018BEA5-0A4E-4564-BF09-D4709FDE7102}" index="9" />
+                      <attribute name="direction" value="left" index="10" />
+                      <attribute name="guid" value="{46517F4A-FA7C-4977-AA19-39D055263AEF}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{716CC9DE-9E00-44d1-ACB6-B23D24F1E508}" index="0" />
+                  <attribute name="typeGuid" value="{48ABA926-107C-4249-BDD3-D5CA73DE4F25}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="documentation" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="3" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node" />
+                  <attribute name="guid" value="{E92E3C07-3C5F-4048-9EA6-1931B8981823}" index="0" />
+                  <attribute name="typeGuid" value="{B5EC543B-BF0C-41ed-B846-60975458FEAA}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="create" index="3" />
+                  <attribute name="name" value="clazz" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="source" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="4" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node" />
+                  <attribute name="guid" value="{054E81F4-5AD2-4fd6-BDA2-0693AC0B72BA}" index="0" />
+                  <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="create" index="3" />
+                  <attribute name="name" value="doc" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGCorrespondence" index="5" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="source" index="0" />
+                      <attribute name="sourceGuid" value="{6CF98B44-779B-41d2-8A95-1A295E84B84C}" index="1" />
+                      <attribute name="targetGuid" value="{E92E3C07-3C5F-4048-9EA6-1931B8981823}" index="2" />
+                      <attribute name="bindingOperator" value="create" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{09D3C8A9-4312-4c81-90AF-628C091BE94E}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{4FB7E387-F046-4cdc-A6ED-95FC1B23304E}" index="11" />
+                      <attribute name="domain" value="correspondence" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                    <children name="TGGLinkVariable" index="1" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="target" index="0" />
+                      <attribute name="sourceGuid" value="{6CF98B44-779B-41d2-8A95-1A295E84B84C}" index="1" />
+                      <attribute name="targetGuid" value="{054E81F4-5AD2-4fd6-BDA2-0693AC0B72BA}" index="2" />
+                      <attribute name="bindingOperator" value="create" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{9467F142-7A8C-4acc-BC05-29BC28CE8214}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{21CE3726-3EDC-4463-B009-1BC82DAE6222}" index="11" />
+                      <attribute name="domain" value="correspondence" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{6CF98B44-779B-41d2-8A95-1A295E84B84C}" index="0" />
+                  <attribute name="typeGuid" value="{CF692EA9-7BE5-43a0-8F06-C818AE025D6D}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="create" index="3" />
+                  <attribute name="name" value="clazzToDoc" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="correspondence" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+              </children>
+              <children name="csps" index="4" xsi:type="MocaTree:Node">
+                <children name="ConstraintInstance" index="0" xsi:type="MocaTree:Node">
+                  <children name="entries" index="0" xsi:type="MocaTree:Node">
+                    <children name="Entry" index="0" xsi:type="MocaTree:Node">
+                      <children name="expressions" index="0" xsi:type="MocaTree:Node">
+                        <children name="Expression" index="0" xsi:type="MocaTree:Node">
+                          <attribute name="type" value="AttributeValueExpression" index="0" />
+                          <attribute name="attributeGuid" value="{192C49C8-E7CF-4f0c-B848-ED582FBBEEC5}" index="1" />
+                          <attribute name="attributeName" value="name" index="2" />
+                          <attribute name="objectVariableGuid" value="{E92E3C07-3C5F-4048-9EA6-1931B8981823}" index="3" />
+                          <attribute name="objectVariableName" value="clazz" index="4" />
+                        </children>
+                        <children name="Expression" index="1" xsi:type="MocaTree:Node">
+                          <attribute name="type" value="AttributeValueExpression" index="0" />
+                          <attribute name="attributeGuid" value="{5E036B6B-3C49-4c70-BFAD-449D0A4E6603}" index="1" />
+                          <attribute name="attributeName" value="name" index="2" />
+                          <attribute name="objectVariableGuid" value="{054E81F4-5AD2-4fd6-BDA2-0693AC0B72BA}" index="3" />
+                          <attribute name="objectVariableName" value="doc" index="4" />
+                        </children>
+                      </children>
+                      <attribute name="constraintName" value="eq" index="0" />
+                      <attribute name="negative" value="false" index="1" />
+                    </children>
+                  </children>
+                  <attribute name="mocaFragmentVersion" value="" index="0" />
+                </children>
+              </children>
+              <attribute name="name" value="ClassToDocRule" index="0" />
+              <attribute name="isAbstract" value="false" index="1" />
+              <attribute name="isInterface" value="false" index="2" />
+              <attribute name="guid" value="{64C7A83D-3A0B-4ee7-B477-F7D85F3A0570}" index="3" />
+              <attribute name="alias" value="" index="4" />
+              <attribute name="cspSpec" value="eq(clazz.name, doc.name)" index="5" />
+              <attribute name="refines" value="" index="6" />
+              <attribute name="baseClasses" value="" index="7" />
+              <attribute name="kernel" value="" index="8" />
+            </children>
+            <children name="Rule" index="2" xsi:type="MocaTree:Node">
+              <children name="references" index="0" xsi:type="MocaTree:Node" />
+              <children name="attributes" index="1" xsi:type="MocaTree:Node" />
+              <children name="operations" index="2" xsi:type="MocaTree:Node" />
+              <children name="objectVariables" index="3" xsi:type="MocaTree:Node">
+                <children name="TGGObjectVariable" index="0" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node" />
+                  <attribute name="guid" value="{A90FE65C-4A56-4c23-B4FA-8166114ED7B7}" index="0" />
+                  <attribute name="typeGuid" value="{B5EC543B-BF0C-41ed-B846-60975458FEAA}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="superClass" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="source" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="1" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node" />
+                  <attribute name="guid" value="{DBC1730B-18D1-4f96-9701-6826D2A18E8A}" index="0" />
+                  <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="superDoc" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGCorrespondence" index="2" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="source" index="0" />
+                      <attribute name="sourceGuid" value="{6470A115-4451-443f-8CD9-4CDE1214E715}" index="1" />
+                      <attribute name="targetGuid" value="{A90FE65C-4A56-4c23-B4FA-8166114ED7B7}" index="2" />
+                      <attribute name="bindingOperator" value="check_only" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{09D3C8A9-4312-4c81-90AF-628C091BE94E}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{BE5F365E-D564-4311-B417-461BB0BC77BD}" index="11" />
+                      <attribute name="domain" value="correspondence" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                    <children name="TGGLinkVariable" index="1" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="target" index="0" />
+                      <attribute name="sourceGuid" value="{6470A115-4451-443f-8CD9-4CDE1214E715}" index="1" />
+                      <attribute name="targetGuid" value="{DBC1730B-18D1-4f96-9701-6826D2A18E8A}" index="2" />
+                      <attribute name="bindingOperator" value="check_only" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{9467F142-7A8C-4acc-BC05-29BC28CE8214}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{98213090-CD5D-45fa-8683-CEE29947DA6B}" index="11" />
+                      <attribute name="domain" value="correspondence" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{6470A115-4451-443f-8CD9-4CDE1214E715}" index="0" />
+                  <attribute name="typeGuid" value="{CF692EA9-7BE5-43a0-8F06-C818AE025D6D}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="superClassToSuperDoc" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="correspondence" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="3" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="superClasses" index="0" />
+                      <attribute name="sourceGuid" value="{B9D9A07B-A494-4dd4-B004-8D5300D3E865}" index="1" />
+                      <attribute name="targetGuid" value="{A90FE65C-4A56-4c23-B4FA-8166114ED7B7}" index="2" />
+                      <attribute name="bindingOperator" value="create" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{D089E349-2776-41bc-B187-5C49451E86FE}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{E83D9BF1-DD27-49b3-A5AF-8086C4B662D2}" index="11" />
+                      <attribute name="domain" value="source" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{B9D9A07B-A494-4dd4-B004-8D5300D3E865}" index="0" />
+                  <attribute name="typeGuid" value="{B5EC543B-BF0C-41ed-B846-60975458FEAA}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="subClazz" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="source" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="4" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="links" index="0" />
+                      <attribute name="sourceGuid" value="{26092EF6-B78F-49f6-87DF-AFA0E4218763}" index="1" />
+                      <attribute name="targetGuid" value="{3E3ED343-E4CB-4518-B9BB-BD6343D121A4}" index="2" />
+                      <attribute name="bindingOperator" value="create" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{FA637359-3916-44e2-8384-C555603E18A4}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{EC0FB992-1B86-4c6a-AF5C-0E82857D7B07}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{26092EF6-B78F-49f6-87DF-AFA0E4218763}" index="0" />
+                  <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="subDoc" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGCorrespondence" index="5" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="source" index="0" />
+                      <attribute name="sourceGuid" value="{DF37C837-BE2E-4d98-A54A-4E2E14F605B1}" index="1" />
+                      <attribute name="targetGuid" value="{B9D9A07B-A494-4dd4-B004-8D5300D3E865}" index="2" />
+                      <attribute name="bindingOperator" value="check_only" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{09D3C8A9-4312-4c81-90AF-628C091BE94E}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{1C7C32B2-0250-473d-A303-E2CE62BA99C9}" index="11" />
+                      <attribute name="domain" value="correspondence" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                    <children name="TGGLinkVariable" index="1" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="target" index="0" />
+                      <attribute name="sourceGuid" value="{DF37C837-BE2E-4d98-A54A-4E2E14F605B1}" index="1" />
+                      <attribute name="targetGuid" value="{26092EF6-B78F-49f6-87DF-AFA0E4218763}" index="2" />
+                      <attribute name="bindingOperator" value="check_only" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{9467F142-7A8C-4acc-BC05-29BC28CE8214}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{B51E5C26-7A79-4ae7-BDD8-19266B431CFB}" index="11" />
+                      <attribute name="domain" value="correspondence" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{DF37C837-BE2E-4d98-A54A-4E2E14F605B1}" index="0" />
+                  <attribute name="typeGuid" value="{CF692EA9-7BE5-43a0-8F06-C818AE025D6D}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="subClazzToSubDoc" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="correspondence" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="6" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="ref" index="0" />
+                      <attribute name="sourceGuid" value="{3E3ED343-E4CB-4518-B9BB-BD6343D121A4}" index="1" />
+                      <attribute name="targetGuid" value="{DBC1730B-18D1-4f96-9701-6826D2A18E8A}" index="2" />
+                      <attribute name="bindingOperator" value="create" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{4EA30CFB-8C96-4452-8A89-36BD2D4F0654}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{8AC422D7-7027-4de3-AC5D-ACF2997AE32D}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{3E3ED343-E4CB-4518-B9BB-BD6343D121A4}" index="0" />
+                  <attribute name="typeGuid" value="{FA6016AD-4853-41f6-8A76-24249313AFD4}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="create" index="3" />
+                  <attribute name="name" value="link" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+              </children>
+              <children name="csps" index="4" xsi:type="MocaTree:Node">
+                <children name="ConstraintInstance" index="0" xsi:type="MocaTree:Node">
+                  <children name="entries" index="0" xsi:type="MocaTree:Node">
+                    <children name="Entry" index="0" xsi:type="MocaTree:Node">
+                      <children name="expressions" index="0" xsi:type="MocaTree:Node">
+                        <children name="Expression" index="0" xsi:type="MocaTree:Node">
+                          <attribute name="type" value="AttributeValueExpression" index="0" />
+                          <attribute name="attributeGuid" value="{5E036B6B-3C49-4c70-BFAD-449D0A4E6603}" index="1" />
+                          <attribute name="attributeName" value="name" index="2" />
+                          <attribute name="objectVariableGuid" value="{3E3ED343-E4CB-4518-B9BB-BD6343D121A4}" index="3" />
+                          <attribute name="objectVariableName" value="link" index="4" />
+                        </children>
+                        <children name="Expression" index="1" xsi:type="MocaTree:Node">
+                          <attribute name="type" value="AttributeValueExpression" index="0" />
+                          <attribute name="attributeGuid" value="{5E036B6B-3C49-4c70-BFAD-449D0A4E6603}" index="1" />
+                          <attribute name="attributeName" value="name" index="2" />
+                          <attribute name="objectVariableGuid" value="{DBC1730B-18D1-4f96-9701-6826D2A18E8A}" index="3" />
+                          <attribute name="objectVariableName" value="superDoc" index="4" />
+                        </children>
+                      </children>
+                      <attribute name="constraintName" value="eq" index="0" />
+                      <attribute name="negative" value="false" index="1" />
+                    </children>
+                  </children>
+                  <attribute name="mocaFragmentVersion" value="" index="0" />
+                </children>
+              </children>
+              <attribute name="name" value="InheritanceToLink" index="0" />
+              <attribute name="isAbstract" value="false" index="1" />
+              <attribute name="isInterface" value="false" index="2" />
+              <attribute name="guid" value="{84096EB5-ADA1-437f-9E8D-570B81426B94}" index="3" />
+              <attribute name="alias" value="" index="4" />
+              <attribute name="cspSpec" value="eq(link.name, superDoc.name)" index="5" />
+              <attribute name="refines" value="" index="6" />
+              <attribute name="baseClasses" value="" index="7" />
+              <attribute name="kernel" value="" index="8" />
+            </children>
+            <children name="Rule" index="3" xsi:type="MocaTree:Node">
+              <children name="references" index="0" xsi:type="MocaTree:Node" />
+              <children name="attributes" index="1" xsi:type="MocaTree:Node" />
+              <children name="operations" index="2" xsi:type="MocaTree:Node" />
+              <children name="objectVariables" index="3" xsi:type="MocaTree:Node">
+                <children name="TGGObjectVariable" index="0" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="links" index="0" />
+                      <attribute name="sourceGuid" value="{3EB2F181-62EB-4048-9714-3BC09275453F}" index="1" />
+                      <attribute name="targetGuid" value="{74167E4A-136E-4044-B0D6-4D1F87B65BE6}" index="2" />
+                      <attribute name="bindingOperator" value="check_only" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{FA637359-3916-44e2-8384-C555603E18A4}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{1DBDC72E-5600-457a-B7F8-DD747EAE4E1C}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{3EB2F181-62EB-4048-9714-3BC09275453F}" index="0" />
+                  <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="superDoc" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="1" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="links" index="0" />
+                      <attribute name="sourceGuid" value="{B3D390D8-7226-4cf2-AE56-5BEAC9B1236C}" index="1" />
+                      <attribute name="targetGuid" value="{FE1438E8-4ABE-42b7-9FC3-FC3477DE0885}" index="2" />
+                      <attribute name="bindingOperator" value="create" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{FA637359-3916-44e2-8384-C555603E18A4}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{F8DBFBF4-FBC1-43f1-8D80-A27D5EB242A8}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{B3D390D8-7226-4cf2-AE56-5BEAC9B1236C}" index="0" />
+                  <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="subDoc" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="2" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node" />
+                  <attribute name="guid" value="{D3CCA3C1-B361-4429-9FE9-455F0169B9B3}" index="0" />
+                  <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="transitiveSuperDoc" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="3" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="ref" index="0" />
+                      <attribute name="sourceGuid" value="{74167E4A-136E-4044-B0D6-4D1F87B65BE6}" index="1" />
+                      <attribute name="targetGuid" value="{D3CCA3C1-B361-4429-9FE9-455F0169B9B3}" index="2" />
+                      <attribute name="bindingOperator" value="check_only" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{4EA30CFB-8C96-4452-8A89-36BD2D4F0654}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{15B267A1-D697-4fe8-89B9-82C8450F7809}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{74167E4A-136E-4044-B0D6-4D1F87B65BE6}" index="0" />
+                  <attribute name="typeGuid" value="{FA6016AD-4853-41f6-8A76-24249313AFD4}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="linkToTransitive" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="4" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="ref" index="0" />
+                      <attribute name="sourceGuid" value="{FE1438E8-4ABE-42b7-9FC3-FC3477DE0885}" index="1" />
+                      <attribute name="targetGuid" value="{D3CCA3C1-B361-4429-9FE9-455F0169B9B3}" index="2" />
+                      <attribute name="bindingOperator" value="create" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{4EA30CFB-8C96-4452-8A89-36BD2D4F0654}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{8298FDC5-5551-47c0-BFF9-7AB894F7EEE9}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{FE1438E8-4ABE-42b7-9FC3-FC3477DE0885}" index="0" />
+                  <attribute name="typeGuid" value="{FA6016AD-4853-41f6-8A76-24249313AFD4}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="create" index="3" />
+                  <attribute name="name" value="linkToTransitiveFromSub" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+              </children>
+              <children name="csps" index="4" xsi:type="MocaTree:Node">
+                <children name="ConstraintInstance" index="0" xsi:type="MocaTree:Node">
+                  <children name="entries" index="0" xsi:type="MocaTree:Node">
+                    <children name="Entry" index="0" xsi:type="MocaTree:Node">
+                      <children name="expressions" index="0" xsi:type="MocaTree:Node">
+                        <children name="Expression" index="0" xsi:type="MocaTree:Node">
+                          <attribute name="type" value="AttributeValueExpression" index="0" />
+                          <attribute name="attributeGuid" value="{5E036B6B-3C49-4c70-BFAD-449D0A4E6603}" index="1" />
+                          <attribute name="attributeName" value="name" index="2" />
+                          <attribute name="objectVariableGuid" value="{FE1438E8-4ABE-42b7-9FC3-FC3477DE0885}" index="3" />
+                          <attribute name="objectVariableName" value="linkToTransitiveFromSub" index="4" />
+                        </children>
+                        <children name="Expression" index="1" xsi:type="MocaTree:Node">
+                          <attribute name="type" value="AttributeValueExpression" index="0" />
+                          <attribute name="attributeGuid" value="{5E036B6B-3C49-4c70-BFAD-449D0A4E6603}" index="1" />
+                          <attribute name="attributeName" value="name" index="2" />
+                          <attribute name="objectVariableGuid" value="{D3CCA3C1-B361-4429-9FE9-455F0169B9B3}" index="3" />
+                          <attribute name="objectVariableName" value="transitiveSuperDoc" index="4" />
+                        </children>
+                      </children>
+                      <attribute name="constraintName" value="eq" index="0" />
+                      <attribute name="negative" value="false" index="1" />
+                    </children>
+                  </children>
+                  <attribute name="mocaFragmentVersion" value="" index="0" />
+                </children>
+              </children>
+              <attribute name="name" value="InheritanceToLink1" index="0" />
+              <attribute name="isAbstract" value="false" index="1" />
+              <attribute name="isInterface" value="false" index="2" />
+              <attribute name="guid" value="{7B436DFC-C31C-4548-9ECC-F7D1C5009FCB}" index="3" />
+              <attribute name="alias" value="" index="4" />
+              <attribute name="cspSpec" value="eq(linkToTransitiveFromSub.name, transitiveSuperDoc.name)" index="5" />
+              <attribute name="refines" value="" index="6" />
+              <attribute name="baseClasses" value="" index="7" />
+              <attribute name="kernel" value="{84096EB5-ADA1-437f-9E8D-570B81426B94}" index="8" />
+            </children>
+            <children name="Rule" index="4" xsi:type="MocaTree:Node">
+              <children name="references" index="0" xsi:type="MocaTree:Node" />
+              <children name="attributes" index="1" xsi:type="MocaTree:Node" />
+              <children name="operations" index="2" xsi:type="MocaTree:Node" />
+              <children name="objectVariables" index="3" xsi:type="MocaTree:Node">
+                <children name="TGGObjectVariable" index="0" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node" />
+                  <attribute name="guid" value="{4E9333F4-6E1D-4222-8AE2-1FFD11871DD0}" index="0" />
+                  <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="superDoc" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="1" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node" />
+                  <attribute name="guid" value="{158C53ED-A7FC-4d8d-93B7-C7540FB8D09F}" index="0" />
+                  <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="subDoc" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="2" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="links" index="0" />
+                      <attribute name="sourceGuid" value="{01992194-DDCB-493a-9297-68E2FE060A1B}" index="1" />
+                      <attribute name="targetGuid" value="{1A3FCA0E-083E-4169-A863-7250CE40FD2E}" index="2" />
+                      <attribute name="bindingOperator" value="check_only" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{FA637359-3916-44e2-8384-C555603E18A4}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{EB030167-C560-47b8-8D8A-2DB1B9A0EEE1}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                    <children name="TGGLinkVariable" index="1" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="links" index="0" />
+                      <attribute name="sourceGuid" value="{01992194-DDCB-493a-9297-68E2FE060A1B}" index="1" />
+                      <attribute name="targetGuid" value="{B8D97366-2633-4ea4-A34C-D7417A3F6FD7}" index="2" />
+                      <attribute name="bindingOperator" value="create" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{FA637359-3916-44e2-8384-C555603E18A4}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{CDD5DA7B-CAAB-4865-B6D5-6217A9F06729}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{01992194-DDCB-493a-9297-68E2FE060A1B}" index="0" />
+                  <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="transitiveSubDoc" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="3" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="ref" index="0" />
+                      <attribute name="sourceGuid" value="{1A3FCA0E-083E-4169-A863-7250CE40FD2E}" index="1" />
+                      <attribute name="targetGuid" value="{158C53ED-A7FC-4d8d-93B7-C7540FB8D09F}" index="2" />
+                      <attribute name="bindingOperator" value="check_only" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{4EA30CFB-8C96-4452-8A89-36BD2D4F0654}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{34DAC743-553B-4c7c-987D-4456E6DC3C6C}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{1A3FCA0E-083E-4169-A863-7250CE40FD2E}" index="0" />
+                  <attribute name="typeGuid" value="{FA6016AD-4853-41f6-8A76-24249313AFD4}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="linkFromTransitiveSubToSub" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="4" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="ref" index="0" />
+                      <attribute name="sourceGuid" value="{B8D97366-2633-4ea4-A34C-D7417A3F6FD7}" index="1" />
+                      <attribute name="targetGuid" value="{4E9333F4-6E1D-4222-8AE2-1FFD11871DD0}" index="2" />
+                      <attribute name="bindingOperator" value="create" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{4EA30CFB-8C96-4452-8A89-36BD2D4F0654}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{9EFD4C6E-420E-450a-8DBB-A5B7C074BF80}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{B8D97366-2633-4ea4-A34C-D7417A3F6FD7}" index="0" />
+                  <attribute name="typeGuid" value="{FA6016AD-4853-41f6-8A76-24249313AFD4}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="create" index="3" />
+                  <attribute name="name" value="linkFromTransitiveSubToSuper" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+              </children>
+              <children name="csps" index="4" xsi:type="MocaTree:Node">
+                <children name="ConstraintInstance" index="0" xsi:type="MocaTree:Node">
+                  <children name="entries" index="0" xsi:type="MocaTree:Node">
+                    <children name="Entry" index="0" xsi:type="MocaTree:Node">
+                      <children name="expressions" index="0" xsi:type="MocaTree:Node">
+                        <children name="Expression" index="0" xsi:type="MocaTree:Node">
+                          <attribute name="type" value="AttributeValueExpression" index="0" />
+                          <attribute name="attributeGuid" value="{5E036B6B-3C49-4c70-BFAD-449D0A4E6603}" index="1" />
+                          <attribute name="attributeName" value="name" index="2" />
+                          <attribute name="objectVariableGuid" value="{B8D97366-2633-4ea4-A34C-D7417A3F6FD7}" index="3" />
+                          <attribute name="objectVariableName" value="linkFromTransitiveSubToSuper" index="4" />
+                        </children>
+                        <children name="Expression" index="1" xsi:type="MocaTree:Node">
+                          <attribute name="type" value="AttributeValueExpression" index="0" />
+                          <attribute name="attributeGuid" value="{5E036B6B-3C49-4c70-BFAD-449D0A4E6603}" index="1" />
+                          <attribute name="attributeName" value="name" index="2" />
+                          <attribute name="objectVariableGuid" value="{4E9333F4-6E1D-4222-8AE2-1FFD11871DD0}" index="3" />
+                          <attribute name="objectVariableName" value="superDoc" index="4" />
+                        </children>
+                      </children>
+                      <attribute name="constraintName" value="eq" index="0" />
+                      <attribute name="negative" value="false" index="1" />
+                    </children>
+                  </children>
+                  <attribute name="mocaFragmentVersion" value="" index="0" />
+                </children>
+              </children>
+              <attribute name="name" value="InheritanceToLink2" index="0" />
+              <attribute name="isAbstract" value="false" index="1" />
+              <attribute name="isInterface" value="false" index="2" />
+              <attribute name="guid" value="{32C7B0CF-2AC3-465e-A1E3-41D388711272}" index="3" />
+              <attribute name="alias" value="" index="4" />
+              <attribute name="cspSpec" value="eq(linkFromTransitiveSubToSuper.name, superDoc.name)" index="5" />
+              <attribute name="refines" value="" index="6" />
+              <attribute name="baseClasses" value="" index="7" />
+              <attribute name="kernel" value="{84096EB5-ADA1-437f-9E8D-570B81426B94}" index="8" />
+            </children>
+            <children name="Rule" index="5" xsi:type="MocaTree:Node">
+              <children name="references" index="0" xsi:type="MocaTree:Node" />
+              <children name="attributes" index="1" xsi:type="MocaTree:Node" />
+              <children name="operations" index="2" xsi:type="MocaTree:Node" />
+              <children name="objectVariables" index="3" xsi:type="MocaTree:Node">
+                <children name="TGGObjectVariable" index="0" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node" />
+                  <attribute name="guid" value="{439F3E67-74C9-4f86-9C45-0B7D27CEF130}" index="0" />
+                  <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="subDoc" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="1" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="links" index="0" />
+                      <attribute name="sourceGuid" value="{3146B6E5-9FE6-46c7-B996-19BA27E8BB0F}" index="1" />
+                      <attribute name="targetGuid" value="{3560EE45-9C2A-4071-B3A9-AC97878C5C93}" index="2" />
+                      <attribute name="bindingOperator" value="check_only" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{FA637359-3916-44e2-8384-C555603E18A4}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{7177C5EC-9A2A-401e-9A6E-3347F1334475}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{3146B6E5-9FE6-46c7-B996-19BA27E8BB0F}" index="0" />
+                  <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="superDoc" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="2" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="links" index="0" />
+                      <attribute name="sourceGuid" value="{8B8001EC-F144-482c-9AB7-22706E3F6FC2}" index="1" />
+                      <attribute name="targetGuid" value="{26B22912-556E-4cbd-8FC6-39C914DF3AED}" index="2" />
+                      <attribute name="bindingOperator" value="check_only" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{FA637359-3916-44e2-8384-C555603E18A4}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{9024A328-41EA-41d9-AD86-4FE41D29021C}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                    <children name="TGGLinkVariable" index="1" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="links" index="0" />
+                      <attribute name="sourceGuid" value="{8B8001EC-F144-482c-9AB7-22706E3F6FC2}" index="1" />
+                      <attribute name="targetGuid" value="{F776BB9A-F927-4920-B7DF-53745A01F1A7}" index="2" />
+                      <attribute name="bindingOperator" value="create" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{FA637359-3916-44e2-8384-C555603E18A4}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{7910EE60-353A-456a-B285-987D42F16B29}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{8B8001EC-F144-482c-9AB7-22706E3F6FC2}" index="0" />
+                  <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="transitiveSub" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="3" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="ref" index="0" />
+                      <attribute name="sourceGuid" value="{26B22912-556E-4cbd-8FC6-39C914DF3AED}" index="1" />
+                      <attribute name="targetGuid" value="{439F3E67-74C9-4f86-9C45-0B7D27CEF130}" index="2" />
+                      <attribute name="bindingOperator" value="check_only" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{4EA30CFB-8C96-4452-8A89-36BD2D4F0654}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{111775EB-90BB-45e4-8717-3C86A6207742}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{26B22912-556E-4cbd-8FC6-39C914DF3AED}" index="0" />
+                  <attribute name="typeGuid" value="{FA6016AD-4853-41f6-8A76-24249313AFD4}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="linkFromTransitiveSubToSub" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="4" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node" />
+                  <attribute name="guid" value="{67B1C3FF-BC68-4e7f-B726-D236C9BC0C7C}" index="0" />
+                  <attribute name="typeGuid" value="{9E8B5459-9A5F-4d48-AB25-4C2995687CD0}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="transitiveSuper" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="5" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="ref" index="0" />
+                      <attribute name="sourceGuid" value="{3560EE45-9C2A-4071-B3A9-AC97878C5C93}" index="1" />
+                      <attribute name="targetGuid" value="{67B1C3FF-BC68-4e7f-B726-D236C9BC0C7C}" index="2" />
+                      <attribute name="bindingOperator" value="check_only" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{4EA30CFB-8C96-4452-8A89-36BD2D4F0654}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{1109F032-767B-4579-A131-A4546E048034}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{3560EE45-9C2A-4071-B3A9-AC97878C5C93}" index="0" />
+                  <attribute name="typeGuid" value="{FA6016AD-4853-41f6-8A76-24249313AFD4}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="check_only" index="3" />
+                  <attribute name="name" value="linkFromSuperToTransitiveSuper" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+                <children name="TGGObjectVariable" index="6" xsi:type="MocaTree:Node">
+                  <children name="constraints" index="0" xsi:type="MocaTree:Node" />
+                  <children name="attributeAssignments" index="1" xsi:type="MocaTree:Node" />
+                  <children name="outgoingLinks" index="2" xsi:type="MocaTree:Node">
+                    <children name="TGGLinkVariable" index="0" xsi:type="MocaTree:Node">
+                      <attribute name="name" value="ref" index="0" />
+                      <attribute name="sourceGuid" value="{F776BB9A-F927-4920-B7DF-53745A01F1A7}" index="1" />
+                      <attribute name="targetGuid" value="{67B1C3FF-BC68-4e7f-B726-D236C9BC0C7C}" index="2" />
+                      <attribute name="bindingOperator" value="create" index="3" />
+                      <attribute name="bindingSemantics" value="mandatory" index="4" />
+                      <attribute name="sourceName" value="" index="5" />
+                      <attribute name="nacIndex" value="-1" index="6" />
+                      <attribute name="textOfReference" value="" index="7" />
+                      <attribute name="textOfReferenceOpposite" value="" index="8" />
+                      <attribute name="idOfReference" value="{4EA30CFB-8C96-4452-8A89-36BD2D4F0654}" index="9" />
+                      <attribute name="direction" value="right" index="10" />
+                      <attribute name="guid" value="{915FF762-FB31-4fc2-A7FA-FE13AAF87149}" index="11" />
+                      <attribute name="domain" value="target" index="12" />
+                      <attribute name="mocaFragmentVersion" value="0.002" index="13" />
+                    </children>
+                  </children>
+                  <attribute name="guid" value="{F776BB9A-F927-4920-B7DF-53745A01F1A7}" index="0" />
+                  <attribute name="typeGuid" value="{FA6016AD-4853-41f6-8A76-24249313AFD4}" index="1" />
+                  <attribute name="bindingState" value="unbound" index="2" />
+                  <attribute name="bindingOperator" value="create" index="3" />
+                  <attribute name="name" value="linkFromTransitiveSubToTransitiveSuper" index="4" />
+                  <attribute name="bindingSemantics" value="mandatory" index="5" />
+                  <attribute name="nacIndex" value="-1" index="6" />
+                  <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="7" />
+                  <attribute name="domain" value="target" index="8" />
+                  <attribute name="mocaFragmentVersion" value="" index="9" />
+                </children>
+              </children>
+              <children name="csps" index="4" xsi:type="MocaTree:Node">
+                <children name="ConstraintInstance" index="0" xsi:type="MocaTree:Node">
+                  <children name="entries" index="0" xsi:type="MocaTree:Node">
+                    <children name="Entry" index="0" xsi:type="MocaTree:Node">
+                      <children name="expressions" index="0" xsi:type="MocaTree:Node">
+                        <children name="Expression" index="0" xsi:type="MocaTree:Node">
+                          <attribute name="type" value="AttributeValueExpression" index="0" />
+                          <attribute name="attributeGuid" value="{5E036B6B-3C49-4c70-BFAD-449D0A4E6603}" index="1" />
+                          <attribute name="attributeName" value="name" index="2" />
+                          <attribute name="objectVariableGuid" value="{F776BB9A-F927-4920-B7DF-53745A01F1A7}" index="3" />
+                          <attribute name="objectVariableName" value="linkFromTransitiveSubToTransitiveSuper" index="4" />
+                        </children>
+                        <children name="Expression" index="1" xsi:type="MocaTree:Node">
+                          <attribute name="type" value="AttributeValueExpression" index="0" />
+                          <attribute name="attributeGuid" value="{5E036B6B-3C49-4c70-BFAD-449D0A4E6603}" index="1" />
+                          <attribute name="attributeName" value="name" index="2" />
+                          <attribute name="objectVariableGuid" value="{67B1C3FF-BC68-4e7f-B726-D236C9BC0C7C}" index="3" />
+                          <attribute name="objectVariableName" value="transitiveSuper" index="4" />
+                        </children>
+                      </children>
+                      <attribute name="constraintName" value="eq" index="0" />
+                      <attribute name="negative" value="false" index="1" />
+                    </children>
+                  </children>
+                  <attribute name="mocaFragmentVersion" value="" index="0" />
+                </children>
+              </children>
+              <attribute name="name" value="InheritanceToLink3" index="0" />
+              <attribute name="isAbstract" value="false" index="1" />
+              <attribute name="isInterface" value="false" index="2" />
+              <attribute name="guid" value="{919753E5-6B5F-4df2-8E0D-F8F06C12AEEB}" index="3" />
+              <attribute name="alias" value="" index="4" />
+              <attribute name="cspSpec" value="eq(linkFromTransitiveSubToTransitiveSuper.name, transitiveSuper.name)" index="5" />
+              <attribute name="refines" value="" index="6" />
+              <attribute name="baseClasses" value="" index="7" />
+              <attribute name="kernel" value="{84096EB5-ADA1-437f-9E8D-570B81426B94}" index="8" />
+            </children>
+          </children>
+          <attribute name="guid" value="{580BAF38-ED3A-475d-AED8-23904FB09276}" index="0" />
+          <attribute name="Moflon::Name" value="Rules" index="1" />
+          <attribute name="Moflon::NsPrefix" value="Rules" index="2" />
+          <attribute name="Moflon::NsUri" value="platform:/plugin/Rules/model/Rules.ecore#//Rules" index="3" />
+        </children>
+      </children>
+      <children name="domains" index="2" xsi:type="MocaTree:Node">
+        <children name="Domain" index="0" xsi:type="MocaTree:Node">
+          <attribute name="domainType" value="source" index="0" />
+          <attribute name="metamodelGuid" value="{09A0B2FF-5F45-48de-8FEF-6C32F718ADAE}" index="1" />
+        </children>
+        <children name="Domain" index="1" xsi:type="MocaTree:Node">
+          <attribute name="domainType" value="target" index="0" />
+          <attribute name="metamodelGuid" value="{54C76D01-CEF4-47c0-8720-D6CC2A7233C7}" index="1" />
+        </children>
+        <children name="Domain" index="2" xsi:type="MocaTree:Node">
+          <attribute name="domainType" value="correspondence" index="0" />
+          <attribute name="metamodelGuid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="1" />
+        </children>
+      </children>
+      <children name="metamodels" index="3" xsi:type="MocaTree:Node">
+        <children name="Metamodel" index="0" xsi:type="MocaTree:Node">
+          <attribute name="guid" value="{09A0B2FF-5F45-48de-8FEF-6C32F718ADAE}" index="0" />
+        </children>
+        <children name="Metamodel" index="1" xsi:type="MocaTree:Node">
+          <attribute name="guid" value="{54C76D01-CEF4-47c0-8720-D6CC2A7233C7}" index="0" />
+        </children>
+        <children name="Metamodel" index="2" xsi:type="MocaTree:Node">
+          <attribute name="guid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="0" />
+        </children>
+      </children>
+      <children name="constraints" index="4" xsi:type="MocaTree:Node">
+        <children name="DECLARATIONS" index="0" xsi:type="MocaTree:Node">
+          <children name="eq" index="0" xsi:type="MocaTree:Node">
+            <children name="ALLOWED_ADORNMENTS" index="0" xsi:type="MocaTree:Node">
+              <children name="BB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BF" index="1" xsi:type="MocaTree:Node" />
+              <children name="FB" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="MODELGEN_ADORNMENTS" index="1" xsi:type="MocaTree:Node">
+              <children name="BB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BF" index="1" xsi:type="MocaTree:Node" />
+              <children name="FB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FF" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE" index="2" xsi:type="MocaTree:Node">
+              <children name="" index="0" xsi:type="MocaTree:Node" />
+              <children name="" index="1" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE_INFORMATION" index="3" xsi:type="MocaTree:Node">
+              <children name="a" index="0" xsi:type="MocaTree:Node" />
+              <children name="b" index="1" xsi:type="MocaTree:Node" />
+            </children>
+            <attribute name="INFORMATION_TEXT" value="Semantics: a = b" index="0" />
+            <attribute name="USER_DEFINED" value="false" index="1" />
+            <attribute name="INDEX" value="0" index="2" />
+          </children>
+          <children name="addPrefix" index="1" xsi:type="MocaTree:Node">
+            <children name="ALLOWED_ADORNMENTS" index="0" xsi:type="MocaTree:Node">
+              <children name="BBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FBB" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="MODELGEN_ADORNMENTS" index="1" xsi:type="MocaTree:Node">
+              <children name="BBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FBB" index="3" xsi:type="MocaTree:Node" />
+              <children name="BFF" index="4" xsi:type="MocaTree:Node" />
+              <children name="FBF" index="5" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE" index="2" xsi:type="MocaTree:Node">
+              <children name="EString" index="0" xsi:type="MocaTree:Node" />
+              <children name="EString" index="1" xsi:type="MocaTree:Node" />
+              <children name="EString" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE_INFORMATION" index="3" xsi:type="MocaTree:Node">
+              <children name="prefix" index="0" xsi:type="MocaTree:Node" />
+              <children name="a" index="1" xsi:type="MocaTree:Node" />
+              <children name="b" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <attribute name="INFORMATION_TEXT" value="Semantics: prefix a = b" index="0" />
+            <attribute name="USER_DEFINED" value="false" index="1" />
+            <attribute name="INDEX" value="1" index="2" />
+          </children>
+          <children name="addSuffix" index="2" xsi:type="MocaTree:Node">
+            <children name="ALLOWED_ADORNMENTS" index="0" xsi:type="MocaTree:Node">
+              <children name="BBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FBB" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="MODELGEN_ADORNMENTS" index="1" xsi:type="MocaTree:Node">
+              <children name="BBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FBB" index="3" xsi:type="MocaTree:Node" />
+              <children name="BFF" index="4" xsi:type="MocaTree:Node" />
+              <children name="FFF" index="5" xsi:type="MocaTree:Node" />
+              <children name="FBF" index="6" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE" index="2" xsi:type="MocaTree:Node">
+              <children name="EString" index="0" xsi:type="MocaTree:Node" />
+              <children name="EString" index="1" xsi:type="MocaTree:Node" />
+              <children name="EString" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE_INFORMATION" index="3" xsi:type="MocaTree:Node">
+              <children name="a" index="0" xsi:type="MocaTree:Node" />
+              <children name="suffix" index="1" xsi:type="MocaTree:Node" />
+              <children name="b" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <attribute name="INFORMATION_TEXT" value="Semantics: a suffix = b" index="0" />
+            <attribute name="USER_DEFINED" value="false" index="1" />
+            <attribute name="INDEX" value="2" index="2" />
+          </children>
+          <children name="concat" index="3" xsi:type="MocaTree:Node">
+            <children name="ALLOWED_ADORNMENTS" index="0" xsi:type="MocaTree:Node">
+              <children name="BBBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BBFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="BFFB" index="3" xsi:type="MocaTree:Node" />
+              <children name="BFBB" index="4" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="MODELGEN_ADORNMENTS" index="1" xsi:type="MocaTree:Node">
+              <children name="BBBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BBFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="BFFB" index="3" xsi:type="MocaTree:Node" />
+              <children name="BFBB" index="4" xsi:type="MocaTree:Node" />
+              <children name="BFFF" index="5" xsi:type="MocaTree:Node" />
+              <children name="BFBF" index="6" xsi:type="MocaTree:Node" />
+              <children name="BBFF" index="7" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE" index="2" xsi:type="MocaTree:Node">
+              <children name="EString" index="0" xsi:type="MocaTree:Node" />
+              <children name="EString" index="1" xsi:type="MocaTree:Node" />
+              <children name="EString" index="2" xsi:type="MocaTree:Node" />
+              <children name="EString" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE_INFORMATION" index="3" xsi:type="MocaTree:Node">
+              <children name="separator" index="0" xsi:type="MocaTree:Node" />
+              <children name="a" index="1" xsi:type="MocaTree:Node" />
+              <children name="b" index="2" xsi:type="MocaTree:Node" />
+              <children name="c" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <attribute name="INFORMATION_TEXT" value="Semantics: a separator b = c" index="0" />
+            <attribute name="USER_DEFINED" value="false" index="1" />
+            <attribute name="INDEX" value="3" index="2" />
+          </children>
+          <children name="setDefaultString" index="4" xsi:type="MocaTree:Node">
+            <children name="ALLOWED_ADORNMENTS" index="0" xsi:type="MocaTree:Node">
+              <children name="BB" index="0" xsi:type="MocaTree:Node" />
+              <children name="FB" index="1" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="MODELGEN_ADORNMENTS" index="1" xsi:type="MocaTree:Node">
+              <children name="BB" index="0" xsi:type="MocaTree:Node" />
+              <children name="FB" index="1" xsi:type="MocaTree:Node" />
+              <children name="FF" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE" index="2" xsi:type="MocaTree:Node">
+              <children name="EString" index="0" xsi:type="MocaTree:Node" />
+              <children name="EString" index="1" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE_INFORMATION" index="3" xsi:type="MocaTree:Node">
+              <children name="string" index="0" xsi:type="MocaTree:Node" />
+              <children name="default" index="1" xsi:type="MocaTree:Node" />
+            </children>
+            <attribute name="INFORMATION_TEXT" value="Semantics: set string = default only if string is free" index="0" />
+            <attribute name="USER_DEFINED" value="false" index="1" />
+            <attribute name="INDEX" value="4" index="2" />
+          </children>
+          <children name="setDefaultNumber" index="5" xsi:type="MocaTree:Node">
+            <children name="ALLOWED_ADORNMENTS" index="0" xsi:type="MocaTree:Node">
+              <children name="BB" index="0" xsi:type="MocaTree:Node" />
+              <children name="FB" index="1" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="MODELGEN_ADORNMENTS" index="1" xsi:type="MocaTree:Node">
+              <children name="BB" index="0" xsi:type="MocaTree:Node" />
+              <children name="FB" index="1" xsi:type="MocaTree:Node" />
+              <children name="FF" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE" index="2" xsi:type="MocaTree:Node">
+              <children name="Number" index="0" xsi:type="MocaTree:Node" />
+              <children name="Number" index="1" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE_INFORMATION" index="3" xsi:type="MocaTree:Node">
+              <children name="number" index="0" xsi:type="MocaTree:Node" />
+              <children name="default" index="1" xsi:type="MocaTree:Node" />
+            </children>
+            <attribute name="INFORMATION_TEXT" value="Semantics: set number = default only if number is free" index="0" />
+            <attribute name="USER_DEFINED" value="false" index="1" />
+            <attribute name="INDEX" value="5" index="2" />
+          </children>
+          <children name="stringToDouble" index="6" xsi:type="MocaTree:Node">
+            <children name="ALLOWED_ADORNMENTS" index="0" xsi:type="MocaTree:Node">
+              <children name="BB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BF" index="1" xsi:type="MocaTree:Node" />
+              <children name="FB" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="MODELGEN_ADORNMENTS" index="1" xsi:type="MocaTree:Node">
+              <children name="BB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BF" index="1" xsi:type="MocaTree:Node" />
+              <children name="FB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FF" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE" index="2" xsi:type="MocaTree:Node">
+              <children name="EString" index="0" xsi:type="MocaTree:Node" />
+              <children name="EDouble" index="1" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE_INFORMATION" index="3" xsi:type="MocaTree:Node">
+              <children name="string" index="0" xsi:type="MocaTree:Node" />
+              <children name="double" index="1" xsi:type="MocaTree:Node" />
+            </children>
+            <attribute name="INFORMATION_TEXT" value="Semantics: string = number.toString()" index="0" />
+            <attribute name="USER_DEFINED" value="false" index="1" />
+            <attribute name="INDEX" value="6" index="2" />
+          </children>
+          <children name="stringToInt" index="7" xsi:type="MocaTree:Node">
+            <children name="ALLOWED_ADORNMENTS" index="0" xsi:type="MocaTree:Node">
+              <children name="BB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BF" index="1" xsi:type="MocaTree:Node" />
+              <children name="FB" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="MODELGEN_ADORNMENTS" index="1" xsi:type="MocaTree:Node">
+              <children name="BB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BF" index="1" xsi:type="MocaTree:Node" />
+              <children name="FB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FF" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE" index="2" xsi:type="MocaTree:Node">
+              <children name="EString" index="0" xsi:type="MocaTree:Node" />
+              <children name="EInt" index="1" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE_INFORMATION" index="3" xsi:type="MocaTree:Node">
+              <children name="string" index="0" xsi:type="MocaTree:Node" />
+              <children name="int" index="1" xsi:type="MocaTree:Node" />
+            </children>
+            <attribute name="INFORMATION_TEXT" value="Semantics: string = number.toString()" index="0" />
+            <attribute name="USER_DEFINED" value="false" index="1" />
+            <attribute name="INDEX" value="7" index="2" />
+          </children>
+          <children name="multiply" index="8" xsi:type="MocaTree:Node">
+            <children name="ALLOWED_ADORNMENTS" index="0" xsi:type="MocaTree:Node">
+              <children name="BBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FBB" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="MODELGEN_ADORNMENTS" index="1" xsi:type="MocaTree:Node">
+              <children name="BBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FBB" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE" index="2" xsi:type="MocaTree:Node">
+              <children name="Number" index="0" xsi:type="MocaTree:Node" />
+              <children name="Number" index="1" xsi:type="MocaTree:Node" />
+              <children name="Number" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE_INFORMATION" index="3" xsi:type="MocaTree:Node">
+              <children name="a" index="0" xsi:type="MocaTree:Node" />
+              <children name="b" index="1" xsi:type="MocaTree:Node" />
+              <children name="c" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <attribute name="INFORMATION_TEXT" value="Semantics: a * b = c" index="0" />
+            <attribute name="USER_DEFINED" value="false" index="1" />
+            <attribute name="INDEX" value="8" index="2" />
+          </children>
+          <children name="divide" index="9" xsi:type="MocaTree:Node">
+            <children name="ALLOWED_ADORNMENTS" index="0" xsi:type="MocaTree:Node">
+              <children name="BBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FBB" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="MODELGEN_ADORNMENTS" index="1" xsi:type="MocaTree:Node">
+              <children name="BBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FBB" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE" index="2" xsi:type="MocaTree:Node">
+              <children name="Number" index="0" xsi:type="MocaTree:Node" />
+              <children name="Number" index="1" xsi:type="MocaTree:Node" />
+              <children name="Number" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE_INFORMATION" index="3" xsi:type="MocaTree:Node">
+              <children name="a" index="0" xsi:type="MocaTree:Node" />
+              <children name="b" index="1" xsi:type="MocaTree:Node" />
+              <children name="c" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <attribute name="INFORMATION_TEXT" value="Semantics: a / b = c" index="0" />
+            <attribute name="USER_DEFINED" value="false" index="1" />
+            <attribute name="INDEX" value="9" index="2" />
+          </children>
+          <children name="add" index="10" xsi:type="MocaTree:Node">
+            <children name="ALLOWED_ADORNMENTS" index="0" xsi:type="MocaTree:Node">
+              <children name="BBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FBB" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="MODELGEN_ADORNMENTS" index="1" xsi:type="MocaTree:Node">
+              <children name="BBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FBB" index="3" xsi:type="MocaTree:Node" />
+              <children name="FFB" index="4" xsi:type="MocaTree:Node" />
+              <children name="FBF" index="5" xsi:type="MocaTree:Node" />
+              <children name="BFF" index="6" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE" index="2" xsi:type="MocaTree:Node">
+              <children name="Number" index="0" xsi:type="MocaTree:Node" />
+              <children name="Number" index="1" xsi:type="MocaTree:Node" />
+              <children name="Number" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE_INFORMATION" index="3" xsi:type="MocaTree:Node">
+              <children name="a" index="0" xsi:type="MocaTree:Node" />
+              <children name="b" index="1" xsi:type="MocaTree:Node" />
+              <children name="c" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <attribute name="INFORMATION_TEXT" value="Semantics: a + b = c" index="0" />
+            <attribute name="USER_DEFINED" value="false" index="1" />
+            <attribute name="INDEX" value="10" index="2" />
+          </children>
+          <children name="sub" index="11" xsi:type="MocaTree:Node">
+            <children name="ALLOWED_ADORNMENTS" index="0" xsi:type="MocaTree:Node">
+              <children name="BBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FBB" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="MODELGEN_ADORNMENTS" index="1" xsi:type="MocaTree:Node">
+              <children name="BBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FBB" index="3" xsi:type="MocaTree:Node" />
+              <children name="FFB" index="4" xsi:type="MocaTree:Node" />
+              <children name="BFF" index="5" xsi:type="MocaTree:Node" />
+              <children name="FBF" index="6" xsi:type="MocaTree:Node" />
+              <children name="FFF" index="7" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE" index="2" xsi:type="MocaTree:Node">
+              <children name="Number" index="0" xsi:type="MocaTree:Node" />
+              <children name="Number" index="1" xsi:type="MocaTree:Node" />
+              <children name="Number" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE_INFORMATION" index="3" xsi:type="MocaTree:Node">
+              <children name="a" index="0" xsi:type="MocaTree:Node" />
+              <children name="b" index="1" xsi:type="MocaTree:Node" />
+              <children name="c" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <attribute name="INFORMATION_TEXT" value="Semantics: a - b = c" index="0" />
+            <attribute name="USER_DEFINED" value="false" index="1" />
+            <attribute name="INDEX" value="11" index="2" />
+          </children>
+          <children name="max" index="12" xsi:type="MocaTree:Node">
+            <children name="ALLOWED_ADORNMENTS" index="0" xsi:type="MocaTree:Node">
+              <children name="BBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FBB" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="MODELGEN_ADORNMENTS" index="1" xsi:type="MocaTree:Node">
+              <children name="BBB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BBF" index="1" xsi:type="MocaTree:Node" />
+              <children name="BFB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FBB" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE" index="2" xsi:type="MocaTree:Node">
+              <children name="Number" index="0" xsi:type="MocaTree:Node" />
+              <children name="Number" index="1" xsi:type="MocaTree:Node" />
+              <children name="Number" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE_INFORMATION" index="3" xsi:type="MocaTree:Node">
+              <children name="a" index="0" xsi:type="MocaTree:Node" />
+              <children name="b" index="1" xsi:type="MocaTree:Node" />
+              <children name="c" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <attribute name="INFORMATION_TEXT" value="Semantics: max(a,b) = c" index="0" />
+            <attribute name="USER_DEFINED" value="false" index="1" />
+            <attribute name="INDEX" value="12" index="2" />
+          </children>
+          <children name="smallerOrEqual" index="13" xsi:type="MocaTree:Node">
+            <children name="ALLOWED_ADORNMENTS" index="0" xsi:type="MocaTree:Node">
+              <children name="BB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BF" index="1" xsi:type="MocaTree:Node" />
+              <children name="FB" index="2" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="MODELGEN_ADORNMENTS" index="1" xsi:type="MocaTree:Node">
+              <children name="BB" index="0" xsi:type="MocaTree:Node" />
+              <children name="BF" index="1" xsi:type="MocaTree:Node" />
+              <children name="FB" index="2" xsi:type="MocaTree:Node" />
+              <children name="FF" index="3" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE" index="2" xsi:type="MocaTree:Node">
+              <children name="Number" index="0" xsi:type="MocaTree:Node" />
+              <children name="Number" index="1" xsi:type="MocaTree:Node" />
+            </children>
+            <children name="SIGNATURE_INFORMATION" index="3" xsi:type="MocaTree:Node">
+              <children name="a" index="0" xsi:type="MocaTree:Node" />
+              <children name="b" index="1" xsi:type="MocaTree:Node" />
+            </children>
+            <attribute name="INFORMATION_TEXT" value="Semantics: a &lt;= b" index="0" />
+            <attribute name="USER_DEFINED" value="false" index="1" />
+            <attribute name="INDEX" value="13" index="2" />
+          </children>
+        </children>
+        <children name="CONSTRAINTS" index="1" xsi:type="MocaTree:Node" />
+      </children>
+      <children name="dependencies" index="5" xsi:type="MocaTree:Node">
+        <children name="ClassDiagramLanguage" index="0" xsi:type="MocaTree:Node" />
+        <children name="DocumentationLanguage" index="1" xsi:type="MocaTree:Node" />
+      </children>
+      <attribute name="guid" value="{6AAC2ADD-2FAA-496b-9C52-074D7BE61394}" index="0" />
+      <attribute name="Moflon::Name" value="ClassDiagramToDocumentationIntegration" index="1" />
+      <attribute name="Moflon::NsPrefix" value="ClassDiagramToDocumentationIntegration" index="2" />
+      <attribute name="Moflon::NsUri" value="platform:/plugin/ClassDiagramToDocumentationIntegration/model/ClassDiagramToDocumentationIntegration.ecore" index="3" />
+      <attribute name="Moflon::PluginID" value="ClassDiagramToDocumentationIntegration" index="4" />
+      <attribute name="Moflon::Export" value="true" index="5" />
+      <attribute name="Moflon::Validated" value="false" index="6" />
+      <attribute name="Moflon::WorkingSet" value="ClassDiagramToDocumentation" index="7" />
+    </children>
+  </children>
+</MocaTree:Node>

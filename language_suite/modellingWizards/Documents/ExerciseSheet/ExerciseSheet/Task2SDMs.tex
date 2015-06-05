@@ -1,0 +1,94 @@
+\section{Track 2 Model Validation With SDMs}
+
+In this task, you will specify validation rules and some repair operations on a model using SDMs.
+The validation will be done on models of the \texttt{ProcessDefinition} language.
+
+To get started perform the following steps:
+\begin{enumerate}
+\item Open the \texttt{ProcessLanguage.eap} file that is located within the \texttt{ProcessLanguage} project
+\item Navigate to the metamodel diagram \texttt{ProcessLanguage\slash ProcessDefinition} 
+\end{enumerate}
+The diagram \texttt{ProcessDefinition} shows the metamodel of the \texttt{ProcessLanguage}.
+All methods that will be implemented in this task should be located in the \texttt{SystemModule} class of the metamodel.
+The \texttt{Facade} package is an extension of this metamodel and provides a \texttt{Helper} class with a predefined \texttt{print()} method that can be used and extended in the following exercises.
+The \texttt{print} method is hand-coded into the generated code in the Eclipse workspace in \texttt{ProcessDefinition\slash gen\slash ProcessDefinition\slash facade\slash impl\slash HelperImpl.java}
+
+
+\subsection{Ensure unique ids}
+Every task has an attribute called \texttt{id} that have to be be unique for all tasks in the containing \texttt{SystemModule}.
+
+Develop an SDM \texttt{ensureUniqueIDs()} that checks the tasks to have a unique id.
+Every time, a conflict is detected it should be reported by printing the conflicting id to the console.
+For this you can use the method \texttt{print} of the \texttt{Helper} class. 
+
+\textbf{Test:}\\ To test your implementation, you can use the model in:\\
+\noindent\hspace*{10mm}\texttt{ProcessDefinition\slash instances\slash processDefModuleWithConflictingIDs.xmi}\\
+and the provided main method in:\\
+\noindent\hspace*{10mm}\texttt{ProcessDefinition\slash src\slash org\slash moflon\slash processdef\slash TestUniqueIDsMain.java}.\\
+
+\subsection{Run simulation}
+Now the execution of the build process should be specified by an SDM.
+Therefore, implement a method \texttt{runSimulation(String taskId)} that takes a task id as String and searches the corresponding task in the model.
+The execution of this task and the invocated tasks should be simulated by writing their \texttt{id}s to the console.
+When no task with an \texttt{id} corresponding to the passed \texttt{taskId} exists in the model, an error message is written to the console. 
+ 
+\textbf{Test:}\\ 
+To test your implementation, you can use the model found in:\\
+\noindent\hspace*{10mm}\texttt{ProcessDefinition\slash instances\slash processDefModule.xmi}\\
+and the provided main method in:\\
+\noindent\hspace*{10mm}\texttt{ProcessDefinition\slash src\slash org\slash moflon\slash processdef\slash TestRunSimulation.java}.
+
+\textbf{Hint:}\\
+A recursion can be used to call an arbitrary number of task invocations. 
+
+
+\clearpage
+\subsection{Forbid cycles}
+As stated before, tasks can invoke other tasks. 
+This can lead to invocation cycles that are not allowed.
+
+
+\textbf{Example:}
+Task1 $\rightarrow$ \textit{Task2} $\rightarrow$ Task3 $\rightarrow$ \textit{Task2}
+
+
+In this exercise, an SDM should be specified that checks the model for cyclic invocations.
+When a cycle is detected print all \texttt{id}s of the involved tasks to the console.
+
+
+For finding cycles (strongly connected components) in a graph different algorithms have been proposed. 
+Tarjan's algorithm, Kosaraju's algorithm or the Path-based strong component algorithm can be used as starting point.
+But feel free specifying your own algorithm.
+
+The validation for cyclic invocations can be implemented in the following steps:
+\begin{enumerate}
+\item Find cycles with an entry point as stated in the example above.
+\item Find cycles where no entry point exists (e.g. \textit{Task4} $\rightarrow$ Task5 $\rightarrow$ \textit{Task4})
+\item Extend the SDM to find self-invocations 
+\item Extend the SDM for not checking subpaths more than once
+\end{enumerate}
+
+\textbf{Test:} \\To test your implementation, you can use the model found in:\\
+\noindent\hspace*{10mm}\texttt{ProcessDefinition\slash instances\slash processDefModuleWithCycle.xmi}\\
+and the provided main method in:\\
+\noindent\hspace*{10mm}\texttt{ProcessDefinition\slash src\slash org\slash moflon\slash processdef\slash TestCycleMain.java}.
+
+
+\textbf{Hint:} \\
+Following cycles are included:
+\begin{itemize}
+  \item deploy\_to\_server $\rightarrow$ \textit{visual\_studio\_project} $\rightarrow$ refresh\_visual\_studio $\rightarrow$ \textit{visual\_studio\_project}
+  \item deploy\_to\_server $\rightarrow$ \textit{build\_update\_site} $\rightarrow$ \textit{build\_update\_site}
+  \item \textit{eat\_some\_icecream} $\rightarrow$ take\_a\_cup\_of\_tea $\rightarrow$ \textit{eat\_some\_icecream}
+\end{itemize}
+
+A basic idea for an algorithm is:
+\begin{itemize}
+  \item Use tasks that have no incoming invocations as an entry point.
+  \item Follow the invocation edges to do a depth-first search.
+  \item When a task is reached that has been visited before, a cycle has been detected.
+  \item For bookkeeping purposes additional references can be inserted into the metamodel between the \texttt{Helper} and the \texttt{Task} class.
+  \item Use not yet visited tasks as entry point for a second validation to cover the whole model.    
+\end{itemize}
+
+

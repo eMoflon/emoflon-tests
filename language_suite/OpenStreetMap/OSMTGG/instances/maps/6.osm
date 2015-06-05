@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.3.3 (4862 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="50.3477000" minlon="8.7062000" maxlat="50.3496000" maxlon="8.7075000"/>
+ <node id="358158558" visible="true" version="3" changeset="14230929" timestamp="2012-12-10T20:34:20Z" user="HoloDuke" uid="75317" lat="50.3480031" lon="8.7069853"/>
+ <node id="370254011" visible="true" version="2" changeset="591723" timestamp="2009-04-16T10:12:27Z" user="misc01" uid="84599" lat="50.3520395" lon="8.7059829"/>
+ <node id="370254015" visible="true" version="2" changeset="14230929" timestamp="2012-12-10T20:34:20Z" user="HoloDuke" uid="75317" lat="50.3462103" lon="8.7025535"/>
+ <node id="370255317" visible="true" version="4" changeset="14230929" timestamp="2012-12-10T20:34:20Z" user="HoloDuke" uid="75317" lat="50.3488916" lon="8.7071120"/>
+ <way id="33265975" visible="true" version="2" changeset="14230929" timestamp="2012-12-10T20:34:16Z" user="HoloDuke" uid="75317">
+  <nd ref="370254011"/>
+  <nd ref="370255317"/>
+  <nd ref="358158558"/>
+  <nd ref="370254015"/>
+  <tag k="highway" v="track"/>
+  <tag k="source" v="Bing"/>
+  <tag k="surface" v="grass"/>
+ </way>
+</osm>

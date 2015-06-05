@@ -1,0 +1,11 @@
+pattern generateNewAuthorPerResearcher {
+
+	@newLibrary : ../LibraryLanguage/Library {
+		++ -author-> newAuthor
+	}
+	
+	++ newAuthor : ../LibraryLanguage/Author {
+		newAuthor.name := aResearcher.name
+	}
+ 
+}  

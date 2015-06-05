@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ClassInheritanceHierarchy:ClassPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ClassInheritanceHierarchy="platform:/plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#/" name="pkg">
+  <classes name="A" superClass="//@classes.1" subClass="//@classes.1">
+    <attributes name="Aa" type=""/>
+  </classes>
+  <classes name="C" superClass="//@classes.0" subClass="//@classes.0">
+    <attributes name="Ca" type=""/>
+  </classes>
+</ClassInheritanceHierarchy:ClassPackage>

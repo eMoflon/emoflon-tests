@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ASCII"?>
+<BlockDiagram_EdgeRules:BlockSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:BlockDiagram_EdgeRules="platform:/plugin/BlockDiagram_EdgeRules/model/BlockDiagram_EdgeRules.ecore" name="aBlockSystem">
+  <blocks id="A"/>
+</BlockDiagram_EdgeRules:BlockSystem>

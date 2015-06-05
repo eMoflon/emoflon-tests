@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MemoryBoxLanguage:Box xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MemoryBoxLanguage="platform:/plugin/MemoryBoxLanguage/model/MemoryBoxLanguage.ecore#/" xsi:schemaLocation="platform:/plugin/MemoryBoxLanguage/model/MemoryBoxLanguage.ecore#/ ../model/MemoryBoxLanguage.ecore">
+  <containedPartition index="5"/>
+  <containedPartition/>
+</MemoryBoxLanguage:Box>

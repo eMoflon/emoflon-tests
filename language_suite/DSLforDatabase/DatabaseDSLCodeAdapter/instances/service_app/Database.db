@@ -1,0 +1,4 @@
+remote {
+	@mode[rw]
+	@url[http://www.emoflon.org]
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.3.3 (4863 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="50.3523000" minlon="8.6991000" maxlat="50.3548000" maxlon="8.7024000"/>
+ <node id="358158424" visible="true" version="3" changeset="15909020" timestamp="2013-04-29T14:32:01Z" user="HoloDuke" uid="75317" lat="50.3539339" lon="8.6979883"/>
+ <node id="358158541" visible="true" version="5" changeset="4832151" timestamp="2010-05-28T15:37:45Z" user="wolter" uid="46169" lat="50.3546532" lon="8.6990828"/>
+ <node id="358158553" visible="true" version="1" changeset="773012" timestamp="2009-03-09T21:16:03Z" user="misc01" uid="84599" lat="50.3504907" lon="8.7009871"/>
+ <node id="358158555" visible="true" version="1" changeset="773012" timestamp="2009-03-09T21:16:03Z" user="misc01" uid="84599" lat="50.3479549" lon="8.7017510"/>
+ <node id="358158547" visible="true" version="3" changeset="17774504" timestamp="2013-09-10T22:09:28Z" user="ageck" uid="464282" lat="50.3527440" lon="8.7006172"/>
+ <node id="358158544" visible="true" version="3" changeset="17774504" timestamp="2013-09-10T22:09:28Z" user="ageck" uid="464282" lat="50.3530442" lon="8.7002987"/>
+ <node id="358158549" visible="true" version="3" changeset="17774504" timestamp="2013-09-10T22:09:28Z" user="ageck" uid="464282" lat="50.3522529" lon="8.7005700"/>
+ <node id="370254003" visible="true" version="1" changeset="250792" timestamp="2009-04-06T08:48:06Z" user="misc01" uid="84599" lat="50.3541982" lon="8.6993416"/>
+ <node id="370254017" visible="true" version="1" changeset="250792" timestamp="2009-04-06T08:48:08Z" user="misc01" uid="84599" lat="50.3514505" lon="8.7006797"/>
+ <node id="370254015" visible="true" version="2" changeset="14230929" timestamp="2012-12-10T20:34:20Z" user="HoloDuke" uid="75317" lat="50.3462103" lon="8.7025535"/>
+ <node id="370254577" visible="true" version="1" changeset="250792" timestamp="2009-04-06T08:49:05Z" user="misc01" uid="84599" lat="50.3523273" lon="8.7002404"/>
+ <node id="370254579" visible="true" version="1" changeset="250792" timestamp="2009-04-06T08:49:05Z" user="misc01" uid="84599" lat="50.3521072" lon="8.7061468"/>
+ <node id="372460983" visible="true" version="2" changeset="17774504" timestamp="2013-09-10T22:09:28Z" user="ageck" uid="464282" lat="50.3529322" lon="8.7004821"/>
+ <node id="370256249" visible="true" version="3" changeset="7628536" timestamp="2011-03-21T15:56:59Z" user="Walker" uid="165208" lat="50.3542496" lon="8.6991139"/>
+ <node id="370256247" visible="true" version="4" changeset="7628536" timestamp="2011-03-21T15:57:00Z" user="Walker" uid="165208" lat="50.3542935" lon="8.6984196"/>
+ <node id="370256250" visible="true" version="3" changeset="7628536" timestamp="2011-03-21T15:57:01Z" user="Walker" uid="165208" lat="50.3541131" lon="8.6985217"/>
+ <node id="370256248" visible="true" version="4" changeset="7628536" timestamp="2011-03-21T15:57:01Z" user="Walker" uid="165208" lat="50.3544299" lon="8.6990118"/>
+ <way id="31969234" visible="true" version="8" changeset="17915610" timestamp="2013-09-19T01:06:42Z" user="wolter" uid="46169">
+  <nd ref="358158541"/>
+  <nd ref="370254003"/>
+  <nd ref="358158544"/>
+  <nd ref="372460983"/>
+  <nd ref="358158547"/>
+  <nd ref="358158549"/>
+  <nd ref="370254017"/>
+  <nd ref="358158553"/>
+  <nd ref="358158555"/>
+  <nd ref="370254015"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade3"/>
+ </way>
+ <way id="32870574" visible="true" version="2" changeset="15909020" timestamp="2013-04-29T14:31:57Z" user="HoloDuke" uid="75317">
+  <nd ref="370254003"/>
+  <nd ref="358158424"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype:bing" v="grade2"/>
+ </way>
+ <way id="32870595" visible="true" version="2" changeset="1087555" timestamp="2009-05-05T15:38:34Z" user="wolter" uid="46169">
+  <nd ref="370254577"/>
+  <nd ref="370254579"/>
+  <tag k="layer" v="-1"/>
+  <tag k="waterway" v="stream"/>
+ </way>
+ <way id="32870706" visible="true" version="1" changeset="250792" timestamp="2009-04-06T08:55:19Z" user="misc01" uid="84599">
+  <nd ref="370256247"/>
+  <nd ref="370256248"/>
+  <nd ref="370256249"/>
+  <nd ref="370256250"/>
+  <nd ref="370256247"/>
+  <tag k="building" v="yes"/>
+  <tag k="created_by" v="Potlatch 0.10f"/>
+ </way>
+</osm>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DS:Database
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:DS="platform:/plugin/DS/model/DS.ecore#/"
+     >
+  <table name="Example">
+    <primaryKey
+        storage="#//@table.0/@column.0"/>
+    <column
+        name="_entryID"
+        primaryKey="#//@table.0/@primaryKey.0"
+        next="#//@table.0/@column.1"
+        type="NUMBER"
+        primitive="true"/>
+    <column
+        name="first"
+        next="#//@table.0/@column.2"
+        prev="#//@table.0/@column.0"
+        type="firstType"
+        primitive="true"/>
+    <column
+        name="second"
+        next="#//@table.0/@column.3"
+        prev="#//@table.0/@column.1"
+        type="secondType"
+        primitive="true"/>
+    <column
+        name="third"
+        next="#//@table.0/@column.4"
+        prev="#//@table.0/@column.2"
+        type="thirdType"
+        primitive="true"/>
+    <column
+        name="fourth"
+        prev="#//@table.0/@column.3"
+        type="fourthType"
+        primitive="true"/>
+  </table>
+</DS:Database>

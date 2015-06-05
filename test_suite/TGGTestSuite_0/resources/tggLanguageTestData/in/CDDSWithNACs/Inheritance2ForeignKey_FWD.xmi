@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CD:ClazzDiagram
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:CD="platform:/plugin/CD/model/CD.ecore#/"
+     >
+  <clazz name="Super"
+      sub="#//@clazz.1">
+    <attr name="first"
+        next="#//@clazz.0/@attr.1"
+        type="firstType"/>
+    <attr name="second"
+        next="#//@clazz.0/@attr.2"
+        prev="#//@clazz.0/@attr.0"
+        type="secondType"/>
+    <attr name="third"
+        next="#//@clazz.0/@attr.3"
+        prev="#//@clazz.0/@attr.1"
+        type="thirdType"/>
+    <attr name="fourth"
+        prev="#//@clazz.0/@attr.2"
+        type="fourthType"/>
+  </clazz>
+  <clazz name="Sub"
+      super="#//@clazz.0"/>
+</CD:ClazzDiagram>

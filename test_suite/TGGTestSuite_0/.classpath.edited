@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="frontend/ea/exportImport/RunExportImportTest.java" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/DoubleLinkedListLanguage"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MemoryBoxLanguage"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MemoryBoxToDoubleLinkedListTransformation"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/RDBMSLanguage"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SimpleClass2RDBMS"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SimpleClassLanguage"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/LSCToMPNTransformation"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MPNLanguage"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MemoryBoxToDoubleLinkedListIntegration"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ClassInheritanceHierarchy"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ClassInhHier2DB"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Database"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BooleanStatementNodes"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MBSecMonLanguage"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BlockDiagram"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BlockDiagramCodeAdapter"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/DictionaryLanguage"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MemoryBoxToDictionaryIntegration"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ABtoCDIntegration"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ContextElementsAB"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ContextElementsCD"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SimpleDictionaryLanguage"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SimpleMemoryBoxLanguage"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ComponentCodeAdapter"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ComponentLanguage"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/LIFOStack"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/StackCodeAdapter"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Families"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FamiliesToPersonsCodeAdapter"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Persons"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Ortssicht"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/OSCAx"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SimaticML"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/VHDLModel"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/VHDLTGGCodeAdapter"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/AB2CDSimpleIntegration"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BlockCodeAdapter"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BlockLanguage"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CompanyLanguage"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CompanyToITIntegration"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ITLanguage"/>
+<<<<<<< .mine
+	<classpathentry combineaccessrules="false" kind="src" path="/ClassDiagramLanguage"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ClassDiagramToRDBMSIntegration"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/DatabaseLanguage"/>
+=======
+	<classpathentry kind="lib" path="lib/antlr-3.3-complete.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.0-beta-sources.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.0-beta.jar"/>
+	<classpathentry kind="lib" path="lib/log4j.jar"/>
+	<classpathentry kind="lib" path="lib/RuntimeTools.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CD"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CDToCDIntegration"/>
+>>>>>>> .r205
+	<classpathentry kind="output" path="bin"/>
+</classpath>

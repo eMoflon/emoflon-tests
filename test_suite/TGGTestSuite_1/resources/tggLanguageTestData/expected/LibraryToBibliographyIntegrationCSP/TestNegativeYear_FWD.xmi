@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<LibraryLanguageCSP:Library
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:LibraryLanguageCSP="platform:/plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore">
+  <author book="//@book.0"
+      name="Andy Schuerr"/>
+  <book author="//@author.0"
+      title="TGGLanguage"
+      year="2011"/>
+</LibraryLanguageCSP:Library>

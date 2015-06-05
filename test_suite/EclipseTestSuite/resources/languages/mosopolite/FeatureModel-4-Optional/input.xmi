@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FeatureModelLanguage:FeatureModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:FeatureModelLanguage="platform:/plugin/FeatureModelLanguage/model/FeatureModelLanguage.ecore#/">
+  <root id="FeaturePhone"
+      name="FeaturePhone">
+    <childrenDependency
+        xsi:type="FeatureModelLanguage:Optional"
+        name="Optional 1">
+      <childFeature
+          parentDependency="#//@root/@childrenDependency.0"
+          id="Communication"
+          name="Communication">
+        <childrenDependency
+            xsi:type="FeatureModelLanguage:Optional"
+            name="Optional 2">
+          <childFeature
+              parentDependency="#//@root/@childrenDependency.0/@childFeature/@childrenDependency.0"
+              id="WLAN"
+              name="WLAN"/>
+        </childrenDependency>
+        <childrenDependency
+            xsi:type="FeatureModelLanguage:Optional"
+            name="Optional 3">
+          <childFeature
+              parentDependency="#//@root/@childrenDependency.0/@childFeature/@childrenDependency.1"
+              id="UMTS"
+              name="UMTS"/>
+        </childrenDependency>
+      </childFeature>
+    </childrenDependency>
+  </root>
+</FeatureModelLanguage:FeatureModel>

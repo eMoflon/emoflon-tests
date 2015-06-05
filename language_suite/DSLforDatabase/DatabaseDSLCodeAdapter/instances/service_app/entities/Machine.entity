@@ -1,0 +1,10 @@
+Machine -> [Job]{
+	@mode[rw]
+	@properties[
+		_id!
+		customer_id-
+		manufacturer*
+		serialNumber?
+		brandNumber+
+	]
+}

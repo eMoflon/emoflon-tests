@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: LibraryToBibliographyIntegration;singleton:=true
+Export-Package: LibraryToBibliographyIntegration.Rules.impl,
+ LibraryToBibliographyIntegration.Rules.util,
+ LibraryToBibliographyIntegration.impl,
+ org.moflon.tie.configurators,
+ LibraryToBibliographyIntegration.Rules,
+ LibraryToBibliographyIntegration,
+ LibraryToBibliographyIntegration.util
+Bundle-Name: LibraryToBibliographyIntegration
+Bundle-Version: 1.0
+Require-Bundle: BibliographyLanguage,
+ LibraryLanguage,
+ org.eclipse.emf.ecore,
+ SDMLanguage,
+ TGGLanguage,
+ TGGRuntime,
+ org.eclipse.emf.ecore.xmi,
+ MocaTree,
+ DebugLanguage,
+ org.apache.log4j;bundle-version="1.2.15",
+ org.moflon.core.utilities
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TU Darmstadt

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdmUtil:CompilerInjection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:sdmUtil="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//sdmUtil">
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/isAppropriate_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;cls&quot;, cls);&#xA;">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/registerObjectsToMatch_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/isAppropriate_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;cls&quot;,cls);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/isApplicable_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/isApplicable_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;cls&quot;, cls);&#xA;ruleresult.registerObject(&quot;table&quot;, table);&#xA;ruleresult.registerObject(&quot;classToTable&quot;, classToTable);&#xA;">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/registerObjects_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; match.getObject(&quot;cls&quot;).eClass().equals(ObjectOrientedLanguage.ObjectOrientedLanguagePackage.eINSTANCE.getClass_());">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/checkTypes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/isAppropriate_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;table&quot;, table);&#xA;">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/registerObjectsToMatch_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/isAppropriate_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;table&quot;,table);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/isApplicable_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/isApplicable_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;cls&quot;, cls);&#xA;ruleresult.registerObject(&quot;table&quot;, table);&#xA;ruleresult.registerObject(&quot;classToTable&quot;, classToTable);&#xA;">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/registerObjects_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; match.getObject(&quot;table&quot;).eClass().equals(DatabaseLanguage.DatabaseLanguagePackage.eINSTANCE.getTable());">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/checkTypes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// TODO: NICO!!!&#xA;return null;">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/checkAttributes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// TODO: NICO!!!&#xA;return null;">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/checkAttributes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/generateModel_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/generateModel_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <importInjectionEntries content="org.moflon.csp.*">
+    <eClass href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="csp.constraints.*">
+    <eClass href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="TGGLanguage.csp.*">
+    <eClass href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable"/>
+  </importInjectionEntries>
+</sdmUtil:CompilerInjection>

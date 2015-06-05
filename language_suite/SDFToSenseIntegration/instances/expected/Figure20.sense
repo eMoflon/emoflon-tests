@@ -1,0 +1,24 @@
+Sense { 
+  Actors:
+    ADC
+    AEC
+    OUT
+    SRC
+	
+  Channels:
+    ADC - ADC2AEC -> AEC
+    AEC - AEC2ADC -> ADC
+    AEC - AEC2OUT -> OUT
+    AEC - AEC2SRC -> SRC
+    OUT - OUT2AEC -> AEC
+    SRC - SRC2AEC -> AEC
+	
+  Capabilities:
+    Actor ADC with processor p1 in s
+    Actor AEC with processor p1 in s
+    Actor OUT with processor p1 in s
+    Actor SRC with processor p1 in s
+	
+  Processors:
+    p1
+}

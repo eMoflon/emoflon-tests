@@ -1,0 +1,100 @@
+rule MReferenceToEReferenceRule {
+	source {
+		@typeClassNode : Node {
+			typeClassNode.name == "EClass"
+			
+			-attribute-> typeClassGuid
+		}
+		
+		typeClassGuid : Attribute {
+			typeClassGuid.name == "guid"
+		}
+				
+		classNode : Node {
+			classNode.name == "EClass"
+			
+			-children-> referencesNode
+		}
+		
+		referencesNode : Node {
+			referencesNode.name == "references"
+			
+			++ -children-> reference
+		}
+		
+		++ reference : Node {
+			reference.name := "EReference"
+			
+			++ -attribute-> referenceName
+			++ -attribute-> referenceType
+			++ -attribute-> referenceGuid
+			++ -attribute-> lowerBound
+			++ -attribute-> upperBound
+			++ -attribute-> containment
+		}
+		
+		++ referenceName : Attribute {
+			referenceName.name := "name"
+		}
+		
+		++ referenceType : Attribute {
+			referenceType.name := "typeGuid"
+			
+			-> typeClassNode
+		}
+		
+		++ referenceGuid : Attribute {
+			referenceGuid.name := "guid"
+		}
+		
+		++ lowerBound : Attribute {
+			lowerBound.name := "lowerBound"
+		}
+		++ upperBound : Attribute {
+			upperBound.name := "upperBound"
+		}
+		++ containment : Attribute {
+			containment.name := "containment"
+		}
+	}
+	
+	correspondence {
+		classNode <- mClassToEclass : MClassToEClass -> eclass
+		typeClassNode <- mClassToEclass2 : MClassToEClass -> etypeClass
+		++ reference <- mReferenceToEReference : MReferenceToEReference -> ereference 
+	}
+	
+	target {
+		etypeClass : EClass {
+		}
+		
+		eclass : EClass {
+			++ -eStructuralFeatures-> ereference
+		}
+		
+		++ ereference : EReference {
+			++ -eType-> etypeClass
+			++ -eGenericType-> egType
+		}
+		
+		++ egType : EGenericType {
+			++ -eClassifier-> etypeClass
+		}
+		
+	}
+	
+	constraints {[
+		eq(referenceName.value, ereference.name)
+		eq(referenceType.value, typeClassGuid.value)
+		stringToNumber(lowerBound.value, ereference.lowerBound);
+		stringToNumber(upperBound.value, ereference.upperBound);
+		stringToBoolean[BB,BF,FB](String, boolean)
+		stringToBoolean(containment.value, ereference.containment);
+		generateGuid[B,F](String)
+		generateGuid(referenceGuid.value)
+	]}
+	
+	operations {
+		bindTypeClassNodeFromReferenceType(referenceType : source/Attribute) : /TGGRuntime/EObjectContainer
+	}
+}

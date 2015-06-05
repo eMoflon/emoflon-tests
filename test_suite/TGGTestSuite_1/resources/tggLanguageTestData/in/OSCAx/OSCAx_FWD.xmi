@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ortssicht:Project xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:Ortssicht="platform:/plugin/Ortssicht/model/Ortssicht.ecore" name="S7_Pro1">
+  <location name="Raum410">
+    <cabinet>
+      <controllingDevice name="Simatic 300-Station" automationProjectName="">
+        <rack noOfSlots="4" orderNo="6ES7 390-1???0-0AA0">
+          <module name="CPU315-2 DP(1)" orderNo="6ES7 315-2AG10-0AB0"/>
+        </rack>
+      </controllingDevice>
+    </cabinet>
+  </location>
+</Ortssicht:Project>

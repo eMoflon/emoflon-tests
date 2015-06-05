@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MUCLanguage:MUCDocument xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:LSCLanguage="platform:/plugin/MBSecMonLanguage/model/MBSecMonLanguage.ecore#//LSCLanguage" xmlns:MUCLanguage="platform:/plugin/MBSecMonLanguage/model/MBSecMonLanguage.ecore#//MUCLanguage"
+    xsi:schemaLocation="platform:/plugin/MBSecMonLanguage/model/MBSecMonLanguage.ecore#//LSCLanguage ../../../../MBSecMonLanguage/model/MBSecMonLanguage.ecore#//LSCLanguage platform:/plugin/MBSecMonLanguage/model/MBSecMonLanguage.ecore#//MUCLanguage ../../../../MBSecMonLanguage/model/MBSecMonLanguage.ecore#//MUCLanguage">
+  <cases xsi:type="MUCLanguage:UseCase" name="lscUsecase1">
+    <lscDocument name="lscDoc2">
+      <lscs xsi:type="LSCLanguage:ExistentialLSC" name="lsc1">
+        <mainchart locations="#//@cases.0/@lscDocument/@lscs.0/@objects.0/@locations.3 #//@cases.0/@lscDocument/@lscs.0/@objects.1/@locations.3"
+            containingLocations="#//@cases.0/@lscDocument/@lscs.0/@objects.0/@locations.0 #//@cases.0/@lscDocument/@lscs.0/@objects.1/@locations.0 #//@cases.0/@lscDocument/@lscs.0/@objects.0/@locations.1 #//@cases.0/@lscDocument/@lscs.0/@objects.1/@locations.1 #//@cases.0/@lscDocument/@lscs.0/@objects.1/@locations.2 #//@cases.0/@lscDocument/@lscs.0/@objects.0/@locations.2">
+          <messages isHot="true" comment="forward" endLocation="#//@cases.0/@lscDocument/@lscs.0/@objects.1/@locations.0"
+              startLocation="#//@cases.0/@lscDocument/@lscs.0/@objects.0/@locations.0"
+              event="forward" isAsync="true"/>
+          <messages comment="coldForward" endLocation="#//@cases.0/@lscDocument/@lscs.0/@objects.1/@locations.1"
+              startLocation="#//@cases.0/@lscDocument/@lscs.0/@objects.0/@locations.1"
+              event="coldForward"/>
+          <messages comment="backward" endLocation="#//@cases.0/@lscDocument/@lscs.0/@objects.0/@locations.2"
+              startLocation="#//@cases.0/@lscDocument/@lscs.0/@objects.1/@locations.2"
+              event="backward" isAsync="true"/>
+        </mainchart>
+        <objects name="instance1">
+          <locations isHot="true" comment="start1" chart="#//@cases.0/@lscDocument/@lscs.0/@mainchart"
+              outgoingMessage="#//@cases.0/@lscDocument/@lscs.0/@mainchart/@messages.0"
+              next="#//@cases.0/@lscDocument/@lscs.0/@objects.1/@locations.0"/>
+          <locations comment="startCold1" chart="#//@cases.0/@lscDocument/@lscs.0/@mainchart"
+              outgoingMessage="#//@cases.0/@lscDocument/@lscs.0/@mainchart/@messages.1"
+              next="#//@cases.0/@lscDocument/@lscs.0/@objects.1/@locations.1"/>
+          <locations comment="end2" incomingMessage="#//@cases.0/@lscDocument/@lscs.0/@mainchart/@messages.2"
+              chart="#//@cases.0/@lscDocument/@lscs.0/@mainchart"/>
+          <locations isHot="true" comment="mainchartLoc1" next="#//@cases.0/@lscDocument/@lscs.0/@objects.1/@locations.3"
+              synchronizableElement="#//@cases.0/@lscDocument/@lscs.0/@mainchart"/>
+        </objects>
+        <objects name="instance2">
+          <locations isHot="true" comment="end1" incomingMessage="#//@cases.0/@lscDocument/@lscs.0/@mainchart/@messages.0"
+              chart="#//@cases.0/@lscDocument/@lscs.0/@mainchart" next="#//@cases.0/@lscDocument/@lscs.0/@objects.0/@locations.1"/>
+          <locations comment="endCold1" incomingMessage="#//@cases.0/@lscDocument/@lscs.0/@mainchart/@messages.1"
+              chart="#//@cases.0/@lscDocument/@lscs.0/@mainchart" next="#//@cases.0/@lscDocument/@lscs.0/@objects.1/@locations.2"/>
+          <locations comment="start2" chart="#//@cases.0/@lscDocument/@lscs.0/@mainchart"
+              outgoingMessage="#//@cases.0/@lscDocument/@lscs.0/@mainchart/@messages.2"
+              next="#//@cases.0/@lscDocument/@lscs.0/@objects.0/@locations.2"/>
+          <locations isHot="true" comment="mainchartLoc2" next="#//@cases.0/@lscDocument/@lscs.0/@objects.0/@locations.0"
+              synchronizableElement="#//@cases.0/@lscDocument/@lscs.0/@mainchart"/>
+        </objects>
+      </lscs>
+    </lscDocument>
+  </cases>
+</MUCLanguage:MUCDocument>

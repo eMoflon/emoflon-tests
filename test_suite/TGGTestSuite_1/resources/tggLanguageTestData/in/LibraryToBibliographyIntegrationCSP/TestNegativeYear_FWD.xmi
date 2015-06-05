@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<LibraryLanguageCSP:Library
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:LibraryLanguageCSP="platform:/plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore"
+    xsi:schemaLocation="platform:/plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore ../../../../../LibraryLanguageCSP/model/LibraryLanguageCSP.ecore"
+    location="Germany">
+  <author book="//@book.0"
+      name="Joshua Bloch"/>
+  <author book="//@book.1"
+      name="Scott Oaks"/>
+  <author book="//@book.2"
+      name="James R. Thompson"/>
+  <book author="//@author.0"
+      title="Effective Java"
+      year="2008"/>
+  <book author="//@author.1"
+      title="Java Security"
+      year="2001"/>
+  <book author="//@author.2"
+      title="Simulation: A Modeler's Approach"
+      year="2009"/>
+</LibraryLanguageCSP:Library>
