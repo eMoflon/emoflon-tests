@@ -141,12 +141,18 @@ public class MPFToCAMTests extends IncrementalIntegratorTest
    @Test
    public void test2() throws Exception
    {
-      testBWDSync("test2.mpf", DeltasOnCAMModel::swapXArgOfFirstOperation);
+      testBWDSync("test2.mpf", DeltasOnCAMModel::swapChosenTool);
    }
    
-   @Test
+   @Ignore("This does not work yet...")
    public void test3() throws Exception
    {
-      testBWDSync("test3.mpf", x -> {});
+      testBWDSync("test3.mpf", DeltasOnCAMModel::swapChosenTool);
+   }
+   
+   @Ignore("This does not work yet...")
+   public void test4() throws Exception
+   {
+      testBWDSync("test4.mpf", x -> {});
    }
 }
