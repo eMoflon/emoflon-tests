@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
-<MocaTree:File xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MocaTree="platform:/plugin/MocaTree/model/MocaTree.ecore" name="test1.cls">
+<MocaTree:File xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MocaTree="platform:/plugin/MocaTree/model/MocaTree.ecore" name="test5.cls">
   <rootNode name="CLS_NODE" stopLineIndex="247">
     <children xsi:type="MocaTree:Node" name="STATEMENT_NODE" stopLineIndex="6">
+      <links name="nextStatement" targets="//@rootNode/@children.7"/>
       <children xsi:type="MocaTree:Node" name="TOOL PATH" stopIndex="8"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" name="FACE_MILLING" startIndex="10" startLineIndex="2" stopIndex="21" stopLineIndex="2"/>
@@ -59,10 +60,12 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="7" name="STATEMENT_NODE" startLineIndex="53" stopLineIndex="53">
+      <links name="nextStatement" targets="//@rootNode/@children.8"/>
       <children xsi:type="MocaTree:Node" name="RAPID" startIndex="238" startLineIndex="53" stopIndex="242" stopLineIndex="53"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1"/>
     </children>
     <children xsi:type="MocaTree:Node" index="8" name="STATEMENT_NODE" startLineIndex="54" stopLineIndex="66">
+      <links name="nextStatement" targets="//@rootNode/@children.10"/>
       <children xsi:type="MocaTree:Node" name="GOTO" startIndex="245" startLineIndex="54" stopIndex="248" stopLineIndex="54"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" index="1" name="-51.6667" startIndex="259" startLineIndex="58" stopIndex="266" stopLineIndex="58"/>
@@ -81,10 +84,12 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="10" name="STATEMENT_NODE" startLineIndex="72" stopLineIndex="72">
+      <links name="nextStatement" targets="//@rootNode/@children.11"/>
       <children xsi:type="MocaTree:Node" name="RAPID" startIndex="324" startLineIndex="72" stopIndex="328" stopLineIndex="72"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1"/>
     </children>
     <children xsi:type="MocaTree:Node" index="11" name="STATEMENT_NODE" startLineIndex="73" stopLineIndex="79">
+      <links name="nextStatement" targets="//@rootNode/@children.13"/>
       <children xsi:type="MocaTree:Node" name="GOTO" startIndex="331" startLineIndex="73" stopIndex="334" stopLineIndex="73"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" name="155.0000" startIndex="336" startLineIndex="75" stopIndex="343" stopLineIndex="75"/>
@@ -100,6 +105,7 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="13" name="STATEMENT_NODE" startLineIndex="85" stopLineIndex="89">
+      <links name="nextStatement" targets="//@rootNode/@children.14"/>
       <children xsi:type="MocaTree:Node" name="FEDRAT" startIndex="379" startLineIndex="85" stopIndex="384" stopLineIndex="85"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" name="MMPM" startIndex="386" startLineIndex="87" stopIndex="389" stopLineIndex="87"/>
@@ -107,6 +113,8 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="14" name="STATEMENT_NODE" startLineIndex="90" stopLineIndex="96">
+      <links name="fedratOption" targets="//@rootNode/@children.13"/>
+      <links name="nextStatement" targets="//@rootNode/@children.15"/>
       <children xsi:type="MocaTree:Node" name="GOTO" startIndex="401" startLineIndex="90" stopIndex="404" stopLineIndex="90"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" name="155.0000" startIndex="406" startLineIndex="92" stopIndex="413" stopLineIndex="92"/>
@@ -115,6 +123,8 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="15" name="STATEMENT_NODE" startLineIndex="97" stopLineIndex="103">
+      <links name="fedratOption" targets="//@rootNode/@children.13"/>
+      <links name="nextStatement" targets="//@rootNode/@children.17"/>
       <children xsi:type="MocaTree:Node" name="GOTO" startIndex="433" startLineIndex="97" stopIndex="436" stopLineIndex="97"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" name="135.0000" startIndex="438" startLineIndex="99" stopIndex="445" stopLineIndex="99"/>
@@ -130,6 +140,8 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="17" name="STATEMENT_NODE" startLineIndex="109" stopLineIndex="115">
+      <links name="fedratOption" targets="//@rootNode/@children.13"/>
+      <links name="nextStatement" targets="//@rootNode/@children.19"/>
       <children xsi:type="MocaTree:Node" name="GOTO" startIndex="481" startLineIndex="109" stopIndex="484" stopLineIndex="109"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" name="-125.0000" startIndex="486" startLineIndex="111" stopIndex="494" stopLineIndex="111"/>
@@ -145,6 +157,8 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="19" name="STATEMENT_NODE" startLineIndex="121" stopLineIndex="127">
+      <links name="fedratOption" targets="//@rootNode/@children.13"/>
+      <links name="nextStatement" targets="//@rootNode/@children.21"/>
       <children xsi:type="MocaTree:Node" name="GOTO" startIndex="530" startLineIndex="121" stopIndex="533" stopLineIndex="121"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" name="-125.0000" startIndex="535" startLineIndex="123" stopIndex="543" stopLineIndex="123"/>
@@ -160,6 +174,8 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="21" name="STATEMENT_NODE" startLineIndex="133" stopLineIndex="139">
+      <links name="fedratOption" targets="//@rootNode/@children.13"/>
+      <links name="nextStatement" targets="//@rootNode/@children.23"/>
       <children xsi:type="MocaTree:Node" name="GOTO" startIndex="579" startLineIndex="133" stopIndex="582" stopLineIndex="133"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" name="135.0000" startIndex="584" startLineIndex="135" stopIndex="591" stopLineIndex="135"/>
@@ -175,6 +191,8 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="23" name="STATEMENT_NODE" startLineIndex="145" stopLineIndex="151">
+      <links name="fedratOption" targets="//@rootNode/@children.13"/>
+      <links name="nextStatement" targets="//@rootNode/@children.25"/>
       <children xsi:type="MocaTree:Node" name="GOTO" startIndex="627" startLineIndex="145" stopIndex="630" stopLineIndex="145"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" name="135.0000" startIndex="632" startLineIndex="147" stopIndex="639" stopLineIndex="147"/>
@@ -190,6 +208,8 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="25" name="STATEMENT_NODE" startLineIndex="157" stopLineIndex="163">
+      <links name="fedratOption" targets="//@rootNode/@children.13"/>
+      <links name="nextStatement" targets="//@rootNode/@children.27"/>
       <children xsi:type="MocaTree:Node" name="GOTO" startIndex="673" startLineIndex="157" stopIndex="676" stopLineIndex="157"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" name="-125.0000" startIndex="678" startLineIndex="159" stopIndex="686" stopLineIndex="159"/>
@@ -205,6 +225,8 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="27" name="STATEMENT_NODE" startLineIndex="169" stopLineIndex="175">
+      <links name="fedratOption" targets="//@rootNode/@children.13"/>
+      <links name="nextStatement" targets="//@rootNode/@children.29"/>
       <children xsi:type="MocaTree:Node" name="GOTO" startIndex="720" startLineIndex="169" stopIndex="723" stopLineIndex="169"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" name="-125.0000" startIndex="725" startLineIndex="171" stopIndex="733" stopLineIndex="171"/>
@@ -220,6 +242,8 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="29" name="STATEMENT_NODE" startLineIndex="181" stopLineIndex="187">
+      <links name="fedratOption" targets="//@rootNode/@children.13"/>
+      <links name="nextStatement" targets="//@rootNode/@children.31"/>
       <children xsi:type="MocaTree:Node" name="GOTO" startIndex="768" startLineIndex="181" stopIndex="771" stopLineIndex="181"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" name="135.0000" startIndex="773" startLineIndex="183" stopIndex="780" stopLineIndex="183"/>
@@ -235,6 +259,8 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="31" name="STATEMENT_NODE" startLineIndex="193" stopLineIndex="199">
+      <links name="fedratOption" targets="//@rootNode/@children.13"/>
+      <links name="nextStatement" targets="//@rootNode/@children.33"/>
       <children xsi:type="MocaTree:Node" name="GOTO" startIndex="815" startLineIndex="193" stopIndex="818" stopLineIndex="193"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" name="135.0000" startIndex="820" startLineIndex="195" stopIndex="827" stopLineIndex="195"/>
@@ -250,6 +276,8 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="33" name="STATEMENT_NODE" startLineIndex="205" stopLineIndex="211">
+      <links name="fedratOption" targets="//@rootNode/@children.13"/>
+      <links name="nextStatement" targets="//@rootNode/@children.35"/>
       <children xsi:type="MocaTree:Node" name="GOTO" startIndex="862" startLineIndex="205" stopIndex="865" stopLineIndex="205"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" name="-125.0000" startIndex="867" startLineIndex="207" stopIndex="875" stopLineIndex="207"/>
@@ -265,6 +293,8 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="35" name="STATEMENT_NODE" startLineIndex="217" stopLineIndex="223">
+      <links name="fedratOption" targets="//@rootNode/@children.13"/>
+      <links name="nextStatement" targets="//@rootNode/@children.37"/>
       <children xsi:type="MocaTree:Node" name="GOTO" startIndex="910" startLineIndex="217" stopIndex="913" stopLineIndex="217"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1">
         <children xsi:type="MocaTree:Node" name="-145.0000" startIndex="915" startLineIndex="219" stopIndex="923" stopLineIndex="219"/>
@@ -280,6 +310,7 @@
       </children>
     </children>
     <children xsi:type="MocaTree:Node" index="37" name="STATEMENT_NODE" startLineIndex="229" stopLineIndex="229">
+      <links name="nextStatement" targets="//@rootNode/@children.38"/>
       <children xsi:type="MocaTree:Node" name="RAPID" startIndex="959" startLineIndex="229" stopIndex="963" stopLineIndex="229"/>
       <children xsi:type="MocaTree:Node" index="1" name="ARGS" startLineIndex="-1" stopLineIndex="-1"/>
     </children>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MocaTree:File xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MocaTree="platform:/plugin/MocaTree/model/MocaTree.ecore" name="test2.mpf">
+  <rootNode name="MPF_NODE">
+    <children xsi:type="MocaTree:Node" name="IGNORE_NODE">
+      <children xsi:type="MocaTree:Node" name=";First Tool"/>
+    </children>
+    <children xsi:type="MocaTree:Node" index="1" name="TOOL_CHANGE">
+      <children xsi:type="MocaTree:Node" name="F_D40" startIndex="1" stopIndex="9"/>
+    </children>
+    <children xsi:type="MocaTree:Node" index="2" name="MOVE" stopLineIndex="7">
+      <links name="previousMove" targets="//@rootNode/@children.1"/>
+      <children xsi:type="MocaTree:Node" index="3" name="G0" startIndex="1" stopIndex="2">
+        <children xsi:type="MocaTree:Node" name="S0 D0 M3" startIndex="24" startLineIndex="7" stopIndex="31" stopLineIndex="7"/>
+      </children>
+      <children xsi:type="MocaTree:Node" index="-3" name="X">
+        <children xsi:type="MocaTree:Node" name="42."/>
+      </children>
+      <children xsi:type="MocaTree:Node" index="1" name="Y">
+        <children xsi:type="MocaTree:Node" name="-51.667"/>
+      </children>
+      <children xsi:type="MocaTree:Node" index="2" name="Z">
+        <children xsi:type="MocaTree:Node" name="38."/>
+      </children>
+    </children>
+    <children xsi:type="MocaTree:Node" index="3" name="MOVE" stopLineIndex="1">
+      <links name="previousMove" targets="//@rootNode/@children.2"/>
+      <links name="previousGNode" targets="//@rootNode/@children.2/@children.0"/>
+      <children xsi:type="MocaTree:Node" name="Z" startIndex="1" stopIndex="1" stopLineIndex="1">
+        <children xsi:type="MocaTree:Node" name="28." startIndex="2" startLineIndex="1" stopIndex="4" stopLineIndex="1"/>
+      </children>
+    </children>
+    <children xsi:type="MocaTree:Node" index="4" name="MOVE" stopLineIndex="4">
+      <links name="previousMove" targets="//@rootNode/@children.3"/>
+      <children xsi:type="MocaTree:Node" name="Z" startIndex="4" startLineIndex="1" stopIndex="4" stopLineIndex="2">
+        <children xsi:type="MocaTree:Node" name="25." startIndex="5" startLineIndex="2" stopIndex="7" stopLineIndex="2"/>
+      </children>
+      <children xsi:type="MocaTree:Node" index="1" name="G1" startIndex="1" stopIndex="2">
+        <children xsi:type="MocaTree:Node" name="250." startIndex="13" startLineIndex="4" stopIndex="16" stopLineIndex="4"/>
+      </children>
+    </children>
+    <children xsi:type="MocaTree:Node" index="5" name="MOVE" stopLineIndex="1">
+      <links name="previousMove" targets="//@rootNode/@children.4"/>
+      <links name="previousGNode" targets="//@rootNode/@children.4/@children.1"/>
+      <children xsi:type="MocaTree:Node" name="X" startIndex="1" stopIndex="1" stopLineIndex="1">
+        <children xsi:type="MocaTree:Node" name="135." startIndex="2" startLineIndex="1" stopIndex="5" stopLineIndex="1"/>
+      </children>
+    </children>
+    <children xsi:type="MocaTree:Node" index="6" name="IGNORE_NODE">
+      <children xsi:type="MocaTree:Node" name=";Cutting"/>
+    </children>
+    <children xsi:type="MocaTree:Node" index="7" name="MOVE" stopLineIndex="1">
+      <links name="previousMove" targets="//@rootNode/@children.5"/>
+      <links name="previousGNode" targets="//@rootNode/@children.4/@children.1"/>
+      <children xsi:type="MocaTree:Node" name="X" startIndex="1" stopIndex="1" stopLineIndex="1">
+        <children xsi:type="MocaTree:Node" name="-125." startIndex="2" startLineIndex="1" stopIndex="6" stopLineIndex="1"/>
+      </children>
+    </children>
+    <children xsi:type="MocaTree:Node" index="8" name="MOVE" stopLineIndex="1">
+      <links name="previousMove" targets="//@rootNode/@children.7"/>
+      <links name="previousGNode" targets="//@rootNode/@children.4/@children.1"/>
+      <children xsi:type="MocaTree:Node" name="Y" startIndex="1" stopIndex="1" stopLineIndex="1">
+        <children xsi:type="MocaTree:Node" name="-23.333" startIndex="2" startLineIndex="1" stopIndex="8" stopLineIndex="1"/>
+      </children>
+    </children>
+  </rootNode>
+</MocaTree:File>

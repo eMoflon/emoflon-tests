@@ -10,4 +10,5 @@ Require-Bundle: org.eclipse.emf.ecore;bundle-version="2.10.1",
  org.moflon.testframework;bundle-version="1.0.0",
  MocaTree;bundle-version="1.0.0",
  TGGLanguage;bundle-version="1.0.0",
- Moca;bundle-version="1.0.0"
+ Moca;bundle-version="1.0.0",
+ MpfToCAMLanguageTGG
