@@ -5,7 +5,7 @@
       <children xsi:type="MocaTree:Node" name=";First Tool"/>
     </children>
     <children xsi:type="MocaTree:Node" index="1" name="TOOL_CHANGE">
-      <children xsi:type="MocaTree:Node" name="F_D40" startIndex="1" stopIndex="9"/>
+      <children xsi:type="MocaTree:Node" name="F_D42"/>
     </children>
     <children xsi:type="MocaTree:Node" index="2" name="MOVE" stopLineIndex="7">
       <links name="previousMove" targets="//@rootNode/@children.1"/>
