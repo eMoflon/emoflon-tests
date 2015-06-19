@@ -1,4 +1,0 @@
-N10 ;First Tool
-N20 T="F_D42"
-N30 G0 X155. Y-51.667 Z38. S0 D0 M3
-N40 Z28.
