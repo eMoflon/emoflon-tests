@@ -14,10 +14,10 @@ import BibliographyLanguage.BibliographyLanguagePackage;
 import LibraryLanguage.LibraryLanguagePackage;
 import LibraryToBibliographyIntegration.LibraryToBibliographyIntegrationPackage;
 
-public class TggBasedTest extends IntegratorTest {
+public class ForwardBackwardTrafo extends IntegratorTest {
 	public boolean enforceDoubleBooktitlePerTest;
 
-	public TggBasedTest() {
+	public ForwardBackwardTrafo() {
 		super(LibraryLanguagePackage.eINSTANCE,
 				LibraryToBibliographyIntegrationPackage.eINSTANCE,
 				BibliographyLanguagePackage.eINSTANCE);
