@@ -68,7 +68,7 @@ public class SimpleEcoreToHTMLTest_Synch extends IncrementalIntegratorTest
 
 	   helper.integrateForward();
 
-      helper.setChangeTrg(root -> {
+       helper.setChangeTrg(root -> {
          final DocumentFileTrgDelta delta = DeltaCreatorFactory.eINSTANCE.createDocumentFileTrgDelta();
 
          final Folder rootAsFolder = (Folder) root;
@@ -79,8 +79,7 @@ public class SimpleEcoreToHTMLTest_Synch extends IncrementalIntegratorTest
       helper.integrateBackward();
 
       saveOutput("TGGLanguageDocumentRootFile_BWD");
-      compareWithExpected("TGGLanguageDocumentRootFile_BWD", ApplicationTypes.BACKWARD,
-				helper.getSrc());
+      compareWithExpected("TGGLanguageDocumentRootFile_BWD", ApplicationTypes.BACKWARD, helper.getSrc());
    }
 
 
