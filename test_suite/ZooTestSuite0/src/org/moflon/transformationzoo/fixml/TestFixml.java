@@ -65,6 +65,7 @@ public class TestFixml extends IntegratorTest {
 	}
 
 	@Test
+	@Ignore("takes too long")
 	public void test4_BWD() {
 		integrate("test4_BWD");
 	}
