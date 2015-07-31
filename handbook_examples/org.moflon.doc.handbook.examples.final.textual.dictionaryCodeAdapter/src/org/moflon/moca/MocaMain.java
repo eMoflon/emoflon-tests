@@ -1,7 +1,7 @@
 package org.moflon.moca;
 import java.io.File;
 import org.apache.log4j.BasicConfigurator;
-import org.moflon.util.eMoflonEMFUtil;
+import org.moflon.core.utilities.eMoflonEMFUtil;
 import Moca.CodeAdapter;
 import Moca.MocaFactory;
 import MocaTree.Folder;
