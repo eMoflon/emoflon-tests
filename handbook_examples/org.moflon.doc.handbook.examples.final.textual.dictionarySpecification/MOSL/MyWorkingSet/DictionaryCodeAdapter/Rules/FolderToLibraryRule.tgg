@@ -1,0 +1,18 @@
+rule FolderToLibraryRule {
+	source {
+		++ inputFolder : Folder
+	}
+	
+	correspondence {
+		++ inputFolder <- folderToLibrary : FolderToLibrary -> library
+	}
+	
+	target {
+		++ library : Library
+	
+	}
+	
+	constraints {
+		eq(inputFolder.name, library.name)
+	}
+}

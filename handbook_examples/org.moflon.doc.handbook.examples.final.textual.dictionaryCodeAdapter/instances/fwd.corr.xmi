@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="ASCII"?>
+<TGGRuntime:CorrespondenceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DictionaryCodeAdapter="http://www.moflon.org.DictionaryCodeAdapter" xmlns:TGGRuntime="http://www.moflon.org.TGGRuntime">
+  <correspondences xsi:type="DictionaryCodeAdapter:FolderToLibrary">
+    <source href="fwd.src.xmi#/"/>
+    <target href="fwd.trg.xmi#/"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:FolderToShelf">
+    <source href="fwd.src.xmi#//@subFolder.0"/>
+    <target href="fwd.trg.xmi#//@shelf.0"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToDictionary">
+    <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+    <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToAuthor">
+    <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.1"/>
+    <target href="fwd.trg.xmi#//@author.0"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2"/>
+    <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.0"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3"/>
+    <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.1"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4"/>
+    <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.2"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5"/>
+    <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.3"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6"/>
+    <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.4"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7"/>
+    <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.5"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8"/>
+    <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.6"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9"/>
+    <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.7"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10"/>
+    <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.8"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11"/>
+    <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.9"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12"/>
+    <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.10"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:FolderToShelf">
+    <source href="fwd.src.xmi#//@subFolder.1"/>
+    <target href="fwd.trg.xmi#//@shelf.1"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToDictionary">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToAuthor">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.1"/>
+    <target href="fwd.trg.xmi#//@author.1"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.0"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.1"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.2"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.3"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.4"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.5"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.6"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.7"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.8"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.9"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.10"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToDictionary">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToAuthor">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.1"/>
+    <target href="fwd.trg.xmi#//@author.1"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.0"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.1"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.2"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.3"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.4"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.5"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.6"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.7"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.8"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.9"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToDictionary">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.2"/>
+  </correspondences>
+  <correspondences xsi:type="DictionaryCodeAdapter:NodeToEntry">
+    <source href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1"/>
+    <target href="fwd.trg.xmi#//@shelf.1/@dictionary.2/@entry.0"/>
+  </correspondences>
+  <source href="fwd.src.xmi#/"/>
+  <target href="fwd.trg.xmi#/"/>
+  <consistencyTable>
+    <entry correspondenceNodes="//@correspondences.0">
+      <targetNodes href="fwd.trg.xmi#/"/>
+      <sourceNodes href="fwd.src.xmi#/"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.0" targetEdges="//@targetEdgeTable/@edge.0" correspondenceNodes="//@correspondences.1">
+      <targetNodes href="fwd.trg.xmi#//@shelf.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.1 //@sourceEdgeTable/@edge.2 //@sourceEdgeTable/@edge.3" targetEdges="//@targetEdgeTable/@edge.1" correspondenceNodes="//@correspondences.2">
+      <targetNodes href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.4" targetEdges="//@targetEdgeTable/@edge.2 //@targetEdgeTable/@edge.3" correspondenceNodes="//@correspondences.3">
+      <targetNodes href="fwd.trg.xmi#//@author.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.1"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.5 //@sourceEdgeTable/@edge.6 //@sourceEdgeTable/@edge.7" targetEdges="//@targetEdgeTable/@edge.4" correspondenceNodes="//@correspondences.4">
+      <targetNodes href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.8 //@sourceEdgeTable/@edge.9 //@sourceEdgeTable/@edge.10" targetEdges="//@targetEdgeTable/@edge.5" correspondenceNodes="//@correspondences.5">
+      <targetNodes href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.11 //@sourceEdgeTable/@edge.12 //@sourceEdgeTable/@edge.13" targetEdges="//@targetEdgeTable/@edge.6" correspondenceNodes="//@correspondences.6">
+      <targetNodes href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.2"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.14 //@sourceEdgeTable/@edge.15 //@sourceEdgeTable/@edge.16" targetEdges="//@targetEdgeTable/@edge.7" correspondenceNodes="//@correspondences.7">
+      <targetNodes href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.3"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.17 //@sourceEdgeTable/@edge.18 //@sourceEdgeTable/@edge.19" targetEdges="//@targetEdgeTable/@edge.8" correspondenceNodes="//@correspondences.8">
+      <targetNodes href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.4"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.20 //@sourceEdgeTable/@edge.21 //@sourceEdgeTable/@edge.22" targetEdges="//@targetEdgeTable/@edge.9" correspondenceNodes="//@correspondences.9">
+      <targetNodes href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.5"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.23 //@sourceEdgeTable/@edge.24 //@sourceEdgeTable/@edge.25" targetEdges="//@targetEdgeTable/@edge.10" correspondenceNodes="//@correspondences.10">
+      <targetNodes href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.6"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.26 //@sourceEdgeTable/@edge.27 //@sourceEdgeTable/@edge.28" targetEdges="//@targetEdgeTable/@edge.11" correspondenceNodes="//@correspondences.11">
+      <targetNodes href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.7"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.29 //@sourceEdgeTable/@edge.30 //@sourceEdgeTable/@edge.31" targetEdges="//@targetEdgeTable/@edge.12" correspondenceNodes="//@correspondences.12">
+      <targetNodes href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.8"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.32 //@sourceEdgeTable/@edge.33 //@sourceEdgeTable/@edge.34" targetEdges="//@targetEdgeTable/@edge.13" correspondenceNodes="//@correspondences.13">
+      <targetNodes href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.9"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.35 //@sourceEdgeTable/@edge.36 //@sourceEdgeTable/@edge.37" targetEdges="//@targetEdgeTable/@edge.14" correspondenceNodes="//@correspondences.14">
+      <targetNodes href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.10"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.38" targetEdges="//@targetEdgeTable/@edge.15" correspondenceNodes="//@correspondences.15">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.39 //@sourceEdgeTable/@edge.40 //@sourceEdgeTable/@edge.41" targetEdges="//@targetEdgeTable/@edge.16" correspondenceNodes="//@correspondences.16">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.42" targetEdges="//@targetEdgeTable/@edge.17 //@targetEdgeTable/@edge.18" correspondenceNodes="//@correspondences.17">
+      <targetNodes href="fwd.trg.xmi#//@author.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.1"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.43 //@sourceEdgeTable/@edge.44 //@sourceEdgeTable/@edge.45" targetEdges="//@targetEdgeTable/@edge.19" correspondenceNodes="//@correspondences.18">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.46 //@sourceEdgeTable/@edge.47 //@sourceEdgeTable/@edge.48" targetEdges="//@targetEdgeTable/@edge.20" correspondenceNodes="//@correspondences.19">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.49 //@sourceEdgeTable/@edge.50 //@sourceEdgeTable/@edge.51" targetEdges="//@targetEdgeTable/@edge.21" correspondenceNodes="//@correspondences.20">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.2"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.52 //@sourceEdgeTable/@edge.53 //@sourceEdgeTable/@edge.54" targetEdges="//@targetEdgeTable/@edge.22" correspondenceNodes="//@correspondences.21">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.3"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.55 //@sourceEdgeTable/@edge.56 //@sourceEdgeTable/@edge.57" targetEdges="//@targetEdgeTable/@edge.23" correspondenceNodes="//@correspondences.22">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.4"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.58 //@sourceEdgeTable/@edge.59 //@sourceEdgeTable/@edge.60" targetEdges="//@targetEdgeTable/@edge.24" correspondenceNodes="//@correspondences.23">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.5"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.61 //@sourceEdgeTable/@edge.62 //@sourceEdgeTable/@edge.63" targetEdges="//@targetEdgeTable/@edge.25" correspondenceNodes="//@correspondences.24">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.6"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.64 //@sourceEdgeTable/@edge.65 //@sourceEdgeTable/@edge.66" targetEdges="//@targetEdgeTable/@edge.26" correspondenceNodes="//@correspondences.25">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.7"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.67 //@sourceEdgeTable/@edge.68 //@sourceEdgeTable/@edge.69" targetEdges="//@targetEdgeTable/@edge.27" correspondenceNodes="//@correspondences.26">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.8"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.70 //@sourceEdgeTable/@edge.71 //@sourceEdgeTable/@edge.72" targetEdges="//@targetEdgeTable/@edge.28" correspondenceNodes="//@correspondences.27">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.9"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.73 //@sourceEdgeTable/@edge.74 //@sourceEdgeTable/@edge.75" targetEdges="//@targetEdgeTable/@edge.29" correspondenceNodes="//@correspondences.28">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.10"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.76 //@sourceEdgeTable/@edge.77 //@sourceEdgeTable/@edge.78" targetEdges="//@targetEdgeTable/@edge.30" correspondenceNodes="//@correspondences.29">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.79" targetEdges="//@targetEdgeTable/@edge.31" correspondenceNodes="//@correspondences.30">
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.1"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.80 //@sourceEdgeTable/@edge.81 //@sourceEdgeTable/@edge.82" targetEdges="//@targetEdgeTable/@edge.32" correspondenceNodes="//@correspondences.31">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.83 //@sourceEdgeTable/@edge.84 //@sourceEdgeTable/@edge.85" targetEdges="//@targetEdgeTable/@edge.33" correspondenceNodes="//@correspondences.32">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.86 //@sourceEdgeTable/@edge.87 //@sourceEdgeTable/@edge.88" targetEdges="//@targetEdgeTable/@edge.34" correspondenceNodes="//@correspondences.33">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.2"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.89 //@sourceEdgeTable/@edge.90 //@sourceEdgeTable/@edge.91" targetEdges="//@targetEdgeTable/@edge.35" correspondenceNodes="//@correspondences.34">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.3"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.92 //@sourceEdgeTable/@edge.93 //@sourceEdgeTable/@edge.94" targetEdges="//@targetEdgeTable/@edge.36" correspondenceNodes="//@correspondences.35">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.4"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.95 //@sourceEdgeTable/@edge.96 //@sourceEdgeTable/@edge.97" targetEdges="//@targetEdgeTable/@edge.37" correspondenceNodes="//@correspondences.36">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.5"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.98 //@sourceEdgeTable/@edge.99 //@sourceEdgeTable/@edge.100" targetEdges="//@targetEdgeTable/@edge.38" correspondenceNodes="//@correspondences.37">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.6"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.101 //@sourceEdgeTable/@edge.102 //@sourceEdgeTable/@edge.103" targetEdges="//@targetEdgeTable/@edge.39" correspondenceNodes="//@correspondences.38">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.7"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.104 //@sourceEdgeTable/@edge.105 //@sourceEdgeTable/@edge.106" targetEdges="//@targetEdgeTable/@edge.40" correspondenceNodes="//@correspondences.39">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.8"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.107 //@sourceEdgeTable/@edge.108 //@sourceEdgeTable/@edge.109" targetEdges="//@targetEdgeTable/@edge.41" correspondenceNodes="//@correspondences.40">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.9"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.110 //@sourceEdgeTable/@edge.111 //@sourceEdgeTable/@edge.112" targetEdges="//@targetEdgeTable/@edge.42" correspondenceNodes="//@correspondences.41">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.2"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.2"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.113 //@sourceEdgeTable/@edge.114 //@sourceEdgeTable/@edge.115" targetEdges="//@targetEdgeTable/@edge.43" correspondenceNodes="//@correspondences.42">
+      <targetNodes href="fwd.trg.xmi#//@shelf.1/@dictionary.2/@entry.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1/@children.1"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1/@children.0"/>
+      <sourceNodes href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1"/>
+    </entry>
+  </consistencyTable>
+  <targetEdgeTable>
+    <edge name="shelf">
+      <src href="fwd.trg.xmi#/"/>
+      <trg href="fwd.trg.xmi#//@shelf.0"/>
+    </edge>
+    <edge name="shelf">
+      <src href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.0"/>
+    </edge>
+    <edge name="library">
+      <src href="fwd.trg.xmi#//@author.0"/>
+      <trg href="fwd.trg.xmi#/"/>
+    </edge>
+    <edge name="dictionary">
+      <src href="fwd.trg.xmi#//@author.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.0"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.1"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.2"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.3"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.4"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.5"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.6"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.7"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.8"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.9"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.10"/>
+    </edge>
+    <edge name="shelf">
+      <src href="fwd.trg.xmi#/"/>
+      <trg href="fwd.trg.xmi#//@shelf.1"/>
+    </edge>
+    <edge name="shelf">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.1"/>
+    </edge>
+    <edge name="library">
+      <src href="fwd.trg.xmi#//@author.1"/>
+      <trg href="fwd.trg.xmi#/"/>
+    </edge>
+    <edge name="dictionary">
+      <src href="fwd.trg.xmi#//@author.1"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.0"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.1"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.2"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.3"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.4"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.5"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.6"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.7"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.8"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.9"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.10"/>
+    </edge>
+    <edge name="shelf">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <trg href="fwd.trg.xmi#//@shelf.1"/>
+    </edge>
+    <edge name="dictionary">
+      <src href="fwd.trg.xmi#//@author.1"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.0"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.1"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.2"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.3"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.4"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.5"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.6"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.7"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.8"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.9"/>
+    </edge>
+    <edge name="shelf">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.2"/>
+      <trg href="fwd.trg.xmi#//@shelf.1"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#//@shelf.1/@dictionary.2"/>
+      <trg href="fwd.trg.xmi#//@shelf.1/@dictionary.2/@entry.0"/>
+    </edge>
+  </targetEdgeTable>
+  <sourceEdgeTable>
+    <edge name="subFolder">
+      <src href="fwd.src.xmi#/"/>
+      <trg href="fwd.src.xmi#//@subFolder.0"/>
+    </edge>
+    <edge name="rootNode">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.0"/>
+    </edge>
+    <edge name="folder">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0"/>
+      <trg href="fwd.src.xmi#//@subFolder.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12"/>
+      <trg href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12/@children.1"/>
+    </edge>
+    <edge name="subFolder">
+      <src href="fwd.src.xmi#/"/>
+      <trg href="fwd.src.xmi#//@subFolder.1"/>
+    </edge>
+    <edge name="rootNode">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.0"/>
+    </edge>
+    <edge name="folder">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0"/>
+      <trg href="fwd.src.xmi#//@subFolder.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12/@children.1"/>
+    </edge>
+    <edge name="rootNode">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.0"/>
+    </edge>
+    <edge name="folder">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1"/>
+      <trg href="fwd.src.xmi#//@subFolder.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11/@children.1"/>
+    </edge>
+    <edge name="rootNode">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.2"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.0"/>
+    </edge>
+    <edge name="folder">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.2"/>
+      <trg href="fwd.src.xmi#//@subFolder.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1/@children.0"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1"/>
+    </edge>
+    <edge name="children">
+      <src href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1"/>
+      <trg href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1/@children.1"/>
+    </edge>
+  </sourceEdgeTable>
+</TGGRuntime:CorrespondenceModel>

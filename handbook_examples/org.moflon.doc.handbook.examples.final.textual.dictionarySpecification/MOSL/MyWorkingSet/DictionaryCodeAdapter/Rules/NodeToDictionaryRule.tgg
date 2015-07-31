@@ -1,0 +1,40 @@
+rule NodeToDictionaryRule {
+	source {
+	
+		shelfFolder : Folder
+		
+		++ dictionaryFile : File { 
+			++ -folder-> shelfFolder
+			++ -rootNode-> dictionaryNode
+		}
+		
+		++ dictionaryNode : Node { 
+			dictionaryNode.name := "DICTIONARY"
+			++ -children-> titleNode
+		}
+		
+		++ titleNode : Node { 
+			titleNode.index := 0
+		}
+	}
+	
+	correspondence {
+		shelfFolder <- folderToShelf : FolderToShelf -> shelf
+		
+		++ dictionaryNode <- nodeToDictionary : NodeToDictionary -> dictionary
+	}
+	
+	target {
+		shelf : Shelf
+		
+		++ dictionary : Dictionary { 
+			++ -shelf-> shelf
+		}
+	
+	}
+	
+	constraints {
+		addSuffix(titleNode.name, ".dictionary", dictionaryFile.name)
+		addPrefix(shelfFolder.name, titleNode.name, dictionary.title)
+	}
+}

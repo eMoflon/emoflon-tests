@@ -1,0 +1,18 @@
+pattern buildPartitions {
+	
+	@this : Box {
+		-containedPartition-> onePartition
+	}
+	
+	! onePartition : Partition
+	
+	++ firstPartition : Partition {
+		-box-> this
+		-next-> lastPartition
+	}
+	
+	++ lastPartition : Partition {
+		-box-> this
+		-previous-> firstPartition
+	}	
+}

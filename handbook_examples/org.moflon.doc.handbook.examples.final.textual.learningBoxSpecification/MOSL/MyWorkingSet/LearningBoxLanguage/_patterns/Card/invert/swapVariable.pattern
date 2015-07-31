@@ -1,0 +1,9 @@
+pattern swapVariable {
+	
+	@temp : Card
+	
+	@this : Card {
+		this.back := temp.back
+		this.face := temp.face
+	}
+}
