@@ -1,0 +1,8 @@
+opposites {
+	// Linking two unidirectional references together so they become a single, Bidirectional reference
+	
+	containedPartition : Box <-> box : Partition
+	
+	card : Partition <-> cardContainer : Card
+	
+}
