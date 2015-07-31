@@ -105,14 +105,14 @@ public class LeitnersBoxController {
    {
       // Grab specific card selected in JFrame
       Partition containerPartition = box.getContainedPartition().get(partIndex);
-      Card toBeChecked = box.getContainedPartition().get(partIndex).getCard().get(cardIndex);
+      Card cardToBeChecked = box.getContainedPartition().get(partIndex).getCard().get(cardIndex);
 
       // Prompt user for guess against card
       String guess = view.getUserGuess();
       System.out.println("Your guess: " + guess);
 
       // TODO: Part III; User function implemented with SDMs. Uncomment the statement below to activate
-      containerPartition.check(guess, toBeChecked);
+      containerPartition.check(cardToBeChecked, guess);
 
       // Save box.xmi instance and refresh GUI
       view.refreshGUI();
