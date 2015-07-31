@@ -2,7 +2,7 @@
 <LearningBoxLanguage:Box
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:LearningBoxLanguage="http://www.moflon.org.LearningBoxLanguage"
+    xmlns:LearningBoxLanguage="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore"
     name="English Numbers">
   <containedPartition
       next="//@containedPartition.3"

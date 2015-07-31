@@ -11,11 +11,11 @@ public class IndexToLevel extends TGGConstraintImpl {
 	private List<String> levels = Arrays.asList(new String[] {"master",
 			"advanced", "beginner" });
 	
-	public void solve(Variable<Number> var_0, Variable<String> var_1){
+	public void solve(Variable var_0, Variable var_1){
     	
 		
-		int index = var_0.getValue().intValue();
-		String level = var_1.getValue();
+		int index = ((Number) var_0.getValue()).intValue();
+		String level = (String) var_1.getValue();  
 
 		String bindingStates = getBindingStates(var_0, var_1);
     	
