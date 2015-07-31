@@ -1,0 +1,8 @@
+pattern forAllCards {
+
+	@partition : Partition {
+		-card-> card
+	}
+
+	card : Card
+}

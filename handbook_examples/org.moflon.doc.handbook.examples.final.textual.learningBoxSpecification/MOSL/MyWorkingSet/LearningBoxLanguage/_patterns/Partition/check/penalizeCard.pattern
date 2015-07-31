@@ -1,0 +1,14 @@
+pattern penalizeCard {
+	
+	@card : Card {
+		-- -cardContainer-> this
+		++ -cardContainer-> previousPartition
+	}
+	
+	@this : Partition {
+		-previous-> previousPartition
+	}
+	
+	previousPartition : Partition
+
+}
