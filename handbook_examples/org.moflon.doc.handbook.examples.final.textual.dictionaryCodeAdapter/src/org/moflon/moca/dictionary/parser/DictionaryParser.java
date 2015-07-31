@@ -1,4 +1,4 @@
-// $ANTLR 3.5.2 C:\\Users\\rkluge\\Documents\\data\\workspaces\\eMoflon-runtime-workspaces\\emoflon-workspace_temp\\DictionaryCodeAdapter\\src\\org\\moflon\\moca\\dictionary\\parser\\DictionaryParser.g 2015-07-31 10:50:58
+// $ANTLR 3.5.2 C:\\Users\\rkluge\\Documents\\data\\workspaces\\eMoflon-runtime-workspaces\\emoflon-workspace_temp\\DictionaryCodeAdapter\\src\\org\\moflon\\moca\\dictionary\\parser\\DictionaryParser.g 2015-07-31 13:05:16
 
 package org.moflon.moca.dictionary.parser; 
 import java.util.Collection;
