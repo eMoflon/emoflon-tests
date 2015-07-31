@@ -1,0 +1,1688 @@
+<?xml version="1.0" encoding="ASCII"?>
+<protocol:TranslationProtocol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:protocol="http://www.moflon.org.TGGLanguage.algorithm.protocol">
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.FolderImpl@5e7ff186 (index: 0, name: english)">
+    <entryNode href="fwd.src.xmi#//@subFolder.0"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:InappropriateCandidate" rule="FolderToLibraryRule" isAppropriateName="isApplicable_FWD" DECviolatingEdge="MocaTree.impl.FolderImpl@2d656f92 (index: 0, name: myLibrary) --subFolder-> MocaTree.impl.FolderImpl@5e7ff186 (index: 0, name: english)" reason="DEC_VIOLATED"/>
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllShelfRule" isAppropriateName="isAppropriate_FWD_Folder_2"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:TranslateContextElement" forRule="ForAllShelfRule">
+    <contextElement href="fwd.src.xmi#/"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:TranslationProtocol" parentProtocol="/">
+    <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.FolderImpl@2d656f92 (index: 0, name: myLibrary)">
+      <entryNode href="fwd.src.xmi#/"/>
+    </translationstep>
+    <translationstep xsi:type="protocol:CandidateProtocol">
+      <candidates xsi:type="protocol:AppropriateCandidate" rule="FolderToLibraryRule" isAppropriateName="isAppropriate_FWD_Folder_0"/>
+      <candidates xsi:type="protocol:InappropriateCandidate" rule="ForAllShelfRule" isAppropriateName="isAppropriate_FWD_Folder_2"/>
+    </translationstep>
+    <translationstep xsi:type="protocol:PerformOperation" name="FolderToLibraryRule : isApplicable_FWD">
+      <entryNode href="fwd.src.xmi#/"/>
+    </translationstep>
+    <translationstep xsi:type="protocol:PerformOperationSuccessful" name="FolderToLibraryRule : perform_FWD">
+      <translatedelements href="fwd.src.xmi#/"/>
+      <createdElements href="fwd.trg.xmi#/"/>
+      <createdElements href="fwd.corr.xmi#//@correspondences.0"/>
+      <createdEdges name="source">
+        <source href="fwd.corr.xmi#//@correspondences.0"/>
+        <target href="fwd.src.xmi#/"/>
+      </createdEdges>
+      <createdEdges name="target">
+        <source href="fwd.corr.xmi#//@correspondences.0"/>
+        <target href="fwd.trg.xmi#/"/>
+      </createdEdges>
+    </translationstep>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllShelfRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.0"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllShelfRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.0"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.0"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.1"/>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.1"/>
+      <target href="fwd.src.xmi#//@subFolder.0"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.1"/>
+      <target href="fwd.trg.xmi#//@shelf.0"/>
+    </createdEdges>
+    <createdEdges name="shelf">
+      <source href="fwd.trg.xmi#/"/>
+      <target href="fwd.trg.xmi#//@shelf.0"/>
+    </createdEdges>
+    <translatedEdges name="subFolder">
+      <source href="fwd.src.xmi#/"/>
+      <target href="fwd.src.xmi#//@subFolder.0"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.FileImpl@21c9c4e2 (index: 0, name: numbers1-10.dictionary)">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="NodeToDictionaryRule" isAppropriateName="isAppropriate_FWD_File_0"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="NodeToDictionaryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="NodeToDictionaryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.2"/>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.2"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+    </createdEdges>
+    <createdEdges name="shelf">
+      <source href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.0"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.2"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+    </createdEdges>
+    <translatedEdges name="rootNode">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="folder">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0"/>
+      <target href="fwd.src.xmi#//@subFolder.0"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@4b658b53 (index: 1, name: contact@langenscheidt.de) (startIndex: 29, startLineIndex: 2, stopIndex: 54, stopLineIndex: 3)">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:InappropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_5"/>
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ExistingAuthorRule" isAppropriateName="isAppropriate_FWD_Node_1"/>
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="NewAuthorRule" isAppropriateName="isAppropriate_FWD_Node_7"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ExistingAuthorRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="NewAuthorRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="NewAuthorRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.1"/>
+    <createdElements href="fwd.trg.xmi#//@author.0"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.3"/>
+    <createdEdges name="library">
+      <source href="fwd.trg.xmi#//@author.0"/>
+      <target href="fwd.trg.xmi#/"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.3"/>
+      <target href="fwd.trg.xmi#//@author.0"/>
+    </createdEdges>
+    <createdEdges name="dictionary">
+      <source href="fwd.trg.xmi#//@author.0"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.3"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.1"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@779e1cd0 (index: 2, name: ENTRY) (startIndex: 0, startLineIndex: 5, stopIndex: 0, stopLineIndex: 7)">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.0"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.4"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.0"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.4"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.0"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.4"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.2/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@13746781 (index: 3, name: ENTRY) (startIndex: 0, startLineIndex: 8, stopIndex: 0, stopLineIndex: 10)">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.1"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.5"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.1"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.5"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.1"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.5"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.3/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@1f20a0ab (index: 4, name: ENTRY) (startIndex: 0, startLineIndex: 11, stopIndex: 0, stopLineIndex: 13)">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.2"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.6"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.2"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.6"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.2"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.6"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.4/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@605d3821 (index: 5, name: ENTRY) (startIndex: 0, startLineIndex: 14, stopIndex: 0, stopLineIndex: 16)">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.3"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.7"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.3"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.7"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.3"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.7"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.5/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@1921f179 (index: 6, name: ENTRY) (startIndex: 0, startLineIndex: 17, stopIndex: 0, stopLineIndex: 19)">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.4"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.8"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.4"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.8"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.4"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.8"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.6/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@2c7f8123 (index: 7, name: ENTRY) (startIndex: 0, startLineIndex: 20, stopIndex: 0, stopLineIndex: 22)">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.5"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.9"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.5"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.9"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.5"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.9"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.7/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@747c75e6 (index: 8, name: ENTRY) (startIndex: 0, startLineIndex: 23, stopIndex: 0, stopLineIndex: 25)">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.6"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.10"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.6"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.10"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.6"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.10"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.8/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@3c24f7a0 (index: 9, name: ENTRY) (startIndex: 0, startLineIndex: 26, stopIndex: 0, stopLineIndex: 28)">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.7"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.11"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.7"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.11"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.7"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.11"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.9/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@2876e6a (index: 10, name: ENTRY) (startIndex: 0, startLineIndex: 29, stopIndex: 0, stopLineIndex: 31)">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.8"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.12"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.8"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.12"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.8"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.12"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.10/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@52ab03b3 (index: 11, name: ENTRY) (startIndex: 0, startLineIndex: 32, stopIndex: 0, stopLineIndex: 34)">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.9"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.13"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.9"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.13"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.9"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.13"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.11/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@7cde49a2 (index: 12, name: ENTRY) (startIndex: 0, startLineIndex: 35, stopIndex: 0, stopLineIndex: 37)">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.10"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.14"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.0/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.10"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.14"/>
+      <target href="fwd.trg.xmi#//@shelf.0/@dictionary.0/@entry.10"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.14"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12"/>
+      <target href="fwd.src.xmi#//@subFolder.0/@file.0/@rootNode/@children.12/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.FolderImpl@730d27f7 (index: 0, name: french)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:InappropriateCandidate" rule="FolderToLibraryRule" isAppropriateName="isApplicable_FWD" DECviolatingEdge="MocaTree.impl.FolderImpl@2d656f92 (index: 0, name: myLibrary) --subFolder-> MocaTree.impl.FolderImpl@730d27f7 (index: 0, name: french)" reason="DEC_VIOLATED"/>
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllShelfRule" isAppropriateName="isAppropriate_FWD_Folder_2"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllShelfRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllShelfRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.15"/>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.15"/>
+      <target href="fwd.src.xmi#//@subFolder.1"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.15"/>
+      <target href="fwd.trg.xmi#//@shelf.1"/>
+    </createdEdges>
+    <createdEdges name="shelf">
+      <source href="fwd.trg.xmi#/"/>
+      <target href="fwd.trg.xmi#//@shelf.1"/>
+    </createdEdges>
+    <translatedEdges name="subFolder">
+      <source href="fwd.src.xmi#/"/>
+      <target href="fwd.src.xmi#//@subFolder.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.FileImpl@64bb0423 (index: 0, name: numbers1-10.dictionary)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="NodeToDictionaryRule" isAppropriateName="isAppropriate_FWD_File_0"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="NodeToDictionaryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="NodeToDictionaryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.16"/>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.16"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+    </createdEdges>
+    <createdEdges name="shelf">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.1"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.16"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+    </createdEdges>
+    <translatedEdges name="rootNode">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="folder">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0"/>
+      <target href="fwd.src.xmi#//@subFolder.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@6a6fd42b (index: 1, name: contact@pons.de) (startIndex: 29, startLineIndex: 2, stopIndex: 45, stopLineIndex: 3)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:InappropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_5"/>
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ExistingAuthorRule" isAppropriateName="isAppropriate_FWD_Node_1"/>
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="NewAuthorRule" isAppropriateName="isAppropriate_FWD_Node_7"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ExistingAuthorRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="NewAuthorRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="NewAuthorRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.1"/>
+    <createdElements href="fwd.trg.xmi#//@author.1"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.17"/>
+    <createdEdges name="library">
+      <source href="fwd.trg.xmi#//@author.1"/>
+      <target href="fwd.trg.xmi#/"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.17"/>
+      <target href="fwd.trg.xmi#//@author.1"/>
+    </createdEdges>
+    <createdEdges name="dictionary">
+      <source href="fwd.trg.xmi#//@author.1"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.17"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.1"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@53d289a4 (index: 2, name: ENTRY) (startIndex: 0, startLineIndex: 5, stopIndex: 0, stopLineIndex: 7)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.0"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.18"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.0"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.18"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.0"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.18"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.2/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@25830b71 (index: 3, name: ENTRY) (startIndex: 0, startLineIndex: 8, stopIndex: 0, stopLineIndex: 10)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.1"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.19"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.1"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.19"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.1"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.19"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.3/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@1e3bb60 (index: 4, name: ENTRY) (startIndex: 0, startLineIndex: 11, stopIndex: 0, stopLineIndex: 13)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.2"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.20"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.2"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.20"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.2"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.20"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.4/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@efbd70b (index: 5, name: ENTRY) (startIndex: 0, startLineIndex: 14, stopIndex: 0, stopLineIndex: 16)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.3"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.21"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.3"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.21"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.3"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.21"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.5/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@4c240de4 (index: 6, name: ENTRY) (startIndex: 0, startLineIndex: 17, stopIndex: 0, stopLineIndex: 19)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.4"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.22"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.4"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.22"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.4"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.22"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.6/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@6b69430c (index: 7, name: ENTRY) (startIndex: 0, startLineIndex: 20, stopIndex: 0, stopLineIndex: 22)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.5"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.23"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.5"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.23"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.5"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.23"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.7/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@402f8ff (index: 8, name: ENTRY) (startIndex: 0, startLineIndex: 23, stopIndex: 0, stopLineIndex: 25)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.6"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.24"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.6"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.24"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.6"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.24"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.8/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@7216091 (index: 9, name: ENTRY) (startIndex: 0, startLineIndex: 26, stopIndex: 0, stopLineIndex: 28)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.7"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.25"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.7"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.25"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.7"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.25"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.9/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@65368aae (index: 10, name: ENTRY) (startIndex: 0, startLineIndex: 29, stopIndex: 0, stopLineIndex: 31)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.8"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.26"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.8"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.26"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.8"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.26"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.10/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@1f449a28 (index: 11, name: ENTRY) (startIndex: 0, startLineIndex: 32, stopIndex: 0, stopLineIndex: 34)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.9"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.27"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.9"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.27"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.9"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.27"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.11/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@62f1ddd3 (index: 12, name: ENTRY) (startIndex: 0, startLineIndex: 35, stopIndex: 0, stopLineIndex: 37)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.10"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.28"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.0"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.10"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.28"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.0/@entry.10"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.28"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.0/@rootNode/@children.12/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.FileImpl@5ca72da1 (index: 0, name: numbers11-20.dictionary)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="NodeToDictionaryRule" isAppropriateName="isAppropriate_FWD_File_0"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="NodeToDictionaryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="NodeToDictionaryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.29"/>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.29"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+    </createdEdges>
+    <createdEdges name="shelf">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <target href="fwd.trg.xmi#//@shelf.1"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.29"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+    </createdEdges>
+    <translatedEdges name="rootNode">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="folder">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1"/>
+      <target href="fwd.src.xmi#//@subFolder.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@20772fd3 (index: 1, name: contact@pons.de) (startIndex: 30, startLineIndex: 2, stopIndex: 46, stopLineIndex: 3)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:InappropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_5"/>
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ExistingAuthorRule" isAppropriateName="isAppropriate_FWD_Node_1"/>
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="NewAuthorRule" isAppropriateName="isAppropriate_FWD_Node_7"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ExistingAuthorRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="NewAuthorRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ExistingAuthorRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.1"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.30"/>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.30"/>
+      <target href="fwd.trg.xmi#//@author.1"/>
+    </createdEdges>
+    <createdEdges name="dictionary">
+      <source href="fwd.trg.xmi#//@author.1"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.30"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.1"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@70e4d64b (index: 2, name: ENTRY) (startIndex: 0, startLineIndex: 5, stopIndex: 0, stopLineIndex: 7)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.0"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.31"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.0"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.31"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.0"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.31"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.2/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@16dea9e9 (index: 3, name: ENTRY) (startIndex: 0, startLineIndex: 8, stopIndex: 0, stopLineIndex: 10)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.1"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.32"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.1"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.32"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.1"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.32"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.3/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@63bd6328 (index: 4, name: ENTRY) (startIndex: 0, startLineIndex: 11, stopIndex: 0, stopLineIndex: 13)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.2"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.33"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.2"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.33"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.2"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.33"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.4/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@771d16b9 (index: 5, name: ENTRY) (startIndex: 0, startLineIndex: 14, stopIndex: 0, stopLineIndex: 16)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.3"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.34"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.3"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.34"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.3"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.34"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.5/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@7b2c4c4b (index: 6, name: ENTRY) (startIndex: 0, startLineIndex: 17, stopIndex: 0, stopLineIndex: 19)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.4"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.35"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.4"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.35"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.4"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.35"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.6/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@327e0875 (index: 7, name: ENTRY) (startIndex: 0, startLineIndex: 20, stopIndex: 0, stopLineIndex: 22)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.5"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.36"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.5"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.36"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.5"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.36"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.7/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@c4dc1e4 (index: 8, name: ENTRY) (startIndex: 0, startLineIndex: 23, stopIndex: 0, stopLineIndex: 25)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.6"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.37"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.6"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.37"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.6"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.37"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.8/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@4f768377 (index: 9, name: ENTRY) (startIndex: 0, startLineIndex: 26, stopIndex: 0, stopLineIndex: 28)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.7"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.38"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.7"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.38"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.7"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.38"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.9/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@51e54d36 (index: 10, name: ENTRY) (startIndex: 0, startLineIndex: 29, stopIndex: 0, stopLineIndex: 31)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.8"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.39"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.8"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.39"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.8"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.39"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.10/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@2aba391a (index: 11, name: ENTRY) (startIndex: 0, startLineIndex: 32, stopIndex: 0, stopLineIndex: 34)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.9"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.40"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.1"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.9"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.40"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.1/@entry.9"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.40"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.1/@rootNode/@children.11/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.FileImpl@816d9ce (index: 0, name: unknown.dictionary)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.2"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="NodeToDictionaryRule" isAppropriateName="isAppropriate_FWD_File_0"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="NodeToDictionaryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.2"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="NodeToDictionaryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.2"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.2"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.41"/>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.41"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode"/>
+    </createdEdges>
+    <createdEdges name="shelf">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.2"/>
+      <target href="fwd.trg.xmi#//@shelf.1"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.41"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.2"/>
+    </createdEdges>
+    <translatedEdges name="rootNode">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.2"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="folder">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.2"/>
+      <target href="fwd.src.xmi#//@subFolder.1"/>
+    </translatedEdges>
+  </translationstep>
+  <translationstep xsi:type="protocol:StartTranslation" node="MocaTree.impl.NodeImpl@2e13c690 (index: 1, name: ENTRY) (startIndex: 0, startLineIndex: 3, stopIndex: 0, stopLineIndex: 5)">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:InappropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_5"/>
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="ForAllEntryRule" isAppropriateName="isAppropriate_FWD_Node_3"/>
+    <candidates xsi:type="protocol:InappropriateCandidate" rule="ExistingAuthorRule" isAppropriateName="isApplicable_FWD" DECviolatingEdge="MocaTree.impl.NodeImpl@2e13c690 (index: 1, name: ENTRY) (startIndex: 0, startLineIndex: 3, stopIndex: 0, stopLineIndex: 5) --children-> MocaTree.impl.NodeImpl@14512f92 (index: 0, name: unknown : unbekannt) (startIndex: 22, startLineIndex: 3, stopIndex: 42, stopLineIndex: 3)" reason="DEC_VIOLATED"/>
+    <candidates xsi:type="protocol:InappropriateCandidate" rule="NewAuthorRule" isAppropriateName="isApplicable_FWD" DECviolatingEdge="MocaTree.impl.NodeImpl@2e13c690 (index: 1, name: ENTRY) (startIndex: 0, startLineIndex: 3, stopIndex: 0, stopLineIndex: 5) --children-> MocaTree.impl.NodeImpl@14512f92 (index: 0, name: unknown : unbekannt) (startIndex: 22, startLineIndex: 3, stopIndex: 42, stopLineIndex: 3)" reason="DEC_VIOLATED"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="ForAllEntryRule : isApplicable_FWD">
+    <entryNode href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="ForAllEntryRule : perform_FWD">
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1/@children.1"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1/@children.0"/>
+    <translatedelements href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1"/>
+    <createdElements href="fwd.trg.xmi#//@shelf.1/@dictionary.2/@entry.0"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.42"/>
+    <createdEdges name="entry">
+      <source href="fwd.trg.xmi#//@shelf.1/@dictionary.2"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.2/@entry.0"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="fwd.corr.xmi#//@correspondences.42"/>
+      <target href="fwd.trg.xmi#//@shelf.1/@dictionary.2/@entry.0"/>
+    </createdEdges>
+    <createdEdges name="source">
+      <source href="fwd.corr.xmi#//@correspondences.42"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1"/>
+    </createdEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1/@children.0"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1"/>
+    </translatedEdges>
+    <translatedEdges name="children">
+      <source href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1"/>
+      <target href="fwd.src.xmi#//@subFolder.1/@file.2/@rootNode/@children.1/@children.1"/>
+    </translatedEdges>
+  </translationstep>
+</protocol:TranslationProtocol>
