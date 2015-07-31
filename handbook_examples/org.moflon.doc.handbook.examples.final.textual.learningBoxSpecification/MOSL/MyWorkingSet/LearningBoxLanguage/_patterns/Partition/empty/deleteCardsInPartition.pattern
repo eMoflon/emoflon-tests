@@ -1,8 +1,0 @@
-pattern deleteCardsInPartition {
-
-	@this : Partition {
-		-- -card-> card
-	}
-	
-	-- card : Card
-}
