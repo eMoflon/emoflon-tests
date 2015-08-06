@@ -29,8 +29,11 @@ class Partition {
 			}
 		return true
 		} else {
-			[penalizeCard]
-			return false
+			if [penalizeCard] { 
+				return false
+			} else {
+				return false 
+			}
 		}		
 	}
 }
