@@ -22,7 +22,7 @@ import MocaTree.File;
 import MocaTree.Folder;
 import MocaTree.MocaTreePackage;
 import SimpleEcoreToHTML.SimpleEcoreToHTMLPackage;
-import TGGLanguage.algorithm.ApplicationTypes;
+import org.moflon.tgg.language.algorithm.ApplicationTypes;
 
 /**
  * Possible deltas to test for: ### Source delta: - add a method / remove a method - move a method (context free ->

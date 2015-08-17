@@ -13,7 +13,7 @@ import BibliographyLanguage.BibliographyLanguagePackage;
 import BibliographyLanguage.Researcher;
 import LibraryLanguage.LibraryLanguagePackage;
 import LibraryToBibliographyIntegration.LibraryToBibliographyIntegrationPackage;
-import TGGLanguage.algorithm.ApplicationTypes;
+import org.moflon.tgg.language.algorithm.ApplicationTypes;
 
 public class AttributeChanges extends IncrementalIntegratorTest {
 	public AttributeChanges() {

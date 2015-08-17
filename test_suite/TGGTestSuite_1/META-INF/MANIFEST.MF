@@ -37,7 +37,8 @@ Require-Bundle: org.eclipse.emf.ecore.xmi;bundle-version="2.10.1",
  DeltaCreator,
  org.apache.commons.io;bundle-version="2.2.0",
  org.apache.log4j;bundle-version="1.2.15",
- org.moflon.core.utilities
+ org.moflon.core.utilities,
+ org.moflon.tgg.language;bundle-version="2.0.0"
 Bundle-ClassPath: lib/diffutils-1.2.1.jar,
  .
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
