@@ -1,8 +1,8 @@
 package csp.constraints;
 
 import BibliographyLanguageCSP.PaperTypes;
-import TGGLanguage.csp.Variable;
-import TGGLanguage.csp.impl.TGGConstraintImpl;
+import org.moflon.tgg.language.csp.Variable;
+import org.moflon.tgg.language.csp.impl.TGGConstraintImpl;
 
 public class CategoryToType extends TGGConstraintImpl {
    public void solve(Variable category, Variable type){

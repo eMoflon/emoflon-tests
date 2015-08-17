@@ -1,7 +1,6 @@
 package csp.constraints;
 
-import TGGLanguage.csp.Variable;
-import TGGLanguage.csp.impl.TGGConstraintImpl;
+import org.moflon.tgg.language.csp.Variable;
 
 public class NotEq extends Eq
 {
