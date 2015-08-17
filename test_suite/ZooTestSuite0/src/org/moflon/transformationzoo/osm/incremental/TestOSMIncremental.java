@@ -16,7 +16,7 @@ import ModelDeltaCreator_OSM.OSMModelDeltaCreator;
 import OSMLanguage.OSMLanguagePackage;
 import OSMLanguage.OSMapContainer;
 import OSMTGG.OSMTGGPackage;
-import TGGLanguage.algorithm.ApplicationTypes;
+import org.moflon.tgg.language.algorithm.ApplicationTypes;
 
 public class TestOSMIncremental extends IncrementalIntegratorTest {
 
