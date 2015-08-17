@@ -19,7 +19,7 @@ import BxSurveyDatabase.BxSchema;
 import BxSurveyDatabase.BxSurveyDatabasePackage;
 import ModelDeltaCreator.BxCDDB_DeltaCreator;
 import ModelDeltaCreator.ModelDeltaCreatorFactory;
-import TGGLanguage.algorithm.ApplicationTypes;
+import org.moflon.tgg.language.algorithm.ApplicationTypes;
 
 public class TestBxSurveyCDDB extends IncrementalIntegratorTest {
 

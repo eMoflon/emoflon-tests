@@ -8,8 +8,6 @@ Require-Bundle: org.eclipse.emf.ecore.xmi;bundle-version="2.10.1",
  org.eclipse.emf.compare;bundle-version="1.2.0",
  com.google.guava;bundle-version="10.0.1",
  org.moflon.testing.testframework,
- TGGLanguage,
- TGGRuntime,
  MocaTree,
  SDMLanguage,
  VHDLModel,
@@ -55,6 +53,7 @@ Require-Bundle: org.eclipse.emf.ecore.xmi;bundle-version="2.10.1",
  RefinementTestLanguage,
  RefinementTestTGG,
  OOToDatabaseIntegration,
- DebugLanguage,
- org.moflon.core.utilities
+ org.moflon.core.utilities,
+ org.moflon.tgg.language;bundle-version="2.0.0",
+ org.moflon.tgg.runtime;bundle-version="2.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8

@@ -15,7 +15,7 @@ import DSWithOrderedCols.Database;
 import ModelDeltaCreator.ModelDeltaCreatorFactory;
 import ModelDeltaCreator.OrderedCD2DS_DeltaCreator;
 import OrderedCD2DS.OrderedCD2DSPackage;
-import TGGLanguage.algorithm.ApplicationTypes;
+import org.moflon.tgg.language.algorithm.ApplicationTypes;
 
 public class TestOrderedCD2DS_Incremental extends IncrementalIntegratorTest {
 
