@@ -42,11 +42,17 @@
   <compilerInjectionEntries content="return true &amp;&amp; match.getObject(&quot;table&quot;).eClass().equals(DatabaseLanguage.DatabaseLanguagePackage.eINSTANCE.getTable());">
     <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/checkTypes_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="// TODO: NICO!!!&#xA;return null;">
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xD;&#xA;ruleResult.setRule(&quot;RuleClassToTable&quot;);&#x9;&#xD;&#xA;ruleResult.setSuccess(true);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;Optional&lt;TripleMatchNodeMapping> matchForCls = __tripleMatch.getNodeMappings().stream().filter(nm -> nm.getNodeName().equals(&quot;cls&quot;)).findAny();&#xD;&#xA;ObjectOrientedLanguage.Class cls = (ObjectOrientedLanguage.Class) matchForCls.get().getNode();&#xA;&#xA;Optional&lt;TripleMatchNodeMapping> matchForTable = __tripleMatch.getNodeMappings().stream().filter(nm -> nm.getNodeName().equals(&quot;table&quot;)).findAny();&#xD;&#xA;DatabaseLanguage.Table table = (DatabaseLanguage.Table) matchForTable.get().getNode();&#xA;&#xA;Optional&lt;TripleMatchNodeMapping> matchForClassToTable = __tripleMatch.getNodeMappings().stream().filter(nm -> nm.getNodeName().equals(&quot;classToTable&quot;)).findAny();&#xD;&#xA;OOToDatabaseIntegration.ClassToTable classToTable = (OOToDatabaseIntegration.ClassToTable) matchForClassToTable.get().getNode();&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xD;&#xA;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;} else {&#xD;&#xA;&#x9;if(csp.check()){ &#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xD;&#xA;&#x9;} else {&#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xD;&#xA;&#x9;&#x9;return ruleResult;&#xD;&#xA;&#x9;}&#x9;&#x9;&#xD;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
     <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/checkAttributes_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="// TODO: NICO!!!&#xA;return null;">
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xD;&#xA;ruleResult.setRule(&quot;RuleClassToTable&quot;);&#x9;&#xD;&#xA;ruleResult.setSuccess(true);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;Optional&lt;TripleMatchNodeMapping> matchForCls = __tripleMatch.getNodeMappings().stream().filter(nm -> nm.getNodeName().equals(&quot;cls&quot;)).findAny();&#xD;&#xA;ObjectOrientedLanguage.Class cls = (ObjectOrientedLanguage.Class) matchForCls.get().getNode();&#xA;&#xA;Optional&lt;TripleMatchNodeMapping> matchForTable = __tripleMatch.getNodeMappings().stream().filter(nm -> nm.getNodeName().equals(&quot;table&quot;)).findAny();&#xD;&#xA;DatabaseLanguage.Table table = (DatabaseLanguage.Table) matchForTable.get().getNode();&#xA;&#xA;Optional&lt;TripleMatchNodeMapping> matchForClassToTable = __tripleMatch.getNodeMappings().stream().filter(nm -> nm.getNodeName().equals(&quot;classToTable&quot;)).findAny();&#xD;&#xA;OOToDatabaseIntegration.ClassToTable classToTable = (OOToDatabaseIntegration.ClassToTable) matchForClassToTable.get().getNode();&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xD;&#xA;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;} else {&#xD;&#xA;&#x9;if(csp.check()){ &#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xD;&#xA;&#x9;} else {&#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xD;&#xA;&#x9;&#x9;return ruleResult;&#xD;&#xA;&#x9;}&#x9;&#x9;&#xD;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
     <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/checkAttributes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;cls&quot;,cls);&#xD;&#xA;isApplicableMatch.registerObject(&quot;table&quot;,table);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/isApplicable_solveCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/isApplicable_checkCsp_CC"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;return csp;">
     <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/generateModel_solveCsp_BWD"/>
@@ -60,7 +66,19 @@
   <importInjectionEntries content="csp.constraints.*">
     <eClass href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable"/>
   </importInjectionEntries>
-  <importInjectionEntries content="TGGLanguage.csp.*">
+  <importInjectionEntries content="org.moflon.tgg.language.csp.*">
+    <eClass href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
     <eClass href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable"/>
   </importInjectionEntries>
 </sdmUtil:CompilerInjection>
