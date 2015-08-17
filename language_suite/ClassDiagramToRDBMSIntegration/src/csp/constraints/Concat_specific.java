@@ -1,6 +1,6 @@
 package csp.constraints;
 
-import TGGLanguage.csp.Variable;
+import org.moflon.tgg.language.csp.Variable;
 import csp.constraints.generator.Generator;
 
 public class Concat_specific extends Concat {
