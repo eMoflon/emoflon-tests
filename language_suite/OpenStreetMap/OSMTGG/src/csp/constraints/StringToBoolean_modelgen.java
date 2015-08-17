@@ -1,6 +1,6 @@
 package csp.constraints;
 
-import TGGLanguage.csp.Variable;
+import org.moflon.tgg.language.csp.Variable;
 
 public class StringToBoolean_modelgen extends StringToBoolean {
 	public void solve(Variable var_0, Variable var_1){
