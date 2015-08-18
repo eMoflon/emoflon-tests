@@ -3,8 +3,8 @@ package csp.constraints;
 import java.util.Arrays;
 import java.util.List;
 
-import TGGLanguage.csp.Variable;
-import TGGLanguage.csp.impl.TGGConstraintImpl;
+import org.moflon.tgg.language.csp.Variable;
+import org.moflon.tgg.language.csp.impl.TGGConstraintImpl;
 
 public class IndexToLevel extends TGGConstraintImpl {
 	
