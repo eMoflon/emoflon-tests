@@ -1,9 +1,9 @@
 package org.moflon.moca;
 import java.io.File;
 import org.apache.log4j.BasicConfigurator;
+import org.moflon.core.moca.processing.CodeAdapter;
+import org.moflon.core.moca.processing.ProcessingFactory;
 import org.moflon.core.utilities.eMoflonEMFUtil;
-import Moca.CodeAdapter;
-import Moca.MocaFactory;
 import MocaTree.Folder;
 import MocaTree.MocaTreePackage;
 import org.moflon.moca.dictionary.parser.DictionaryParserAdapter;
@@ -40,7 +40,7 @@ public class MocaMain
   public static CodeAdapter getCodeAdapter(){
     if(codeAdapter == null){
 	    // Register parsers and unparsers
-		codeAdapter = MocaFactory.eINSTANCE.createCodeAdapter();
+		codeAdapter = ProcessingFactory.eINSTANCE.createCodeAdapter();
         codeAdapter.getParser().add(new DictionaryParserAdapter());
         codeAdapter.getUnparser().add(new DictionaryUnparserAdapter());	  
      }
