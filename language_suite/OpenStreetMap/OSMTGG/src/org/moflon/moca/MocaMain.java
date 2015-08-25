@@ -6,8 +6,8 @@ import org.moflon.core.utilities.eMoflonEMFUtil;
 import org.moflon.moca.osm.parser.OsmParserAdapter;
 import org.moflon.moca.osm.unparser.OsmUnparserAdapter;
 
-import Moca.CodeAdapter;
-import Moca.MocaFactory;
+import org.moflon.core.moca.processing.CodeAdapter;
+import org.moflon.core.moca.processing.ProcessingFactory;
 
 public class MocaMain 
 {
@@ -19,7 +19,7 @@ public class MocaMain
     BasicConfigurator.configure();
     
     // Register parsers and unparsers
-    codeAdapter = MocaFactory.eINSTANCE.createCodeAdapter();
+    codeAdapter = ProcessingFactory.eINSTANCE.createCodeAdapter();
     codeAdapter.getParser().add(new OsmParserAdapter());
     codeAdapter.getUnparser().add(new OsmUnparserAdapter());
 
