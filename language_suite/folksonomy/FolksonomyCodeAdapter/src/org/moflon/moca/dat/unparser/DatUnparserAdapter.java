@@ -9,7 +9,7 @@ import org.antlr.runtime.tree.CommonTreeNodeStream;
 import org.antlr.stringtemplate.StringTemplate;
 import org.antlr.stringtemplate.StringTemplateGroup;
 
-import Moca.unparser.impl.TemplateUnparserImpl;
+import org.moflon.core.moca.processing.unparser.impl.TemplateUnparserImpl;
 
 public class DatUnparserAdapter extends TemplateUnparserImpl 
 {

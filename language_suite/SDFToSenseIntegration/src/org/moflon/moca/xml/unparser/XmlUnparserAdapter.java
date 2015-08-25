@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import org.antlr.stringtemplate.StringTemplateGroup;
-import Moca.unparser.impl.XMLUnparserImpl;
+import org.moflon.core.moca.processing.unparser.impl.XMLUnparserImpl;
 import org.antlr.stringtemplate.language.DefaultTemplateLexer;
 
 public class XmlUnparserAdapter extends XMLUnparserImpl 

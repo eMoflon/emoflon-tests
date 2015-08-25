@@ -3,8 +3,8 @@ import org.apache.log4j.BasicConfigurator;
 import org.moflon.core.utilities.eMoflonEMFUtil;
 import org.moflon.moca.dat.unparser.DatUnparserAdapter;
 
-import Moca.CodeAdapter;
-import Moca.MocaFactory;
+import org.moflon.core.moca.processing.CodeAdapter;
+import org.moflon.core.moca.processing.ProcessingFactory;
 import MocaTree.Folder;
 import MocaTree.MocaTreePackage;
 
@@ -18,7 +18,7 @@ public class MocaMain
     BasicConfigurator.configure();
 
     // Register parsers and unparsers
-    codeAdapter = MocaFactory.eINSTANCE.createCodeAdapter();
+    codeAdapter = ProcessingFactory.eINSTANCE.createCodeAdapter();
     codeAdapter.getUnparser().add(new DatUnparserAdapter());
 
     // load tree from file

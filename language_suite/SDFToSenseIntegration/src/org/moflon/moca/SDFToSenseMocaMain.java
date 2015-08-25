@@ -21,8 +21,8 @@ import org.moflon.tgg.algorithm.synchronization.SynchronizationHelper;
 import org.moflon.tie.SDFToSenseIntegrationTrafo;
 import org.moflon.core.utilities.eMoflonEMFUtil;
 
-import Moca.CodeAdapter;
-import Moca.MocaFactory;
+import org.moflon.core.moca.processing.CodeAdapter;
+import org.moflon.core.moca.processing.ProcessingFactory;
 import SDFToSenseIntegration.SDFToSenseIntegrationPackage;
 import Sense.Actor;
 import Sense.Capability;
@@ -50,7 +50,7 @@ public class SDFToSenseMocaMain {
 
 	public static void init(){
 		// Register parsers and unparsers
-		codeAdapter = MocaFactory.eINSTANCE.createCodeAdapter();
+		codeAdapter = ProcessingFactory.eINSTANCE.createCodeAdapter();
 		codeAdapter.getParser().add(new XmlParserAdapter());
 		codeAdapter.getUnparser().add(new XmlUnparserAdapter()); 
 	}

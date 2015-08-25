@@ -1,6 +1,6 @@
 package org.moflon.moca.xml.parser;
 
-import Moca.parser.impl.XMLParserImpl;
+import org.moflon.core.moca.processing.parser.impl.XMLParserImpl;
 
 public class XmlParserAdapter extends XMLParserImpl 
 {
