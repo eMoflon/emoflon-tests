@@ -11,7 +11,6 @@ Require-Bundle: org.eclipse.emf.ecore.xmi;bundle-version="2.10.1",
  org.eclipse.osgi;bundle-version="3.8.2",
  org.eclipse.core.runtime;bundle-version="3.8.0",
  SDMLanguage,
- Moca,
  MocaTree,
  LibraryLanguage,
  LibraryLanguageCSP,
@@ -38,7 +37,8 @@ Require-Bundle: org.eclipse.emf.ecore.xmi;bundle-version="2.10.1",
  org.apache.commons.io;bundle-version="2.2.0",
  org.apache.log4j;bundle-version="1.2.15",
  org.moflon.core.utilities,
- org.moflon.tgg.language;bundle-version="2.0.0"
+ org.moflon.tgg.language;bundle-version="2.0.0",
+ org.moflon.core.moca.processing;bundle-version="2.0.0"
 Bundle-ClassPath: lib/diffutils-1.2.1.jar,
  .
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
