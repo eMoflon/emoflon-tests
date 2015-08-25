@@ -6,7 +6,7 @@ import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.RecognitionException;
 import org.antlr.runtime.tree.CommonTree;
 import org.moflon.moca.MocaUtil;
-import Moca.parser.impl.ParserImpl;
+import org.moflon.core.moca.processing.parser.impl.ParserImpl;
 import MocaTree.Node;
 
 public class ProcParserAdapter extends ParserImpl 
