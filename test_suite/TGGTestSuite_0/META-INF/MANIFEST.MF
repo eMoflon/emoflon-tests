@@ -13,7 +13,6 @@ Require-Bundle: org.eclipse.emf.ecore.xmi;bundle-version="2.10.1",
  VHDLModel,
  VHDLTGGCodeAdapter,
  MoflonPropertyContainer,
- Moca,
  BlockCodeAdapter,
  BlockDiagram,
  BlockDiagramCodeAdapter,
@@ -55,5 +54,6 @@ Require-Bundle: org.eclipse.emf.ecore.xmi;bundle-version="2.10.1",
  OOToDatabaseIntegration,
  org.moflon.core.utilities,
  org.moflon.tgg.language;bundle-version="2.0.0",
- org.moflon.tgg.runtime;bundle-version="2.0.0"
+ org.moflon.tgg.runtime;bundle-version="2.0.0",
+ org.moflon.core.moca.processing;bundle-version="2.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
