@@ -1,6 +1,10 @@
 package backend.democles.railwayControl;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -19,7 +23,13 @@ public class TestRailwayControl {
 	
 	@Before
 	public void init(){
-		uutRailway= (Railway) eMoflonEMFUtil.loadAndInitModel(RailwayControlPackage.eINSTANCE, "resources/railwayControl/Railway.xmi");
+		ResourceSet set = eMoflonEMFUtil.createDefaultResourceSet();
+		// Initialize package
+		set.getPackageRegistry().put(RailwayControlPackage.eNS_URI, RailwayControlPackage.eINSTANCE);
+		eMoflonEMFUtil.installCrossReferencers(set);
+		Resource r = set.getResource(eMoflonEMFUtil.createFileURI("resources/railwayControl/Railway.xmi", true),
+				true);
+		uutRailway= (Railway) r.getContents().get(0);
 		assertEquals(4, uutRailway.getTracks().size());
 	}
 		
