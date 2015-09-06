@@ -13,6 +13,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.moflon.testframework.tgg.IncrementalIntegratorTest;
 import org.moflon.testframework.tgg.TreeComparator;
+import org.moflon.tgg.language.algorithm.ApplicationTypes;
 
 import DeltaCreator.DeltaCreatorFactory;
 import DeltaCreator.DocumentFileTrgDelta;
@@ -22,7 +23,6 @@ import MocaTree.File;
 import MocaTree.Folder;
 import MocaTree.MocaTreePackage;
 import SimpleEcoreToHTML.SimpleEcoreToHTMLPackage;
-import org.moflon.tgg.language.algorithm.ApplicationTypes;
 
 /**
  * Possible deltas to test for: ### Source delta: - add a method / remove a method - move a method (context free ->

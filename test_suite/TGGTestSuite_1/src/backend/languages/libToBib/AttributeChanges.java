@@ -5,15 +5,13 @@ import org.junit.Test;
 import org.moflon.moca.ModelToTreeConverter;
 import org.moflon.testframework.tgg.IncrementalIntegratorTest;
 import org.moflon.testframework.tgg.TreeComparator;
-
-
+import org.moflon.tgg.language.algorithm.ApplicationTypes;
 
 import BibliographyLanguage.Bibliography;
 import BibliographyLanguage.BibliographyLanguagePackage;
 import BibliographyLanguage.Researcher;
 import LibraryLanguage.LibraryLanguagePackage;
 import LibraryToBibliographyIntegration.LibraryToBibliographyIntegrationPackage;
-import org.moflon.tgg.language.algorithm.ApplicationTypes;
 
 public class AttributeChanges extends IncrementalIntegratorTest {
 	public AttributeChanges() {

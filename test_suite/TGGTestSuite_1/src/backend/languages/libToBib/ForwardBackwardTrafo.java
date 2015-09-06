@@ -1,9 +1,7 @@
 package backend.languages.libToBib;
 
 import org.eclipse.emf.ecore.EObject;
-import org.junit.Ignore;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.moflon.moca.ModelToTreeConverter;
 import org.moflon.testframework.tgg.IntegratorTest;
 import org.moflon.testframework.tgg.TreeComparator;

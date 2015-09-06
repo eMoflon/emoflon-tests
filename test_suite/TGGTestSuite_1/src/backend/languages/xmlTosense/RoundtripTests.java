@@ -13,10 +13,10 @@ import org.eclipse.emf.ecore.EObject;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.moflon.core.utilities.eMoflonEMFUtil;
 import org.moflon.moca.SDFToSenseMocaMain;
 import org.moflon.testframework.tgg.IntegratorTest;
 import org.moflon.tgg.algorithm.synchronization.SynchronizationHelper;
-import org.moflon.core.utilities.eMoflonEMFUtil;
 
 import MocaTree.MocaTreePackage;
 import SDFToSenseIntegration.SDFToSenseIntegrationPackage;

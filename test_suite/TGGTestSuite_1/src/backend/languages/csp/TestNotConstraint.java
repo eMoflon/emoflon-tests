@@ -2,7 +2,6 @@ package backend.languages.csp;
 
 
 import org.junit.Test;
-
 import org.moflon.testframework.tgg.IntegratorTest;
 
 import BibliographyLanguageCSP.BibliographyLanguageCSPPackage;

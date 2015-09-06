@@ -3,7 +3,6 @@ package backend.languages.folksonomy;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
 import org.moflon.moca.MocaTreeSorter;
-import org.moflon.moca.MocaUtil;
 import org.moflon.testframework.tgg.IntegratorTest;
 
 import FolksonomyCodeAdapter.FolksonomyCodeAdapterPackage;

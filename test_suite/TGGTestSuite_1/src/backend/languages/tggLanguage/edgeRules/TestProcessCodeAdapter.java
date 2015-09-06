@@ -1,9 +1,8 @@
 package backend.languages.tggLanguage.edgeRules;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.moflon.testframework.tgg.IntegratorTest;
 import org.moflon.core.utilities.eMoflonEMFUtil;
+import org.moflon.testframework.tgg.IntegratorTest;
 
 import MocaTree.MocaTreePackage;
 import ProcessCodeAdapter_EdgeRules.ProcessCodeAdapter_EdgeRulesPackage;

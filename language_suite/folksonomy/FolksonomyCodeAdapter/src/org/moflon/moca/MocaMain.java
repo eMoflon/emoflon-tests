@@ -22,7 +22,7 @@ public class MocaMain
     codeAdapter.getUnparser().add(new DatUnparserAdapter());
 
     // load tree from file
-    eMoflonEMFUtil.init(MocaTreePackage.eINSTANCE);
+    MocaTreePackage.eINSTANCE.getClass();
     Folder tree = (Folder) eMoflonEMFUtil.loadModel("instances/source.xmi_FWD.xmi");
     
     // Perform tree-to-text

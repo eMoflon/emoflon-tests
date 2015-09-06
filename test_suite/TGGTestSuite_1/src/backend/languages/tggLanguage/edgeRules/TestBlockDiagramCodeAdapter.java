@@ -2,7 +2,6 @@ package backend.languages.tggLanguage.edgeRules;
 
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.moflon.testframework.tgg.IntegratorTest;
 import org.moflon.testframework.tgg.TreeComparator;
 
