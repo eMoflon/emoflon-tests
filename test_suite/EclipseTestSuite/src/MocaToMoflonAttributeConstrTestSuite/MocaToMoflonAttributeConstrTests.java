@@ -1,8 +1,5 @@
 package MocaToMoflonAttributeConstrTestSuite;
 
-import java.io.File;
-import java.io.IOException;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
