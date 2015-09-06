@@ -19,8 +19,7 @@ import MemoryBoxToDoubleLinkedListIntegration.MemoryBoxToDoubleLinkedListIntegra
 public class MemoryBoxToDoubleLinkedListIntegration extends IntegratorTest {
 
 	public MemoryBoxToDoubleLinkedListIntegration() {
-		super(MemoryBoxLanguagePackage.eINSTANCE,
-				MemoryBoxToDoubleLinkedListIntegrationPackage.eINSTANCE,
+		super(MemoryBoxLanguagePackage.eINSTANCE, MemoryBoxToDoubleLinkedListIntegrationPackage.eINSTANCE,
 				DoubleLinkedListLanguagePackage.eINSTANCE);
 	}
 
@@ -39,16 +38,15 @@ public class MemoryBoxToDoubleLinkedListIntegration extends IntegratorTest {
 			node.setContainer(list);
 		}
 
-		eMoflonEMFUtil.saveModel(list, getExpectedpath() + getIntegrationName()
-				+ "/BigListExpected.xmi");
+		eMoflonEMFUtil.saveModel(eMoflonEMFUtil.createDefaultResourceSet(), list,
+				getExpectedpath() + getIntegrationName() + "/BigListExpected.xmi");
 	}
 
 	private void createBigBoxConnected(int size) throws IOException {
 		Box box = MemoryBoxLanguageFactory.eINSTANCE.createBox();
 		box.setName("Container");
 		for (int i = 0; i < size; i++) {
-			Partition partition = MemoryBoxLanguageFactory.eINSTANCE
-					.createPartition();
+			Partition partition = MemoryBoxLanguageFactory.eINSTANCE.createPartition();
 			partition.setBox(box);
 			partition.setIndex(i);
 			partition.setPartitionSize(3);
@@ -60,8 +58,7 @@ public class MemoryBoxToDoubleLinkedListIntegration extends IntegratorTest {
 
 		}
 
-		eMoflonEMFUtil.saveModel(box, getFullInpath()
-				+ "PartitionToNode_FWD_big.xmi");
+		eMoflonEMFUtil.saveModel(eMoflonEMFUtil.createDefaultResourceSet(), box, getFullInpath() + "PartitionToNode_FWD_big.xmi");
 	}
 
 	private void createBigBoxNotConnected(int size) throws IOException {
@@ -73,7 +70,7 @@ public class MemoryBoxToDoubleLinkedListIntegration extends IntegratorTest {
 			p.setPartitionSize(3);
 		}
 
-		eMoflonEMFUtil.saveModel(box, getInpath() + "BigBoxCreatedin.xmi");
+		eMoflonEMFUtil.saveModel(eMoflonEMFUtil.createDefaultResourceSet(), box, getInpath() + "BigBoxCreatedin.xmi");
 	}
 
 	@Test
