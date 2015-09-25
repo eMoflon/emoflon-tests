@@ -1,13 +1,17 @@
 package org.moflon.moca;
 import java.io.File;
+import java.io.IOException;
+
 import org.apache.log4j.BasicConfigurator;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.moflon.core.moca.processing.CodeAdapter;
 import org.moflon.core.moca.processing.ProcessingFactory;
 import org.moflon.core.utilities.eMoflonEMFUtil;
-import MocaTree.Folder;
-import MocaTree.MocaTreePackage;
 import org.moflon.moca.dictionary.parser.DictionaryParserAdapter;
 import org.moflon.moca.dictionary.unparser.DictionaryUnparserAdapter;
+
+import MocaTree.Folder;
 
 public class MocaMain 
 {
@@ -22,7 +26,14 @@ public class MocaMain
     Folder tree = getCodeAdapter().parse(new File("instances/in/"));
 
     // Save tree to file
-    eMoflonEMFUtil.saveModel(tree, "instances/tree.xmi");
+    ResourceSet set = eMoflonEMFUtil.createDefaultResourceSet();
+    Resource resource = set.createResource(eMoflonEMFUtil.createFileURI("instances/tree.xmi", false));
+    resource.getContents().add(tree);
+    try {
+		resource.save(null);
+	} catch (IOException e) {
+		System.err.println("Error while saving model: " + e.getMessage());
+	}
 
     // Perform tree-to-model
     //TODO
