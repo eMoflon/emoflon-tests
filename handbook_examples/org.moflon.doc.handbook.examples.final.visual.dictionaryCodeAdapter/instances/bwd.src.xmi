@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<DictionaryLanguage:Library xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:DictionaryLanguage="http://www.moflon.org.DictionaryLanguage" name="myLibrary">
+<DictionaryLanguage:Library xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:DictionaryLanguage="platform:/plugin/DictionaryLanguage/model/DictionaryLanguage.ecore" name="myLibrary">
   <author dictionary="//@shelf.0/@dictionary.0" email="contact@langenscheidt.de"/>
   <author dictionary="//@shelf.1/@dictionary.0 //@shelf.1/@dictionary.1" email="contact@pons.de"/>
   <shelf description="english">
