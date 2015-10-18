@@ -3,9 +3,6 @@
   <dependencies value="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore"/>
   <metaModelProject MetaModelProjectName="DemoclesTestSuite_0"/>
   <replaceGenModel/>
-  <genTracingInstrumentation/>
   <sdmCodegeneratorHandlerId value="DEMOCLES_REVERSE_NAVI"/>
   <tGGBuildMode/>
-  <debugMode/>
-  <strictSDMConditionalBranching/>
 </MoflonPropertyContainer:MoflonPropertiesContainer>
