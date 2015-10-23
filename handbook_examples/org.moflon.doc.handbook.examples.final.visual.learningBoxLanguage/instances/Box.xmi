@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <LearningBoxLanguage:Box xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:LearningBoxLanguage="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore">
   <containedPartition next="//@containedPartition.1" index="1">
-    <card back="One" face="1"/>
     <card back="Two" face="2"/>
     <card xsi:type="LearningBoxLanguage:FastCard" back="Six" face="6"/>
     <card back="Four" face="4"/>
