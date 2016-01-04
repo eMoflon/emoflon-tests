@@ -4,5 +4,4 @@
   <metaModelProject MetaModelProjectName="SDMTestSuite"/>
   <replaceGenModel/>
   <sdmCodegeneratorHandlerId value="DEMOCLES_REVERSE_NAVI"/>
-  <tGGBuildMode/>
 </MoflonPropertyContainer:MoflonPropertiesContainer>
