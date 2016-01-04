@@ -1,7 +1,6 @@
 package csp.constraints;
 
 import org.moflon.tgg.language.csp.Variable;
-import org.moflon.tgg.language.csp.impl.TGGConstraintImpl;
 
 public class SmallToCapital_modelgen extends SmallToCapital {
 	public void solve(Variable var_0, Variable var_1) {

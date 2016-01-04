@@ -15,15 +15,13 @@ import org.antlr.stringtemplate.language.AngleBracketTemplateLexer;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.BasicConfigurator;
 import org.eclipse.emf.ecore.EObject;
-import org.moflon.moca.xml.parser.XmlParserAdapter;
-import org.moflon.moca.xml.unparser.XmlUnparserAdapter;
-import org.moflon.tgg.algorithm.synchronization.SynchronizationHelper;
-import org.moflon.tie.SDFToSenseIntegrationTrafo;
-import org.moflon.core.utilities.eMoflonEMFUtil;
-
 import org.moflon.core.moca.processing.CodeAdapter;
 import org.moflon.core.moca.processing.ProcessingFactory;
-import SDFToSenseIntegration.SDFToSenseIntegrationPackage;
+import org.moflon.core.utilities.eMoflonEMFUtil;
+import org.moflon.moca.xml.parser.XmlParserAdapter;
+import org.moflon.moca.xml.unparser.XmlUnparserAdapter;
+import org.moflon.tie.SDFToSenseIntegrationTrafo;
+
 import Sense.Actor;
 import Sense.Capability;
 import Sense.Channel;

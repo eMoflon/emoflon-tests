@@ -1,7 +1,6 @@
 package csp.constraints;
 
 import org.moflon.tgg.language.csp.Variable;
-import org.moflon.tgg.language.csp.impl.TGGConstraintImpl;
 
 public class StringToBigDecimal_modelgen extends StringToBigDecimal {
 	public void solve(Variable var_0, Variable var_1) {
