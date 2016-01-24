@@ -222,13 +222,32 @@ public class NetworkLanguageTest {
 		Assert.assertEquals(expected, actual);
 	}
 	
-	@Ignore //TODO@aaltenkirch: Provide an Implemenatation / fix fals 'unknown type' bug
+	//TODO@aaltenkirch: Provide an Implemenatation / fix fals 'unknown type' bug
 	@Test
-	public void testGroupAddLeader() throws Exception {
-		NetworkSystem system = factory.createNetworkSystem();
+	public void testGroupGetLeader_NoNodeInGroup() throws Exception {
 		Group group = factory.createGroup();
-		system.getGroups().add(group);
+		Assert.assertNull(group.getLeader());
+	}
+	
+	@Test
+	public void testGroupGetLeader_OneNodeInGroup() throws Exception {
+		Group group = factory.createGroup();
 		final Node leader = factory.createNode();
+		group.getMembers().add(leader);
 		Assert.assertEquals(leader, group.getLeader());
+	}
+	
+	@Test
+	public void testGroupGetLeader_MultipleNodesInGroup() throws Exception {
+		Group group = factory.createGroup();
+		final Node node1 = factory.createNode();
+		final Node node2 = factory.createNode();
+		final Node node3 = factory.createNode();
+		group.getMembers().add(node1);
+		group.getMembers().add(node2);
+		group.getMembers().add(node3);
+		
+		Node actual = group.getLeader();
+		Assert.assertNotNull(actual);
 	}
 }
