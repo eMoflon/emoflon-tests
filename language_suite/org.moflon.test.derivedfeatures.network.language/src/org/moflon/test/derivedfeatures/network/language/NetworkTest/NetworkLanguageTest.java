@@ -222,7 +222,6 @@ public class NetworkLanguageTest {
 		Assert.assertEquals(expected, actual);
 	}
 	
-	//TODO@aaltenkirch: Provide an Implemenatation / fix fals 'unknown type' bug
 	@Test
 	public void testGroupGetLeader_NoNodeInGroup() throws Exception {
 		Group group = factory.createGroup();
