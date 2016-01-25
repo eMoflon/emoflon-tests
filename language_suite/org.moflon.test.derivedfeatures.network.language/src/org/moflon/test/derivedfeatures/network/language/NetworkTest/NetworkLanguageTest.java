@@ -1,7 +1,6 @@
 package org.moflon.test.derivedfeatures.network.language.NetworkTest;
 
 import org.junit.Assert;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.Ignore;
 import org.moflon.test.derivedfeatures.network.language.Group;
@@ -13,12 +12,7 @@ import org.moflon.test.derivedfeatures.network.language.Node;
 public class NetworkLanguageTest {
 
 	private static LanguageFactory factory = LanguageFactory.eINSTANCE;
-	
-	@BeforeClass
-	public static void initializeNetwork() {
-		//completeNetwork = TestSetup.createNetworkSystem();
-	}
-	
+		
 	@Test
 	public void testSystemGetNodeCount() {
 		NetworkSystem network = factory.createNetworkSystem();
