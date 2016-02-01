@@ -225,7 +225,7 @@ public class NetworkLanguageTest {
 	@Test
 	public void testGroupGetLeader_OneNodeInGroup() throws Exception {
 		Group group = factory.createGroup();
-		final Node leader = factory.createNode();
+		final Node leader = factory.createSpecialNode();
 		group.getMembers().add(leader);
 		Assert.assertEquals(leader, group.getLeader());
 	}
@@ -235,12 +235,12 @@ public class NetworkLanguageTest {
 		Group group = factory.createGroup();
 		final Node node1 = factory.createNode();
 		final Node node2 = factory.createNode();
-		final Node node3 = factory.createNode();
+		final Node node3 = factory.createSpecialNode();
 		group.getMembers().add(node1);
 		group.getMembers().add(node2);
 		group.getMembers().add(node3);
 		
 		Node actual = group.getLeader();
-		Assert.assertNotNull(actual);
+		Assert.assertEquals(node3, actual);
 	}
 }
