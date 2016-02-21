@@ -4,7 +4,6 @@ Bundle-Name: EclipseTestSuite
 Bundle-SymbolicName: EclipseTestSuite
 Bundle-Version: 1.0.0.qualifier
 Export-Package: backend.languages.TGGLanguage,
- frontend.ea.exportImport,
  languages.doubleLinkedListLanguage,
  languages.memoryBox2DoubleLinkedListTransformation,
  languages.memoryBoxLanguage,
