@@ -206,14 +206,25 @@ public class NetworkLanguageTest {
 	@Test
 	public void testGroupGetSystemName() {
 		NetworkSystem system = factory.createNetworkSystem();
+		NetworkSystem system2 = factory.createNetworkSystem();
 		Group group = factory.createGroup();
 		system.getGroups().add(group);
 		
-		String expected = "testName";
+		String expected = "systemName";
 		system.setName(expected);
 
 		String actual = group.getSystemName(); 
 		Assert.assertEquals(expected, actual);
+		
+		String expected2 = "systemName";
+		system.setName(expected2);
+		Assert.assertEquals(expected2, group.getSystemName());
+		
+		String expected3 = "system2Name";
+		system2.setName(expected3);
+		
+		group.setSystem(system2);
+		Assert.assertEquals(expected3, group.getSystemName());
 	}
 	
 	@Test
