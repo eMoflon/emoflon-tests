@@ -1,9 +1,6 @@
 Manifest-Version: 1.0
 Bundle-SymbolicName: org.moflon.test.derivedfeatures.network.language;
  singleton:=true
-Export-Package: org.moflon.test.derivedfeatures.network.language.util,
- org.moflon.test.derivedfeatures.network.language.impl,
- org.moflon.test.derivedfeatures.network.language
 Bundle-Name: org.moflon.test.derivedfeatures.network.language
 Bundle-Version: 1.0.0.qualifier
 Require-Bundle: org.eclipse.emf.ecore,
