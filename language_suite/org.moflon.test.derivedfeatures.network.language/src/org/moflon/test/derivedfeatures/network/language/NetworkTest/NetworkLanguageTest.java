@@ -254,4 +254,28 @@ public class NetworkLanguageTest {
 		Node actual = group.getLeader();
 		Assert.assertEquals(node3, actual);
 	}
+	
+	@Ignore
+	@Test
+	public void perfTestNodeGetFullName() {
+		
+		Node node = factory.createNode();
+		node.setFirstName("first");
+		node.setLastName("last");
+		
+		final int iterations = 10000000;
+		final int setterCallFraction = 100;
+
+		long startTime = System.currentTimeMillis();
+		for (int i = 0; i < iterations; i++) {
+			if (i % setterCallFraction == 0) {
+				node.setFirstName(String.valueOf(i));
+			} else {
+				node.getFullName();
+			}
+		}
+		long duration = System.currentTimeMillis() - startTime;
+		System.out.println(duration);
+		System.out.println(node.getFullName());
+	}
 }
