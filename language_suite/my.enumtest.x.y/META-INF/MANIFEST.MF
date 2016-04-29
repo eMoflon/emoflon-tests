@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: my.enumtest.x.y;singleton:=true
+Export-Package: enm.containing.pkg.z.impl,
+ my.enumtest.x.y,
+ my.enumtest.x.y.impl,
+ enm.containing.pkg.z,
+ enm.containing.pkg.z.util,
+ my.enumtest.x.y.util
+Bundle-Name: my.enumtest.x.y
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ org.moflon.core.utilities
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TU Darmstadt
