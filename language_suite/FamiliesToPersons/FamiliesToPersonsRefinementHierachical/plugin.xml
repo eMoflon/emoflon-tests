@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><plugin>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="FamiliesToPersonsRefinementHierachical.FamiliesToPersonsRefinementHierachicalPackage" genModel="model/FamiliesToPersonsRefinementHierachical.genmodel" uri="platform:/plugin/FamiliesToPersonsRefinementHierachical/model/FamiliesToPersonsRefinementHierachical.ecore"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="FamiliesToPersonsRefinementHierachical.Rules.RulesPackage" genModel="model/FamiliesToPersonsRefinementHierachical.genmodel" uri="platform:/plugin/FamiliesToPersonsRefinementHierachical/model/FamiliesToPersonsRefinementHierachical.ecore#//Rules"/>
+  </extension>
+</plugin>
