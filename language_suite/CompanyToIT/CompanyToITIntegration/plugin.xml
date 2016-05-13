@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><plugin>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="CompanyToITIntegration.CompanyToITIntegrationPackage" genModel="model/CompanyToITIntegration.genmodel" uri="platform:/plugin/CompanyToITIntegration/model/CompanyToITIntegration.ecore"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="CompanyToITIntegration.Rules.RulesPackage" genModel="model/CompanyToITIntegration.genmodel" uri="platform:/plugin/CompanyToITIntegration/model/CompanyToITIntegration.ecore#//Rules"/>
+  </extension>
+</plugin>
