@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><plugin>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="SokobanImportExport.SokobanImportExportPackage" genModel="model/SokobanImportExport.genmodel" uri="platform:/plugin/SokobanImportExport/model/SokobanImportExport.ecore"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="SokobanImportExport.Rules.RulesPackage" genModel="model/SokobanImportExport.genmodel" uri="platform:/plugin/SokobanImportExport/model/SokobanImportExport.ecore#//Rules"/>
+  </extension>
+</plugin>
