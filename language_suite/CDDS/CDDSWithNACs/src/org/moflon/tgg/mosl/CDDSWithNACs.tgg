@@ -1,0 +1,339 @@
+#import "platform:/plugin/CD/model/CD.ecore"
+#import "platform:/plugin/DS/model/DS.ecore"
+
+#schema CDDSWithNACs
+
+#source {
+	CD
+}
+
+#target {
+	DS
+}
+
+#correspondence {
+	AttrToColumn {
+		#src->CD.Attr
+		#trg->DS.Column
+	}
+	CDToDS {
+		#src->CD.ClazzDiagram
+		#trg->DS.Database
+	}
+	AssociationToForeignKey {
+		#src->CD.Association
+		#trg->DS.ForeignKey
+	}
+	ClazzToTable {
+		#src->CD.Clazz
+		#trg->DS.Table
+	}
+	ClazzToForeignKey {
+		#src->CD.Clazz
+		#trg->DS.ForeignKey
+	}
+}
+
+#attributeConditions {
+	eq(1: , 0: ) {
+		#sync: FB, BF, BB
+		#gen: BB, FB, BF, FF
+	}
+}
+
+
+#using CDDSWithNACs.*
+
+#rule Clazz2TableRule #with CDDSWithNACs
+
+#source {
+	++clazz:CD.Clazz
+	cd:CD.ClazzDiagram {
+		++ - clazz->clazz
+	}
+}
+
+#target {
+	ds:DS.Database
+	++table:DS.Table {
+		++ - column->idcolumn
+		++ - primaryKey->pk1
+		++ - ds->ds
+	}
+	++idcolumn:DS.Column {
+		primitive := true
+		type := "NUMBER"
+		name := "_entryID"
+	}
+	++pk1:DS.Key {
+		++ - storage->idcolumn
+	}
+}
+
+#correspondence {
+	cDToDS :CDToDS {
+		#src->cd
+		#trg->ds
+	}
+	++ clazzToTable :ClazzToTable {
+		#src->clazz
+		#trg->table
+	}
+}
+
+#attributeConditions {
+	eq (clazz.name, table.name)
+}
+
+
+#using CDDSWithNACs.*
+
+#rule Inheritance2ForeignKeyRule #with CDDSWithNACs
+
+#source {
+	superClass:CD.Clazz
+	subClazz:CD.Clazz {
+		! - super->superClass
+		++ - super->superClass
+	}
+}
+
+#target {
+	pkey1:DS.Key {
+		- storage->pColumn1
+		- referee->sameInheritanceForeignKey
+		++ - referee->inheritanceForeignKey
+	}
+	subTable:DS.Table {
+		- foreignKey->sameInheritanceForeignKey
+		++ - foreignKey->inheritanceForeignKey
+		- primaryKey->pkey2
+	}
+	pColumn2:DS.Column {
+		name == "_entryID"
+		type == "NUMBER"
+	}
+	!sameInheritanceForeignKey:DS.ForeignKey {
+		- storage->pColumn2
+	}
+	++inheritanceForeignKey:DS.ForeignKey {
+		++ - storage->pColumn2
+	}
+	pColumn1:DS.Column {
+		name == "_entryID"
+		type == "NUMBER"
+	}
+	superTable:DS.Table {
+		- primaryKey->pkey1
+	}
+	pkey2:DS.Key {
+		- storage->pColumn2
+	}
+}
+
+#correspondence {
+	clazzToTable1 :ClazzToTable {
+		#src->superClass
+		#trg->superTable
+	}
+	++ clazzToForeignKey1 :ClazzToForeignKey {
+		#src->superClass
+		#trg->inheritanceForeignKey
+	}
+	++ clazzToForeignKey2 :ClazzToForeignKey {
+		#src->subClazz
+		#trg->inheritanceForeignKey
+	}
+	clazzToTable2 :ClazzToTable {
+		#src->subClazz
+		#trg->subTable
+	}
+}
+
+
+#using CDDSWithNACs.*
+
+#abstract #rule AbstractNextAttr2ColumnRule #with CDDSWithNACs
+
+#source {
+	!otherAttr:CD.Attr {
+		- prev->lastAttr
+	}
+	!attrWithSameName:CD.Attr {
+		name == column . name
+	}
+	clazz:CD.Clazz {
+		- attr->attrWithSameName
+		- attr->lastAttr
+		- attr->otherAttr
+		++ - attr->attr
+	}
+	lastAttr:CD.Attr {
+		++ - next->attr
+	}
+	++attr:CD.Attr
+}
+
+#target {
+	++column:DS.Column {
+		primitive := true
+	}
+}
+
+
+#using CDDSWithNACs.*
+
+#rule CD2DSRule #with CDDSWithNACs
+
+#source {
+	++cd:CD.ClazzDiagram
+}
+
+#target {
+	++ds:DS.Database
+}
+
+#correspondence {
+	++ cDToDS :CDToDS {
+		#src->cd
+		#trg->ds
+	}
+}
+
+
+#using CDDSWithNACs.*
+
+#rule Assoc2ForeignKeyRule #with CDDSWithNACs
+
+#source {
+	sourceClazz:CD.Clazz {
+		++ - outgoingAssoc->assoc
+		- outgoingAssoc->assocWithSameName
+	}
+	!assocWithSameName:CD.Association {
+		name == assocColumn . name
+	}
+	cd:CD.ClazzDiagram {
+		++ - association->assoc
+		- clazz->targetClazz
+		- clazz->sourceClazz
+		- association->assocWithSameName
+	}
+	targetClazz:CD.Clazz {
+		- incomingAssoc->assocWithSameName
+		++ - incomingAssoc->assoc
+	}
+	++assoc:CD.Association
+}
+
+#target {
+	primaryColumn:DS.Column {
+		name == "_entryID"
+		type == "NUMBER"
+	}
+	sourceTable:DS.Table {
+		++ - foreignKey->fk
+		++ - column->assocColumn
+		- column->nextColumn
+		- column->lastColumn
+		- column->columnWithSameName
+	}
+	!columnWithSameName:DS.Column {
+		name == assoc . name
+	}
+	++assocColumn:DS.Column {
+		primitive := false
+	}
+	lastColumn:DS.Column {
+		++ - next->assocColumn
+	}
+	targetTable:DS.Table {
+		- primaryKey->pkey
+	}
+	++fk:DS.ForeignKey {
+		++ - storage->assocColumn
+	}
+	pkey:DS.Key {
+		- storage->primaryColumn
+		++ - referee->fk
+	}
+	!nextColumn:DS.Column {
+		- prev->lastColumn
+	}
+}
+
+#correspondence {
+	clazzToTable2 :ClazzToTable {
+		#src->sourceClazz
+		#trg->sourceTable
+	}
+	++ associationToForeignKey :AssociationToForeignKey {
+		#src->assoc
+		#trg->fk
+	}
+	clazzToTable1 :ClazzToTable {
+		#src->targetClazz
+		#trg->targetTable
+	}
+}
+
+#attributeConditions {
+	eq (assoc.name, assocColumn.name)
+}
+
+
+#using CDDSWithNACs.*
+
+#rule NextAttr2ColumnRule #extends AbstractNextAttr2ColumnRule, FirstAttr2ColumnRule #with CDDSWithNACs
+
+
+#using CDDSWithNACs.*
+
+#rule FirstAttr2ColumnRule #with CDDSWithNACs
+
+#source {
+	clazz:CD.Clazz {
+		- attr->otherAttr
+		++ - attr->attr
+	}
+	++attr:CD.Attr
+	!otherAttr:CD.Attr
+}
+
+#target {
+	!columnWithSameName:DS.Column {
+		name == attr . name
+	}
+	table:DS.Table {
+		- column->nextColumn
+		- column->lastColumn
+		- column->columnWithSameName
+		++ - column->column
+	}
+	++column:DS.Column {
+		primitive := true
+		++ - prev->lastColumn
+	}
+	!nextColumn:DS.Column
+	lastColumn:DS.Column {
+		- next->nextColumn
+	}
+}
+
+#correspondence {
+	++ attrToColumn :AttrToColumn {
+		#src->attr
+		#trg->column
+	}
+	clazzToTable :ClazzToTable {
+		#src->clazz
+		#trg->table
+	}
+}
+
+#attributeConditions {
+	eq (attr.name, column.name)
+	eq (attr.type, column.type)
+}
+
+
