@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tgg:TripleGraphGrammarFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tgg="http://www.moflon.org/ide/tgg/mosl/TGG">
+  <schema name="FamiliesToPersonsRefinementFlat">
+    <imports name="platform:/plugin/Families/model/Families.ecore"/>
+    <imports name="platform:/plugin/Persons/model/Persons.ecore"/>
+    <sourceTypes href="../../../../../../../plugin/Families/model/Families.ecore#/"/>
+    <targetTypes href="../../../../../../../plugin/Persons/model/Persons.ecore#/"/>
+    <correspondenceTypes name="FamilyToFather">
+      <source href="../../../../../../../plugin/Families/model/Families.ecore#//Family"/>
+      <target href="../../../../../../../plugin/Persons/model/Persons.ecore#//Father"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="MemberToMother">
+      <source href="../../../../../../../plugin/Families/model/Families.ecore#//Member"/>
+      <target href="../../../../../../../plugin/Persons/model/Persons.ecore#//Mother"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="MemberToFather">
+      <source href="../../../../../../../plugin/Families/model/Families.ecore#//Member"/>
+      <target href="../../../../../../../plugin/Persons/model/Persons.ecore#//Father"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="MemberToDaughter">
+      <source href="../../../../../../../plugin/Families/model/Families.ecore#//Member"/>
+      <target href="../../../../../../../plugin/Persons/model/Persons.ecore#//Daughter"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="MemberToSon">
+      <source href="../../../../../../../plugin/Families/model/Families.ecore#//Member"/>
+      <target href="../../../../../../../plugin/Persons/model/Persons.ecore#//Son"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="FamilyToPerson">
+      <source href="../../../../../../../plugin/Families/model/Families.ecore#//Family"/>
+      <target href="../../../../../../../plugin/Persons/model/Persons.ecore#//Person"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="FamilyRegisterToPersonsRegister">
+      <source href="../../../../../../../plugin/Families/model/Families.ecore#//FamilyRegister"/>
+      <target href="../../../../../../../plugin/Persons/model/Persons.ecore#//PersonsRegister"/>
+    </correspondenceTypes>
+    <attributeCondDefs name="concat">
+      <params type="EString"/>
+      <params index="3" type="EString"/>
+      <params index="2" type="EString"/>
+      <params index="1" type="EString"/>
+      <allowedSyncAdornments value="BBBB"/>
+      <allowedSyncAdornments value="BBFB"/>
+      <allowedSyncAdornments value="BFFB"/>
+      <allowedSyncAdornments value="BBBF"/>
+      <allowedSyncAdornments value="BFBB"/>
+      <allowedGenAdornments value="BBFF"/>
+      <allowedGenAdornments value="BBBF"/>
+      <allowedGenAdornments value="BBBB"/>
+      <allowedGenAdornments value="BFBF"/>
+      <allowedGenAdornments value="BFFB"/>
+      <allowedGenAdornments value="BBFB"/>
+      <allowedGenAdornments value="BFBB"/>
+      <allowedGenAdornments value="BFFF"/>
+    </attributeCondDefs>
+  </schema>
+  <rules name="DaughterToMembersRule" supertypes="//@rules.6 //@rules.8" schema="//@schema">
+    <using importedNamespace="FamiliesToPersonsRefinementFlat.*"/>
+  </rules>
+  <rules name="FatherToMembersRule" schema="//@schema">
+    <using importedNamespace="FamiliesToPersonsRefinementFlat.*"/>
+    <sourcePatterns name="familyRegister">
+      <type href="../../../../../../../plugin/Families/model/Families.ecore#//FamilyRegister"/>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Families/model/Families.ecore#//FamilyRegister/families"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="family">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Families/model/Families.ecore#//Family"/>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Families/model/Families.ecore#//Family/father"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="member">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Families/model/Families.ecore#//Member"/>
+    </sourcePatterns>
+    <targetPatterns name="father">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Persons/model/Persons.ecore#//Father"/>
+    </targetPatterns>
+    <targetPatterns name="personsRegister">
+      <type href="../../../../../../../plugin/Persons/model/Persons.ecore#//PersonsRegister"/>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Persons/model/Persons.ecore#//PersonsRegister/person"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="familyToFather" type="//@schema/@correspondenceTypes.0" source="//@rules.1/@sourcePatterns.1" target="//@rules.1/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="familyRegisterToPersonsRegister" type="//@schema/@correspondenceTypes.6" source="//@rules.1/@sourcePatterns.0" target="//@rules.1/@targetPatterns.1"/>
+    <correspondencePatterns name="memberToFather" type="//@schema/@correspondenceTypes.2" source="//@rules.1/@sourcePatterns.2" target="//@rules.1/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:LiteralExpression" value="&quot; &quot;"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@sourcePatterns.2" attribute="firstName"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@sourcePatterns.1" attribute="lastName"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@targetPatterns.0" attribute="fullName"/>
+    </attrConditions>
+  </rules>
+  <rules name="FamilyRegisterToPersonsRegisterRule" schema="//@schema">
+    <using importedNamespace="FamiliesToPersonsRefinementFlat.*"/>
+    <sourcePatterns name="familyRegister">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Families/model/Families.ecore#//FamilyRegister"/>
+    </sourcePatterns>
+    <targetPatterns name="personsRegister">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Persons/model/Persons.ecore#//PersonsRegister"/>
+    </targetPatterns>
+    <correspondencePatterns name="familyRegisterToPersonsRegister" type="//@schema/@correspondenceTypes.6" source="//@rules.2/@sourcePatterns.0" target="//@rules.2/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="MotherToMembersRule" supertypes="//@rules.6 //@rules.7" schema="//@schema">
+    <using importedNamespace="FamiliesToPersonsRefinementFlat.*"/>
+  </rules>
+  <rules name="AbstractSonToMembersRule" abstractRule="true" schema="//@schema">
+    <using importedNamespace="FamiliesToPersonsRefinementFlat.*"/>
+    <sourcePatterns name="family">
+      <type href="../../../../../../../plugin/Families/model/Families.ecore#//Family"/>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Families/model/Families.ecore#//Family/sons"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="member">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Families/model/Families.ecore#//Member"/>
+    </sourcePatterns>
+    <targetPatterns name="person">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Persons/model/Persons.ecore#//Son"/>
+    </targetPatterns>
+    <correspondencePatterns name="memberToSon" type="//@schema/@correspondenceTypes.4" source="//@rules.4/@sourcePatterns.1" target="//@rules.4/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="SonToMembersRule" supertypes="//@rules.4 //@rules.6" schema="//@schema">
+    <using importedNamespace="FamiliesToPersonsRefinementFlat.*"/>
+  </rules>
+  <rules name="FatherCreatedAbstractRule" abstractRule="true" schema="//@schema">
+    <using importedNamespace="FamiliesToPersonsRefinementFlat.*"/>
+    <sourcePatterns name="member">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Families/model/Families.ecore#//Member"/>
+    </sourcePatterns>
+    <sourcePatterns name="familyRegister">
+      <type href="../../../../../../../plugin/Families/model/Families.ecore#//FamilyRegister"/>
+      <linkVariablePatterns target="//@rules.6/@sourcePatterns.2">
+        <type href="../../../../../../../plugin/Families/model/Families.ecore#//FamilyRegister/families"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="family">
+      <type href="../../../../../../../plugin/Families/model/Families.ecore#//Family"/>
+    </sourcePatterns>
+    <targetPatterns name="person">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Persons/model/Persons.ecore#//Person"/>
+    </targetPatterns>
+    <targetPatterns name="father">
+      <type href="../../../../../../../plugin/Persons/model/Persons.ecore#//Father"/>
+    </targetPatterns>
+    <targetPatterns name="personsRegister">
+      <type href="../../../../../../../plugin/Persons/model/Persons.ecore#//PersonsRegister"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Persons/model/Persons.ecore#//PersonsRegister/person"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.1">
+        <type href="../../../../../../../plugin/Persons/model/Persons.ecore#//PersonsRegister/person"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="familyRegisterToPersonsRegister" type="//@schema/@correspondenceTypes.6" source="//@rules.6/@sourcePatterns.1" target="//@rules.6/@targetPatterns.2"/>
+    <correspondencePatterns name="familyToFather" type="//@schema/@correspondenceTypes.0" source="//@rules.6/@sourcePatterns.2" target="//@rules.6/@targetPatterns.1"/>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:LiteralExpression" value="&quot; &quot;"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.6/@sourcePatterns.0" attribute="firstName"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.6/@sourcePatterns.2" attribute="lastName"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.6/@targetPatterns.0" attribute="fullName"/>
+    </attrConditions>
+  </rules>
+  <rules name="AbstractMotherToMembersRule" abstractRule="true" schema="//@schema">
+    <using importedNamespace="FamiliesToPersonsRefinementFlat.*"/>
+    <sourcePatterns name="noMotherMember">
+      <op value="!"/>
+      <type href="../../../../../../../plugin/Families/model/Families.ecore#//Member"/>
+    </sourcePatterns>
+    <sourcePatterns name="family">
+      <type href="../../../../../../../plugin/Families/model/Families.ecore#//Family"/>
+      <linkVariablePatterns target="//@rules.7/@sourcePatterns.0">
+        <type href="../../../../../../../plugin/Families/model/Families.ecore#//Family/mother"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Families/model/Families.ecore#//Family/mother"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="member">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Families/model/Families.ecore#//Member"/>
+    </sourcePatterns>
+    <targetPatterns name="person">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Persons/model/Persons.ecore#//Mother"/>
+    </targetPatterns>
+    <correspondencePatterns name="memberToMother" type="//@schema/@correspondenceTypes.1" source="//@rules.7/@sourcePatterns.2" target="//@rules.7/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="AbstractDaughterToMembersRule" abstractRule="true" schema="//@schema">
+    <using importedNamespace="FamiliesToPersonsRefinementFlat.*"/>
+    <sourcePatterns name="member">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Families/model/Families.ecore#//Member"/>
+    </sourcePatterns>
+    <sourcePatterns name="family">
+      <type href="../../../../../../../plugin/Families/model/Families.ecore#//Family"/>
+      <linkVariablePatterns target="//@rules.8/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Families/model/Families.ecore#//Family/daughters"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="person">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Persons/model/Persons.ecore#//Daughter"/>
+    </targetPatterns>
+    <correspondencePatterns name="memberToDaughter" type="//@schema/@correspondenceTypes.3" source="//@rules.8/@sourcePatterns.0" target="//@rules.8/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+</tgg:TripleGraphGrammarFile>
