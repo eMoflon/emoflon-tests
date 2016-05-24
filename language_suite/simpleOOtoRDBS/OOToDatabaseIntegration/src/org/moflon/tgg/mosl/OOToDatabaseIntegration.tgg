@@ -1,0 +1,41 @@
+#import "platform:/plugin/ObjectOrientedLanguage/model/ObjectOrientedLanguage.ecore"
+#import "platform:/plugin/DatabaseLanguage/model/DatabaseLanguage.ecore"
+
+#schema OOToDatabaseIntegration
+
+#source {
+	ObjectOrientedLanguage
+}
+
+#target {
+	DatabaseLanguage
+}
+
+#correspondence {
+	ClassToTable {
+		#src->ObjectOrientedLanguage.Class
+		#trg->DatabaseLanguage.Table
+	}
+}
+
+
+#using OOToDatabaseIntegration.*
+
+#rule RuleClassToTable #with OOToDatabaseIntegration
+
+#source {
+	++cls:ObjectOrientedLanguage.Class
+}
+
+#target {
+	++table:DatabaseLanguage.Table
+}
+
+#correspondence {
+	++ classToTable :ClassToTable {
+		#src->cls
+		#trg->table
+	}
+}
+
+
