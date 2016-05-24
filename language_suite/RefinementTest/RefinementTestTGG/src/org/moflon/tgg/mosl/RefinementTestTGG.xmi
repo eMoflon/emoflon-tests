@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tgg:TripleGraphGrammarFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tgg="http://www.moflon.org/ide/tgg/mosl/TGG">
+  <schema name="RefinementTestTGG">
+    <imports name="platform:/plugin/MocaTree/model/MocaTree.ecore"/>
+    <imports name="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore"/>
+    <sourceTypes href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#/"/>
+    <targetTypes href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#/"/>
+    <correspondenceTypes name="FileToPseudoFile">
+      <source href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+      <target href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFile"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="NodeToPseudoNode">
+      <source href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <target href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoNode"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="FolderToPseudoFolder">
+      <source href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+      <target href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFolder"/>
+    </correspondenceTypes>
+  </schema>
+  <rules name="FileToPFileRule" schema="//@schema">
+    <using importedNamespace="RefinementTestTGG.*"/>
+    <sourcePatterns name="folder">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+      <linkVariablePatterns target="//@rules.0/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/file"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="file">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </sourcePatterns>
+    <targetPatterns name="pseudoFolder">
+      <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFolder"/>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFolder/pseudoFile"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="pseudoFile">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFile"/>
+    </targetPatterns>
+    <correspondencePatterns name="fileToPseudoFile" type="//@schema/@correspondenceTypes.0" source="//@rules.0/@sourcePatterns.1" target="//@rules.0/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="folderToPseudoFolder" type="//@schema/@correspondenceTypes.2" source="//@rules.0/@sourcePatterns.0" target="//@rules.0/@targetPatterns.0"/>
+  </rules>
+  <rules name="DeleteCorrRule" supertypes="//@rules.0 //@rules.7 //@rules.6 //@rules.9 //@rules.4" schema="//@schema">
+    <using importedNamespace="RefinementTestTGG.*"/>
+    <sourcePatterns name="node">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </sourcePatterns>
+    <targetPatterns name="pseudoNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoNode"/>
+    </targetPatterns>
+  </rules>
+  <rules name="DeleteEdgeRule" supertypes="//@rules.7 //@rules.6 //@rules.0 //@rules.8" schema="//@schema">
+    <using importedNamespace="RefinementTestTGG.*"/>
+    <targetPatterns name="pseudoFile">
+      <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFile"/>
+    </targetPatterns>
+    <targetPatterns name="pseudoNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoNode"/>
+    </targetPatterns>
+  </rules>
+  <rules name="ReplaceNodeRule" supertypes="//@rules.0 //@rules.7 //@rules.6" schema="//@schema">
+    <using importedNamespace="RefinementTestTGG.*"/>
+  </rules>
+  <rules name="CreateNodeRule" supertypes="//@rules.0 //@rules.7 //@rules.6" schema="//@schema">
+    <using importedNamespace="RefinementTestTGG.*"/>
+    <targetPatterns name="pseudoNode2">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoNode"/>
+    </targetPatterns>
+    <targetPatterns name="pseudoFile">
+      <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFile"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFile/pseudoNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+  </rules>
+  <rules name="ContextWinsRule" supertypes="//@rules.7 //@rules.6 //@rules.0" schema="//@schema">
+    <using importedNamespace="RefinementTestTGG.*"/>
+  </rules>
+  <rules name="NodeToPNodeRule" schema="//@schema">
+    <using importedNamespace="RefinementTestTGG.*"/>
+    <sourcePatterns name="file">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </sourcePatterns>
+    <sourcePatterns name="node">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <linkVariablePatterns target="//@rules.6/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node/file"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="folder">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+      <linkVariablePatterns target="//@rules.6/@sourcePatterns.0">
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/file"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="pseudoFolder">
+      <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFolder"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.2">
+        <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFolder/pseudoFile"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="pseudoNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoNode"/>
+    </targetPatterns>
+    <targetPatterns name="pseudoFile">
+      <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFile"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFile/pseudoNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="fileToPseudoFile" type="//@schema/@correspondenceTypes.0" source="//@rules.6/@sourcePatterns.0" target="//@rules.6/@targetPatterns.2"/>
+    <correspondencePatterns name="nodeToPseudoNode" type="//@schema/@correspondenceTypes.1" source="//@rules.6/@sourcePatterns.1" target="//@rules.6/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="folderToPseudoFolder" type="//@schema/@correspondenceTypes.2" source="//@rules.6/@sourcePatterns.2" target="//@rules.6/@targetPatterns.0"/>
+  </rules>
+  <rules name="FolderToPFolderRule" schema="//@schema">
+    <using importedNamespace="RefinementTestTGG.*"/>
+    <sourcePatterns name="folder">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </sourcePatterns>
+    <targetPatterns name="pseudoFolder">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFolder"/>
+    </targetPatterns>
+    <correspondencePatterns name="folderToPseudoFolder" type="//@schema/@correspondenceTypes.2" source="//@rules.7/@sourcePatterns.0" target="//@rules.7/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="AddEdgeRule" supertypes="//@rules.7 //@rules.0 //@rules.6" schema="//@schema">
+    <using importedNamespace="RefinementTestTGG.*"/>
+    <targetPatterns name="pseudoFolder">
+      <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFolder"/>
+      <linkVariablePatterns target="//@rules.8/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFolder/pseudoNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="pseudoNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoNode"/>
+    </targetPatterns>
+  </rules>
+  <rules name="AddCorrRule" supertypes="//@rules.7 //@rules.0 //@rules.6 //@rules.4" schema="//@schema">
+    <using importedNamespace="RefinementTestTGG.*"/>
+    <sourcePatterns name="node">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </sourcePatterns>
+    <targetPatterns name="pseudoNode2">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoNode"/>
+    </targetPatterns>
+    <correspondencePatterns name="node2ToPseudoNode" type="//@schema/@correspondenceTypes.1" source="//@rules.9/@sourcePatterns.0" target="//@rules.9/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+</tgg:TripleGraphGrammarFile>

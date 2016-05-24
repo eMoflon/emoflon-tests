@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tgg:TripleGraphGrammarFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tgg="http://www.moflon.org/ide/tgg/mosl/TGG">
+  <schema name="StackCodeAdapter">
+    <imports name="platform:/plugin/LIFOStack/model/LIFOStack.ecore"/>
+    <imports name="platform:/plugin/MocaTree/model/MocaTree.ecore"/>
+    <sourceTypes href="../../../../../../../plugin/LIFOStack/model/LIFOStack.ecore#/"/>
+    <targetTypes href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#/"/>
+    <correspondenceTypes name="StackElementToNode">
+      <source href="../../../../../../../plugin/LIFOStack/model/LIFOStack.ecore#//StackElement"/>
+      <target href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="StackToFile">
+      <source href="../../../../../../../plugin/LIFOStack/model/LIFOStack.ecore#//Stack"/>
+      <target href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </correspondenceTypes>
+  </schema>
+  <rules name="StackToFileRule" schema="//@schema">
+    <using importedNamespace="StackCodeAdapter.*"/>
+    <sourcePatterns name="stack">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/LIFOStack/model/LIFOStack.ecore#//Stack"/>
+    </sourcePatterns>
+    <targetPatterns name="file">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;stack.stack&quot;"/>
+      </attributeAssignments>
+    </targetPatterns>
+    <targetPatterns name="node">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Stack&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node/file"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="stacktofile" type="//@schema/@correspondenceTypes.1" source="//@rules.0/@sourcePatterns.0" target="//@rules.0/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="EndNodeRule" schema="//@schema">
+    <using importedNamespace="StackCodeAdapter.*"/>
+    <sourcePatterns name="end">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/LIFOStack/model/LIFOStack.ecore#//End"/>
+    </sourcePatterns>
+    <sourcePatterns name="stack">
+      <type href="../../../../../../../plugin/LIFOStack/model/LIFOStack.ecore#//Stack"/>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/LIFOStack/model/LIFOStack.ecore#//Stack/elements"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="rootNode">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.1">
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node/file"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="file">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </targetPatterns>
+    <targetPatterns name="node">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;End&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="stacktofile" type="//@schema/@correspondenceTypes.1" source="//@rules.1/@sourcePatterns.1" target="//@rules.1/@targetPatterns.1"/>
+    <correspondencePatterns name="stackelementtonode" type="//@schema/@correspondenceTypes.0" source="//@rules.1/@sourcePatterns.0" target="//@rules.1/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="StackElementToNodeRule" schema="//@schema">
+    <using importedNamespace="StackCodeAdapter.*"/>
+    <sourcePatterns name="stackelement">
+      <type href="../../../../../../../plugin/LIFOStack/model/LIFOStack.ecore#//StackElement"/>
+    </sourcePatterns>
+    <sourcePatterns name="stack">
+      <type href="../../../../../../../plugin/LIFOStack/model/LIFOStack.ecore#//Stack"/>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/LIFOStack/model/LIFOStack.ecore#//Stack/elements"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.0">
+        <type href="../../../../../../../plugin/LIFOStack/model/LIFOStack.ecore#//Stack/elements"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="newStackElement">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/LIFOStack/model/LIFOStack.ecore#//StackElement"/>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/LIFOStack/model/LIFOStack.ecore#//StackElement/next"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="node">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </targetPatterns>
+    <targetPatterns name="newNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Element&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="stackelementtonode" type="//@schema/@correspondenceTypes.0" source="//@rules.2/@sourcePatterns.0" target="//@rules.2/@targetPatterns.0"/>
+    <correspondencePatterns name="newStackElementToNode" type="//@schema/@correspondenceTypes.0" source="//@rules.2/@sourcePatterns.2" target="//@rules.2/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+</tgg:TripleGraphGrammarFile>

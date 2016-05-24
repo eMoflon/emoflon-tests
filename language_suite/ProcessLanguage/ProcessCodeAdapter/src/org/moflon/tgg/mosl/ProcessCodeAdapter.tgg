@@ -1,0 +1,402 @@
+#import "platform:/plugin/MocaTree/model/MocaTree.ecore"
+#import "platform:/plugin/ProcessDefinition/model/ProcessDefinition.ecore"
+
+#schema ProcessCodeAdapter
+
+#source {
+	MocaTree
+}
+
+#target {
+	ProcessDefinition
+}
+
+#correspondence {
+	FileToTask {
+		#src->MocaTree.File
+		#trg->ProcessDefinition.Task
+	}
+	FolderToSystem {
+		#src->MocaTree.Folder
+		#trg->ProcessDefinition.SystemModule
+	}
+	NodeToImport {
+		#src->MocaTree.Node
+		#trg->ProcessDefinition.Import
+	}
+	NodeToInvocation {
+		#src->MocaTree.Node
+		#trg->ProcessDefinition.Invocation
+	}
+	FolderToModule {
+		#src->MocaTree.Folder
+		#trg->ProcessDefinition.Module
+	}
+}
+
+#attributeConditions {
+	eq(0: , 1: ) {
+		#sync: BF, FB, BB
+		#gen: FF, FB, BF, BB
+	}
+	addPrefix(1:EString, 2:EString, 0:EString) {
+		#sync: FBB, BFB, BBF, BBB
+		#gen: BBF, FBB, FBF, BFF, BBB, BFB
+	}
+}
+
+
+#using ProcessCodeAdapter.*
+
+#rule NodeToInvocationRule #extends AbstractOtherInvokedTaskRule, AbstractNodeToInvocationRule #with ProcessCodeAdapter
+
+#source {
+	++invocationNode:MocaTree.Node
+}
+
+#target {
+	++invocation:ProcessDefinition.Invocation
+}
+
+#correspondence {
+	++ invocationNodeToInvocation :NodeToInvocation {
+		#src->invocationNode
+		#trg->invocation
+	}
+}
+
+
+#using ProcessCodeAdapter.*
+
+#abstract #rule AbstractNodeToImportRule #with ProcessCodeAdapter
+
+#source {
+	taskNode:MocaTree.Node {
+		- file->file
+	}
+	invocationsNode:MocaTree.Node {
+		- parentNode->taskNode
+	}
+	file:MocaTree.File
+	folder:MocaTree.Folder {
+		- file->file
+	}
+	++invocationNode:MocaTree.Node {
+		++ - parentNode->invocationsNode
+	}
+}
+
+#target {
+	system:ProcessDefinition.SystemModule
+	task:ProcessDefinition.Task
+}
+
+#correspondence {
+	fileToTask :FileToTask {
+		#src->file
+		#trg->task
+	}
+}
+
+
+#using ProcessCodeAdapter.*
+
+#rule NodeToImportRule #extends AbstractNodeToImportRule #with ProcessCodeAdapter
+
+#source {
+	++invocationNode:MocaTree.Node {
+		++ - parentNode->invocationsNode
+	}
+	otherFolder:MocaTree.Folder
+	rootFolder:MocaTree.Folder {
+		- subFolder->otherFolder
+		- subFolder->folder
+	}
+	invocationsNode:MocaTree.Node {
+		name == "IMPORTS"
+	}
+	folder:MocaTree.Folder
+}
+
+#target {
+	++invocation:ProcessDefinition.Import
+	module:ProcessDefinition.Module
+	importedModule:ProcessDefinition.Module {
+		++ - import->invocation
+	}
+	task:ProcessDefinition.Task {
+		- module->module
+		++ - imports->invocation
+	}
+	system:ProcessDefinition.SystemModule {
+		- allModules->module
+		- allModules->importedModule
+	}
+}
+
+#correspondence {
+	++ nodeToImport :NodeToImport {
+		#src->invocationNode
+		#trg->invocation
+	}
+	fileToImportedModule :FolderToModule {
+		#src->otherFolder
+		#trg->importedModule
+	}
+}
+
+#attributeConditions {
+	eq (invocationNode.name, otherFolder.name)
+}
+
+
+#using ProcessCodeAdapter.*
+
+#rule RootToSystemRule #with ProcessCodeAdapter
+
+#source {
+	++rootFolder:MocaTree.Folder
+}
+
+#target {
+	++system:ProcessDefinition.SystemModule
+}
+
+#correspondence {
+	++ rootFolderToSystem :FolderToSystem {
+		#src->rootFolder
+		#trg->system
+	}
+}
+
+#attributeConditions {
+	eq (rootFolder.name, system.name)
+}
+
+
+#using ProcessCodeAdapter.*
+
+#abstract #rule AbstractOtherInvokedTaskRule #with ProcessCodeAdapter
+
+#source {
+	otherFile:MocaTree.File
+	folder:MocaTree.Folder {
+		- file->otherFile
+	}
+	++invocationNode:MocaTree.Node
+}
+
+#target {
+	system:ProcessDefinition.SystemModule
+	invokedTask:ProcessDefinition.Task {
+		++ - invocation->invocation
+		- systemModule->system
+	}
+	++invocation:ProcessDefinition.Invocation
+}
+
+#correspondence {
+	fileToTask2 :FileToTask {
+		#src->otherFile
+		#trg->invokedTask
+	}
+}
+
+#attributeConditions {
+	addPrefix (invocationNode.name, ".proc", otherFile.name)
+}
+
+
+#using ProcessCodeAdapter.*
+
+#rule NodeToInvocationDifferentModuleRule #extends AbstractNodeToInvocationRule #with ProcessCodeAdapter
+
+#source {
+	rootFolder:MocaTree.Folder {
+		- subFolder->otherFolder
+		- subFolder->folder
+	}
+	++invocationNode:MocaTree.Node
+	otherFolder:MocaTree.Folder {
+		- file->otherFile
+	}
+	folder:MocaTree.Folder
+	otherFile:MocaTree.File
+}
+
+#target {
+	invokedTask:ProcessDefinition.Task {
+		++ - invocation->invocation
+		- systemModule->system
+	}
+	++invocation:ProcessDefinition.Invocation
+	system:ProcessDefinition.SystemModule
+}
+
+#correspondence {
+	++ invocationNodeToInvocation :NodeToInvocation {
+		#src->invocationNode
+		#trg->invocation
+	}
+	file2Task2 :FileToTask {
+		#src->otherFile
+		#trg->invokedTask
+	}
+}
+
+#attributeConditions {
+	addPrefix (invocationNode.name, ".proc", otherFile.name)
+}
+
+
+#using ProcessCodeAdapter.*
+
+#rule FileToTaskRule #with ProcessCodeAdapter
+
+#source {
+	folder:MocaTree.Folder {
+		++ - file->file
+	}
+	++invocationNode:MocaTree.Node {
+		name := "INVOCATIONS"
+		++ - parentNode->taskNode
+	}
+	++taskNode:MocaTree.Node {
+		name := "TASK"
+		++ - file->file
+	}
+	++file:MocaTree.File
+	++importNode:MocaTree.Node {
+		name := "IMPORTS"
+		++ - parentNode->taskNode
+	}
+}
+
+#target {
+	system:ProcessDefinition.SystemModule {
+		- allModules->module
+	}
+	module:ProcessDefinition.Module
+	++task:ProcessDefinition.Task {
+		++ - module->module
+		++ - systemModule->system
+	}
+}
+
+#correspondence {
+	folderToModule :FolderToModule {
+		#src->folder
+		#trg->module
+	}
+	++ fileToTask :FileToTask {
+		#src->file
+		#trg->task
+	}
+}
+
+#attributeConditions {
+	addPrefix (task.id, ".proc", file.name)
+}
+
+
+#using ProcessCodeAdapter.*
+
+#rule SubFolderToModuleRule #with ProcessCodeAdapter
+
+#source {
+	rootFolder:MocaTree.Folder {
+		++ - subFolder->subFolder
+	}
+	++subFolder:MocaTree.Folder
+}
+
+#target {
+	++module:ProcessDefinition.Module
+	system:ProcessDefinition.SystemModule {
+		++ - allModules->module
+	}
+}
+
+#correspondence {
+	++ subFolderToSubTask :FolderToModule {
+		#src->subFolder
+		#trg->module
+	}
+	folderToSystem :FolderToSystem {
+		#src->rootFolder
+		#trg->system
+	}
+}
+
+#attributeConditions {
+	eq (subFolder.name, module.description)
+}
+
+
+#using ProcessCodeAdapter.*
+
+#abstract #rule AbstractNodeToInvocationRule #with ProcessCodeAdapter
+
+#source {
+	file:MocaTree.File
+	folder:MocaTree.Folder {
+		- file->file
+	}
+	++invocationNode:MocaTree.Node {
+		++ - parentNode->invocationsNode
+	}
+	taskNode:MocaTree.Node {
+		- file->file
+	}
+	invocationsNode:MocaTree.Node {
+		name == "INVOCATIONS"
+		- parentNode->taskNode
+	}
+}
+
+#target {
+	task:ProcessDefinition.Task {
+		- systemModule->system
+		++ - invocations->invocation
+	}
+	++invocation:ProcessDefinition.Invocation
+	system:ProcessDefinition.SystemModule
+}
+
+#correspondence {
+	fileToTask :FileToTask {
+		#src->file
+		#trg->task
+	}
+}
+
+
+#using ProcessCodeAdapter.*
+
+#rule NodeToInvocationRecursiveRule #extends AbstractNodeToInvocationRule #with ProcessCodeAdapter
+
+#source {
+	++invocationNode:MocaTree.Node
+	file:MocaTree.File
+}
+
+#target {
+	task:ProcessDefinition.Task {
+		++ - invocation->invocation
+		++ - invocations->invocation
+	}
+	++invocation:ProcessDefinition.Invocation
+}
+
+#correspondence {
+	++ invocationNodeToInvocation :NodeToInvocation {
+		#src->invocationNode
+		#trg->invocation
+	}
+}
+
+#attributeConditions {
+	addPrefix (invocationNode.name, ".proc", file.name)
+}
+
+

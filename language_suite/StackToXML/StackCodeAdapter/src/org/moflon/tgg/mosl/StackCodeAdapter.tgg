@@ -1,0 +1,120 @@
+#import "platform:/plugin/LIFOStack/model/LIFOStack.ecore"
+#import "platform:/plugin/MocaTree/model/MocaTree.ecore"
+
+#schema StackCodeAdapter
+
+#source {
+	LIFOStack
+}
+
+#target {
+	MocaTree
+}
+
+#correspondence {
+	StackElementToNode {
+		#src->LIFOStack.StackElement
+		#trg->MocaTree.Node
+	}
+	StackToFile {
+		#src->LIFOStack.Stack
+		#trg->MocaTree.File
+	}
+}
+
+
+#using StackCodeAdapter.*
+
+#rule StackToFileRule #with StackCodeAdapter
+
+#source {
+	++stack:LIFOStack.Stack
+}
+
+#target {
+	++file:MocaTree.File {
+		name := "stack.stack"
+	}
+	++node:MocaTree.Node {
+		name := "Stack"
+		++ - file->file
+	}
+}
+
+#correspondence {
+	++ stacktofile :StackToFile {
+		#src->stack
+		#trg->file
+	}
+}
+
+
+#using StackCodeAdapter.*
+
+#rule EndNodeRule #with StackCodeAdapter
+
+#source {
+	++end:LIFOStack.End
+	stack:LIFOStack.Stack {
+		++ - elements->end
+	}
+}
+
+#target {
+	rootNode:MocaTree.Node {
+		- file->file
+	}
+	file:MocaTree.File
+	++node:MocaTree.Node {
+		name := "End"
+		++ - parentNode->rootNode
+	}
+}
+
+#correspondence {
+	stacktofile :StackToFile {
+		#src->stack
+		#trg->file
+	}
+	++ stackelementtonode :StackElementToNode {
+		#src->end
+		#trg->node
+	}
+}
+
+
+#using StackCodeAdapter.*
+
+#rule StackElementToNodeRule #with StackCodeAdapter
+
+#source {
+	stackelement:LIFOStack.StackElement
+	stack:LIFOStack.Stack {
+		++ - elements->newStackElement
+		- elements->stackelement
+	}
+	++newStackElement:LIFOStack.StackElement {
+		++ - next->stackelement
+	}
+}
+
+#target {
+	node:MocaTree.Node
+	++newNode:MocaTree.Node {
+		name := "Element"
+		++ - parentNode->node
+	}
+}
+
+#correspondence {
+	stackelementtonode :StackElementToNode {
+		#src->stackelement
+		#trg->node
+	}
+	++ newStackElementToNode :StackElementToNode {
+		#src->newStackElement
+		#trg->newNode
+	}
+}
+
+
