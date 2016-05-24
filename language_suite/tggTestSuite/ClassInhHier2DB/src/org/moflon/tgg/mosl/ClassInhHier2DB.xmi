@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tgg:TripleGraphGrammarFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tgg="http://www.moflon.org/ide/tgg/mosl/TGG">
+  <schema name="ClassInhHier2DB">
+    <imports name="platform:/plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore"/>
+    <imports name="platform:/plugin/Database/model/Database.ecore"/>
+    <sourceTypes href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#/"/>
+    <targetTypes href="../../../../../../../plugin/Database/model/Database.ecore#/"/>
+    <correspondenceTypes name="PackageToDatabase">
+      <source href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//ClassPackage"/>
+      <target href="../../../../../../../plugin/Database/model/Database.ecore#//DB"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="ClazzToTable">
+      <source href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//Clazz"/>
+      <target href="../../../../../../../plugin/Database/model/Database.ecore#//Table"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="AttributeToColumn">
+      <source href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//Attribute"/>
+      <target href="../../../../../../../plugin/Database/model/Database.ecore#//Column"/>
+    </correspondenceTypes>
+    <attributeCondDefs name="eq">
+      <params type=""/>
+      <params index="1" type=""/>
+      <allowedSyncAdornments value="BF"/>
+      <allowedSyncAdornments value="FB"/>
+      <allowedSyncAdornments value="BB"/>
+      <allowedGenAdornments value="FF"/>
+      <allowedGenAdornments value="BB"/>
+      <allowedGenAdornments value="BF"/>
+      <allowedGenAdornments value="FB"/>
+    </attributeCondDefs>
+  </schema>
+  <rules name="ClassToTableRule" schema="//@schema">
+    <using importedNamespace="ClassInhHier2DB.*"/>
+    <sourcePatterns name="classpackage">
+      <type href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//ClassPackage"/>
+    </sourcePatterns>
+    <sourcePatterns name="clazz">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//Clazz"/>
+      <linkVariablePatterns target="//@rules.0/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//Clazz/package"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="db">
+      <type href="../../../../../../../plugin/Database/model/Database.ecore#//DB"/>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Database/model/Database.ecore#//DB/tables"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="table">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Database/model/Database.ecore#//Table"/>
+    </targetPatterns>
+    <correspondencePatterns name="packageToDatabase" type="//@schema/@correspondenceTypes.0" source="//@rules.0/@sourcePatterns.0" target="//@rules.0/@targetPatterns.0"/>
+    <correspondencePatterns name="clazzToTable" type="//@schema/@correspondenceTypes.1" source="//@rules.0/@sourcePatterns.1" target="//@rules.0/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@sourcePatterns.1" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@targetPatterns.1" attribute="heading"/>
+    </attrConditions>
+  </rules>
+  <rules name="SubClassToTable" schema="//@schema">
+    <using importedNamespace="ClassInhHier2DB.*"/>
+    <sourcePatterns name="subClazz">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//Clazz"/>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//Clazz/superClass"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//Clazz/package"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="classpackage">
+      <type href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//ClassPackage"/>
+    </sourcePatterns>
+    <sourcePatterns name="clazz">
+      <type href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//Clazz"/>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.1">
+        <type href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//Clazz/package"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="table">
+      <type href="../../../../../../../plugin/Database/model/Database.ecore#//Table"/>
+    </targetPatterns>
+    <correspondencePatterns name="clazzToTable" type="//@schema/@correspondenceTypes.1" source="//@rules.1/@sourcePatterns.2" target="//@rules.1/@targetPatterns.0"/>
+    <correspondencePatterns name="subClazzToTable" type="//@schema/@correspondenceTypes.1" source="//@rules.1/@sourcePatterns.0" target="//@rules.1/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="AttributeToColumnRule" schema="//@schema">
+    <using importedNamespace="ClassInhHier2DB.*"/>
+    <sourcePatterns name="clazz">
+      <type href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//Clazz"/>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//Clazz/attributes"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="attribute">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//Attribute"/>
+    </sourcePatterns>
+    <targetPatterns name="column">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Database/model/Database.ecore#//Column"/>
+    </targetPatterns>
+    <targetPatterns name="table">
+      <type href="../../../../../../../plugin/Database/model/Database.ecore#//Table"/>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Database/model/Database.ecore#//Table/columns"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="clazzToTable" type="//@schema/@correspondenceTypes.1" source="//@rules.2/@sourcePatterns.0" target="//@rules.2/@targetPatterns.1"/>
+    <correspondencePatterns name="attributeToColumn" type="//@schema/@correspondenceTypes.2" source="//@rules.2/@sourcePatterns.1" target="//@rules.2/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@sourcePatterns.1" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@targetPatterns.0" attribute="name"/>
+    </attrConditions>
+  </rules>
+  <rules name="PackageToDatabaseRule" schema="//@schema">
+    <using importedNamespace="ClassInhHier2DB.*"/>
+    <sourcePatterns name="classpackage">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore#//ClassPackage"/>
+    </sourcePatterns>
+    <targetPatterns name="db">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Database/model/Database.ecore#//DB"/>
+    </targetPatterns>
+    <correspondencePatterns name="packageToDatabase" type="//@schema/@correspondenceTypes.0" source="//@rules.3/@sourcePatterns.0" target="//@rules.3/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.3/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.3/@targetPatterns.0" attribute="title"/>
+    </attrConditions>
+  </rules>
+</tgg:TripleGraphGrammarFile>
