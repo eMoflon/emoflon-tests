@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tgg:TripleGraphGrammarFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tgg="http://www.moflon.org/ide/tgg/mosl/TGG">
+  <schema name="BoardGameTGG_eMoflonTutorial">
+    <imports name="platform:/plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore"/>
+    <imports name="platform:/plugin/MocaTree/model/MocaTree.ecore"/>
+    <sourceTypes href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#/"/>
+    <targetTypes href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#/"/>
+    <correspondenceTypes name="FieldToNode">
+      <source href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field"/>
+      <target href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="BoardToNode">
+      <source href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Board"/>
+      <target href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </correspondenceTypes>
+    <attributeCondDefs name="stringToInt">
+      <params index="1" type="EInt"/>
+      <params type="EString"/>
+      <allowedSyncAdornments value="BB"/>
+      <allowedSyncAdornments value="FB"/>
+      <allowedSyncAdornments value="BF"/>
+      <allowedGenAdornments value="BF"/>
+      <allowedGenAdornments value="FF"/>
+      <allowedGenAdornments value="FB"/>
+      <allowedGenAdornments value="BB"/>
+    </attributeCondDefs>
+    <attributeCondDefs name="addSuffix">
+      <params type="EString"/>
+      <params index="2" type="EString"/>
+      <params index="1" type="EString"/>
+      <allowedSyncAdornments value="BBB"/>
+      <allowedSyncAdornments value="BBF"/>
+      <allowedSyncAdornments value="FBB"/>
+      <allowedSyncAdornments value="BFB"/>
+      <allowedGenAdornments value="FBB"/>
+      <allowedGenAdornments value="BFB"/>
+      <allowedGenAdornments value="FBF"/>
+      <allowedGenAdornments value="BBB"/>
+      <allowedGenAdornments value="FFF"/>
+      <allowedGenAdornments value="BBF"/>
+      <allowedGenAdornments value="BFF"/>
+    </attributeCondDefs>
+  </schema>
+  <rules name="FieldToNodeAllOther" schema="//@schema">
+    <using importedNamespace="BoardGameTGG_eMoflonTutorial.*"/>
+    <sourcePatterns name="leftNeighbor">
+      <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field"/>
+      <linkVariablePatterns target="//@rules.0/@sourcePatterns.3">
+        <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/board"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.0/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/right"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="field">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field"/>
+      <linkVariablePatterns target="//@rules.0/@sourcePatterns.3">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/board"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="topNeighbor">
+      <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field"/>
+      <linkVariablePatterns target="//@rules.0/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/bottom"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.0/@sourcePatterns.3">
+        <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/board"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="board">
+      <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Board"/>
+    </sourcePatterns>
+    <targetPatterns name="rowNode">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeConstraints op=" != ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeConstraints>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;ROW&quot;"/>
+      </attributeConstraints>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.2">
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="columnNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;COLUMN&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="boardNode">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;BOARD&quot;"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <correspondencePatterns name="fToN" type="//@schema/@correspondenceTypes.0" source="//@rules.0/@sourcePatterns.1" target="//@rules.0/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="bToN" type="//@schema/@correspondenceTypes.1" source="//@rules.0/@sourcePatterns.3" target="//@rules.0/@targetPatterns.2"/>
+  </rules>
+  <rules name="BoardToBoardNode" schema="//@schema">
+    <using importedNamespace="BoardGameTGG_eMoflonTutorial.*"/>
+    <sourcePatterns name="board">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Board"/>
+    </sourcePatterns>
+    <sourcePatterns name="topLeftField">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/col"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/row"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/board"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="colsNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="1"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;COLS&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="file">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </targetPatterns>
+    <targetPatterns name="dimensionNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;DIMENSIONS&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.9">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="columnCountNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="boardNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;BOARD&quot;"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="1"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.9">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="topLeftFieldNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;COLUMN&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.6">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="topRowNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;ROW&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.4">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="rowsNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;ROWS&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="rowCountNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.7">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="boardSpecNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;BOARD_SPEC&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node/file"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="fToN" type="//@schema/@correspondenceTypes.0" source="//@rules.1/@sourcePatterns.1" target="//@rules.1/@targetPatterns.5">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="bToN" type="//@schema/@correspondenceTypes.1" source="//@rules.1/@sourcePatterns.0" target="//@rules.1/@targetPatterns.4">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@targetPatterns.3" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@sourcePatterns.0" attribute="width"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@targetPatterns.8" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@sourcePatterns.0" attribute="height"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.1">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:LiteralExpression" value="&quot;.board&quot;"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@targetPatterns.1" attribute="name"/>
+    </attrConditions>
+  </rules>
+  <rules name="CreateFigureNode" schema="//@schema">
+    <using importedNamespace="BoardGameTGG_eMoflonTutorial.*"/>
+    <sourcePatterns name="field">
+      <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field"/>
+    </sourcePatterns>
+    <sourcePatterns name="place">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Place"/>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Place/field"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="fieldNode">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;COLUMN&quot;"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <targetPatterns name="figureNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="fToN" type="//@schema/@correspondenceTypes.0" source="//@rules.2/@sourcePatterns.0" target="//@rules.2/@targetPatterns.0"/>
+  </rules>
+  <rules name="FieldToNodeTopRow" schema="//@schema">
+    <using importedNamespace="BoardGameTGG_eMoflonTutorial.*"/>
+    <sourcePatterns name="field">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/row"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/board"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="leftNeighbor">
+      <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/row"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeConstraints>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.2">
+        <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/board"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/right"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="board">
+      <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Board"/>
+    </sourcePatterns>
+    <targetPatterns name="rowNode">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;ROW&quot;"/>
+      </attributeConstraints>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeConstraints>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.1">
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="boardNode">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;BOARD&quot;"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <targetPatterns name="columnNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;COLUMN&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="bToN" type="//@schema/@correspondenceTypes.1" source="//@rules.3/@sourcePatterns.2" target="//@rules.3/@targetPatterns.1"/>
+    <correspondencePatterns name="fToN" type="//@schema/@correspondenceTypes.0" source="//@rules.3/@sourcePatterns.0" target="//@rules.3/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="FieldToNodeLeftColumn" schema="//@schema">
+    <using importedNamespace="BoardGameTGG_eMoflonTutorial.*"/>
+    <sourcePatterns name="topNeighbor">
+      <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/col"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeConstraints>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.1">
+        <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/board"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/bottom"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="board">
+      <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Board"/>
+    </sourcePatterns>
+    <sourcePatterns name="field">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/col"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore#//Field/board"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="boardNode">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;BOARD&quot;"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <targetPatterns name="rowNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;ROW&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="columnNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;COLUMN&quot;"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="bToN" type="//@schema/@correspondenceTypes.1" source="//@rules.4/@sourcePatterns.1" target="//@rules.4/@targetPatterns.0"/>
+    <correspondencePatterns name="fToN" type="//@schema/@correspondenceTypes.0" source="//@rules.4/@sourcePatterns.2" target="//@rules.4/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+</tgg:TripleGraphGrammarFile>
