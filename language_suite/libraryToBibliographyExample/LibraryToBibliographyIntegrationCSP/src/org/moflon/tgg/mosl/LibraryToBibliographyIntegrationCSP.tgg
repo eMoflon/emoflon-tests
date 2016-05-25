@@ -135,7 +135,7 @@
 	}
 	aut:LibraryLanguageCSP.Author
 	!existingBook:LibraryLanguageCSP.Book {
-		title == pub . citation
+		title == pub.citation
 	}
 	lib:LibraryLanguageCSP.Library {
 		- book->existingBook
