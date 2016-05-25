@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tgg:TripleGraphGrammarFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tgg="http://www.moflon.org/ide/tgg/mosl/TGG">
+  <schema name="SimpleEcoreToHTML">
+    <imports name="http://www.eclipse.org/emf/2002/Ecore"/>
+    <imports name="platform:/plugin/MocaTree/model/MocaTree.ecore"/>
+    <imports name="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//activities"/>
+    <sourceTypes href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+    <sourceTypes href="../../../../../../../plugin/SDMLanguage/model/SDMLanguage.ecore#//activities"/>
+    <targetTypes href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#/"/>
+    <correspondenceTypes name="EClassToSuperClassesTable">
+      <source href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+      <target href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="EPackageToFolder">
+      <source href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+      <target href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="EClassToMethodTable">
+      <source href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+      <target href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="EClassToFile">
+      <source href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+      <target href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="EOperationToNode">
+      <source href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+      <target href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </correspondenceTypes>
+    <attributeCondDefs name="eq">
+      <params index="1" type=""/>
+      <params type=""/>
+      <allowedSyncAdornments value="FB"/>
+      <allowedSyncAdornments value="BF"/>
+      <allowedSyncAdornments value="BB"/>
+      <allowedGenAdornments value="FF"/>
+      <allowedGenAdornments value="FB"/>
+      <allowedGenAdornments value="BF"/>
+      <allowedGenAdornments value="BB"/>
+    </attributeCondDefs>
+    <attributeCondDefs name="addSuffix">
+      <params index="2" type="EString"/>
+      <params index="1" type="EString"/>
+      <params type="EString"/>
+      <allowedSyncAdornments value="FBB"/>
+      <allowedSyncAdornments value="BFB"/>
+      <allowedSyncAdornments value="BBB"/>
+      <allowedSyncAdornments value="BBF"/>
+      <allowedGenAdornments value="FFF"/>
+      <allowedGenAdornments value="FBB"/>
+      <allowedGenAdornments value="FBF"/>
+      <allowedGenAdornments value="BFB"/>
+      <allowedGenAdornments value="BFF"/>
+      <allowedGenAdornments value="BBB"/>
+      <allowedGenAdornments value="BBF"/>
+    </attributeCondDefs>
+    <attributeCondDefs name="addPrefix">
+      <params type="EString"/>
+      <params index="1" type="EString"/>
+      <params index="2" type="EString"/>
+      <allowedSyncAdornments value="BBB"/>
+      <allowedSyncAdornments value="FBB"/>
+      <allowedSyncAdornments value="BFB"/>
+      <allowedSyncAdornments value="BBF"/>
+      <allowedGenAdornments value="BFF"/>
+      <allowedGenAdornments value="FBB"/>
+      <allowedGenAdornments value="BBF"/>
+      <allowedGenAdornments value="BFB"/>
+      <allowedGenAdornments value="BBB"/>
+      <allowedGenAdornments value="FBF"/>
+    </attributeCondDefs>
+  </schema>
+  <rules name="DocumentMethod" schema="//@schema">
+    <using importedNamespace="SimpleEcoreToHTML.*"/>
+    <sourcePatterns name="src__method">
+      <op value="++"/>
+      <type href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </sourcePatterns>
+    <targetPatterns name="ref">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text"/>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="tr">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;tr&quot;"/>
+      </attributeAssignments>
+    </targetPatterns>
+    <targetPatterns name="td">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;td&quot;"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="docu">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;td&quot;"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="1"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="methodToTr" type="//@schema/@correspondenceTypes.4" source="//@rules.0/@sourcePatterns.0" target="//@rules.0/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@targetPatterns.0" attribute="name"/>
+    </attrConditions>
+  </rules>
+  <rules name="EOperationTableBridge" schema="//@schema">
+    <using importedNamespace="SimpleEcoreToHTML.*"/>
+    <sourcePatterns name="method">
+      <type href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EOperation/eContainingClass"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="eclass">
+      <type href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </sourcePatterns>
+    <targetPatterns name="tr">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;tr&quot;"/>
+      </attributeConstraints>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="methodTable">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;table&quot;"/>
+      </attributeConstraints>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="3"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <correspondencePatterns name="eclassToMethodTable" type="//@schema/@correspondenceTypes.2" source="//@rules.1/@sourcePatterns.1" target="//@rules.1/@targetPatterns.1"/>
+    <correspondencePatterns name="methodToTr" type="//@schema/@correspondenceTypes.4" source="//@rules.1/@sourcePatterns.0" target="//@rules.1/@targetPatterns.0"/>
+  </rules>
+  <rules name="IgnoreFileDocumentation" schema="//@schema">
+    <using importedNamespace="SimpleEcoreToHTML.*"/>
+    <targetPatterns name="documentation">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="1"/>
+      </attributeConstraints>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;p&quot;"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <targetPatterns name="docu">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text"/>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+  </rules>
+  <rules name="DocumentMoflonMethod" supertypes="//@rules.0" schema="//@schema">
+    <using importedNamespace="SimpleEcoreToHTML.*"/>
+    <sourcePatterns name="src__method">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SDMLanguage/model/SDMLanguage.ecore#//activities/MoflonEOperation"/>
+    </sourcePatterns>
+  </rules>
+  <rules name="DocumentInheritance" schema="//@schema">
+    <using importedNamespace="SimpleEcoreToHTML.*"/>
+    <sourcePatterns name="superClass">
+      <type href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </sourcePatterns>
+    <sourcePatterns name="subClass">
+      <type href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EClass/eSuperTypes"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="tr">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;tr&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.3">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="link">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Link"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Link/targets"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="tableOfSuperClass">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </targetPatterns>
+    <targetPatterns name="tableOfSubClass">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/links"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="ref">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.5">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="td">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;td&quot;"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="superClassToTableOfSuperClass" type="//@schema/@correspondenceTypes.0" source="//@rules.4/@sourcePatterns.0" target="//@rules.4/@targetPatterns.2"/>
+    <correspondencePatterns name="subClassToTableOfSubClass" type="//@schema/@correspondenceTypes.0" source="//@rules.4/@sourcePatterns.1" target="//@rules.4/@targetPatterns.3"/>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@targetPatterns.4" attribute="name"/>
+    </attrConditions>
+  </rules>
+  <rules name="EClassToHTMLFile" supertypes="//@rules.8" schema="//@schema">
+    <using importedNamespace="SimpleEcoreToHTML.*"/>
+    <sourcePatterns name="eclass">
+      <op value="++"/>
+      <type href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </sourcePatterns>
+    <targetPatterns name="methods">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Methods of this class: &quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.7">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="methodTable">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="3"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;table&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.6">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="h3_forSuperClasses">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="4"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;h3&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.6">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="htmlFile">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </targetPatterns>
+    <targetPatterns name="title">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text"/>
+    </targetPatterns>
+    <targetPatterns name="superClassesTable">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;table&quot;"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="5"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.6">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="body">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;body&quot;"/>
+      </attributeAssignments>
+    </targetPatterns>
+    <targetPatterns name="h3">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="2"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;h3&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.6">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="allSupers">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;All Known Super Classes: &quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="eclassToSuperClassesTable" type="//@schema/@correspondenceTypes.0" source="//@rules.5/@sourcePatterns.0" target="//@rules.5/@targetPatterns.5">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="eclassToMethodTable" type="//@schema/@correspondenceTypes.2" source="//@rules.5/@sourcePatterns.0" target="//@rules.5/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="eclassToHtmlFile" type="//@schema/@correspondenceTypes.3" source="//@rules.5/@sourcePatterns.0" target="//@rules.5/@targetPatterns.3">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.1">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.5/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:LiteralExpression" value="&quot;.html&quot;"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.5/@targetPatterns.3" attribute="name"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.2">
+      <values xsi:type="tgg:LiteralExpression" value="&quot;EClass &quot;"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.5/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.5/@targetPatterns.4" attribute="name"/>
+    </attrConditions>
+  </rules>
+  <rules name="IgnoreMethodDocumentation" schema="//@schema">
+    <using importedNamespace="SimpleEcoreToHTML.*"/>
+    <targetPatterns name="docu">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="documentation">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;td&quot;"/>
+      </attributeConstraints>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="1"/>
+      </attributeConstraints>
+    </targetPatterns>
+  </rules>
+  <rules name="EClassFileBridge" schema="//@schema">
+    <using importedNamespace="SimpleEcoreToHTML.*"/>
+    <sourcePatterns name="epackage">
+      <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+      <linkVariablePatterns target="//@rules.7/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage/eClassifiers"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="eclass">
+      <type href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </sourcePatterns>
+    <targetPatterns name="docuFolder">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/file"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="htmlFile">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </targetPatterns>
+    <correspondencePatterns name="eclassToHtmlFile" type="//@schema/@correspondenceTypes.3" source="//@rules.7/@sourcePatterns.1" target="//@rules.7/@targetPatterns.1"/>
+    <correspondencePatterns name="epackageToDocuFolder" type="//@schema/@correspondenceTypes.1" source="//@rules.7/@sourcePatterns.0" target="//@rules.7/@targetPatterns.0"/>
+  </rules>
+  <rules name="HTMLFileAndHeader" abstractRule="true" schema="//@schema">
+    <using importedNamespace="SimpleEcoreToHTML.*"/>
+    <targetPatterns name="header">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;h1&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.8/@targetPatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="documentation">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;p&quot;"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/index"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="1"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.8/@targetPatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="body">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;body&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.8/@targetPatterns.3">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="rootNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;html&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.8/@targetPatterns.4">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node/file"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="htmlFile">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </targetPatterns>
+    <targetPatterns name="title">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text"/>
+      <linkVariablePatterns target="//@rules.8/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+  </rules>
+  <rules name="RootPackageToDocuFolder" supertypes="//@rules.8" schema="//@schema">
+    <using importedNamespace="SimpleEcoreToHTML.*"/>
+    <sourcePatterns name="rootPackage">
+      <op value="++"/>
+      <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </sourcePatterns>
+    <targetPatterns name="htmlFile">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </targetPatterns>
+    <targetPatterns name="title">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Outermost-Package:  Documentation for Project-Root&quot;"/>
+      </attributeAssignments>
+    </targetPatterns>
+    <targetPatterns name="docuFolder">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+      <linkVariablePatterns target="//@rules.9/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/file"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="rootPackageToDocuFolder" type="//@schema/@correspondenceTypes.1" source="//@rules.9/@sourcePatterns.0" target="//@rules.9/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.1">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.9/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:LiteralExpression" value="&quot;.html&quot;"/>
+      <values xsi:type="tgg:LocalVariable" name="withSuffix"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.9/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.9/@targetPatterns.2" attribute="name"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.2">
+      <values xsi:type="tgg:LiteralExpression" value="&quot;__&quot;"/>
+      <values xsi:type="tgg:LocalVariable" name="withSuffix"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.9/@targetPatterns.0" attribute="name"/>
+    </attrConditions>
+  </rules>
+  <rules name="SubPackageToDocuFolder" supertypes="//@rules.8" schema="//@schema">
+    <using importedNamespace="SimpleEcoreToHTML.*"/>
+    <sourcePatterns name="rootPackage">
+      <op value="++"/>
+      <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </sourcePatterns>
+    <sourcePatterns name="superPackage">
+      <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+      <linkVariablePatterns target="//@rules.10/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage/eSubpackages"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="docuFolder">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+      <linkVariablePatterns target="//@rules.10/@targetPatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/file"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="title">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Documentation for Subpackage&quot;"/>
+      </attributeAssignments>
+    </targetPatterns>
+    <targetPatterns name="htmlFile">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </targetPatterns>
+    <targetPatterns name="rootFolder">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+      <linkVariablePatterns target="//@rules.10/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/subFolder"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="rootPackageToDocuFolder" type="//@schema/@correspondenceTypes.1" source="//@rules.10/@sourcePatterns.0" target="//@rules.10/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="superPackageToRootFolder" type="//@schema/@correspondenceTypes.1" source="//@rules.10/@sourcePatterns.1" target="//@rules.10/@targetPatterns.3"/>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.10/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.10/@targetPatterns.0" attribute="name"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.2">
+      <values xsi:type="tgg:LiteralExpression" value="&quot;__&quot;"/>
+      <values xsi:type="tgg:LocalVariable" name="withSuffix"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.10/@targetPatterns.2" attribute="name"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.1">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.10/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:LiteralExpression" value="&quot;.html&quot;"/>
+      <values xsi:type="tgg:LocalVariable" name="withSuffix"/>
+    </attrConditions>
+  </rules>
+</tgg:TripleGraphGrammarFile>
