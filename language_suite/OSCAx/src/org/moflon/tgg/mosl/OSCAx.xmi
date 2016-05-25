@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tgg:TripleGraphGrammarFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tgg="http://www.moflon.org/ide/tgg/mosl/TGG">
+  <schema name="OSCAx">
+    <imports name="platform:/plugin/Ortssicht/model/Ortssicht.ecore"/>
+    <imports name="platform:/plugin/SimaticML/model/SimaticML.ecore"/>
+    <sourceTypes href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#/"/>
+    <targetTypes href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#/"/>
+    <correspondenceTypes name="ProjectToProjectT">
+      <source href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Project"/>
+      <target href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ProjectT"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="IOLink">
+      <source href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Module"/>
+      <target href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceItemT"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="ContextFreeLocationLink">
+      <source href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Location"/>
+      <target href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ProjectT"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="SubLocationLink" super="//@schema/@correspondenceTypes.2"/>
+    <correspondenceTypes name="LocationLink" super="//@schema/@correspondenceTypes.2"/>
+    <correspondenceTypes name="CPULink">
+      <source href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Module"/>
+      <target href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceItemT"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="StationLink">
+      <source href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//ControllingDevice"/>
+      <target href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceT"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="CabinetLink">
+      <source href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//ElectricalControlCabinet"/>
+      <target href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ProjectT"/>
+    </correspondenceTypes>
+    <attributeCondDefs name="setAttributeTypeInteger" userDefined="true">
+      <params type="SimaticML.AttributeTypes"/>
+      <allowedSyncAdornments value="B"/>
+      <allowedSyncAdornments value="F"/>
+    </attributeCondDefs>
+    <attributeCondDefs name="setAttributeTypeString" userDefined="true">
+      <params type="SimaticML.AttributeTypes"/>
+      <allowedSyncAdornments value="F"/>
+      <allowedSyncAdornments value="B"/>
+    </attributeCondDefs>
+    <attributeCondDefs name="eq">
+      <params index="1" type=""/>
+      <params type=""/>
+      <allowedSyncAdornments value="BB"/>
+      <allowedSyncAdornments value="BF"/>
+      <allowedSyncAdornments value="FB"/>
+      <allowedGenAdornments value="BB"/>
+      <allowedGenAdornments value="FF"/>
+      <allowedGenAdornments value="BF"/>
+      <allowedGenAdornments value="FB"/>
+    </attributeCondDefs>
+    <attributeCondDefs name="setAttributeTypeAddress" userDefined="true">
+      <params type="SimaticML.AttributeTypes"/>
+      <allowedSyncAdornments value="B"/>
+      <allowedSyncAdornments value="F"/>
+    </attributeCondDefs>
+  </schema>
+  <rules name="Module2DeviceItemCPU" schema="//@schema">
+    <using importedNamespace="OSCAx.*"/>
+    <sourcePatterns name="module">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Module"/>
+    </sourcePatterns>
+    <sourcePatterns name="rack">
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Rack"/>
+      <linkVariablePatterns target="//@rules.0/@sourcePatterns.2">
+        <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Rack/controllingDevice"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.0/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Rack/module"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="controllingDevice">
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//ControllingDevice"/>
+    </sourcePatterns>
+    <targetPatterns name="deviceItemT">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceItemT"/>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceItemT/attributelist"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="attributeList">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeListT"/>
+    </targetPatterns>
+    <targetPatterns name="attributeOrderNumber">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;OrderNumber&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/attributeListT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="attributeSlot">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Slot&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/attributeListT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="valueCpuOrderNo">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT"/>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT/attributeT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="deviceT">
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceT"/>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.6">
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceT/deviceObjectList"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="deviceObjectListT">
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceObjectListT"/>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceObjectListT/deviceItems"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="value2">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT/any"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;2&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.3">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT/attributeT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="stationLink" type="//@schema/@correspondenceTypes.6" source="//@rules.0/@sourcePatterns.2" target="//@rules.0/@targetPatterns.5"/>
+    <correspondencePatterns name="coreLink" type="//@schema/@correspondenceTypes.5" source="//@rules.0/@sourcePatterns.0" target="//@rules.0/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@targetPatterns.3" attribute="type"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.1">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@targetPatterns.2" attribute="type"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.2">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@targetPatterns.0" attribute="name"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.2">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@sourcePatterns.0" attribute="orderNo"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@targetPatterns.4" attribute="any"/>
+    </attrConditions>
+  </rules>
+  <rules name="ElectricalControlCabinet2ProjectT" schema="//@schema">
+    <using importedNamespace="OSCAx.*"/>
+    <sourcePatterns name="electricalControlCabinet">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//ElectricalControlCabinet"/>
+    </sourcePatterns>
+    <sourcePatterns name="location">
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Location"/>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Location/cabinet"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="projectT">
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ProjectT"/>
+    </targetPatterns>
+    <correspondencePatterns name="contextFreeLocationLink" type="//@schema/@correspondenceTypes.2" source="//@rules.1/@sourcePatterns.1" target="//@rules.1/@targetPatterns.0"/>
+    <correspondencePatterns name="createCabinetLink" type="//@schema/@correspondenceTypes.7" source="//@rules.1/@sourcePatterns.0" target="//@rules.1/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="Location2ProjectT" schema="//@schema">
+    <using importedNamespace="OSCAx.*"/>
+    <sourcePatterns name="location">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Location"/>
+    </sourcePatterns>
+    <sourcePatterns name="project">
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Project"/>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Project/location"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="projectT">
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ProjectT"/>
+    </targetPatterns>
+    <correspondencePatterns name="projectlink" type="//@schema/@correspondenceTypes.0" source="//@rules.2/@sourcePatterns.1" target="//@rules.2/@targetPatterns.0"/>
+    <correspondencePatterns name="locationLink" type="//@schema/@correspondenceTypes.4" source="//@rules.2/@sourcePatterns.0" target="//@rules.2/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="subLocation2ProjectT" schema="//@schema">
+    <using importedNamespace="OSCAx.*"/>
+    <sourcePatterns name="location">
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Location"/>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Location/childLocation"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="childLocation">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Location"/>
+    </sourcePatterns>
+    <targetPatterns name="projectT">
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ProjectT"/>
+    </targetPatterns>
+    <correspondencePatterns name="coreLink" type="//@schema/@correspondenceTypes.3" source="//@rules.3/@sourcePatterns.1" target="//@rules.3/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="contextFreeLocationLink" type="//@schema/@correspondenceTypes.2" source="//@rules.3/@sourcePatterns.0" target="//@rules.3/@targetPatterns.0"/>
+  </rules>
+  <rules name="Module2DeviceItemT" schema="//@schema">
+    <using importedNamespace="OSCAx.*"/>
+    <sourcePatterns name="controllingDevice">
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//ControllingDevice"/>
+    </sourcePatterns>
+    <sourcePatterns name="module">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Module"/>
+    </sourcePatterns>
+    <sourcePatterns name="rack">
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Rack"/>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.0">
+        <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Rack/controllingDevice"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Rack/module"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="valueOrderNumber">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.8">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT/attributeT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="deviceItemT">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceItemT"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceItemT/type"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Module&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.3">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceItemT/attributelist"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="deviceObjectListT">
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceObjectListT"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceObjectListT/deviceItems"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="attributeListT">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeListT"/>
+    </targetPatterns>
+    <targetPatterns name="valueAddress">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.10">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT/attributeT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="valueSubDevice">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.12">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT/attributeT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="deviceT">
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceT"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.2">
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceT/deviceObjectList"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="valueAssetId">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.11">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT/attributeT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="attributeOrderNumber">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;OrderNumber&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.3">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/attributeListT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="valueSlot">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT/any"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;4&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.13">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT/attributeT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="attributeAddress">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Address&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.3">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/attributeListT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="attributeAssetId">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Asset-ID&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.3">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/attributeListT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="attributeSubDevice">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;SubDevice&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.3">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/attributeListT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="attributeSlot">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Slot&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.3">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/attributeListT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="ioLink" type="//@schema/@correspondenceTypes.1" source="//@rules.4/@sourcePatterns.1" target="//@rules.4/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="stationLink" type="//@schema/@correspondenceTypes.6" source="//@rules.4/@sourcePatterns.0" target="//@rules.4/@targetPatterns.6"/>
+    <attrConditions name="//@schema/@attributeCondDefs.2">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@sourcePatterns.1" attribute="orderNo"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@targetPatterns.0" attribute="any"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.1">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@targetPatterns.8" attribute="type"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.2">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@sourcePatterns.1" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@targetPatterns.1" attribute="name"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.1">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@targetPatterns.11" attribute="type"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@targetPatterns.12" attribute="type"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.3">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@targetPatterns.10" attribute="type"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@targetPatterns.13" attribute="type"/>
+    </attrConditions>
+  </rules>
+  <rules name="Project2ProjectT" schema="//@schema">
+    <using importedNamespace="OSCAx.*"/>
+    <sourcePatterns name="project">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Project"/>
+    </sourcePatterns>
+    <targetPatterns name="projectT">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ProjectT"/>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ProjectT/projectObjects"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="objectList">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ProjectObjectListT"/>
+    </targetPatterns>
+    <correspondencePatterns name="coreLink" type="//@schema/@correspondenceTypes.0" source="//@rules.5/@sourcePatterns.0" target="//@rules.5/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.2">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.5/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.5/@targetPatterns.0" attribute="name"/>
+    </attrConditions>
+  </rules>
+  <rules name="ControllingDevice2DeviceT" schema="//@schema">
+    <using importedNamespace="OSCAx.*"/>
+    <sourcePatterns name="rack1">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Rack"/>
+      <linkVariablePatterns target="//@rules.6/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//Rack/controllingDevice"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="controllingDevice">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//ControllingDevice"/>
+    </sourcePatterns>
+    <sourcePatterns name="electricalControlCabinet">
+      <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//ElectricalControlCabinet"/>
+      <linkVariablePatterns target="//@rules.6/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/Ortssicht/model/Ortssicht.ecore#//ElectricalControlCabinet/controllingDevice"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="projectT">
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ProjectT"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.7">
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ProjectT/projectObjects"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="deviceItemT">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceItemT"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ObjectBaseT/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Rack&quot;"/>
+      </attributeAssignments>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceItemT/type"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Rack&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceItemT/attributelist"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="attributeListT">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeListT"/>
+    </targetPatterns>
+    <targetPatterns name="deviceObjectListT">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceObjectListT"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceObjectListT/deviceItems"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="attributeT">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;OrderNumber&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//AttributeT/attributeListT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="valueT">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.4">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ValueT/attributeT"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="deviceT">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceT"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceT/type"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Central&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.3">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//DeviceT/deviceObjectList"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="projectObjectListT">
+      <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ProjectObjectListT"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.6">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimaticML/model/SimaticML.ecore#//ProjectObjectListT/devices"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="cabinetLink" type="//@schema/@correspondenceTypes.7" source="//@rules.6/@sourcePatterns.2" target="//@rules.6/@targetPatterns.0"/>
+    <correspondencePatterns name="coreLink" type="//@schema/@correspondenceTypes.6" source="//@rules.6/@sourcePatterns.1" target="//@rules.6/@targetPatterns.6">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.2">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.6/@sourcePatterns.0" attribute="orderNo"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.6/@targetPatterns.5" attribute="any"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.2">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.6/@sourcePatterns.1" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.6/@targetPatterns.6" attribute="name"/>
+    </attrConditions>
+  </rules>
+</tgg:TripleGraphGrammarFile>
