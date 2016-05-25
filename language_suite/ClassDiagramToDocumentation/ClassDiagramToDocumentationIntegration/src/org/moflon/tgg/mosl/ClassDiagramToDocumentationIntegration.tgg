@@ -1,0 +1,202 @@
+#import "platform:/plugin/ClassDiagramLanguage/model/ClassDiagramLanguage.ecore"
+#import "platform:/plugin/DocumentationLanguage/model/DocumentationLanguage.ecore"
+
+#schema ClassDiagramToDocumentationIntegration
+
+#source {
+	ClassDiagramLanguage
+}
+
+#target {
+	DocumentationLanguage
+}
+
+#correspondence {
+	ClassDiagramToDocumentation {
+		#src->ClassDiagramLanguage.ClassDiagram
+		#trg->DocumentationLanguage.Documentation
+	}
+	ClazzToDocument {
+		#src->ClassDiagramLanguage.Clazz
+		#trg->DocumentationLanguage.Document
+	}
+}
+
+#attributeConditions {
+	eq(1: , 0: ) {
+		#sync: FB, BF, BB
+		#gen: BB, FB, FF, BF
+	}
+}
+
+
+#using ClassDiagramToDocumentationIntegration.*
+
+#rule InheritanceToLink3 #complements InheritanceToLink#with ClassDiagramToDocumentationIntegration
+
+#target {
+	++linkFromTransitiveSubToTransitiveSuper:DocumentationLanguage.Link {
+		++ - ref->transitiveSuper
+	}
+	linkFromTransitiveSubToSub:DocumentationLanguage.Link {
+		- ref->subDoc
+	}
+	transitiveSuper:DocumentationLanguage.Document
+	transitiveSub:DocumentationLanguage.Document {
+		++ - links->linkFromTransitiveSubToTransitiveSuper
+		- links->linkFromTransitiveSubToSub
+	}
+	superDoc:DocumentationLanguage.Document {
+		- links->linkFromSuperToTransitiveSuper
+	}
+	linkFromSuperToTransitiveSuper:DocumentationLanguage.Link {
+		- ref->transitiveSuper
+	}
+	subDoc:DocumentationLanguage.Document
+}
+
+#attributeConditions {
+	eq (linkFromTransitiveSubToTransitiveSuper.name, transitiveSuper.name)
+}
+
+
+#using ClassDiagramToDocumentationIntegration.*
+
+#rule ClassToDocRule #with ClassDiagramToDocumentationIntegration
+
+#source {
+	classDiagram:ClassDiagramLanguage.ClassDiagram {
+		++ - classes->clazz
+	}
+	++clazz:ClassDiagramLanguage.Clazz
+}
+
+#target {
+	documentation:DocumentationLanguage.Documentation {
+		++ - docs->doc
+	}
+	++doc:DocumentationLanguage.Document
+}
+
+#correspondence {
+	classDiagramToDocumentation :ClassDiagramToDocumentation {
+		#src->classDiagram
+		#trg->documentation
+	}
+	++ clazzToDoc :ClazzToDocument {
+		#src->clazz
+		#trg->doc
+	}
+}
+
+#attributeConditions {
+	eq (clazz.name, doc.name)
+}
+
+
+#using ClassDiagramToDocumentationIntegration.*
+
+#rule InheritanceToLink #with ClassDiagramToDocumentationIntegration
+
+#source {
+	subClazz:ClassDiagramLanguage.Clazz {
+		++ - superClasses->superClass
+	}
+	superClass:ClassDiagramLanguage.Clazz
+}
+
+#target {
+	superDoc:DocumentationLanguage.Document
+	++link:DocumentationLanguage.Link {
+		++ - ref->superDoc
+	}
+	subDoc:DocumentationLanguage.Document {
+		++ - links->link
+	}
+}
+
+#correspondence {
+	subClazzToSubDoc :ClazzToDocument {
+		#src->subClazz
+		#trg->subDoc
+	}
+	superClassToSuperDoc :ClazzToDocument {
+		#src->superClass
+		#trg->superDoc
+	}
+}
+
+#attributeConditions {
+	eq (link.name, superDoc.name)
+}
+
+
+#using ClassDiagramToDocumentationIntegration.*
+
+#rule CDToDocumentationRule #with ClassDiagramToDocumentationIntegration
+
+#source {
+	++cd:ClassDiagramLanguage.ClassDiagram
+}
+
+#target {
+	++documentation:DocumentationLanguage.Documentation
+}
+
+#correspondence {
+	++ cdToDocumentation :ClassDiagramToDocumentation {
+		#src->cd
+		#trg->documentation
+	}
+}
+
+
+#using ClassDiagramToDocumentationIntegration.*
+
+#rule InheritanceToLink1 #complements InheritanceToLink#with ClassDiagramToDocumentationIntegration
+
+#target {
+	superDoc:DocumentationLanguage.Document {
+		- links->linkToTransitive
+	}
+	linkToTransitive:DocumentationLanguage.Link {
+		- ref->transitiveSuperDoc
+	}
+	subDoc:DocumentationLanguage.Document {
+		++ - links->linkToTransitiveFromSub
+	}
+	transitiveSuperDoc:DocumentationLanguage.Document
+	++linkToTransitiveFromSub:DocumentationLanguage.Link {
+		++ - ref->transitiveSuperDoc
+	}
+}
+
+#attributeConditions {
+	eq (linkToTransitiveFromSub.name, transitiveSuperDoc.name)
+}
+
+
+#using ClassDiagramToDocumentationIntegration.*
+
+#rule InheritanceToLink2 #complements InheritanceToLink#with ClassDiagramToDocumentationIntegration
+
+#target {
+	transitiveSubDoc:DocumentationLanguage.Document {
+		- links->linkFromTransitiveSubToSub
+		++ - links->linkFromTransitiveSubToSuper
+	}
+	linkFromTransitiveSubToSub:DocumentationLanguage.Link {
+		- ref->subDoc
+	}
+	++linkFromTransitiveSubToSuper:DocumentationLanguage.Link {
+		++ - ref->superDoc
+	}
+	superDoc:DocumentationLanguage.Document
+	subDoc:DocumentationLanguage.Document
+}
+
+#attributeConditions {
+	eq (linkFromTransitiveSubToSuper.name, superDoc.name)
+}
+
+
