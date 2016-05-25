@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tgg:TripleGraphGrammarFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tgg="http://www.moflon.org/ide/tgg/mosl/TGG">
+  <schema name="ProductrequirementsToSimulinkprojectIntegration">
+    <imports name="platform:/plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore"/>
+    <imports name="platform:/plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore"/>
+    <sourceTypes href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#/"/>
+    <targetTypes href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#/"/>
+    <correspondenceTypes name="Functionality2System">
+      <source href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Functionality"/>
+      <target href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//SimSystem"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="Requirement2FunctionBlock">
+      <source href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Requirement"/>
+      <target href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//FunctionBlock"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="ProductToRootSystem" super="//@schema/@correspondenceTypes.3"/>
+    <correspondenceTypes name="ProductToSystem">
+      <source href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Product"/>
+      <target href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//SimSystem"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="Product2Project">
+      <source href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Product"/>
+      <target href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//Project"/>
+    </correspondenceTypes>
+    <attributeCondDefs name="eq">
+      <params type=""/>
+      <params index="1" type=""/>
+      <allowedSyncAdornments value="FB"/>
+      <allowedSyncAdornments value="BB"/>
+      <allowedSyncAdornments value="BF"/>
+      <allowedGenAdornments value="BB"/>
+      <allowedGenAdornments value="BF"/>
+      <allowedGenAdornments value="FF"/>
+      <allowedGenAdornments value="FB"/>
+    </attributeCondDefs>
+  </schema>
+  <rules name="Requirement2NewFunctionBlock" schema="//@schema">
+    <using importedNamespace="ProductrequirementsToSimulinkprojectIntegration.*"/>
+    <sourcePatterns name="functionality">
+      <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Functionality"/>
+    </sourcePatterns>
+    <sourcePatterns name="requirement">
+      <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Requirement"/>
+      <linkVariablePatterns target="//@rules.0/@sourcePatterns.0">
+        <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Requirement/functionality"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="functionBlock">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//FunctionBlock"/>
+    </targetPatterns>
+    <targetPatterns name="existingFunctionBlock">
+      <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//FunctionBlock"/>
+    </targetPatterns>
+    <targetPatterns name="system">
+      <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//SimSystem"/>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//SimSystem/blocks"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.1">
+        <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//SimSystem/blocks"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="functionality2System" type="//@schema/@correspondenceTypes.0" source="//@rules.0/@sourcePatterns.0" target="//@rules.0/@targetPatterns.2"/>
+    <correspondencePatterns name="requirement2FunctionBlock1" type="//@schema/@correspondenceTypes.1" source="//@rules.0/@sourcePatterns.1" target="//@rules.0/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="requirement2FunctionBlock2" type="//@schema/@correspondenceTypes.1" source="//@rules.0/@sourcePatterns.1" target="//@rules.0/@targetPatterns.1"/>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@sourcePatterns.1" attribute="id"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@targetPatterns.1" attribute="requirementId"/>
+    </attrConditions>
+  </rules>
+  <rules name="Functionality2SubSystemSimple" schema="//@schema">
+    <using importedNamespace="ProductrequirementsToSimulinkprojectIntegration.*"/>
+    <sourcePatterns name="product">
+      <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Product"/>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Product/functionality"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="functionality">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Functionality"/>
+    </sourcePatterns>
+    <targetPatterns name="subSystemBlock">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//SubSystemBlock"/>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//SubSystemBlock/subsystem"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="subSystem">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//SubSystem"/>
+    </targetPatterns>
+    <targetPatterns name="system">
+      <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//SimSystem"/>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//SimSystem/blocks"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="productToSystem2" type="//@schema/@correspondenceTypes.3" source="//@rules.1/@sourcePatterns.0" target="//@rules.1/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="functionality2System" type="//@schema/@correspondenceTypes.0" source="//@rules.1/@sourcePatterns.1" target="//@rules.1/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="productToSystem1" type="//@schema/@correspondenceTypes.3" source="//@rules.1/@sourcePatterns.0" target="//@rules.1/@targetPatterns.2"/>
+  </rules>
+  <rules name="ProductAndFunctionality2ProjectRule" schema="//@schema">
+    <using importedNamespace="ProductrequirementsToSimulinkprojectIntegration.*"/>
+    <sourcePatterns name="product">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Product"/>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Product/functionality"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="functionality">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Functionality"/>
+    </sourcePatterns>
+    <targetPatterns name="rootSystem">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//RootSystem"/>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//RootSystem/project"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="project">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//Project"/>
+    </targetPatterns>
+    <correspondencePatterns name="product2Project" type="//@schema/@correspondenceTypes.4" source="//@rules.2/@sourcePatterns.0" target="//@rules.2/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="functionality2System" type="//@schema/@correspondenceTypes.0" source="//@rules.2/@sourcePatterns.1" target="//@rules.2/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="productToSystem" type="//@schema/@correspondenceTypes.3" source="//@rules.2/@sourcePatterns.0" target="//@rules.2/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="RuleRequirement2FunctionBlock" schema="//@schema">
+    <using importedNamespace="ProductrequirementsToSimulinkprojectIntegration.*"/>
+    <sourcePatterns name="functionality">
+      <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Functionality"/>
+    </sourcePatterns>
+    <sourcePatterns name="requirement">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Requirement"/>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Requirement/functionality"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="functionBlock">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//FunctionBlock"/>
+    </targetPatterns>
+    <targetPatterns name="system">
+      <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//SimSystem"/>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//SimSystem/blocks"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="requirement2FunctionBlock" type="//@schema/@correspondenceTypes.1" source="//@rules.3/@sourcePatterns.1" target="//@rules.3/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="functionality2System" type="//@schema/@correspondenceTypes.0" source="//@rules.3/@sourcePatterns.0" target="//@rules.3/@targetPatterns.1"/>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.3/@sourcePatterns.1" attribute="id"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.3/@targetPatterns.0" attribute="requirementId"/>
+    </attrConditions>
+  </rules>
+  <rules name="Functionality2RootSystem" schema="//@schema">
+    <using importedNamespace="ProductrequirementsToSimulinkprojectIntegration.*"/>
+    <sourcePatterns name="product">
+      <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Product"/>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Product/functionality"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="functionality">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Functionality"/>
+    </sourcePatterns>
+    <targetPatterns name="rootSystem">
+      <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//RootSystem"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.1">
+        <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//RootSystem/project"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="project">
+      <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//Project"/>
+    </targetPatterns>
+    <correspondencePatterns name="productToRootSystem" type="//@schema/@correspondenceTypes.2" source="//@rules.4/@sourcePatterns.0" target="//@rules.4/@targetPatterns.0"/>
+    <correspondencePatterns name="product2Project" type="//@schema/@correspondenceTypes.4" source="//@rules.4/@sourcePatterns.0" target="//@rules.4/@targetPatterns.1"/>
+    <correspondencePatterns name="functionality2System" type="//@schema/@correspondenceTypes.0" source="//@rules.4/@sourcePatterns.1" target="//@rules.4/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="NewRequirement2FunctionBlock" schema="//@schema">
+    <using importedNamespace="ProductrequirementsToSimulinkprojectIntegration.*"/>
+    <sourcePatterns name="requirement">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Requirement"/>
+      <linkVariablePatterns target="//@rules.5/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Requirement/functionality"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="existingRequirement">
+      <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Requirement"/>
+      <linkVariablePatterns target="//@rules.5/@sourcePatterns.2">
+        <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Requirement/functionality"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="functionality">
+      <type href="../../../../../../../plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore#//Functionality"/>
+    </sourcePatterns>
+    <targetPatterns name="functionBlock">
+      <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//FunctionBlock"/>
+    </targetPatterns>
+    <targetPatterns name="system">
+      <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//SimSystem"/>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.0">
+        <type href="../../../../../../../plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore#//SimSystem/blocks"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="requirement2FunctionBlock2" type="//@schema/@correspondenceTypes.1" source="//@rules.5/@sourcePatterns.1" target="//@rules.5/@targetPatterns.0"/>
+    <correspondencePatterns name="functionality2System" type="//@schema/@correspondenceTypes.0" source="//@rules.5/@sourcePatterns.2" target="//@rules.5/@targetPatterns.1"/>
+    <correspondencePatterns name="requirement2FunctionBlock1" type="//@schema/@correspondenceTypes.1" source="//@rules.5/@sourcePatterns.0" target="//@rules.5/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.5/@sourcePatterns.1" attribute="id"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.5/@sourcePatterns.0" attribute="id"/>
+    </attrConditions>
+  </rules>
+</tgg:TripleGraphGrammarFile>
