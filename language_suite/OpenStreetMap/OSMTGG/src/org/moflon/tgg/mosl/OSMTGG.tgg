@@ -1,0 +1,579 @@
+#import "platform:/plugin/MocaTree/model/MocaTree.ecore"
+#import "platform:/plugin/OSMLanguage/model/OSMLanguage.ecore"
+
+#schema OSMTGG
+
+#source {
+	MocaTree
+}
+
+#target {
+	OSMLanguage
+}
+
+#correspondence {
+	NodeToOSMTag {
+		#src->MocaTree.Node
+		#trg->OSMLanguage.OSMTag
+	}
+	FolderToOSMapContainer {
+		#src->MocaTree.Folder
+		#trg->OSMLanguage.OSMapContainer
+	}
+	NodeToOSMMember {
+		#src->MocaTree.Node
+		#trg->OSMLanguage.OSMMember
+	}
+	NodeToOSMPrimitive {
+		#src->MocaTree.Node
+		#trg->OSMLanguage.OSMPrimitive
+	}
+	RefNodeToOSMNode {
+		#src->MocaTree.Node
+		#trg->OSMLanguage.OSMNode
+	}
+	NodeToOSMRelation #extends NodeToOSMPrimitive
+	NodeToOSMNode #extends NodeToOSMPrimitive
+	NodeToOSMWay #extends NodeToOSMPrimitive
+	NodeToOSMBounds {
+		#src->MocaTree.Node
+		#trg->OSMLanguage.OSMBounds
+	}
+	FileToOSMap {
+		#src->MocaTree.File
+		#trg->OSMLanguage.OSMap
+	}
+}
+
+#attributeConditions {
+	#userDefined setStandardValue(0:String, 1:String) {
+		#sync: BB, BF, FB
+		#gen: BB, FF, BF, FB
+	}
+	stringToDouble(1:EDouble, 0:EString) {
+		#sync: BF, FB, BB
+		#gen: BB, FF, FB, BF
+	}
+	#userDefined stringToBoolean(1:boolean, 0:String) {
+		#sync: BF, BB, FB
+		#gen: BB, FF, BF, FB
+	}
+	eq(0: , 1: ) {
+		#sync: BF, BB, FB
+		#gen: FB, FF, BF, BB
+	}
+}
+
+
+#using OSMTGG.*
+
+#rule FileToOSMapRule #with OSMTGG
+
+#source {
+	++license:MocaTree.Attribute {
+		name := "license"
+	}
+	++copyright:MocaTree.Attribute {
+		name := "copyright"
+	}
+	++version:MocaTree.Attribute {
+		name := "version"
+	}
+	++gapNode:MocaTree.Node {
+		name := "osm"
+		++ - attribute->generator
+		++ - attribute->copyright
+		++ - file->file
+		++ - attribute->attribution
+		++ - attribute->version
+		++ - attribute->license
+	}
+	++file:MocaTree.File
+	++attribution:MocaTree.Attribute {
+		name := "attribution"
+	}
+	folder:MocaTree.Folder {
+		++ - file->file
+	}
+	++generator:MocaTree.Attribute {
+		name := "generator"
+	}
+}
+
+#target {
+	oSMapContainer:OSMLanguage.OSMapContainer {
+		++ - osmap->oSMap
+	}
+	++oSMap:OSMLanguage.OSMap
+}
+
+#correspondence {
+	++ fileToOSMap :FileToOSMap {
+		#src->file
+		#trg->oSMap
+	}
+	folderToOSMapContainer :FolderToOSMapContainer {
+		#src->folder
+		#trg->oSMapContainer
+	}
+}
+
+#attributeConditions {
+	setStandardValue (copyright.value, "OpenStreetMap and contributors")
+	setStandardValue (version.value, "0.6")
+	setStandardValue (generator.value, "TGG-Transformation")
+	setStandardValue (attribution.value, "http://www.openstreetmap.org/copyright")
+	setStandardValue (license.value, "http://opendatacommons.org/licenses/odbl/1-0/")
+	eq (file.name, oSMap.name)
+}
+
+
+#using OSMTGG.*
+
+#rule OsmAddPrimitiveAttributesRule #with OSMTGG
+
+#source {
+	++user:MocaTree.Attribute {
+		name := "user"
+	}
+	++timestamp:MocaTree.Attribute {
+		name := "timestamp"
+	}
+	++uid:MocaTree.Attribute {
+		name := "uid"
+	}
+	++version:MocaTree.Attribute {
+		name := "version"
+	}
+	++node:MocaTree.Node {
+		++ - attribute->changeset
+		++ - attribute->version
+		++ - attribute->user
+		++ - attribute->uid
+		++ - attribute->timestamp
+	}
+	++changeset:MocaTree.Attribute {
+		name := "changeset"
+	}
+}
+
+#attributeConditions {
+	setStandardValue (changeset.value, "1")
+	setStandardValue (version.value, "0.6")
+	setStandardValue (user.value, "Moflon-User")
+	setStandardValue (timestamp.value, "2013-01-10T12:00:00Z")
+	setStandardValue (uid.value, "0")
+}
+
+
+#using OSMTGG.*
+
+#rule NodeToOSMBoundsRule #with OSMTGG
+
+#source {
+	++minlat:MocaTree.Attribute {
+		name := "minlat"
+	}
+	++node:MocaTree.Node {
+		name := "bounds"
+		++ - attribute->minlon
+		++ - attribute->minlat
+		++ - attribute->maxlon
+		++ - parentNode->gapNode
+		++ - attribute->maxlat
+	}
+	++minlon:MocaTree.Attribute {
+		name := "minlon"
+	}
+	++maxlat:MocaTree.Attribute {
+		name := "maxlat"
+	}
+	gapNode:MocaTree.Node {
+		name == "osm"
+		- file->file
+	}
+	++maxlon:MocaTree.Attribute {
+		name := "maxlon"
+	}
+	file:MocaTree.File
+}
+
+#target {
+	oSMap:OSMLanguage.OSMap {
+		++ - osmbounds->oSMBounds
+	}
+	++oSMBounds:OSMLanguage.OSMBounds
+}
+
+#correspondence {
+	++ nodeToOSMBounds :NodeToOSMBounds {
+		#src->node
+		#trg->oSMBounds
+	}
+	fileToOSMap :FileToOSMap {
+		#src->file
+		#trg->oSMap
+	}
+}
+
+#attributeConditions {
+	stringToDouble (maxlat.value, oSMBounds.maxlat)
+	stringToDouble (maxlon.value, oSMBounds.maxlon)
+	stringToDouble (minlon.value, oSMBounds.minlon)
+	stringToDouble (minlat.value, oSMBounds.minlat)
+}
+
+
+#using OSMTGG.*
+
+#rule NodeToOSMNodeRule #extends OsmAddPrimitiveAttributesRule #with OSMTGG
+
+#source {
+	++lat:MocaTree.Attribute {
+		name := "lat"
+	}
+	++node:MocaTree.Node {
+		name := "node"
+		++ - parentNode->gapNode
+		++ - attribute->id
+		++ - attribute->lat
+		++ - attribute->lon
+		++ - attribute->visible
+	}
+	++visible:MocaTree.Attribute {
+		name := "visible"
+	}
+	gapNode:MocaTree.Node {
+		name == "osm"
+		- file->file
+	}
+	file:MocaTree.File
+	++id:MocaTree.Attribute {
+		name := "id"
+	}
+	++lon:MocaTree.Attribute {
+		name := "lon"
+	}
+}
+
+#target {
+	oSMap:OSMLanguage.OSMap {
+		++ - osmnode->oSMNode
+	}
+	++oSMNode:OSMLanguage.OSMNode
+}
+
+#correspondence {
+	fileToOSMap :FileToOSMap {
+		#src->file
+		#trg->oSMap
+	}
+	++ nodeToOSMNode :NodeToOSMNode {
+		#src->node
+		#trg->oSMNode
+	}
+}
+
+#attributeConditions {
+	stringToDouble (id.value, oSMNode.id)
+	stringToDouble (lat.value, oSMNode.lat)
+	stringToBoolean (visible.value, oSMNode.visible)
+	stringToDouble (lon.value, oSMNode.lon)
+}
+
+
+#using OSMTGG.*
+
+#rule NodeToOSMWayRule #extends OsmAddPrimitiveAttributesRule #with OSMTGG
+
+#source {
+	++visible:MocaTree.Attribute {
+		name := "visible"
+	}
+	gapNode:MocaTree.Node {
+		name == "osm"
+		- file->file
+	}
+	++id:MocaTree.Attribute {
+		name := "id"
+	}
+	++node:MocaTree.Node {
+		name := "way"
+		++ - attribute->visible
+		++ - parentNode->gapNode
+		++ - attribute->id
+	}
+	file:MocaTree.File
+}
+
+#target {
+	oSMap:OSMLanguage.OSMap {
+		++ - osmway->oSMWay
+	}
+	++oSMWay:OSMLanguage.OSMWay
+}
+
+#correspondence {
+	fileToOSMap :FileToOSMap {
+		#src->file
+		#trg->oSMap
+	}
+	++ nodeToOSMWay :NodeToOSMWay {
+		#src->node
+		#trg->oSMWay
+	}
+}
+
+#attributeConditions {
+	stringToDouble (id.value, oSMWay.id)
+	stringToBoolean (visible.value, oSMWay.visible)
+}
+
+
+#using OSMTGG.*
+
+#rule NodeToOSMRelationRule #extends OsmAddPrimitiveAttributesRule #with OSMTGG
+
+#source {
+	gapNode:MocaTree.Node {
+		name == "osm"
+		- file->file
+	}
+	++visible:MocaTree.Attribute {
+		name := "visible"
+	}
+	file:MocaTree.File
+	++node:MocaTree.Node {
+		name := "relation"
+		++ - attribute->visible
+		++ - parentNode->gapNode
+		++ - attribute->id
+	}
+	++id:MocaTree.Attribute {
+		name := "id"
+	}
+}
+
+#target {
+	++oSMRelation:OSMLanguage.OSMRelation
+	oSMap:OSMLanguage.OSMap {
+		++ - osmrelation->oSMRelation
+	}
+}
+
+#correspondence {
+	fileToOSMap :FileToOSMap {
+		#src->file
+		#trg->oSMap
+	}
+	++ nodeToOSMRelation :NodeToOSMRelation {
+		#src->node
+		#trg->oSMRelation
+	}
+}
+
+#attributeConditions {
+	stringToDouble (id.value, oSMRelation.id)
+	stringToBoolean (visible.value, oSMRelation.visible)
+}
+
+
+#using OSMTGG.*
+
+#rule LinkRefToOSMNodeRule #with OSMTGG
+
+#source {
+	node:MocaTree.Node {
+		name == "node"
+		- attribute->id
+		- parentNode->rootNode
+	}
+	++ref:MocaTree.Attribute {
+		name := "ref"
+	}
+	++refNode:MocaTree.Node {
+		name := "nd"
+		++ - parentNode->wayNode
+		++ - attribute->ref
+	}
+	id:MocaTree.Attribute {
+		name == "id"
+	}
+	wayNode:MocaTree.Node {
+		name == "way"
+		- parentNode->rootNode
+	}
+	rootNode:MocaTree.Node {
+		name == "osm"
+	}
+}
+
+#target {
+	osmmap:OSMLanguage.OSMap {
+		- osmnode->oSMNode
+		- osmway->oSMWay
+	}
+	oSMNode:OSMLanguage.OSMNode
+	oSMWay:OSMLanguage.OSMWay {
+		++ - osmNodes->oSMNode
+	}
+}
+
+#correspondence {
+	nodeToOSMPrimitive :NodeToOSMPrimitive {
+		#src->node
+		#trg->oSMNode
+	}
+	++ refNodeToOSMNode :RefNodeToOSMNode {
+		#src->refNode
+		#trg->oSMNode
+	}
+	nodeToOSMWay :NodeToOSMPrimitive {
+		#src->wayNode
+		#trg->oSMWay
+	}
+}
+
+#attributeConditions {
+	eq (ref.value, id.value)
+}
+
+
+#using OSMTGG.*
+
+#rule FolderToOSMContainerRule #with OSMTGG
+
+#source {
+	++folder:MocaTree.Folder
+}
+
+#target {
+	++osmContainer:OSMLanguage.OSMapContainer
+}
+
+#correspondence {
+	++ folderToOSMapContainer :FolderToOSMapContainer {
+		#src->folder
+		#trg->osmContainer
+	}
+}
+
+#attributeConditions {
+	eq (folder.name, osmContainer.name)
+}
+
+
+#using OSMTGG.*
+
+#rule NodeToOSMTagRule #with OSMTGG
+
+#source {
+	++v:MocaTree.Attribute {
+		name := "v"
+	}
+	++k:MocaTree.Attribute {
+		name := "k"
+	}
+	++node:MocaTree.Node {
+		name := "tag"
+		++ - attribute->v
+		++ - parentNode->rootNode
+		++ - attribute->k
+	}
+	rootNode:MocaTree.Node
+}
+
+#target {
+	osmPrimitve:OSMLanguage.OSMPrimitive {
+		++ - osmtag->oSMTag
+	}
+	++oSMTag:OSMLanguage.OSMTag
+}
+
+#correspondence {
+	++ nodeToOSMTag :NodeToOSMTag {
+		#src->node
+		#trg->oSMTag
+	}
+	nodeToOSMPrimitive :NodeToOSMPrimitive {
+		#src->rootNode
+		#trg->osmPrimitve
+	}
+}
+
+#attributeConditions {
+	eq (v.value, oSMTag.value)
+	eq (k.value, oSMTag.key)
+}
+
+
+#using OSMTGG.*
+
+#rule NodeToOSMMemberRule #with OSMTGG
+
+#source {
+	++ref:MocaTree.Attribute {
+		name := "ref"
+	}
+	++type:MocaTree.Attribute {
+		name := "type"
+	}
+	++role:MocaTree.Attribute {
+		name := "role"
+	}
+	relationNode:MocaTree.Node {
+		name == "relation"
+		- parentNode->rootNode
+	}
+	++node:MocaTree.Node {
+		name := "member"
+		++ - attribute->ref
+		++ - attribute->role
+		++ - attribute->type
+		++ - parentNode->relationNode
+	}
+	id:MocaTree.Attribute {
+		name == "id"
+	}
+	rootNode:MocaTree.Node {
+		name == "osm"
+	}
+	wayNode:MocaTree.Node {
+		name == "way"
+		- attribute->id
+		- parentNode->rootNode
+	}
+}
+
+#target {
+	++oSMMember:OSMLanguage.OSMMember {
+		++ - osmway->osmWay
+	}
+	osmWay:OSMLanguage.OSMWay
+	oSMRelation:OSMLanguage.OSMRelation {
+		++ - osmmember->oSMMember
+	}
+}
+
+#correspondence {
+	nodeToOSMPrimitive :NodeToOSMRelation {
+		#src->relationNode
+		#trg->oSMRelation
+	}
+	++ nodeToOSMMember :NodeToOSMMember {
+		#src->node
+		#trg->oSMMember
+	}
+	nodeToOSMWay :NodeToOSMWay {
+		#src->wayNode
+		#trg->osmWay
+	}
+}
+
+#attributeConditions {
+	setStandardValue (role.value, oSMMember.role)
+	eq (type.value, oSMMember.type)
+	eq (ref.value, id.value)
+}
+
+
