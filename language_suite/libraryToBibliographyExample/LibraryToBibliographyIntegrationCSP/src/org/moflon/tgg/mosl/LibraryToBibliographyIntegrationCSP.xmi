@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tgg:TripleGraphGrammarFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tgg="http://www.moflon.org/ide/tgg/mosl/TGG">
+  <schema name="LibraryToBibliographyIntegrationCSP">
+    <imports name="platform:/plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore"/>
+    <imports name="platform:/plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore"/>
+    <sourceTypes href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#/"/>
+    <targetTypes href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#/"/>
+    <correspondenceTypes name="BookToPublication">
+      <source href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Book"/>
+      <target href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Publication"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="LibraryToBibliography">
+      <source href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library"/>
+      <target href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Bibliography"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="AuthorToResearcher">
+      <source href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Author"/>
+      <target href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Researcher"/>
+    </correspondenceTypes>
+    <attributeCondDefs name="eq">
+      <params index="1" type=""/>
+      <params type=""/>
+      <allowedSyncAdornments value="FB"/>
+      <allowedSyncAdornments value="BF"/>
+      <allowedSyncAdornments value="BB"/>
+      <allowedGenAdornments value="FF"/>
+      <allowedGenAdornments value="BF"/>
+      <allowedGenAdornments value="FB"/>
+      <allowedGenAdornments value="BB"/>
+    </attributeCondDefs>
+    <attributeCondDefs name="notEq" userDefined="true">
+      <params type="one"/>
+      <params index="1" type="two"/>
+      <allowedSyncAdornments value="BB"/>
+    </attributeCondDefs>
+    <attributeCondDefs name="categoryToType" userDefined="true">
+      <params index="1" type="BibliographyLanguageCSP.PaperTypes"/>
+      <params type="EString"/>
+      <allowedSyncAdornments value="BB"/>
+      <allowedSyncAdornments value="FB"/>
+      <allowedSyncAdornments value="BF"/>
+      <allowedGenAdornments value="BB"/>
+      <allowedGenAdornments value="FB"/>
+      <allowedGenAdornments value="BF"/>
+      <allowedGenAdornments value="FF"/>
+    </attributeCondDefs>
+    <attributeCondDefs name="smallerOrEqual">
+      <params index="1" type="Number"/>
+      <params type="Number"/>
+      <allowedSyncAdornments value="BB"/>
+      <allowedSyncAdornments value="FB"/>
+      <allowedSyncAdornments value="BF"/>
+      <allowedGenAdornments value="FF"/>
+      <allowedGenAdornments value="FB"/>
+      <allowedGenAdornments value="BF"/>
+      <allowedGenAdornments value="BB"/>
+    </attributeCondDefs>
+    <attributeCondDefs name="add">
+      <params type="Number"/>
+      <params index="2" type="Number"/>
+      <params index="1" type="Number"/>
+      <allowedSyncAdornments value="BFB"/>
+      <allowedSyncAdornments value="FBB"/>
+      <allowedSyncAdornments value="BBF"/>
+      <allowedSyncAdornments value="BBB"/>
+      <allowedGenAdornments value="FBF"/>
+      <allowedGenAdornments value="FFB"/>
+      <allowedGenAdornments value="BFF"/>
+      <allowedGenAdornments value="FBB"/>
+      <allowedGenAdornments value="BBB"/>
+      <allowedGenAdornments value="BFB"/>
+      <allowedGenAdornments value="BBF"/>
+    </attributeCondDefs>
+  </schema>
+  <rules name="RuleLibraryToBibliography" schema="//@schema">
+    <using importedNamespace="LibraryToBibliographyIntegrationCSP.*"/>
+    <sourcePatterns name="lib">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library"/>
+      <linkVariablePatterns target="//@rules.0/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library/archive"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="archive">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Archive"/>
+    </sourcePatterns>
+    <targetPatterns name="biblio">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Bibliography"/>
+    </targetPatterns>
+    <correspondencePatterns name="libraryToBibliography" type="//@schema/@correspondenceTypes.1" source="//@rules.0/@sourcePatterns.0" target="//@rules.0/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@sourcePatterns.0" attribute="location"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@targetPatterns.0" attribute="name"/>
+    </attrConditions>
+  </rules>
+  <rules name="RuleConnectionBookToArchive" schema="//@schema">
+    <using importedNamespace="LibraryToBibliographyIntegrationCSP.*"/>
+    <sourcePatterns name="lib">
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library"/>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.2">
+        <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library/author"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.3">
+        <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library/archive"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="book">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Book"/>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Book/author"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="aut">
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Author"/>
+    </sourcePatterns>
+    <sourcePatterns name="archive">
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Archive"/>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.4">
+        <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Archive/book"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Archive/book"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="existingBook">
+      <op value="!"/>
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Book"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Book/title"/>
+        <valueExp xsi:type="tgg:AttributeExpression" objectVar="//@rules.1/@targetPatterns.1">
+          <attribute href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Publication/citation"/>
+        </valueExp>
+      </attributeConstraints>
+    </sourcePatterns>
+    <targetPatterns name="res">
+      <type href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Researcher"/>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Researcher/publication"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="pub">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Publication"/>
+    </targetPatterns>
+    <correspondencePatterns name="bookToPublication" type="//@schema/@correspondenceTypes.0" source="//@rules.1/@sourcePatterns.1" target="//@rules.1/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="authorToResearcher" type="//@schema/@correspondenceTypes.2" source="//@rules.1/@sourcePatterns.2" target="//@rules.1/@targetPatterns.0"/>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@sourcePatterns.1" attribute="title"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@targetPatterns.1" attribute="citation"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.3">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@targetPatterns.1" attribute="year"/>
+      <values xsi:type="tgg:LocalVariable" name="yearIncremented"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.4">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@sourcePatterns.3" attribute="year"/>
+      <values xsi:type="tgg:LiteralExpression" value="-1"/>
+      <values xsi:type="tgg:LocalVariable" name="yearIncremented"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.2">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@sourcePatterns.1" attribute="category"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@targetPatterns.1" attribute="type"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@sourcePatterns.1" attribute="year"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.1/@targetPatterns.1" attribute="year"/>
+    </attrConditions>
+  </rules>
+  <rules name="RuleBookToPublication" schema="//@schema">
+    <using importedNamespace="LibraryToBibliographyIntegrationCSP.*"/>
+    <sourcePatterns name="book">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Book"/>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Book/author"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="aut">
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Author"/>
+    </sourcePatterns>
+    <sourcePatterns name="existingBook">
+      <op value="!"/>
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Book"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Book/title"/>
+        <valueExp xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@targetPatterns.0">
+          <attribute href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Publication/citation"/>
+        </valueExp>
+      </attributeConstraints>
+    </sourcePatterns>
+    <sourcePatterns name="lib">
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library"/>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.2">
+        <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library/book"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.4">
+        <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library/archive"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library/book"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.1">
+        <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library/author"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="archive">
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Archive"/>
+    </sourcePatterns>
+    <targetPatterns name="pub">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Publication"/>
+    </targetPatterns>
+    <targetPatterns name="res">
+      <type href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Researcher"/>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Researcher/publication"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="bibliography">
+      <type href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Bibliography"/>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.1">
+        <type href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Bibliography/researcher"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="libraryToBibliography" type="//@schema/@correspondenceTypes.1" source="//@rules.2/@sourcePatterns.3" target="//@rules.2/@targetPatterns.2"/>
+    <correspondencePatterns name="bookToPublication" type="//@schema/@correspondenceTypes.0" source="//@rules.2/@sourcePatterns.0" target="//@rules.2/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="authorToResearcher" type="//@schema/@correspondenceTypes.2" source="//@rules.2/@sourcePatterns.1" target="//@rules.2/@targetPatterns.1"/>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@sourcePatterns.0" attribute="year"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@targetPatterns.0" attribute="year"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@sourcePatterns.0" attribute="title"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@targetPatterns.0" attribute="citation"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.1">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@sourcePatterns.3" attribute="location"/>
+      <values xsi:type="tgg:LiteralExpression" value="&quot;Germany&quot;"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.2">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@sourcePatterns.0" attribute="category"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@targetPatterns.0" attribute="type"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.3">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@sourcePatterns.4" attribute="year"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@targetPatterns.0" attribute="year"/>
+    </attrConditions>
+  </rules>
+  <rules name="RuleConnectionBookToAuthor" schema="//@schema">
+    <using importedNamespace="LibraryToBibliographyIntegrationCSP.*"/>
+    <sourcePatterns name="aut">
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Author"/>
+    </sourcePatterns>
+    <sourcePatterns name="book">
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Book"/>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Book/author"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="library">
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library"/>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.0">
+        <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library/author"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.1">
+        <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library/book"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="res">
+      <type href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Researcher"/>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Researcher/publication"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="pub">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Publication"/>
+    </targetPatterns>
+    <correspondencePatterns name="bookToPublication" type="//@schema/@correspondenceTypes.0" source="//@rules.3/@sourcePatterns.1" target="//@rules.3/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="authorToResearcher" type="//@schema/@correspondenceTypes.2" source="//@rules.3/@sourcePatterns.0" target="//@rules.3/@targetPatterns.0"/>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.3/@sourcePatterns.1" attribute="title"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.3/@targetPatterns.1" attribute="citation"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.3/@sourcePatterns.1" attribute="year"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.3/@targetPatterns.1" attribute="year"/>
+    </attrConditions>
+  </rules>
+  <rules name="RuleAuthorToResearcher" schema="//@schema">
+    <using importedNamespace="LibraryToBibliographyIntegrationCSP.*"/>
+    <sourcePatterns name="aut">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Author"/>
+    </sourcePatterns>
+    <sourcePatterns name="lib">
+      <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library"/>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore#//Library/author"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="res">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Researcher"/>
+    </targetPatterns>
+    <targetPatterns name="bib">
+      <type href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Bibliography"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/BibliographyLanguageCSP/model/BibliographyLanguageCSP.ecore#//Bibliography/researcher"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="authorToResearcher" type="//@schema/@correspondenceTypes.2" source="//@rules.4/@sourcePatterns.0" target="//@rules.4/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="libraryToBibliography" type="//@schema/@correspondenceTypes.1" source="//@rules.4/@sourcePatterns.1" target="//@rules.4/@targetPatterns.1"/>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@targetPatterns.0" attribute="name"/>
+    </attrConditions>
+  </rules>
+</tgg:TripleGraphGrammarFile>
