@@ -1,0 +1,496 @@
+#import "platform:/plugin/FolksonomyLanguage/model/FolksonomyLanguage.ecore"
+#import "platform:/plugin/MocaTree/model/MocaTree.ecore"
+
+#schema FolksonomyCodeAdapter
+
+#source {
+	FolksonomyLanguage
+}
+
+#target {
+	MocaTree
+}
+
+#correspondence {
+	FolksonomyToFolder {
+		#src->FolksonomyLanguage.Folksonomy
+		#trg->MocaTree.Folder
+	}
+	UserToNode {
+		#src->FolksonomyLanguage.User
+		#trg->MocaTree.Node
+	}
+	ItemToNode {
+		#src->FolksonomyLanguage.Item
+		#trg->MocaTree.Node
+	}
+}
+
+#attributeConditions {
+	eq(0: , 1: ) {
+		#sync: FB, BF, BB
+		#gen: FB, BF, FF, BB
+	}
+}
+
+
+#using FolksonomyCodeAdapter.*
+
+#rule CreateActivity #extends CreateItem #with FolksonomyCodeAdapter
+
+#source {
+	++item:FolksonomyLanguage.Activity
+}
+
+#target {
+	itemFile:MocaTree.File {
+		name == "ActivityHierarchy.dat"
+	}
+}
+
+
+#using FolksonomyCodeAdapter.*
+
+#rule IgnoreResourceActivity #with FolksonomyCodeAdapter
+
+#source {
+	activity:FolksonomyLanguage.Activity
+	resource:FolksonomyLanguage.Resource {
+		++ - assignedActivities->activity
+	}
+}
+
+
+#using FolksonomyCodeAdapter.*
+
+#abstract #rule AbstractCreateItemResourceUser2 #with FolksonomyCodeAdapter
+
+#source {
+	item:FolksonomyLanguage.Item
+	user:FolksonomyLanguage.User {
+		++ - items->resource
+		- items->item
+		- folksonomy->folksonomy
+	}
+	folksonomy:FolksonomyLanguage.Folksonomy
+	resource:FolksonomyLanguage.Resource {
+		- folksonomy->folksonomy
+	}
+}
+
+#target {
+	++entry:MocaTree.Node {
+		name := "ENTRY"
+		++ - parentNode->activityResourceUserRoot
+	}
+	++resourceNode:MocaTree.Node {
+		++ - parentNode->entry
+	}
+	activityResourceUser:MocaTree.File {
+		name == "ActivityResourceUser.dat"
+	}
+	++userNode:MocaTree.Node {
+		index := 2
+		++ - parentNode->entry
+	}
+	activityResourceUserRoot:MocaTree.Node {
+		name == "ACTIVITY-RESOURCE-USER"
+		- file->activityResourceUser
+	}
+	++itemNode:MocaTree.Node {
+		++ - parentNode->entry
+	}
+}
+
+#correspondence {
+	itemToNode :ItemToNode {
+		#src->resource
+		#trg->activityResourceUserRoot
+	}
+}
+
+#attributeConditions {
+	eq (resource.label, resourceNode.name)
+	eq (user.name, userNode.name)
+	eq (item.label, itemNode.name)
+}
+
+
+#using FolksonomyCodeAdapter.*
+
+#rule CreateResource #extends CreateItem #with FolksonomyCodeAdapter
+
+#source {
+	++item:FolksonomyLanguage.Resource
+}
+
+#target {
+	itemFile:MocaTree.File {
+		name == "ActivityResourceUser.dat"
+	}
+}
+
+
+#using FolksonomyCodeAdapter.*
+
+#rule CreateTag #extends CreateItem #with FolksonomyCodeAdapter
+
+#source {
+	++item:FolksonomyLanguage.Tag
+}
+
+#target {
+	itemFile:MocaTree.File {
+		name == "ResourceTagUser.dat"
+	}
+}
+
+
+#using FolksonomyCodeAdapter.*
+
+#rule CreateFriendship #with FolksonomyCodeAdapter
+
+#source {
+	user:FolksonomyLanguage.User {
+		++ - friends->friend
+	}
+	friend:FolksonomyLanguage.User
+}
+
+#target {
+	++entry:MocaTree.Node {
+		name := "ENTRY"
+		++ - parentNode->friends
+	}
+	++userNode:MocaTree.Node {
+		index := 0
+		++ - parentNode->entry
+	}
+	friends:MocaTree.Node
+	++friendNode:MocaTree.Node {
+		index := 1
+		++ - parentNode->entry
+	}
+}
+
+#correspondence {
+	friendToNode :UserToNode {
+		#src->friend
+		#trg->friends
+	}
+	userToNode :UserToNode {
+		#src->user
+		#trg->friends
+	}
+}
+
+#attributeConditions {
+	eq (friend.name, friendNode.name)
+	eq (user.name, userNode.name)
+}
+
+
+#using FolksonomyCodeAdapter.*
+
+#rule CreateActivityResourceUser #extends AbstractCreateItemResourceUser2 #with FolksonomyCodeAdapter
+
+#source {
+	resource:FolksonomyLanguage.Resource {
+		- assignedActivities->item
+	}
+	item:FolksonomyLanguage.Activity
+}
+
+#target {
+	++itemNode:MocaTree.Node {
+		index := 0
+	}
+	++resourceNode:MocaTree.Node {
+		index := 1
+	}
+}
+
+
+#using FolksonomyCodeAdapter.*
+
+#rule CreateSubActivity #with FolksonomyCodeAdapter
+
+#source {
+	++sub:FolksonomyLanguage.Activity
+	activity:FolksonomyLanguage.Activity {
+		++ - subActivities->sub
+	}
+}
+
+#target {
+	++parent:MocaTree.Node {
+		index := 0
+		++ - parentNode->entry
+	}
+	root:MocaTree.Node
+	++entry:MocaTree.Node {
+		name := "ENTRY"
+		++ - parentNode->root
+	}
+	++child:MocaTree.Node {
+		index := 1
+		++ - parentNode->entry
+	}
+}
+
+#correspondence {
+	activityToNode :ItemToNode {
+		#src->activity
+		#trg->root
+	}
+	++ subActivityToNode :ItemToNode {
+		#src->sub
+		#trg->root
+	}
+}
+
+#attributeConditions {
+	eq (activity.label, parent.name)
+	eq (sub.label, child.name)
+}
+
+
+#using FolksonomyCodeAdapter.*
+
+#rule CreateFolder #with FolksonomyCodeAdapter
+
+#source {
+	++folksonomy:FolksonomyLanguage.Folksonomy
+}
+
+#target {
+	++root:MocaTree.Node {
+		name := "ACTIVITY-ACTIVITY"
+		++ - file->ActivityHierarchy
+	}
+	++UserUser:MocaTree.File {
+		name := "UserUser.dat"
+	}
+	++activityResourceUserRoot:MocaTree.Node {
+		name := "ACTIVITY-RESOURCE-USER"
+		++ - file->ActivityResourceUser
+	}
+	++friends:MocaTree.Node {
+		name := "USER-USER"
+		++ - file->UserUser
+	}
+	++activityUserRoot:MocaTree.Node {
+		name := "ACTIVITY-USER"
+		++ - file->ActivityUser
+	}
+	++ActivityResourceUser:MocaTree.File {
+		name := "ActivityResourceUser.dat"
+	}
+	++ActivityUser:MocaTree.File {
+		name := "ActivityUser.dat"
+	}
+	++ActivityHierarchy:MocaTree.File {
+		name := "ActivityHierarchy.dat"
+	}
+	++resourceTagUserNode:MocaTree.Node {
+		name := "RESOURCE-TAG-USER"
+		++ - file->ResourceTagUser
+	}
+	++folder:MocaTree.Folder {
+		++ - file->ActivityResourceUser
+		++ - file->ResourceTagUser
+		++ - file->ActivityUser
+		++ - file->UserUser
+		++ - file->ActivityHierarchy
+	}
+	++ResourceTagUser:MocaTree.File {
+		name := "ResourceTagUser.dat"
+	}
+}
+
+#correspondence {
+	++ folksonomyToFolder :FolksonomyToFolder {
+		#src->folksonomy
+		#trg->folder
+	}
+}
+
+#attributeConditions {
+	eq (folksonomy.name, folder.name)
+}
+
+
+#using FolksonomyCodeAdapter.*
+
+#rule CreateItem #with FolksonomyCodeAdapter
+
+#source {
+	++item:FolksonomyLanguage.Item {
+		++ - folksonomy->folksonomy
+	}
+	folksonomy:FolksonomyLanguage.Folksonomy
+}
+
+#target {
+	itemFile:MocaTree.File
+	root:MocaTree.Node {
+		- file->itemFile
+	}
+	folder:MocaTree.Folder {
+		- file->itemFile
+	}
+}
+
+#correspondence {
+	folksonomyToFolder :FolksonomyToFolder {
+		#src->folksonomy
+		#trg->folder
+	}
+	++ itemToNode :ItemToNode {
+		#src->item
+		#trg->root
+	}
+}
+
+
+#using FolksonomyCodeAdapter.*
+
+#rule CreateUser #with FolksonomyCodeAdapter
+
+#source {
+	folksonomy:FolksonomyLanguage.Folksonomy
+	++user:FolksonomyLanguage.User {
+		++ - folksonomy->folksonomy
+	}
+}
+
+#target {
+	folder:MocaTree.Folder {
+		- file->userUser
+	}
+	userUser:MocaTree.File {
+		name == "UserUser.dat"
+	}
+	friends:MocaTree.Node {
+		- file->userUser
+	}
+}
+
+#correspondence {
+	++ userToNode :UserToNode {
+		#src->user
+		#trg->friends
+	}
+	folksonomyToFolder :FolksonomyToFolder {
+		#src->folksonomy
+		#trg->folder
+	}
+}
+
+
+#using FolksonomyCodeAdapter.*
+
+#rule IgnoreResourceTag #with FolksonomyCodeAdapter
+
+#source {
+	item:FolksonomyLanguage.Tag {
+		++ - resources->resource
+	}
+	resource:FolksonomyLanguage.Resource
+}
+
+
+#using FolksonomyCodeAdapter.*
+
+#rule IgnoreUserItem #with FolksonomyCodeAdapter
+
+#source {
+	user:FolksonomyLanguage.User {
+		++ - items->item
+	}
+	item:FolksonomyLanguage.Item
+}
+
+
+#using FolksonomyCodeAdapter.*
+
+#rule CreateActivityUser #with FolksonomyCodeAdapter
+
+#source {
+	activity:FolksonomyLanguage.Activity
+	user:FolksonomyLanguage.User {
+		++ - items->activity
+	}
+}
+
+#target {
+	usesActivityFile:MocaTree.File
+	folder:MocaTree.Folder {
+		- file->usesActivityFile
+		- file->usersFile
+		- file->activitiesFile
+	}
+	activityUserRoot:MocaTree.Node {
+		name == "ACTIVITY-USER"
+		- file->usesActivityFile
+	}
+	activitiesNode:MocaTree.Node {
+		- file->activitiesFile
+	}
+	usersFile:MocaTree.File
+	++userNode:MocaTree.Node {
+		index := 0
+		++ - parentNode->entry
+	}
+	usersNode:MocaTree.Node {
+		- file->usersFile
+	}
+	++activityNode:MocaTree.Node {
+		index := 1
+		++ - parentNode->entry
+	}
+	activitiesFile:MocaTree.File
+	++entry:MocaTree.Node {
+		name := "ENTRY"
+		++ - parentNode->activityUserRoot
+	}
+}
+
+#correspondence {
+	activityToNode :ItemToNode {
+		#src->activity
+		#trg->activitiesNode
+	}
+	userToNode :UserToNode {
+		#src->user
+		#trg->usersNode
+	}
+}
+
+#attributeConditions {
+	eq (activity.label, activityNode.name)
+	eq (user.name, userNode.name)
+}
+
+
+#using FolksonomyCodeAdapter.*
+
+#rule CreateResourceTagUser #extends AbstractCreateItemResourceUser2 #with FolksonomyCodeAdapter
+
+#source {
+	item:FolksonomyLanguage.Tag {
+		- resources->resource
+	}
+	resource:FolksonomyLanguage.Resource
+}
+
+#target {
+	++itemNode:MocaTree.Node {
+		index := 1
+	}
+	++resourceNode:MocaTree.Node {
+		index := 0
+	}
+}
+
+
