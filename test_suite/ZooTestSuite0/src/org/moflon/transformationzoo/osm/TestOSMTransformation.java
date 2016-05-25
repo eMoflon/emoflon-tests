@@ -1,6 +1,7 @@
 package org.moflon.transformationzoo.osm;
 
 import org.eclipse.emf.ecore.EObject;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.moflon.moca.ModelToTreeConverter;
 import org.moflon.testframework.tgg.IntegratorTest;
@@ -23,7 +24,8 @@ public class TestOSMTransformation extends IntegratorTest {
 		integrate("single_osmap_FWD");
 	}
 	
-	@Test
+	//BWD tests are ignored due to missing post processing
+	@Test @Ignore
 	public void testFileToOSMap_BWD() {
 		integrate("single_osmap_BWD");
 	}
@@ -34,7 +36,8 @@ public class TestOSMTransformation extends IntegratorTest {
 		integrate("single_node_FWD");
 	}
 	
-	@Test 
+	//BWD tests are ignored due to missing post processing
+	@Test @Ignore
 	public void testNodeToOSMNode_BWD() 
 	{
 		integrate("single_node_BWD");
@@ -46,7 +49,8 @@ public class TestOSMTransformation extends IntegratorTest {
 		integrate("single_way_FWD");
 	}
 	
-	@Test
+	//BWD tests are ignored due to missing post processing
+	@Test @Ignore
 	public void testNodeToOSMWay_BWD()
 	{
 		integrate("single_way_BWD");
@@ -58,7 +62,8 @@ public class TestOSMTransformation extends IntegratorTest {
 		integrate("single_relation_FWD");
 	}
 	
-	@Test
+	//BWD tests are ignored due to missing post processing
+	@Test @Ignore
 	public void testNodeToOSMRelation_BWD() 
 	{
 		integrate("single_relation_BWD");
@@ -69,7 +74,8 @@ public class TestOSMTransformation extends IntegratorTest {
 		integrate("complexMap_FWD");
 	}
 	
-	@Test
+	//BWD tests are ignored due to missing post processing
+	@Test @Ignore
 	public void testMocaTreetoComplexOSMModel_BWD() {
 		integrate("complexMap_BWD");
 	}

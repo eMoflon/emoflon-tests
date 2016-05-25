@@ -3,6 +3,7 @@ package org.moflon.transformationzoo.osm.incremental;
 import java.io.IOException;
 
 import org.eclipse.emf.ecore.EObject;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.moflon.moca.ModelToTreeConverter;
 import org.moflon.testframework.tgg.IncrementalIntegratorTest;
@@ -45,7 +46,8 @@ public class TestOSMIncremental extends IncrementalIntegratorTest {
 		compareWithExpected("FirstIncremental_ChangeBounds_FWD", ApplicationTypes.FORWARD, helper.getTrg());
 	}
 
-	@Test
+	//BWD tests are ignored due to missing post processing
+    @Test @Ignore
 	public void testFirstIncremental_ChangeBounds_BWD() throws IOException, InterruptedException {
 		
 		init();
