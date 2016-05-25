@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tgg:TripleGraphGrammarFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tgg="http://www.moflon.org/ide/tgg/mosl/TGG">
+  <schema name="fixmlTGG">
+    <imports name="platform:/plugin/MocaTree/model/MocaTree.ecore"/>
+    <imports name="platform:/plugin/fixmlPackage/model/FixmlPackage.ecore"/>
+    <sourceTypes href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#/"/>
+    <targetTypes href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#/"/>
+    <correspondenceTypes name="NodeToFixmlClass">
+      <source href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <target href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="FileToCompilationUnit">
+      <source href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+      <target href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//CompilationUnit"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="NodeToFixmlObjectAttribute">
+      <source href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <target href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttribute"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="AttributeToFixmlAttribute">
+      <source href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Attribute"/>
+      <target href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlAttribute"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="AttributeToFixmlObjectAttributeAttribute">
+      <source href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Attribute"/>
+      <target href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttributeAttribute"/>
+    </correspondenceTypes>
+    <attributeCondDefs name="eq">
+      <params index="1" type=""/>
+      <params type=""/>
+      <allowedSyncAdornments value="FB"/>
+      <allowedSyncAdornments value="BB"/>
+      <allowedSyncAdornments value="BF"/>
+      <allowedGenAdornments value="BF"/>
+      <allowedGenAdornments value="FB"/>
+      <allowedGenAdornments value="BB"/>
+      <allowedGenAdornments value="FF"/>
+    </attributeCondDefs>
+    <attributeCondDefs name="setDefaultString">
+      <params type="EString"/>
+      <params index="1" type="EString"/>
+      <allowedSyncAdornments value="BB"/>
+      <allowedSyncAdornments value="FB"/>
+      <allowedGenAdornments value="FB"/>
+      <allowedGenAdornments value="FF"/>
+      <allowedGenAdornments value="BB"/>
+    </attributeCondDefs>
+    <attributeCondDefs name="add">
+      <params type="Number"/>
+      <params index="2" type="Number"/>
+      <params index="1" type="Number"/>
+      <allowedSyncAdornments value="BBB"/>
+      <allowedSyncAdornments value="FBB"/>
+      <allowedSyncAdornments value="BFB"/>
+      <allowedSyncAdornments value="BBF"/>
+      <allowedGenAdornments value="FBF"/>
+      <allowedGenAdornments value="BFF"/>
+      <allowedGenAdornments value="BBF"/>
+      <allowedGenAdornments value="BBB"/>
+      <allowedGenAdornments value="FBB"/>
+      <allowedGenAdornments value="BFB"/>
+      <allowedGenAdornments value="FFB"/>
+    </attributeCondDefs>
+  </schema>
+  <rules name="AttributeLevelN" abstractRule="true" supertypes="//@rules.9" schema="//@schema">
+    <using importedNamespace="fixmlTGG.*"/>
+    <sourcePatterns name="childNode">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <linkVariablePatterns target="//@rules.0/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node/attribute"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="newAttr">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Attribute"/>
+    </sourcePatterns>
+    <targetPatterns name="fixmlChildObjectAttribute">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttribute"/>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.3">
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttribute/fixmlClass"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.2">
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttribute/refClass"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="fixmlObjectAttributeAttribute">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttributeAttribute"/>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttributeAttribute/fixmlObjectAttribute"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="childFixmlClass">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+    </targetPatterns>
+    <targetPatterns name="owner">
+      <op value="!"/>
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+      <attributeConstraints op=" > ">
+        <attribute href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/level"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <correspondencePatterns name="attrToFixmlObjectAttributeAttribute" type="//@schema/@correspondenceTypes.4" source="//@rules.0/@sourcePatterns.1" target="//@rules.0/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="childNodeToFixmlChildObjectAttribute" type="//@schema/@correspondenceTypes.2" source="//@rules.0/@sourcePatterns.0" target="//@rules.0/@targetPatterns.0"/>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@sourcePatterns.1" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@targetPatterns.1" attribute="name"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@sourcePatterns.1" attribute="value"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.0/@targetPatterns.1" attribute="value"/>
+    </attrConditions>
+  </rules>
+  <rules name="Rest" abstractRule="true" schema="//@schema">
+    <using importedNamespace="fixmlTGG.*"/>
+    <targetPatterns name="compilationUnit">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//CompilationUnit"/>
+    </targetPatterns>
+    <targetPatterns name="childFixmlClass">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.0">
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/compilationUnit"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+  </rules>
+  <rules name="AttributeLevelNEfficient" supertypes="//@rules.9" schema="//@schema">
+    <using importedNamespace="fixmlTGG.*"/>
+    <sourcePatterns name="newAttr">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Attribute"/>
+    </sourcePatterns>
+    <sourcePatterns name="childNode">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node/attribute"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="fixmlAttribute">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlAttribute"/>
+    </targetPatterns>
+    <targetPatterns name="fixmlChildObjectAttribute">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttribute"/>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.3">
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttribute/fixmlClass"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.4">
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttribute/refClass"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="fixmlObjectAttributeAttribute">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttributeAttribute"/>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttributeAttribute/fixmlObjectAttribute"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="owner">
+      <op value="!"/>
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+      <attributeConstraints op=" > ">
+        <attribute href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/level"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <targetPatterns name="childFixmlClass">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+    </targetPatterns>
+    <correspondencePatterns name="childNodeToFixmlChildObjectAttribute" type="//@schema/@correspondenceTypes.2" source="//@rules.2/@sourcePatterns.1" target="//@rules.2/@targetPatterns.1"/>
+    <correspondencePatterns name="attrToFixmlObjectAttributeAttribute" type="//@schema/@correspondenceTypes.4" source="//@rules.2/@sourcePatterns.0" target="//@rules.2/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@targetPatterns.0" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@targetPatterns.2" attribute="name"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@targetPatterns.2" attribute="name"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@sourcePatterns.0" attribute="value"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@targetPatterns.2" attribute="value"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@targetPatterns.0" attribute="value"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.2/@targetPatterns.2" attribute="value"/>
+    </attrConditions>
+  </rules>
+  <rules name="RestLevelN" supertypes="//@rules.1 //@rules.6" schema="//@schema">
+    <using importedNamespace="fixmlTGG.*"/>
+    <targetPatterns name="childFixmlClass">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+    </targetPatterns>
+  </rules>
+  <rules name="TagToFixmlClass" schema="//@schema">
+    <using importedNamespace="fixmlTGG.*"/>
+    <sourcePatterns name="file">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </sourcePatterns>
+    <sourcePatterns name="rootNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;FIXML&quot;"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node/file"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="node">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="compilationUnit">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//CompilationUnit"/>
+    </targetPatterns>
+    <targetPatterns name="fixmlClass">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/level"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/compilationUnit"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="nodeToFixmlClass" type="//@schema/@correspondenceTypes.0" source="//@rules.4/@sourcePatterns.2" target="//@rules.4/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="fileToCompilationUnit" type="//@schema/@correspondenceTypes.1" source="//@rules.4/@sourcePatterns.0" target="//@rules.4/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@sourcePatterns.2" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@targetPatterns.1" attribute="name"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.1">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.4/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:LiteralExpression" value="&quot;default&quot;"/>
+    </attrConditions>
+  </rules>
+  <rules name="FirstLevel0" supertypes="//@rules.7 //@rules.10" schema="//@schema">
+    <using importedNamespace="fixmlTGG.*"/>
+    <sourcePatterns name="node">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </sourcePatterns>
+    <targetPatterns name="childFixmlClass">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+      <attributeAssignments op=" := ">
+        <attribute href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/level"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="1"/>
+      </attributeAssignments>
+    </targetPatterns>
+    <targetPatterns name="fixmlClass">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/level"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <correspondencePatterns name="nodeToFixmlClass" type="//@schema/@correspondenceTypes.0" source="//@rules.5/@sourcePatterns.0" target="//@rules.5/@targetPatterns.1"/>
+  </rules>
+  <rules name="LevelN" abstractRule="true" supertypes="//@rules.10" schema="//@schema">
+    <using importedNamespace="fixmlTGG.*"/>
+    <sourcePatterns name="node">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </sourcePatterns>
+    <sourcePatterns name="childNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <linkVariablePatterns target="//@rules.6/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="fixmlClass">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+      <attributeConstraints op=" > ">
+        <attribute href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/level"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <targetPatterns name="fixmlObjectAttribute">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttribute"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.0">
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttribute/refClass"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="fixmlChildObjectAttribute">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttribute"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.3">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttribute/refClass"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttribute/fixmlObjectAttributeContainer"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="childFixmlClass">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+    </targetPatterns>
+    <correspondencePatterns name="childNodeToFixmlChildObjectAttribute" type="//@schema/@correspondenceTypes.2" source="//@rules.6/@sourcePatterns.1" target="//@rules.6/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="nodeToFixmlObjectAttribute" type="//@schema/@correspondenceTypes.2" source="//@rules.6/@sourcePatterns.0" target="//@rules.6/@targetPatterns.1"/>
+    <correspondencePatterns name="nodeToFixmlClass2" type="//@schema/@correspondenceTypes.0" source="//@rules.6/@sourcePatterns.1" target="//@rules.6/@targetPatterns.3">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.2">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.6/@targetPatterns.0" attribute="level"/>
+      <values xsi:type="tgg:LiteralExpression" value="1"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.6/@targetPatterns.3" attribute="level"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.6/@targetPatterns.3" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.6/@targetPatterns.2" attribute="type"/>
+    </attrConditions>
+  </rules>
+  <rules name="First" abstractRule="true" schema="//@schema">
+    <using importedNamespace="fixmlTGG.*"/>
+    <sourcePatterns name="childNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </sourcePatterns>
+    <targetPatterns name="compilationUnit">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//CompilationUnit"/>
+    </targetPatterns>
+    <targetPatterns name="noSameFixmlClass">
+      <op value="!"/>
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/name"/>
+        <valueExp xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@sourcePatterns.0">
+          <attribute href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+        </valueExp>
+      </attributeConstraints>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.0">
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/compilationUnit"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+  </rules>
+  <rules name="RestLevel0" supertypes="//@rules.1 //@rules.10" schema="//@schema">
+    <using importedNamespace="fixmlTGG.*"/>
+    <sourcePatterns name="node">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </sourcePatterns>
+    <targetPatterns name="fixmlClass">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/level"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <targetPatterns name="childFixmlClass">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/level"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="1"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <correspondencePatterns name="nodeToFixmlClass" type="//@schema/@correspondenceTypes.0" source="//@rules.8/@sourcePatterns.0" target="//@rules.8/@targetPatterns.0"/>
+  </rules>
+  <rules name="AbstractAttributeLevel0" abstractRule="true" schema="//@schema">
+    <using importedNamespace="fixmlTGG.*"/>
+    <sourcePatterns name="childNode">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <linkVariablePatterns target="//@rules.9/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node/attribute"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="newAttr">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Attribute"/>
+    </sourcePatterns>
+    <targetPatterns name="compilationUnit">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//CompilationUnit"/>
+    </targetPatterns>
+    <targetPatterns name="fixmlAttribute">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlAttribute"/>
+      <linkVariablePatterns target="//@rules.9/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlAttribute/compilationUnit"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="childFixmlClass">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+      <linkVariablePatterns target="//@rules.9/@targetPatterns.0">
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/compilationUnit"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.9/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/attribute"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="newAttrToFixmlAttribute" type="//@schema/@correspondenceTypes.3" source="//@rules.9/@sourcePatterns.1" target="//@rules.9/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.9/@sourcePatterns.1" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.9/@targetPatterns.1" attribute="name"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.9/@sourcePatterns.1" attribute="value"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.9/@targetPatterns.1" attribute="value"/>
+    </attrConditions>
+  </rules>
+  <rules name="Level0" abstractRule="true" schema="//@schema">
+    <using importedNamespace="fixmlTGG.*"/>
+    <sourcePatterns name="childNode">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <linkVariablePatterns target="//@rules.10/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="node">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </sourcePatterns>
+    <targetPatterns name="fixmlClass">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+      <linkVariablePatterns target="//@rules.10/@targetPatterns.1">
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/compilationUnit"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="compilationUnit">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//CompilationUnit"/>
+    </targetPatterns>
+    <targetPatterns name="childFixmlClass">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+      <linkVariablePatterns target="//@rules.10/@targetPatterns.1">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/compilationUnit"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="fixmlObjAttr">
+      <op value="++"/>
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttribute"/>
+      <linkVariablePatterns target="//@rules.10/@targetPatterns.0">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttribute/fixmlClass"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.10/@targetPatterns.2">
+        <op value="++"/>
+        <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlObjectAttribute/refClass"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="nodeToFixmlClass2" type="//@schema/@correspondenceTypes.0" source="//@rules.10/@sourcePatterns.0" target="//@rules.10/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="childNodeToFixmlObjAttr" type="//@schema/@correspondenceTypes.2" source="//@rules.10/@sourcePatterns.0" target="//@rules.10/@targetPatterns.3">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.10/@targetPatterns.2" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.10/@targetPatterns.3" attribute="type"/>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.10/@sourcePatterns.0" attribute="name"/>
+      <values xsi:type="tgg:AttributeVariable" objectVar="//@rules.10/@targetPatterns.2" attribute="name"/>
+    </attrConditions>
+  </rules>
+  <rules name="FirstLevelN" supertypes="//@rules.6 //@rules.7" schema="//@schema">
+    <using importedNamespace="fixmlTGG.*"/>
+  </rules>
+  <rules name="AttributeLevel0" supertypes="//@rules.9" schema="//@schema">
+    <using importedNamespace="fixmlTGG.*"/>
+    <sourcePatterns name="childNode">
+      <type href="../../../../../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </sourcePatterns>
+    <targetPatterns name="childFixmlClass">
+      <type href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass"/>
+      <attributeConstraints op=" == ">
+        <attribute href="../../../../../../../plugin/fixmlPackage/model/FixmlPackage.ecore#//FixmlClass/level"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <correspondencePatterns name="childNodeToChildFixmlClass" type="//@schema/@correspondenceTypes.0" source="//@rules.12/@sourcePatterns.0" target="//@rules.12/@targetPatterns.0"/>
+  </rules>
+</tgg:TripleGraphGrammarFile>

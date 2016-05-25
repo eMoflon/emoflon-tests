@@ -1,0 +1,417 @@
+#import "platform:/plugin/MocaTree/model/MocaTree.ecore"
+#import "platform:/plugin/fixmlPackage/model/FixmlPackage.ecore"
+
+#schema fixmlTGG
+
+#source {
+	MocaTree
+}
+
+#target {
+	fixmlPackage
+}
+
+#correspondence {
+	NodeToFixmlClass {
+		#src->MocaTree.Node
+		#trg->fixmlPackage.FixmlClass
+	}
+	FileToCompilationUnit {
+		#src->MocaTree.File
+		#trg->fixmlPackage.CompilationUnit
+	}
+	NodeToFixmlObjectAttribute {
+		#src->MocaTree.Node
+		#trg->fixmlPackage.FixmlObjectAttribute
+	}
+	AttributeToFixmlAttribute {
+		#src->MocaTree.Attribute
+		#trg->fixmlPackage.FixmlAttribute
+	}
+	AttributeToFixmlObjectAttributeAttribute {
+		#src->MocaTree.Attribute
+		#trg->fixmlPackage.FixmlObjectAttributeAttribute
+	}
+}
+
+#attributeConditions {
+	eq(1: , 0: ) {
+		#sync: FB, BB, BF
+		#gen: BF, FB, BB, FF
+	}
+	setDefaultString(0:EString, 1:EString) {
+		#sync: BB, FB
+		#gen: FB, FF, BB
+	}
+	add(0:Number, 2:Number, 1:Number) {
+		#sync: BBB, FBB, BFB, BBF
+		#gen: FBF, BFF, BBF, BBB, FBB, BFB, FFB
+	}
+}
+
+
+#using fixmlTGG.*
+
+#abstract #rule AttributeLevelN #extends AbstractAttributeLevel0 #with fixmlTGG
+
+#source {
+	childNode:MocaTree.Node {
+		++ - attribute->newAttr
+	}
+	++newAttr:MocaTree.Attribute
+}
+
+#target {
+	fixmlChildObjectAttribute:fixmlPackage.FixmlObjectAttribute {
+		- fixmlClass->owner
+		- refClass->childFixmlClass
+	}
+	++fixmlObjectAttributeAttribute:fixmlPackage.FixmlObjectAttributeAttribute {
+		++ - fixmlObjectAttribute->fixmlChildObjectAttribute
+	}
+	childFixmlClass:fixmlPackage.FixmlClass
+	!owner:fixmlPackage.FixmlClass {
+		level > 0
+	}
+}
+
+#correspondence {
+	++ attrToFixmlObjectAttributeAttribute :AttributeToFixmlObjectAttributeAttribute {
+		#src->newAttr
+		#trg->fixmlObjectAttributeAttribute
+	}
+	childNodeToFixmlChildObjectAttribute :NodeToFixmlObjectAttribute {
+		#src->childNode
+		#trg->fixmlChildObjectAttribute
+	}
+}
+
+#attributeConditions {
+	eq (newAttr.name, fixmlObjectAttributeAttribute.name)
+	eq (newAttr.value, fixmlObjectAttributeAttribute.value)
+}
+
+
+#using fixmlTGG.*
+
+#abstract #rule Rest #with fixmlTGG
+
+#target {
+	compilationUnit:fixmlPackage.CompilationUnit
+	childFixmlClass:fixmlPackage.FixmlClass {
+		- compilationUnit->compilationUnit
+	}
+}
+
+
+#using fixmlTGG.*
+
+#rule AttributeLevelNEfficient #extends AbstractAttributeLevel0 #with fixmlTGG
+
+#source {
+	++newAttr:MocaTree.Attribute
+	childNode:MocaTree.Node {
+		++ - attribute->newAttr
+	}
+}
+
+#target {
+	++fixmlAttribute:fixmlPackage.FixmlAttribute
+	fixmlChildObjectAttribute:fixmlPackage.FixmlObjectAttribute {
+		- fixmlClass->owner
+		- refClass->childFixmlClass
+	}
+	++fixmlObjectAttributeAttribute:fixmlPackage.FixmlObjectAttributeAttribute {
+		++ - fixmlObjectAttribute->fixmlChildObjectAttribute
+	}
+	!owner:fixmlPackage.FixmlClass {
+		level > 0
+	}
+	childFixmlClass:fixmlPackage.FixmlClass
+}
+
+#correspondence {
+	childNodeToFixmlChildObjectAttribute :NodeToFixmlObjectAttribute {
+		#src->childNode
+		#trg->fixmlChildObjectAttribute
+	}
+	++ attrToFixmlObjectAttributeAttribute :AttributeToFixmlObjectAttributeAttribute {
+		#src->newAttr
+		#trg->fixmlObjectAttributeAttribute
+	}
+}
+
+#attributeConditions {
+	eq (fixmlAttribute.name, fixmlObjectAttributeAttribute.name)
+	eq (newAttr.name, fixmlObjectAttributeAttribute.name)
+	eq (newAttr.value, fixmlObjectAttributeAttribute.value)
+	eq (fixmlAttribute.value, fixmlObjectAttributeAttribute.value)
+}
+
+
+#using fixmlTGG.*
+
+#rule RestLevelN #extends Rest, LevelN #with fixmlTGG
+
+#target {
+	childFixmlClass:fixmlPackage.FixmlClass
+}
+
+
+#using fixmlTGG.*
+
+#rule TagToFixmlClass #with fixmlTGG
+
+#source {
+	++file:MocaTree.File
+	++rootNode:MocaTree.Node {
+		name := "FIXML"
+		++ - file->file
+	}
+	++node:MocaTree.Node {
+		++ - parentNode->rootNode
+	}
+}
+
+#target {
+	++compilationUnit:fixmlPackage.CompilationUnit
+	++fixmlClass:fixmlPackage.FixmlClass {
+		level := 0
+		++ - compilationUnit->compilationUnit
+	}
+}
+
+#correspondence {
+	++ nodeToFixmlClass :NodeToFixmlClass {
+		#src->node
+		#trg->fixmlClass
+	}
+	++ fileToCompilationUnit :FileToCompilationUnit {
+		#src->file
+		#trg->compilationUnit
+	}
+}
+
+#attributeConditions {
+	eq (node.name, fixmlClass.name)
+	setDefaultString (file.name, "default")
+}
+
+
+#using fixmlTGG.*
+
+#rule FirstLevel0 #extends First, Level0 #with fixmlTGG
+
+#source {
+	node:MocaTree.Node
+}
+
+#target {
+	++childFixmlClass:fixmlPackage.FixmlClass {
+		level := 1
+	}
+	fixmlClass:fixmlPackage.FixmlClass {
+		level == 0
+	}
+}
+
+#correspondence {
+	nodeToFixmlClass :NodeToFixmlClass {
+		#src->node
+		#trg->fixmlClass
+	}
+}
+
+
+#using fixmlTGG.*
+
+#abstract #rule LevelN #extends Level0 #with fixmlTGG
+
+#source {
+	node:MocaTree.Node
+	++childNode:MocaTree.Node {
+		++ - parentNode->node
+	}
+}
+
+#target {
+	fixmlClass:fixmlPackage.FixmlClass {
+		level > 0
+	}
+	fixmlObjectAttribute:fixmlPackage.FixmlObjectAttribute {
+		- refClass->fixmlClass
+	}
+	++fixmlChildObjectAttribute:fixmlPackage.FixmlObjectAttribute {
+		++ - refClass->childFixmlClass
+		++ - fixmlObjectAttributeContainer->fixmlObjectAttribute
+	}
+	++childFixmlClass:fixmlPackage.FixmlClass
+}
+
+#correspondence {
+	++ childNodeToFixmlChildObjectAttribute :NodeToFixmlObjectAttribute {
+		#src->childNode
+		#trg->fixmlChildObjectAttribute
+	}
+	nodeToFixmlObjectAttribute :NodeToFixmlObjectAttribute {
+		#src->node
+		#trg->fixmlObjectAttribute
+	}
+	++ nodeToFixmlClass2 :NodeToFixmlClass {
+		#src->childNode
+		#trg->childFixmlClass
+	}
+}
+
+#attributeConditions {
+	add (fixmlClass.level, 1, childFixmlClass.level)
+	eq (childFixmlClass.name, fixmlChildObjectAttribute.type)
+}
+
+
+#using fixmlTGG.*
+
+#abstract #rule First #with fixmlTGG
+
+#source {
+	++childNode:MocaTree.Node
+}
+
+#target {
+	compilationUnit:fixmlPackage.CompilationUnit
+	!noSameFixmlClass:fixmlPackage.FixmlClass {
+		name == childNode . name
+		- compilationUnit->compilationUnit
+	}
+}
+
+
+#using fixmlTGG.*
+
+#rule RestLevel0 #extends Rest, Level0 #with fixmlTGG
+
+#source {
+	node:MocaTree.Node
+}
+
+#target {
+	fixmlClass:fixmlPackage.FixmlClass {
+		level == 0
+	}
+	childFixmlClass:fixmlPackage.FixmlClass {
+		level == 1
+	}
+}
+
+#correspondence {
+	nodeToFixmlClass :NodeToFixmlClass {
+		#src->node
+		#trg->fixmlClass
+	}
+}
+
+
+#using fixmlTGG.*
+
+#abstract #rule AbstractAttributeLevel0 #with fixmlTGG
+
+#source {
+	childNode:MocaTree.Node {
+		++ - attribute->newAttr
+	}
+	++newAttr:MocaTree.Attribute
+}
+
+#target {
+	compilationUnit:fixmlPackage.CompilationUnit
+	++fixmlAttribute:fixmlPackage.FixmlAttribute {
+		++ - compilationUnit->compilationUnit
+	}
+	childFixmlClass:fixmlPackage.FixmlClass {
+		- compilationUnit->compilationUnit
+		++ - attribute->fixmlAttribute
+	}
+}
+
+#correspondence {
+	++ newAttrToFixmlAttribute :AttributeToFixmlAttribute {
+		#src->newAttr
+		#trg->fixmlAttribute
+	}
+}
+
+#attributeConditions {
+	eq (newAttr.name, fixmlAttribute.name)
+	eq (newAttr.value, fixmlAttribute.value)
+}
+
+
+#using fixmlTGG.*
+
+#abstract #rule Level0 #with fixmlTGG
+
+#source {
+	++childNode:MocaTree.Node {
+		++ - parentNode->node
+	}
+	node:MocaTree.Node
+}
+
+#target {
+	fixmlClass:fixmlPackage.FixmlClass {
+		- compilationUnit->compilationUnit
+	}
+	compilationUnit:fixmlPackage.CompilationUnit
+	++childFixmlClass:fixmlPackage.FixmlClass {
+		++ - compilationUnit->compilationUnit
+	}
+	++fixmlObjAttr:fixmlPackage.FixmlObjectAttribute {
+		++ - fixmlClass->fixmlClass
+		++ - refClass->childFixmlClass
+	}
+}
+
+#correspondence {
+	++ nodeToFixmlClass2 :NodeToFixmlClass {
+		#src->childNode
+		#trg->childFixmlClass
+	}
+	++ childNodeToFixmlObjAttr :NodeToFixmlObjectAttribute {
+		#src->childNode
+		#trg->fixmlObjAttr
+	}
+}
+
+#attributeConditions {
+	eq (childFixmlClass.name, fixmlObjAttr.type)
+	eq (childNode.name, childFixmlClass.name)
+}
+
+
+#using fixmlTGG.*
+
+#rule FirstLevelN #extends LevelN, First #with fixmlTGG
+
+
+#using fixmlTGG.*
+
+#rule AttributeLevel0 #extends AbstractAttributeLevel0 #with fixmlTGG
+
+#source {
+	childNode:MocaTree.Node
+}
+
+#target {
+	childFixmlClass:fixmlPackage.FixmlClass {
+		level == 0
+	}
+}
+
+#correspondence {
+	childNodeToChildFixmlClass :NodeToFixmlClass {
+		#src->childNode
+		#trg->childFixmlClass
+	}
+}
+
+
