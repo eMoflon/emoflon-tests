@@ -1,4 +1,4 @@
-package backend.languages.csp;
+package backend.languages.libToBibCSP;
 
 
 import org.junit.Test;
@@ -8,10 +8,10 @@ import BibliographyLanguageCSP.BibliographyLanguageCSPPackage;
 import LibraryLanguageCSP.LibraryLanguageCSPPackage;
 import LibraryToBibliographyIntegrationCSP.LibraryToBibliographyIntegrationCSPPackage;
 
-public class TestNotConstraint extends IntegratorTest {
+public class LibToBibCSP extends IntegratorTest {
 	
 	// EPackage sourcePackage, EPackage corrPackage, EPackage targetPackage
-	public TestNotConstraint() {
+	public LibToBibCSP() {
 		super(LibraryLanguageCSPPackage.eINSTANCE,
 				LibraryToBibliographyIntegrationCSPPackage.eINSTANCE,
 				BibliographyLanguageCSPPackage.eINSTANCE);
@@ -22,4 +22,8 @@ public class TestNotConstraint extends IntegratorTest {
 		integrate("LibraryNotConstraint_FWD");
 	}
 
+	@Test
+	public void testNegativeValueLiteral() {
+		integrate("TestNegativeValueLiteral_BWD");
+	}
 }
