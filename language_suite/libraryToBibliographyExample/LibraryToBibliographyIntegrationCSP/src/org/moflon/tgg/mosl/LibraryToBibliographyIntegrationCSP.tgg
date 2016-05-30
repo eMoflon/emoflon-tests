@@ -176,7 +176,6 @@
 	eq (book.title, pub.citation)
 	notEq (lib.location, "Germany")
 	categoryToType (book.category, pub.type)
-	smallerOrEqual (archive.year, pub.year)
 }
 
 
