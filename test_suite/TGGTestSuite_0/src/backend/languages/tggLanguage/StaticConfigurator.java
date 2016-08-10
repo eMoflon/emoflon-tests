@@ -13,7 +13,8 @@ public class StaticConfigurator implements Configurator {
 
 	@Override
 	public RuleResult chooseOne(Collection<RuleResult> alternatives) {
-		alternatives.forEach(rr -> rr.restrictMatchesTo(this::condition));
+		if(alternatives.stream().anyMatch(rr -> rr.getRule().startsWith("EmployeeTo")))  
+			alternatives.forEach(rr -> rr.restrictMatchesTo(this::condition));
 
 		return alternatives.stream().filter(rr -> !rr.isEmpty())
 				.findAny() 
