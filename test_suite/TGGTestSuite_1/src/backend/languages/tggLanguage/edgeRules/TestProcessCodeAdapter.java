@@ -1,7 +1,6 @@
 package backend.languages.tggLanguage.edgeRules;
 
 import org.junit.Test;
-import org.moflon.core.utilities.eMoflonEMFUtil;
 import org.moflon.testframework.tgg.IntegratorTest;
 
 import MocaTree.MocaTreePackage;
@@ -15,7 +14,7 @@ public class TestProcessCodeAdapter extends IntegratorTest
    public TestProcessCodeAdapter()
    {
       super(MocaTreePackage.eINSTANCE, ProcessCodeAdapter_EdgeRulesPackage.eINSTANCE, ProcessDefinition_EdgeRulesPackage.eINSTANCE);
-      eMoflonEMFUtil.init(ProcessDefinition_EdgeRulesPackage.eINSTANCE);
+      ProcessDefinition_EdgeRulesPackage.eINSTANCE.getName();
    }
 
    @Test

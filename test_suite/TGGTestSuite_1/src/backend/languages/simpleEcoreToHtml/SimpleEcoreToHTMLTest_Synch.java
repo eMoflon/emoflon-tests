@@ -38,8 +38,6 @@ public class SimpleEcoreToHTMLTest_Synch extends IncrementalIntegratorTest
 {
 
 	
-   private DirectoryComparator directoryComparator;
-
    public SimpleEcoreToHTMLTest_Synch()
    {
       super(EcorePackage.eINSTANCE, SimpleEcoreToHTMLPackage.eINSTANCE, MocaTreePackage.eINSTANCE);
