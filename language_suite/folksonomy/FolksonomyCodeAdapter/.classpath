@@ -7,16 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/rkluge/Documents/data/workspaces/MoflonDev20160823/org.moflon.core.utilities/lib/antlr-3.5.2-complete.jar">
-		<attributes>
-			<attribute name="plugin_id" value="org.moflon.core.utilities"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
-	<classpathentry exported="true" kind="lib" path="ile:/C:/Users/rkluge/Documents/Programme/neon_L1/plugins/org.moflon.core.utilities_1.1.0.201608261305.jar!/lib/antlr-3.5.2-complete.jar">
-		<attributes>
-			<attribute name="plugin_id" value="org.moflon.core.utilities"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
