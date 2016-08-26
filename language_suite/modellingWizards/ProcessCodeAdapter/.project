@@ -41,12 +41,12 @@
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.moflon.ide.core.runtime.builders.IntegrationBuilder</name>
+			<name>org.moflon.tgg.mosl.codeadapter.mosltggbuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.moflon.tgg.mosl.codeadapter.mosltggbuilder</name>
+			<name>org.moflon.ide.core.runtime.builders.IntegrationBuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
