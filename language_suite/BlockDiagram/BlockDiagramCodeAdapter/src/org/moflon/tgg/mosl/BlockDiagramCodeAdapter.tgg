@@ -7,7 +7,7 @@
 	BlockDiagram
 }
 
-#target {
+#target { 
 	MocaTree
 }
 
