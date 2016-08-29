@@ -1,0 +1,4 @@
+*.ecore
+*.genmodel
+*.xmi
+!.keep*
