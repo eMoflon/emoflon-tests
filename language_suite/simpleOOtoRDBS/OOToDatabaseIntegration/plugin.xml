@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?eclipse version="3.0"?><plugin>
   <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="OOToDatabaseIntegration.OOToDatabaseIntegrationPackage" genModel="model/OOToDatabaseIntegration.genmodel" uri="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.pre.ecore"/>
+    <package class="OOToDatabaseIntegration.OOToDatabaseIntegrationPackage" genModel="model/OOToDatabaseIntegration.genmodel" uri="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore"/>
   </extension>
   <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="OOToDatabaseIntegration.Rules.RulesPackage" genModel="model/OOToDatabaseIntegration.genmodel" uri="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.pre.ecore#//Rules"/>
+    <package class="OOToDatabaseIntegration.Rules.RulesPackage" genModel="model/OOToDatabaseIntegration.genmodel" uri="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules"/>
   </extension>
 </plugin>
