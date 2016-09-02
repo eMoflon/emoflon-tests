@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.moflon.tgg.language:TripleGraphGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.moflon.tgg.language="platform:/plugin/org.moflon.tgg.language/model/Language.ecore" name="RefinementTestTGG">
+  <domain name="Source" metamodel="//@metamodel.1" type="SOURCE"/>
+  <domain name="Target" metamodel="//@metamodel.2" type="TARGET"/>
+  <domain name="Correspondence" metamodel="//@metamodel.0"/>
+  <tggRule name="FileToPFileRule" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="file" incomingLink="//@tggRule.0/@linkVariable.1 //@tggRule.0/@linkVariable.2" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="fileToPseudoFile" outgoingLink="//@tggRule.0/@linkVariable.0 //@tggRule.0/@linkVariable.1" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//FileToPseudoFile"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="folder" incomingLink="//@tggRule.0/@linkVariable.4" outgoingLink="//@tggRule.0/@linkVariable.2" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="folderToPseudoFolder" outgoingLink="//@tggRule.0/@linkVariable.3 //@tggRule.0/@linkVariable.4" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//FolderToPseudoFolder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="pseudoFile" incomingLink="//@tggRule.0/@linkVariable.0 //@tggRule.0/@linkVariable.5" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFile"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="pseudoFolder" incomingLink="//@tggRule.0/@linkVariable.3" outgoingLink="//@tggRule.0/@linkVariable.5" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFolder"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.0/@objectVariable.4" source="//@tggRule.0/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//FileToPseudoFile/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.0/@objectVariable.0" source="//@tggRule.0/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//FileToPseudoFile/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.0/@objectVariable.0" source="//@tggRule.0/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Folder/file"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.0/@objectVariable.5" source="//@tggRule.0/@objectVariable.3" domain="//@domain.2">
+      <type href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//FolderToPseudoFolder/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.0/@objectVariable.2" source="//@tggRule.0/@objectVariable.3" domain="//@domain.2">
+      <type href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//FolderToPseudoFolder/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="pseudoFile" target="//@tggRule.0/@objectVariable.4" source="//@tggRule.0/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFolder/pseudoFile"/>
+    </linkVariable>
+    <csp/>
+  </tggRule>
+  <tggRule name="FolderToPFolderRule" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="folder" incomingLink="//@tggRule.1/@linkVariable.1" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="folderToPseudoFolder" outgoingLink="//@tggRule.1/@linkVariable.0 //@tggRule.1/@linkVariable.1" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//FolderToPseudoFolder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="pseudoFolder" incomingLink="//@tggRule.1/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFolder"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.1/@objectVariable.2" source="//@tggRule.1/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//FolderToPseudoFolder/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.1/@objectVariable.0" source="//@tggRule.1/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//FolderToPseudoFolder/source"/>
+    </linkVariable>
+    <csp/>
+  </tggRule>
+  <tggRule name="NodeToPNodeRule" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="file" incomingLink="//@tggRule.2/@linkVariable.1 //@tggRule.2/@linkVariable.2 //@tggRule.2/@linkVariable.5" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="fileToPseudoFile" outgoingLink="//@tggRule.2/@linkVariable.0 //@tggRule.2/@linkVariable.1" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//FileToPseudoFile"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="folder" incomingLink="//@tggRule.2/@linkVariable.4" outgoingLink="//@tggRule.2/@linkVariable.2" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="folderToPseudoFolder" outgoingLink="//@tggRule.2/@linkVariable.3 //@tggRule.2/@linkVariable.4" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//FolderToPseudoFolder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="node" incomingLink="//@tggRule.2/@linkVariable.7" outgoingLink="//@tggRule.2/@linkVariable.5" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="nodeToPseudoNode" outgoingLink="//@tggRule.2/@linkVariable.6 //@tggRule.2/@linkVariable.7" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//NodeToPseudoNode"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="pseudoFile" incomingLink="//@tggRule.2/@linkVariable.0 //@tggRule.2/@linkVariable.9" outgoingLink="//@tggRule.2/@linkVariable.8" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFile"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="pseudoFolder" incomingLink="//@tggRule.2/@linkVariable.3" outgoingLink="//@tggRule.2/@linkVariable.9" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFolder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="pseudoNode" incomingLink="//@tggRule.2/@linkVariable.6 //@tggRule.2/@linkVariable.8" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoNode"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.2/@objectVariable.6" source="//@tggRule.2/@objectVariable.1" domain="//@domain.2">
+      <type href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//FileToPseudoFile/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.2/@objectVariable.0" source="//@tggRule.2/@objectVariable.1" domain="//@domain.2">
+      <type href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//FileToPseudoFile/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.2/@objectVariable.0" source="//@tggRule.2/@objectVariable.2" domain="//@domain.0">
+      <type href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Folder/file"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.2/@objectVariable.7" source="//@tggRule.2/@objectVariable.3" domain="//@domain.2">
+      <type href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//FolderToPseudoFolder/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.2/@objectVariable.2" source="//@tggRule.2/@objectVariable.3" domain="//@domain.2">
+      <type href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//FolderToPseudoFolder/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.2/@objectVariable.0" source="//@tggRule.2/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Node/file"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.2/@objectVariable.8" source="//@tggRule.2/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//NodeToPseudoNode/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.2/@objectVariable.4" source="//@tggRule.2/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//NodeToPseudoNode/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="pseudoNode" target="//@tggRule.2/@objectVariable.8" source="//@tggRule.2/@objectVariable.6" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFile/pseudoNode"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="pseudoFile" target="//@tggRule.2/@objectVariable.6" source="//@tggRule.2/@objectVariable.7" domain="//@domain.1">
+      <type href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFolder/pseudoFile"/>
+    </linkVariable>
+    <csp/>
+  </tggRule>
+  <tggRule name="AddCorrRule" refines="//@tggRule.6 //@tggRule.0 //@tggRule.1 //@tggRule.2" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="node2ToPseudoNode" outgoingLink="//@tggRule.3/@linkVariable.0 //@tggRule.3/@linkVariable.1" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//NodeToPseudoNode"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="node" incomingLink="//@tggRule.3/@linkVariable.1" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="pseudoNode2" incomingLink="//@tggRule.3/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoNode"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.3/@objectVariable.2" source="//@tggRule.3/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//NodeToPseudoNode/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.3/@objectVariable.1" source="//@tggRule.3/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//NodeToPseudoNode/source"/>
+    </linkVariable>
+    <csp/>
+  </tggRule>
+  <tggRule name="AddEdgeRule" refines="//@tggRule.0 //@tggRule.1 //@tggRule.2" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="pseudoFolder" outgoingLink="//@tggRule.4/@linkVariable.0" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFolder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="pseudoNode" incomingLink="//@tggRule.4/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoNode"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="pseudoNode" target="//@tggRule.4/@objectVariable.1" source="//@tggRule.4/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFolder/pseudoNode"/>
+    </linkVariable>
+    <csp/>
+  </tggRule>
+  <tggRule name="ContextWinsRule" refines="//@tggRule.0 //@tggRule.1 //@tggRule.2" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
+    <csp/>
+  </tggRule>
+  <tggRule name="CreateNodeRule" refines="//@tggRule.0 //@tggRule.1 //@tggRule.2" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="pseudoFile" outgoingLink="//@tggRule.6/@linkVariable.0" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFile"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="pseudoNode2" incomingLink="//@tggRule.6/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoNode"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="pseudoNode" target="//@tggRule.6/@objectVariable.1" source="//@tggRule.6/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFile/pseudoNode"/>
+    </linkVariable>
+    <csp/>
+  </tggRule>
+  <tggRule name="DeleteCorrRule" refines="//@tggRule.0 //@tggRule.1 //@tggRule.2 //@tggRule.6 //@tggRule.3" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="node" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="pseudoNode" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoNode"/>
+    </objectVariable>
+    <csp/>
+  </tggRule>
+  <tggRule name="DeleteEdgeRule" refines="//@tggRule.0 //@tggRule.1 //@tggRule.2 //@tggRule.4" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="pseudoFile" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoFile"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="pseudoNode" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#//PseudoNode"/>
+    </objectVariable>
+    <csp/>
+  </tggRule>
+  <tggRule name="ReplaceNodeRule" refines="//@tggRule.0 //@tggRule.1 //@tggRule.2" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
+    <csp/>
+  </tggRule>
+  <metamodel name="RefinementTestTGG">
+    <outermostPackage href="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#/"/>
+  </metamodel>
+  <metamodel name="MocaTree">
+    <outermostPackage href="platform:/plugin/MocaTree/model/MocaTree.ecore#/"/>
+  </metamodel>
+  <metamodel name="RefinementTestLanguage">
+    <outermostPackage href="platform:/plugin/RefinementTestLanguage/model/RefinementTestLanguage.ecore#/"/>
+  </metamodel>
+</org.moflon.tgg.language:TripleGraphGrammar>

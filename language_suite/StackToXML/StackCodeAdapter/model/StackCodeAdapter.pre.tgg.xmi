@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.moflon.tgg.language:TripleGraphGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//expressions" xmlns:org.moflon.tgg.language="platform:/plugin/org.moflon.tgg.language/model/Language.ecore" name="StackCodeAdapter">
+  <domain name="Target" metamodel="//@metamodel.0" type="TARGET"/>
+  <domain name="Correspondence" metamodel="//@metamodel.2"/>
+  <domain name="Source" metamodel="//@metamodel.1" type="SOURCE"/>
+  <tggRule name="EndNodeRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="stack" incomingLink="//@tggRule.0/@linkVariable.3" outgoingLink="//@tggRule.0/@linkVariable.0" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/LIFOStack/model/LIFOStack.ecore#//Stack"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="node" incomingLink="//@tggRule.0/@linkVariable.1" outgoingLink="//@tggRule.0/@linkVariable.2" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignment>
+        <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;End&quot;"/>
+        <attribute href="platform:/plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+      </attributeAssignment>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="stackelementtonode" outgoingLink="//@tggRule.0/@linkVariable.1 //@tggRule.0/@linkVariable.6" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//StackElementToNode"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="stacktofile" outgoingLink="//@tggRule.0/@linkVariable.3 //@tggRule.0/@linkVariable.5" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//StackToFile"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="rootNode" incomingLink="//@tggRule.0/@linkVariable.2" outgoingLink="//@tggRule.0/@linkVariable.4" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="file" incomingLink="//@tggRule.0/@linkVariable.4 //@tggRule.0/@linkVariable.5" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="end" incomingLink="//@tggRule.0/@linkVariable.6 //@tggRule.0/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/LIFOStack/model/LIFOStack.ecore#//End"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="elements" target="//@tggRule.0/@objectVariable.6" source="//@tggRule.0/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="platform:/plugin/LIFOStack/model/LIFOStack.ecore#//Stack/elements"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.0/@objectVariable.1" source="//@tggRule.0/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="parentNode" target="//@tggRule.0/@objectVariable.4" source="//@tggRule.0/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.0/@objectVariable.0" source="//@tggRule.0/@objectVariable.3" domain="//@domain.1">
+      <type href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//StackToFile/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.0/@objectVariable.5" source="//@tggRule.0/@objectVariable.4" domain="//@domain.0">
+      <type href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Node/file"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.0/@objectVariable.5" source="//@tggRule.0/@objectVariable.3" domain="//@domain.1">
+      <type href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//StackToFile/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.0/@objectVariable.6" source="//@tggRule.0/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.1"/>
+    <csp/>
+  </tggRule>
+  <tggRule name="StackElementToNodeRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="stackelementtonode" outgoingLink="//@tggRule.1/@linkVariable.0 //@tggRule.1/@linkVariable.2" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//StackElementToNode"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="node" incomingLink="//@tggRule.1/@linkVariable.0 //@tggRule.1/@linkVariable.3" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="newStackElementToNode" outgoingLink="//@tggRule.1/@linkVariable.1 //@tggRule.1/@linkVariable.6" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//StackElementToNode"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="newNode" incomingLink="//@tggRule.1/@linkVariable.1" outgoingLink="//@tggRule.1/@linkVariable.3" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignment>
+        <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;Element&quot;"/>
+        <attribute href="platform:/plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+      </attributeAssignment>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="stackelement" incomingLink="//@tggRule.1/@linkVariable.2 //@tggRule.1/@linkVariable.4 //@tggRule.1/@linkVariable.7" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/LIFOStack/model/LIFOStack.ecore#//StackElement"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="stack" outgoingLink="//@tggRule.1/@linkVariable.4 //@tggRule.1/@linkVariable.5" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/LIFOStack/model/LIFOStack.ecore#//Stack"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="newStackElement" incomingLink="//@tggRule.1/@linkVariable.6 //@tggRule.1/@linkVariable.5" outgoingLink="//@tggRule.1/@linkVariable.7" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/LIFOStack/model/LIFOStack.ecore#//StackElement"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.1/@objectVariable.1" source="//@tggRule.1/@objectVariable.0" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.1/@objectVariable.3" source="//@tggRule.1/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.1/@objectVariable.4" source="//@tggRule.1/@objectVariable.0" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="parentNode" target="//@tggRule.1/@objectVariable.1" source="//@tggRule.1/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="elements" target="//@tggRule.1/@objectVariable.4" source="//@tggRule.1/@objectVariable.5" domain="//@domain.2">
+      <type href="platform:/plugin/LIFOStack/model/LIFOStack.ecore#//Stack/elements"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="elements" target="//@tggRule.1/@objectVariable.6" source="//@tggRule.1/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="platform:/plugin/LIFOStack/model/LIFOStack.ecore#//Stack/elements"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.1/@objectVariable.6" source="//@tggRule.1/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="next" target="//@tggRule.1/@objectVariable.4" source="//@tggRule.1/@objectVariable.6" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="platform:/plugin/LIFOStack/model/LIFOStack.ecore#//StackElement/next"/>
+    </linkVariable>
+    <csp/>
+  </tggRule>
+  <tggRule name="StackToFileRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="stack" incomingLink="//@tggRule.2/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/LIFOStack/model/LIFOStack.ecore#//Stack"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="node" outgoingLink="//@tggRule.2/@linkVariable.2" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignment>
+        <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;Stack&quot;"/>
+        <attribute href="platform:/plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+      </attributeAssignment>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="file" incomingLink="//@tggRule.2/@linkVariable.1 //@tggRule.2/@linkVariable.2" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/MocaTree/model/MocaTree.ecore#//File"/>
+      <attributeAssignment>
+        <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;stack.stack&quot;"/>
+        <attribute href="platform:/plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+      </attributeAssignment>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="stacktofile" outgoingLink="//@tggRule.2/@linkVariable.0 //@tggRule.2/@linkVariable.1" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//StackToFile"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.2/@objectVariable.0" source="//@tggRule.2/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//StackToFile/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.2/@objectVariable.2" source="//@tggRule.2/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//StackToFile/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.2/@objectVariable.2" source="//@tggRule.2/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="platform:/plugin/MocaTree/model/MocaTree.ecore#//Node/file"/>
+    </linkVariable>
+    <csp/>
+  </tggRule>
+  <metamodel name="MocaTree">
+    <outermostPackage href="platform:/plugin/MocaTree/model/MocaTree.ecore#/"/>
+  </metamodel>
+  <metamodel name="LIFOStack">
+    <outermostPackage href="platform:/plugin/LIFOStack/model/LIFOStack.ecore#/"/>
+  </metamodel>
+  <metamodel name="StackCodeAdapter">
+    <outermostPackage href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#/"/>
+  </metamodel>
+</org.moflon.tgg.language:TripleGraphGrammar>

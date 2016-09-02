@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdmUtil:CompilerInjection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:sdmUtil="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//sdmUtil">
+  <importInjectionEntries content="org.moflon.csp.*">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="csp.constraints.*">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.language.csp.*">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.csp.*">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="csp.constraints.*">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.language.csp.*">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.csp.*">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="csp.constraints.*">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.language.csp.*">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule"/>
+  </importInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/isAppropriate_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;stack&quot;, stack);&#xA;match.registerObject(&quot;end&quot;, end);&#xA;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/registerObjectsToMatch_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/isAppropriate_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;stack&quot;,stack);&#xD;&#xA;isApplicableMatch.registerObject(&quot;stacktofile&quot;,stacktofile);&#xD;&#xA;isApplicableMatch.registerObject(&quot;rootNode&quot;,rootNode);&#xD;&#xA;isApplicableMatch.registerObject(&quot;file&quot;,file);&#xD;&#xA;isApplicableMatch.registerObject(&quot;end&quot;,end);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/isApplicable_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/isApplicable_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;stack&quot;, stack);&#xA;ruleresult.registerObject(&quot;node&quot;, node);&#xA;ruleresult.registerObject(&quot;stackelementtonode&quot;, stackelementtonode);&#xA;ruleresult.registerObject(&quot;stacktofile&quot;, stacktofile);&#xA;ruleresult.registerObject(&quot;rootNode&quot;, rootNode);&#xA;ruleresult.registerObject(&quot;file&quot;, file);&#xA;ruleresult.registerObject(&quot;end&quot;, end);&#xA;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/registerObjects_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;end&quot;).eClass()).equals(&quot;LIFOStack.End.&quot;);">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/checkTypes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/isAppropriate_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;node&quot;, node);&#xA;match.registerObject(&quot;rootNode&quot;, rootNode);&#xA;match.registerObject(&quot;file&quot;, file);&#xA;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/registerObjectsToMatch_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/isAppropriate_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;stack&quot;,stack);&#xD;&#xA;isApplicableMatch.registerObject(&quot;node&quot;,node);&#xD;&#xA;isApplicableMatch.registerObject(&quot;stacktofile&quot;,stacktofile);&#xD;&#xA;isApplicableMatch.registerObject(&quot;rootNode&quot;,rootNode);&#xD;&#xA;isApplicableMatch.registerObject(&quot;file&quot;,file);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/isApplicable_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/isApplicable_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;stack&quot;, stack);&#xA;ruleresult.registerObject(&quot;node&quot;, node);&#xA;ruleresult.registerObject(&quot;stackelementtonode&quot;, stackelementtonode);&#xA;ruleresult.registerObject(&quot;stacktofile&quot;, stacktofile);&#xA;ruleresult.registerObject(&quot;rootNode&quot;, rootNode);&#xA;ruleresult.registerObject(&quot;file&quot;, file);&#xA;ruleresult.registerObject(&quot;end&quot;, end);&#xA;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/registerObjects_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;node&quot;).eClass()).equals(&quot;MocaTree.Node.&quot;);">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/checkTypes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/isAppropriate_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;stackelement&quot;, stackelement);&#xA;match.registerObject(&quot;stack&quot;, stack);&#xA;match.registerObject(&quot;newStackElement&quot;, newStackElement);&#xA;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/registerObjectsToMatch_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/isAppropriate_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;stackelementtonode&quot;,stackelementtonode);&#xD;&#xA;isApplicableMatch.registerObject(&quot;node&quot;,node);&#xD;&#xA;isApplicableMatch.registerObject(&quot;stackelement&quot;,stackelement);&#xD;&#xA;isApplicableMatch.registerObject(&quot;stack&quot;,stack);&#xD;&#xA;isApplicableMatch.registerObject(&quot;newStackElement&quot;,newStackElement);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/isApplicable_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/isApplicable_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;stackelementtonode&quot;, stackelementtonode);&#xA;ruleresult.registerObject(&quot;node&quot;, node);&#xA;ruleresult.registerObject(&quot;newStackElementToNode&quot;, newStackElementToNode);&#xA;ruleresult.registerObject(&quot;newNode&quot;, newNode);&#xA;ruleresult.registerObject(&quot;stackelement&quot;, stackelement);&#xA;ruleresult.registerObject(&quot;stack&quot;, stack);&#xA;ruleresult.registerObject(&quot;newStackElement&quot;, newStackElement);&#xA;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/registerObjects_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;newStackElement&quot;).eClass()).equals(&quot;LIFOStack.StackElement.&quot;);">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/checkTypes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/isAppropriate_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;node&quot;, node);&#xA;match.registerObject(&quot;newNode&quot;, newNode);&#xA;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/registerObjectsToMatch_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/isAppropriate_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;stackelementtonode&quot;,stackelementtonode);&#xD;&#xA;isApplicableMatch.registerObject(&quot;node&quot;,node);&#xD;&#xA;isApplicableMatch.registerObject(&quot;newNode&quot;,newNode);&#xD;&#xA;isApplicableMatch.registerObject(&quot;stackelement&quot;,stackelement);&#xD;&#xA;isApplicableMatch.registerObject(&quot;stack&quot;,stack);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/isApplicable_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/isApplicable_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;stackelementtonode&quot;, stackelementtonode);&#xA;ruleresult.registerObject(&quot;node&quot;, node);&#xA;ruleresult.registerObject(&quot;newStackElementToNode&quot;, newStackElementToNode);&#xA;ruleresult.registerObject(&quot;newNode&quot;, newNode);&#xA;ruleresult.registerObject(&quot;stackelement&quot;, stackelement);&#xA;ruleresult.registerObject(&quot;stack&quot;, stack);&#xA;ruleresult.registerObject(&quot;newStackElement&quot;, newStackElement);&#xA;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/registerObjects_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;newNode&quot;).eClass()).equals(&quot;MocaTree.Node.&quot;);">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/checkTypes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/isAppropriate_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;stack&quot;, stack);&#xA;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/registerObjectsToMatch_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/isAppropriate_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;stack&quot;,stack);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/isApplicable_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/isApplicable_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;stack&quot;, stack);&#xA;ruleresult.registerObject(&quot;node&quot;, node);&#xA;ruleresult.registerObject(&quot;file&quot;, file);&#xA;ruleresult.registerObject(&quot;stacktofile&quot;, stacktofile);&#xA;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/registerObjects_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;stack&quot;).eClass()).equals(&quot;LIFOStack.Stack.&quot;);">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/checkTypes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/isAppropriate_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;node&quot;, node);&#xA;match.registerObject(&quot;file&quot;, file);&#xA;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/registerObjectsToMatch_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/isAppropriate_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;node&quot;,node);&#xD;&#xA;isApplicableMatch.registerObject(&quot;file&quot;,file);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/isApplicable_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/isApplicable_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;stack&quot;, stack);&#xA;ruleresult.registerObject(&quot;node&quot;, node);&#xA;ruleresult.registerObject(&quot;file&quot;, file);&#xA;ruleresult.registerObject(&quot;stacktofile&quot;, stacktofile);&#xA;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/registerObjects_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;node&quot;).eClass()).equals(&quot;MocaTree.Node.&quot;) &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;file&quot;).eClass()).equals(&quot;MocaTree.File.&quot;);">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/checkTypes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xD;&#xA;ruleResult.setRule(&quot;EndNodeRule&quot;);&#x9;&#xD;&#xA;ruleResult.setSuccess(true);&#xD;&#xA;&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;if(!__helper.hasExpectedValue(&quot;node&quot;, &quot;name&quot;, &quot;End&quot;, ComparingOperator.EQUAL)) {&#xD;&#xA;&#x9;ruleResult.setSuccess(false); &#xD;&#xA;&#x9;return ruleResult;&#xD;&#xA;}&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xD;&#xA;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;} else {&#xD;&#xA;&#x9;if(csp.check()){ &#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xD;&#xA;&#x9;} else {&#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xD;&#xA;&#x9;&#x9;return ruleResult;&#xD;&#xA;&#x9;}&#x9;&#x9;&#xD;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/checkAttributes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xD;&#xA;ruleResult.setRule(&quot;EndNodeRule&quot;);&#x9;&#xD;&#xA;ruleResult.setSuccess(true);&#xD;&#xA;&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;if(!__helper.hasExpectedValue(&quot;node&quot;, &quot;name&quot;, &quot;End&quot;, ComparingOperator.EQUAL)) {&#xD;&#xA;&#x9;ruleResult.setSuccess(false); &#xD;&#xA;&#x9;return ruleResult;&#xD;&#xA;}&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xD;&#xA;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;} else {&#xD;&#xA;&#x9;if(csp.check()){ &#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xD;&#xA;&#x9;} else {&#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xD;&#xA;&#x9;&#x9;return ruleResult;&#xD;&#xA;&#x9;}&#x9;&#x9;&#xD;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/checkAttributes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xD;&#xA;ruleResult.setRule(&quot;StackElementToNodeRule&quot;);&#x9;&#xD;&#xA;ruleResult.setSuccess(true);&#xD;&#xA;&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;if(!__helper.hasExpectedValue(&quot;newNode&quot;, &quot;name&quot;, &quot;Element&quot;, ComparingOperator.EQUAL)) {&#xD;&#xA;&#x9;ruleResult.setSuccess(false); &#xD;&#xA;&#x9;return ruleResult;&#xD;&#xA;}&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xD;&#xA;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;} else {&#xD;&#xA;&#x9;if(csp.check()){ &#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xD;&#xA;&#x9;} else {&#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xD;&#xA;&#x9;&#x9;return ruleResult;&#xD;&#xA;&#x9;}&#x9;&#x9;&#xD;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/checkAttributes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xD;&#xA;ruleResult.setRule(&quot;StackElementToNodeRule&quot;);&#x9;&#xD;&#xA;ruleResult.setSuccess(true);&#xD;&#xA;&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;if(!__helper.hasExpectedValue(&quot;newNode&quot;, &quot;name&quot;, &quot;Element&quot;, ComparingOperator.EQUAL)) {&#xD;&#xA;&#x9;ruleResult.setSuccess(false); &#xD;&#xA;&#x9;return ruleResult;&#xD;&#xA;}&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xD;&#xA;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;} else {&#xD;&#xA;&#x9;if(csp.check()){ &#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xD;&#xA;&#x9;} else {&#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xD;&#xA;&#x9;&#x9;return ruleResult;&#xD;&#xA;&#x9;}&#x9;&#x9;&#xD;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/checkAttributes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xD;&#xA;ruleResult.setRule(&quot;StackToFileRule&quot;);&#x9;&#xD;&#xA;ruleResult.setSuccess(true);&#xD;&#xA;&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;if(!__helper.hasExpectedValue(&quot;node&quot;, &quot;name&quot;, &quot;Stack&quot;, ComparingOperator.EQUAL)) {&#xD;&#xA;&#x9;ruleResult.setSuccess(false); &#xD;&#xA;&#x9;return ruleResult;&#xD;&#xA;}&#xA;&#xA;if(!__helper.hasExpectedValue(&quot;file&quot;, &quot;name&quot;, &quot;stack.stack&quot;, ComparingOperator.EQUAL)) {&#xD;&#xA;&#x9;ruleResult.setSuccess(false); &#xD;&#xA;&#x9;return ruleResult;&#xD;&#xA;}&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xD;&#xA;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;} else {&#xD;&#xA;&#x9;if(csp.check()){ &#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xD;&#xA;&#x9;} else {&#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xD;&#xA;&#x9;&#x9;return ruleResult;&#xD;&#xA;&#x9;}&#x9;&#x9;&#xD;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/checkAttributes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xD;&#xA;ruleResult.setRule(&quot;StackToFileRule&quot;);&#x9;&#xD;&#xA;ruleResult.setSuccess(true);&#xD;&#xA;&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;if(!__helper.hasExpectedValue(&quot;node&quot;, &quot;name&quot;, &quot;Stack&quot;, ComparingOperator.EQUAL)) {&#xD;&#xA;&#x9;ruleResult.setSuccess(false); &#xD;&#xA;&#x9;return ruleResult;&#xD;&#xA;}&#xA;&#xA;if(!__helper.hasExpectedValue(&quot;file&quot;, &quot;name&quot;, &quot;stack.stack&quot;, ComparingOperator.EQUAL)) {&#xD;&#xA;&#x9;ruleResult.setSuccess(false); &#xD;&#xA;&#x9;return ruleResult;&#xD;&#xA;}&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xD;&#xA;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;} else {&#xD;&#xA;&#x9;if(csp.check()){ &#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xD;&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xD;&#xA;&#x9;} else {&#xD;&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xD;&#xA;&#x9;&#x9;return ruleResult;&#xD;&#xA;&#x9;}&#x9;&#x9;&#xD;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/checkAttributes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/isApplicable_solveCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/isApplicable_checkCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/isApplicable_solveCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/isApplicable_checkCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/isApplicable_solveCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/isApplicable_checkCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;stack&quot;,stack);&#xD;&#xA;isApplicableMatch.registerObject(&quot;stacktofile&quot;,stacktofile);&#xD;&#xA;isApplicableMatch.registerObject(&quot;rootNode&quot;,rootNode);&#xD;&#xA;isApplicableMatch.registerObject(&quot;file&quot;,file);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/generateModel_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/EndNodeRule/generateModel_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;stackelementtonode&quot;,stackelementtonode);&#xD;&#xA;isApplicableMatch.registerObject(&quot;node&quot;,node);&#xD;&#xA;isApplicableMatch.registerObject(&quot;stackelement&quot;,stackelement);&#xD;&#xA;isApplicableMatch.registerObject(&quot;stack&quot;,stack);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/generateModel_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackElementToNodeRule/generateModel_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/generateModel_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules/StackToFileRule/generateModel_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+</sdmUtil:CompilerInjection>

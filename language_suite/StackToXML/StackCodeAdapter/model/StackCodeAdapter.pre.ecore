@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="StackCodeAdapter" nsURI="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore"
+    nsPrefix="StackCodeAdapter">
+  <eClassifiers xsi:type="ecore:EClass" name="StackToFile" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractCorrespondence">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/LIFOStack/model/LIFOStack.ecore#//Stack"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/MocaTree/model/MocaTree.ecore#//File"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StackElementToNode" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractCorrespondence">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/LIFOStack/model/LIFOStack.ecore#//StackElement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+  </eClassifiers>
+  <eSubpackages name="Rules" nsURI="platform:/plugin/StackCodeAdapter/model/StackCodeAdapter.ecore#//Rules"
+      nsPrefix="Rules">
+    <eClassifiers xsi:type="ecore:EClass" name="EndNodeRule" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractRule"/>
+    <eClassifiers xsi:type="ecore:EClass" name="StackElementToNodeRule" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractRule"/>
+    <eClassifiers xsi:type="ecore:EClass" name="StackToFileRule" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractRule"/>
+  </eSubpackages>
+</ecore:EPackage>

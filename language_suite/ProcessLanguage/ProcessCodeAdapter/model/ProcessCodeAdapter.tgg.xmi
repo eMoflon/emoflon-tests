@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.moflon.tgg.language:TripleGraphGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:csp="platform:/plugin/org.moflon.tgg.language/model/Language.ecore#//csp" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//expressions" xmlns:org.moflon.tgg.language="platform:/plugin/org.moflon.tgg.language/model/Language.ecore" xmlns:patternExpressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//patterns/patternExpressions" name="ProcessCodeAdapter">
+  <domain name="Target" metamodel="//@metamodel.0" type="TARGET"/>
+  <domain name="Correspondence" metamodel="//@metamodel.2"/>
+  <domain name="Source" metamodel="//@metamodel.1" type="SOURCE"/>
+  <tggRule name="NodeToInvocationRecursiveRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocation" incomingLink="//@tggRule.0/@linkVariable.4 //@tggRule.0/@linkVariable.0 //@tggRule.0/@linkVariable.6" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Invocation"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="task" incomingLink="//@tggRule.0/@linkVariable.8" outgoingLink="//@tggRule.0/@linkVariable.0 //@tggRule.0/@linkVariable.6 //@tggRule.0/@linkVariable.5" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="file" incomingLink="//@tggRule.0/@linkVariable.1 //@tggRule.0/@linkVariable.2 //@tggRule.0/@linkVariable.10" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="system" incomingLink="//@tggRule.0/@linkVariable.5" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//SystemModule"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="folder" outgoingLink="//@tggRule.0/@linkVariable.10" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocationsNode" incomingLink="//@tggRule.0/@linkVariable.3" outgoingLink="//@tggRule.0/@linkVariable.9" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <constraint>
+        <constraintExpression xsi:type="expressions:ComparisonExpression" operator="EQUAL">
+          <rightExpression xsi:type="expressions:LiteralExpression" value="&quot;INVOCATIONS&quot;"/>
+          <leftExpression xsi:type="patternExpressions:AttributeValueExpression" object="//@tggRule.0/@objectVariable.5">
+            <attribute href="../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+          </leftExpression>
+        </constraintExpression>
+      </constraint>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocationNode" incomingLink="//@tggRule.0/@linkVariable.7" outgoingLink="//@tggRule.0/@linkVariable.3" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="taskNode" incomingLink="//@tggRule.0/@linkVariable.9" outgoingLink="//@tggRule.0/@linkVariable.1" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocationNodeToInvocation" outgoingLink="//@tggRule.0/@linkVariable.7 //@tggRule.0/@linkVariable.4" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToInvocation"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="fileToTask" outgoingLink="//@tggRule.0/@linkVariable.8 //@tggRule.0/@linkVariable.2" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="invocation" target="//@tggRule.0/@objectVariable.0" source="//@tggRule.0/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task/invocation"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.0/@objectVariable.2" source="//@tggRule.0/@objectVariable.7" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node/file"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.0/@objectVariable.2" source="//@tggRule.0/@objectVariable.9" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="parentNode" target="//@tggRule.0/@objectVariable.5" source="//@tggRule.0/@objectVariable.6" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.0/@objectVariable.0" source="//@tggRule.0/@objectVariable.8" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToInvocation/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="systemModule" target="//@tggRule.0/@objectVariable.3" source="//@tggRule.0/@objectVariable.1" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task/systemModule"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="invocations" target="//@tggRule.0/@objectVariable.0" source="//@tggRule.0/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task/invocations"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.0/@objectVariable.6" source="//@tggRule.0/@objectVariable.8" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToInvocation/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.0/@objectVariable.1" source="//@tggRule.0/@objectVariable.9" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="parentNode" target="//@tggRule.0/@objectVariable.7" source="//@tggRule.0/@objectVariable.5" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.0/@objectVariable.2" source="//@tggRule.0/@objectVariable.4" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/file"/>
+    </linkVariable>
+    <csp>
+      <constraints variables="//@tggRule.0/@csp/@variables.2 //@tggRule.0/@csp/@variables.0 //@tggRule.0/@csp/@variables.1" name="addPrefix">
+        <signature type="EString" index="2"/>
+        <signature type="EString"/>
+        <signature type="EString" index="1"/>
+        <allowedAdornments value="BBB"/>
+        <allowedAdornments value="BFB"/>
+        <allowedAdornments value="BBF"/>
+        <allowedAdornments value="FBB"/>
+        <modelgenAdornments value="FBB"/>
+        <modelgenAdornments value="BBB"/>
+        <modelgenAdornments value="BBF"/>
+        <modelgenAdornments value="BFB"/>
+        <modelgenAdornments value="FBF"/>
+        <modelgenAdornments value="BFF"/>
+      </constraints>
+      <variables xsi:type="csp:Literal" bound="true" value="ACED0005740007222E70726F6322"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="name" objectVariable="file"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="name" objectVariable="invocationNode"/>
+    </csp>
+  </tggRule>
+  <tggRule name="NodeToInvocationDifferentModuleRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="otherFolder" incomingLink="//@tggRule.1/@linkVariable.0" outgoingLink="//@tggRule.1/@linkVariable.4" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="rootFolder" outgoingLink="//@tggRule.1/@linkVariable.6 //@tggRule.1/@linkVariable.0" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocationNode" incomingLink="//@tggRule.1/@linkVariable.13" outgoingLink="//@tggRule.1/@linkVariable.1" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="taskNode" incomingLink="//@tggRule.1/@linkVariable.15" outgoingLink="//@tggRule.1/@linkVariable.8" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocationNodeToInvocation" outgoingLink="//@tggRule.1/@linkVariable.2 //@tggRule.1/@linkVariable.13" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToInvocation"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="otherFile" incomingLink="//@tggRule.1/@linkVariable.11 //@tggRule.1/@linkVariable.4" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocation" incomingLink="//@tggRule.1/@linkVariable.2 //@tggRule.1/@linkVariable.7 //@tggRule.1/@linkVariable.12" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Invocation"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="folder" incomingLink="//@tggRule.1/@linkVariable.6" outgoingLink="//@tggRule.1/@linkVariable.16" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="system" incomingLink="//@tggRule.1/@linkVariable.10 //@tggRule.1/@linkVariable.3" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//SystemModule"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="task" incomingLink="//@tggRule.1/@linkVariable.14" outgoingLink="//@tggRule.1/@linkVariable.3 //@tggRule.1/@linkVariable.12" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="file" incomingLink="//@tggRule.1/@linkVariable.9 //@tggRule.1/@linkVariable.16 //@tggRule.1/@linkVariable.8" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invokedTask" incomingLink="//@tggRule.1/@linkVariable.5" outgoingLink="//@tggRule.1/@linkVariable.10 //@tggRule.1/@linkVariable.7" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocationsNode" incomingLink="//@tggRule.1/@linkVariable.1" outgoingLink="//@tggRule.1/@linkVariable.15" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <constraint>
+        <constraintExpression xsi:type="expressions:ComparisonExpression" operator="EQUAL">
+          <rightExpression xsi:type="expressions:LiteralExpression" value="&quot;INVOCATIONS&quot;"/>
+          <leftExpression xsi:type="patternExpressions:AttributeValueExpression" object="//@tggRule.1/@objectVariable.12">
+            <attribute href="../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+          </leftExpression>
+        </constraintExpression>
+      </constraint>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="file2Task2" outgoingLink="//@tggRule.1/@linkVariable.11 //@tggRule.1/@linkVariable.5" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="fileToTask" outgoingLink="//@tggRule.1/@linkVariable.14 //@tggRule.1/@linkVariable.9" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="subFolder" target="//@tggRule.1/@objectVariable.0" source="//@tggRule.1/@objectVariable.1" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/subFolder"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="parentNode" target="//@tggRule.1/@objectVariable.12" source="//@tggRule.1/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.1/@objectVariable.6" source="//@tggRule.1/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="systemModule" target="//@tggRule.1/@objectVariable.8" source="//@tggRule.1/@objectVariable.9" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task/systemModule"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.1/@objectVariable.5" source="//@tggRule.1/@objectVariable.0" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/file"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.1/@objectVariable.11" source="//@tggRule.1/@objectVariable.13" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="subFolder" target="//@tggRule.1/@objectVariable.7" source="//@tggRule.1/@objectVariable.1" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/subFolder"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="invocation" target="//@tggRule.1/@objectVariable.6" source="//@tggRule.1/@objectVariable.11" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task/invocation"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.1/@objectVariable.10" source="//@tggRule.1/@objectVariable.3" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node/file"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.1/@objectVariable.10" source="//@tggRule.1/@objectVariable.14" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="systemModule" target="//@tggRule.1/@objectVariable.8" source="//@tggRule.1/@objectVariable.11" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task/systemModule"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.1/@objectVariable.5" source="//@tggRule.1/@objectVariable.13" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="invocations" target="//@tggRule.1/@objectVariable.6" source="//@tggRule.1/@objectVariable.9" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task/invocations"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.1/@objectVariable.2" source="//@tggRule.1/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.1/@objectVariable.9" source="//@tggRule.1/@objectVariable.14" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="parentNode" target="//@tggRule.1/@objectVariable.3" source="//@tggRule.1/@objectVariable.12" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.1/@objectVariable.10" source="//@tggRule.1/@objectVariable.7" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/file"/>
+    </linkVariable>
+    <csp>
+      <constraints variables="//@tggRule.1/@csp/@variables.2 //@tggRule.1/@csp/@variables.0 //@tggRule.1/@csp/@variables.1" name="addPrefix">
+        <signature type="EString" index="2"/>
+        <signature type="EString"/>
+        <signature type="EString" index="1"/>
+        <allowedAdornments value="BBB"/>
+        <allowedAdornments value="BFB"/>
+        <allowedAdornments value="BBF"/>
+        <allowedAdornments value="FBB"/>
+        <modelgenAdornments value="FBB"/>
+        <modelgenAdornments value="BBB"/>
+        <modelgenAdornments value="BBF"/>
+        <modelgenAdornments value="BFB"/>
+        <modelgenAdornments value="FBF"/>
+        <modelgenAdornments value="BFF"/>
+      </constraints>
+      <variables xsi:type="csp:Literal" bound="true" value="ACED0005740007222E70726F6322"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="name" objectVariable="otherFile"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="name" objectVariable="invocationNode"/>
+    </csp>
+  </tggRule>
+  <tggRule name="NodeToImportRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="importedModule" incomingLink="//@tggRule.2/@linkVariable.11 //@tggRule.2/@linkVariable.5" outgoingLink="//@tggRule.2/@linkVariable.1" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Module"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="otherFolder" incomingLink="//@tggRule.2/@linkVariable.2 //@tggRule.2/@linkVariable.4" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="fileToImportedModule" outgoingLink="//@tggRule.2/@linkVariable.4 //@tggRule.2/@linkVariable.5" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToModule"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="rootFolder" outgoingLink="//@tggRule.2/@linkVariable.2 //@tggRule.2/@linkVariable.6" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="module" incomingLink="//@tggRule.2/@linkVariable.7 //@tggRule.2/@linkVariable.12" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Module"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="nodeToImport" outgoingLink="//@tggRule.2/@linkVariable.13 //@tggRule.2/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToImport"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocationNode" incomingLink="//@tggRule.2/@linkVariable.0" outgoingLink="//@tggRule.2/@linkVariable.3" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="taskNode" incomingLink="//@tggRule.2/@linkVariable.14" outgoingLink="//@tggRule.2/@linkVariable.9" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocation" incomingLink="//@tggRule.2/@linkVariable.13 //@tggRule.2/@linkVariable.1 //@tggRule.2/@linkVariable.8" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Import"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="folder" incomingLink="//@tggRule.2/@linkVariable.6" outgoingLink="//@tggRule.2/@linkVariable.16" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="task" incomingLink="//@tggRule.2/@linkVariable.15" outgoingLink="//@tggRule.2/@linkVariable.12 //@tggRule.2/@linkVariable.8" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="system" outgoingLink="//@tggRule.2/@linkVariable.7 //@tggRule.2/@linkVariable.11" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//SystemModule"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="file" incomingLink="//@tggRule.2/@linkVariable.10 //@tggRule.2/@linkVariable.9 //@tggRule.2/@linkVariable.16" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocationsNode" incomingLink="//@tggRule.2/@linkVariable.3" outgoingLink="//@tggRule.2/@linkVariable.14" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <constraint>
+        <constraintExpression xsi:type="expressions:ComparisonExpression" operator="EQUAL">
+          <rightExpression xsi:type="expressions:LiteralExpression" value="&quot;IMPORTS&quot;"/>
+          <leftExpression xsi:type="patternExpressions:AttributeValueExpression" object="//@tggRule.2/@objectVariable.13">
+            <attribute href="../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+          </leftExpression>
+        </constraintExpression>
+      </constraint>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="fileToTask" outgoingLink="//@tggRule.2/@linkVariable.15 //@tggRule.2/@linkVariable.10" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.2/@objectVariable.6" source="//@tggRule.2/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToImport/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="import" target="//@tggRule.2/@objectVariable.8" source="//@tggRule.2/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Module/import"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="subFolder" target="//@tggRule.2/@objectVariable.1" source="//@tggRule.2/@objectVariable.3" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/subFolder"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="parentNode" target="//@tggRule.2/@objectVariable.13" source="//@tggRule.2/@objectVariable.6" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.2/@objectVariable.1" source="//@tggRule.2/@objectVariable.2" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToModule/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.2/@objectVariable.0" source="//@tggRule.2/@objectVariable.2" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToModule/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="subFolder" target="//@tggRule.2/@objectVariable.9" source="//@tggRule.2/@objectVariable.3" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/subFolder"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="allModules" target="//@tggRule.2/@objectVariable.4" source="//@tggRule.2/@objectVariable.11" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//SystemModule/allModules"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="imports" target="//@tggRule.2/@objectVariable.8" source="//@tggRule.2/@objectVariable.10" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task/imports"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.2/@objectVariable.12" source="//@tggRule.2/@objectVariable.7" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node/file"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.2/@objectVariable.12" source="//@tggRule.2/@objectVariable.14" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="allModules" target="//@tggRule.2/@objectVariable.0" source="//@tggRule.2/@objectVariable.11" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//SystemModule/allModules"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="module" target="//@tggRule.2/@objectVariable.4" source="//@tggRule.2/@objectVariable.10" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task/module"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.2/@objectVariable.8" source="//@tggRule.2/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToImport/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="parentNode" target="//@tggRule.2/@objectVariable.7" source="//@tggRule.2/@objectVariable.13" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.2/@objectVariable.10" source="//@tggRule.2/@objectVariable.14" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.2/@objectVariable.12" source="//@tggRule.2/@objectVariable.9" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/file"/>
+    </linkVariable>
+    <csp>
+      <constraints variables="//@tggRule.2/@csp/@variables.1 //@tggRule.2/@csp/@variables.0" name="eq">
+        <signature type="" index="1"/>
+        <signature type=""/>
+        <allowedAdornments value="BF"/>
+        <allowedAdornments value="FB"/>
+        <allowedAdornments value="BB"/>
+        <modelgenAdornments value="FF"/>
+        <modelgenAdornments value="BB"/>
+        <modelgenAdornments value="FB"/>
+        <modelgenAdornments value="BF"/>
+      </constraints>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="name" objectVariable="otherFolder"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="name" objectVariable="invocationNode"/>
+    </csp>
+  </tggRule>
+  <tggRule name="NodeToInvocationRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="fileToTask2" outgoingLink="//@tggRule.3/@linkVariable.14 //@tggRule.3/@linkVariable.1" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocationNode" incomingLink="//@tggRule.3/@linkVariable.10" outgoingLink="//@tggRule.3/@linkVariable.2" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="taskNode" incomingLink="//@tggRule.3/@linkVariable.12" outgoingLink="//@tggRule.3/@linkVariable.6" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocationNodeToInvocation" outgoingLink="//@tggRule.3/@linkVariable.3 //@tggRule.3/@linkVariable.10" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToInvocation"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="otherFile" incomingLink="//@tggRule.3/@linkVariable.14 //@tggRule.3/@linkVariable.0" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocation" incomingLink="//@tggRule.3/@linkVariable.3 //@tggRule.3/@linkVariable.5 //@tggRule.3/@linkVariable.9" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Invocation"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="task" incomingLink="//@tggRule.3/@linkVariable.11" outgoingLink="//@tggRule.3/@linkVariable.4 //@tggRule.3/@linkVariable.9" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="file" incomingLink="//@tggRule.3/@linkVariable.7 //@tggRule.3/@linkVariable.13 //@tggRule.3/@linkVariable.6" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="system" incomingLink="//@tggRule.3/@linkVariable.4 //@tggRule.3/@linkVariable.8" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//SystemModule"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="folder" outgoingLink="//@tggRule.3/@linkVariable.13 //@tggRule.3/@linkVariable.0" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invokedTask" incomingLink="//@tggRule.3/@linkVariable.1" outgoingLink="//@tggRule.3/@linkVariable.8 //@tggRule.3/@linkVariable.5" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocationsNode" incomingLink="//@tggRule.3/@linkVariable.2" outgoingLink="//@tggRule.3/@linkVariable.12" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <constraint>
+        <constraintExpression xsi:type="expressions:ComparisonExpression" operator="EQUAL">
+          <rightExpression xsi:type="expressions:LiteralExpression" value="&quot;INVOCATIONS&quot;"/>
+          <leftExpression xsi:type="patternExpressions:AttributeValueExpression" object="//@tggRule.3/@objectVariable.11">
+            <attribute href="../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+          </leftExpression>
+        </constraintExpression>
+      </constraint>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="fileToTask" outgoingLink="//@tggRule.3/@linkVariable.11 //@tggRule.3/@linkVariable.7" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.3/@objectVariable.4" source="//@tggRule.3/@objectVariable.9" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/file"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.3/@objectVariable.10" source="//@tggRule.3/@objectVariable.0" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="parentNode" target="//@tggRule.3/@objectVariable.11" source="//@tggRule.3/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.3/@objectVariable.5" source="//@tggRule.3/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToInvocation/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="systemModule" target="//@tggRule.3/@objectVariable.8" source="//@tggRule.3/@objectVariable.6" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task/systemModule"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="invocation" target="//@tggRule.3/@objectVariable.5" source="//@tggRule.3/@objectVariable.10" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task/invocation"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.3/@objectVariable.7" source="//@tggRule.3/@objectVariable.2" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node/file"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.3/@objectVariable.7" source="//@tggRule.3/@objectVariable.12" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="systemModule" target="//@tggRule.3/@objectVariable.8" source="//@tggRule.3/@objectVariable.10" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task/systemModule"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="invocations" target="//@tggRule.3/@objectVariable.5" source="//@tggRule.3/@objectVariable.6" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task/invocations"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.3/@objectVariable.1" source="//@tggRule.3/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToInvocation/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.3/@objectVariable.6" source="//@tggRule.3/@objectVariable.12" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="parentNode" target="//@tggRule.3/@objectVariable.2" source="//@tggRule.3/@objectVariable.11" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.3/@objectVariable.7" source="//@tggRule.3/@objectVariable.9" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/file"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.3/@objectVariable.4" source="//@tggRule.3/@objectVariable.0" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/source"/>
+    </linkVariable>
+    <csp>
+      <constraints variables="//@tggRule.3/@csp/@variables.0 //@tggRule.3/@csp/@variables.2 //@tggRule.3/@csp/@variables.1" name="addPrefix">
+        <signature type="EString" index="2"/>
+        <signature type="EString"/>
+        <signature type="EString" index="1"/>
+        <allowedAdornments value="BBB"/>
+        <allowedAdornments value="BFB"/>
+        <allowedAdornments value="BBF"/>
+        <allowedAdornments value="FBB"/>
+        <modelgenAdornments value="FBB"/>
+        <modelgenAdornments value="BBB"/>
+        <modelgenAdornments value="BBF"/>
+        <modelgenAdornments value="BFB"/>
+        <modelgenAdornments value="FBF"/>
+        <modelgenAdornments value="BFF"/>
+      </constraints>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="name" objectVariable="invocationNode"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="name" objectVariable="otherFile"/>
+      <variables xsi:type="csp:Literal" bound="true" value="ACED0005740007222E70726F6322"/>
+    </csp>
+  </tggRule>
+  <tggRule name="SubFolderToModuleRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="rootFolder" incomingLink="//@tggRule.4/@linkVariable.1" outgoingLink="//@tggRule.4/@linkVariable.0" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="subFolder" incomingLink="//@tggRule.4/@linkVariable.0 //@tggRule.4/@linkVariable.2" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="system" incomingLink="//@tggRule.4/@linkVariable.3" outgoingLink="//@tggRule.4/@linkVariable.4" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//SystemModule"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="subFolderToSubTask" outgoingLink="//@tggRule.4/@linkVariable.2 //@tggRule.4/@linkVariable.5" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToModule"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="folderToSystem" outgoingLink="//@tggRule.4/@linkVariable.1 //@tggRule.4/@linkVariable.3" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToSystem"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="module" incomingLink="//@tggRule.4/@linkVariable.5 //@tggRule.4/@linkVariable.4" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Module"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="subFolder" target="//@tggRule.4/@objectVariable.1" source="//@tggRule.4/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/subFolder"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.4/@objectVariable.0" source="//@tggRule.4/@objectVariable.4" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToSystem/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.4/@objectVariable.1" source="//@tggRule.4/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToModule/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.4/@objectVariable.2" source="//@tggRule.4/@objectVariable.4" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToSystem/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="allModules" target="//@tggRule.4/@objectVariable.5" source="//@tggRule.4/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//SystemModule/allModules"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.4/@objectVariable.5" source="//@tggRule.4/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToModule/target"/>
+    </linkVariable>
+    <csp>
+      <constraints variables="//@tggRule.4/@csp/@variables.1 //@tggRule.4/@csp/@variables.0" name="eq">
+        <signature type="" index="1"/>
+        <signature type=""/>
+        <allowedAdornments value="BF"/>
+        <allowedAdornments value="FB"/>
+        <allowedAdornments value="BB"/>
+        <modelgenAdornments value="FF"/>
+        <modelgenAdornments value="BB"/>
+        <modelgenAdornments value="FB"/>
+        <modelgenAdornments value="BF"/>
+      </constraints>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="description" objectVariable="module"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="name" objectVariable="subFolder"/>
+    </csp>
+  </tggRule>
+  <tggRule name="RootToSystemRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="rootFolder" incomingLink="//@tggRule.5/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="system" incomingLink="//@tggRule.5/@linkVariable.1" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//SystemModule"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="rootFolderToSystem" outgoingLink="//@tggRule.5/@linkVariable.0 //@tggRule.5/@linkVariable.1" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToSystem"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.5/@objectVariable.0" source="//@tggRule.5/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToSystem/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.5/@objectVariable.1" source="//@tggRule.5/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToSystem/target"/>
+    </linkVariable>
+    <csp>
+      <constraints variables="//@tggRule.5/@csp/@variables.1 //@tggRule.5/@csp/@variables.0" name="eq">
+        <signature type="" index="1"/>
+        <signature type=""/>
+        <allowedAdornments value="BF"/>
+        <allowedAdornments value="FB"/>
+        <allowedAdornments value="BB"/>
+        <modelgenAdornments value="FF"/>
+        <modelgenAdornments value="BB"/>
+        <modelgenAdornments value="FB"/>
+        <modelgenAdornments value="BF"/>
+      </constraints>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="name" objectVariable="system"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="name" objectVariable="rootFolder"/>
+    </csp>
+  </tggRule>
+  <tggRule name="FileToTaskRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="invocationNode" outgoingLink="//@tggRule.6/@linkVariable.3" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignment>
+        <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;INVOCATIONS&quot;"/>
+        <attribute href="../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+      </attributeAssignment>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="fileToTask" outgoingLink="//@tggRule.6/@linkVariable.1 //@tggRule.6/@linkVariable.7" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="taskNode" incomingLink="//@tggRule.6/@linkVariable.3 //@tggRule.6/@linkVariable.8" outgoingLink="//@tggRule.6/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignment>
+        <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;TASK&quot;"/>
+        <attribute href="../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+      </attributeAssignment>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="folderToModule" outgoingLink="//@tggRule.6/@linkVariable.4 //@tggRule.6/@linkVariable.6" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToModule"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="system" incomingLink="//@tggRule.6/@linkVariable.10" outgoingLink="//@tggRule.6/@linkVariable.9" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//SystemModule"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="task" incomingLink="//@tggRule.6/@linkVariable.1" outgoingLink="//@tggRule.6/@linkVariable.2 //@tggRule.6/@linkVariable.10" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="folder" incomingLink="//@tggRule.6/@linkVariable.4" outgoingLink="//@tggRule.6/@linkVariable.5" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="file" incomingLink="//@tggRule.6/@linkVariable.0 //@tggRule.6/@linkVariable.7 //@tggRule.6/@linkVariable.5" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//File"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="importNode" outgoingLink="//@tggRule.6/@linkVariable.8" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node"/>
+      <attributeAssignment>
+        <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;IMPORTS&quot;"/>
+        <attribute href="../../../plugin/MocaTree/model/MocaTree.ecore#//TreeElement/name"/>
+      </attributeAssignment>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="module" incomingLink="//@tggRule.6/@linkVariable.6 //@tggRule.6/@linkVariable.9 //@tggRule.6/@linkVariable.2" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Module"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.6/@objectVariable.7" source="//@tggRule.6/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Node/file"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.6/@objectVariable.5" source="//@tggRule.6/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="module" target="//@tggRule.6/@objectVariable.9" source="//@tggRule.6/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task/module"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="parentNode" target="//@tggRule.6/@objectVariable.2" source="//@tggRule.6/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.6/@objectVariable.6" source="//@tggRule.6/@objectVariable.3" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToModule/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="file" target="//@tggRule.6/@objectVariable.7" source="//@tggRule.6/@objectVariable.6" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Folder/file"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.6/@objectVariable.9" source="//@tggRule.6/@objectVariable.3" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToModule/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.6/@objectVariable.7" source="//@tggRule.6/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="parentNode" target="//@tggRule.6/@objectVariable.2" source="//@tggRule.6/@objectVariable.8" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="../../../plugin/MocaTree/model/MocaTree.ecore#//Text/parentNode"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="allModules" target="//@tggRule.6/@objectVariable.9" source="//@tggRule.6/@objectVariable.4" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//SystemModule/allModules"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="systemModule" target="//@tggRule.6/@objectVariable.4" source="//@tggRule.6/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#//Task/systemModule"/>
+    </linkVariable>
+    <csp>
+      <constraints variables="//@tggRule.6/@csp/@variables.1 //@tggRule.6/@csp/@variables.2 //@tggRule.6/@csp/@variables.0" name="addPrefix">
+        <signature type="EString" index="2"/>
+        <signature type="EString"/>
+        <signature type="EString" index="1"/>
+        <allowedAdornments value="BBB"/>
+        <allowedAdornments value="BFB"/>
+        <allowedAdornments value="BBF"/>
+        <allowedAdornments value="FBB"/>
+        <modelgenAdornments value="FBB"/>
+        <modelgenAdornments value="BBB"/>
+        <modelgenAdornments value="BBF"/>
+        <modelgenAdornments value="BFB"/>
+        <modelgenAdornments value="FBF"/>
+        <modelgenAdornments value="BFF"/>
+      </constraints>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="name" objectVariable="file"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="task"/>
+      <variables xsi:type="csp:Literal" bound="true" value="ACED0005740007222E70726F6322"/>
+    </csp>
+  </tggRule>
+  <metamodel name="ProcessDefinition">
+    <outermostPackage href="../../../plugin/ProcessDefinition/model/ProcessDefinition.ecore#/"/>
+  </metamodel>
+  <metamodel name="MocaTree">
+    <outermostPackage href="../../../plugin/MocaTree/model/MocaTree.ecore#/"/>
+  </metamodel>
+  <metamodel name="ProcessCodeAdapter">
+    <outermostPackage href="../../../plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#/"/>
+  </metamodel>
+</org.moflon.tgg.language:TripleGraphGrammar>

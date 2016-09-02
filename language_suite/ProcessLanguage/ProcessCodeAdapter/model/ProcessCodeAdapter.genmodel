@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/ProcessCodeAdapter/gen" modelPluginID="ProcessCodeAdapter"
+    modelName="ProcessCodeAdapter" updateClasspath="false" codeFormatting="true" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" usedGenPackages="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.genmodel#//runtime platform:/plugin/MocaTree/model/MocaTree.genmodel#//MocaTree platform:/plugin/ProcessDefinition/model/ProcessDefinition.genmodel#//ProcessDefinition platform:/plugin/org.moflon.tgg.language/model/Language.genmodel#//language platform:/plugin/SDMLanguage/model/SDMLanguage.genmodel#//SDMLanguage"
+    operationReflection="true">
+  <foreignModel>ProcessCodeAdapter.ecore</foreignModel>
+  <genPackages prefix="ProcessCodeAdapter" disposableProviderFactory="true" ecorePackage="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#/">
+    <genClasses ecoreClass="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToImport">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToImport/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToImport/target"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToSystem">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToSystem/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToSystem/target"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FileToTask/target"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToInvocation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToInvocation/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//NodeToInvocation/target"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToModule">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToModule/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//FolderToModule/target"/>
+    </genClasses>
+    <nestedGenPackages prefix="Rules" disposableProviderFactory="true" loadInitialization="true"
+        literalsInterface="false" ecorePackage="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules">
+      <genClasses ecoreClass="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule">
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_FWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_FWD/taskNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjectsToMatch_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjectsToMatch_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjectsToMatch_FWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjectsToMatch_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjectsToMatch_FWD/taskNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_solveCsp_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_solveCsp_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_solveCsp_FWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_solveCsp_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_solveCsp_FWD/taskNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_FWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_FWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_FWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_FWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_FWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_FWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_FWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_FWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_FWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_FWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_FWD/invocationNodeToInvocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_FWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_BWD/system"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjectsToMatch_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjectsToMatch_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjectsToMatch_BWD/system"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_solveCsp_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_solveCsp_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_solveCsp_BWD/system"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_BWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_BWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_BWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_BWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_BWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_BWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_BWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_BWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_BWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_BWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_BWD/invocationNodeToInvocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/registerObjects_BWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_BWD_EMoflonEdge_9">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_BWD_EMoflonEdge_9/_edge_invocation"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_FWD_EMoflonEdge_9">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isAppropriate_FWD_EMoflonEdge_9/_edge_parentNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_CC/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_CC/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_CC/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_CC/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_CC/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_CC/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_CC/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_CC/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkDEC_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkDEC_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkDEC_FWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkDEC_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkDEC_FWD/taskNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkDEC_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkDEC_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/checkDEC_BWD/system"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/generateModel/fileToTaskParameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/generateModel_solveCsp_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/generateModel_solveCsp_BWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/generateModel_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/generateModel_solveCsp_BWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/generateModel_solveCsp_BWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/generateModel_solveCsp_BWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/generateModel_solveCsp_BWD/fileToTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRecursiveRule/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule">
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_FWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_FWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_FWD/invocationsNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_FWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_FWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_FWD/invocationsNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_FWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_FWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_FWD/invocationsNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_FWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_FWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_FWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_FWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_FWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_FWD/invokedTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_FWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_FWD/file2Task2"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_FWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/invocationNodeToInvocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/invokedTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/file2Task2"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_FWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_BWD/invokedTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjectsToMatch_BWD/invokedTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_solveCsp_BWD/invokedTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_BWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_BWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_BWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_BWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_BWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_BWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_BWD/invokedTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_BWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_BWD/file2Task2"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_BWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/invocationNodeToInvocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/invokedTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/file2Task2"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/registerObjects_BWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_BWD_EMoflonEdge_10">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_BWD_EMoflonEdge_10/_edge_invocation"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_FWD_EMoflonEdge_10">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isAppropriate_FWD_EMoflonEdge_10/_edge_parentNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_CC/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_CC/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_CC/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_CC/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_CC/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_CC/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_CC/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_CC/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_CC/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_CC/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_CC/invokedTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_CC/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkDEC_FWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkDEC_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkDEC_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkDEC_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkDEC_FWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkDEC_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkDEC_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkDEC_FWD/invocationsNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkDEC_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkDEC_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkDEC_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/checkDEC_BWD/invokedTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel/file2Task2Parameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_solveCsp_BWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_solveCsp_BWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_solveCsp_BWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_solveCsp_BWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_solveCsp_BWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_solveCsp_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_solveCsp_BWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_solveCsp_BWD/invokedTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_solveCsp_BWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_solveCsp_BWD/file2Task2"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_solveCsp_BWD/fileToTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationDifferentModuleRule/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule">
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_FWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_FWD/invocationsNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_FWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_FWD/invocationsNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_FWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_FWD/invocationsNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_FWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_FWD/importedModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_FWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_FWD/fileToImportedModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_FWD/module"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_FWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_FWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_FWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_FWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/importedModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/fileToImportedModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/module"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/nodeToImport"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_FWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_BWD/importedModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_BWD/module"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_BWD/system"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_BWD/importedModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_BWD/module"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjectsToMatch_BWD/system"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_BWD/importedModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_BWD/module"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_solveCsp_BWD/system"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_BWD/importedModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_BWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_BWD/fileToImportedModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_BWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_BWD/module"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_BWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_BWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_BWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_BWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_BWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/importedModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/fileToImportedModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/module"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/nodeToImport"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/registerObjects_BWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_BWD_EMoflonEdge_11">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_BWD_EMoflonEdge_11/_edge_import"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_FWD_EMoflonEdge_11">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isAppropriate_FWD_EMoflonEdge_11/_edge_parentNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_CC/importedModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_CC/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_CC/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_CC/module"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_CC/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_CC/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_CC/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_CC/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_CC/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_CC/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_CC/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_CC/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkDEC_FWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkDEC_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkDEC_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkDEC_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkDEC_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkDEC_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkDEC_FWD/invocationsNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkDEC_BWD/importedModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkDEC_BWD/module"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkDEC_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkDEC_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/checkDEC_BWD/system"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel/fileToTaskParameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_solveCsp_BWD/importedModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_solveCsp_BWD/otherFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_solveCsp_BWD/fileToImportedModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_solveCsp_BWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_solveCsp_BWD/module"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_solveCsp_BWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_solveCsp_BWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_solveCsp_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_solveCsp_BWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_solveCsp_BWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_solveCsp_BWD/fileToTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToImportRule/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule">
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_FWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_FWD/invocationsNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjectsToMatch_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjectsToMatch_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjectsToMatch_FWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjectsToMatch_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjectsToMatch_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjectsToMatch_FWD/invocationsNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_solveCsp_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_solveCsp_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_solveCsp_FWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_solveCsp_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_solveCsp_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_solveCsp_FWD/invocationsNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_FWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_FWD/fileToTask2"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_FWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_FWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_FWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_FWD/invokedTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_FWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_FWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_FWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_FWD/fileToTask2"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_FWD/invocationNodeToInvocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_FWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_FWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_FWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_FWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_FWD/invokedTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_FWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_FWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_BWD/invokedTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjectsToMatch_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjectsToMatch_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjectsToMatch_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjectsToMatch_BWD/invokedTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_solveCsp_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_solveCsp_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_solveCsp_BWD/invokedTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_BWD/fileToTask2"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_BWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_BWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_BWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_BWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_BWD/invokedTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_BWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_BWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_BWD/fileToTask2"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_BWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_BWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_BWD/invocationNodeToInvocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_BWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_BWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_BWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_BWD/invokedTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_BWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/registerObjects_BWD/fileToTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_BWD_EMoflonEdge_12">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_BWD_EMoflonEdge_12/_edge_invocation"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_FWD_EMoflonEdge_12">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isAppropriate_FWD_EMoflonEdge_12/_edge_parentNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_CC/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_CC/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_CC/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_CC/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_CC/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_CC/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_CC/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_CC/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_CC/invokedTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_CC/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkDEC_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkDEC_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkDEC_FWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkDEC_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkDEC_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkDEC_FWD/invocationsNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkDEC_BWD/invocation"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkDEC_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkDEC_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/checkDEC_BWD/invokedTask"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel/fileToTask2Parameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel_solveCsp_BWD/fileToTask2"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel_solveCsp_BWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel_solveCsp_BWD/otherFile"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel_solveCsp_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel_solveCsp_BWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel_solveCsp_BWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel_solveCsp_BWD/invokedTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel_solveCsp_BWD/invocationsNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel_solveCsp_BWD/fileToTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/NodeToInvocationRule/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule">
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_FWD/subFolder"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjectsToMatch_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjectsToMatch_FWD/subFolder"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_solveCsp_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_solveCsp_FWD/subFolder"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_FWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_FWD/subFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_FWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_FWD/folderToSystem"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_FWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_FWD/subFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_FWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_FWD/subFolderToSubTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_FWD/folderToSystem"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_FWD/module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_BWD/module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjectsToMatch_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjectsToMatch_BWD/module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_solveCsp_BWD/module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_BWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_BWD/folderToSystem"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_BWD/module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_BWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_BWD/subFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_BWD/subFolderToSubTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_BWD/folderToSystem"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/registerObjects_BWD/module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_BWD_EMoflonEdge_13">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_BWD_EMoflonEdge_13/_edge_allModules"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_FWD_EMoflonEdge_13">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isAppropriate_FWD_EMoflonEdge_13/_edge_subFolder"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_CC/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_CC/subFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_CC/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_CC/module"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/checkDEC_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/checkDEC_FWD/subFolder"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/checkDEC_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/checkDEC_BWD/module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/generateModel/folderToSystemParameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/generateModel_solveCsp_BWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/generateModel_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/generateModel_solveCsp_BWD/folderToSystem"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/SubFolderToModuleRule/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/AbstractNodeToInvocationRule"/>
+      <genClasses ecoreClass="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule">
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_FWD/rootFolder"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjectsToMatch_FWD/rootFolder"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_solveCsp_FWD/rootFolder"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_solveCsp_FWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_solveCsp_FWD/rootFolder"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjects_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjects_FWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjects_FWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjects_FWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjects_FWD/rootFolderToSystem"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_BWD/system"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjectsToMatch_BWD/system"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_solveCsp_BWD/system"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_solveCsp_BWD/system"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjects_BWD/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjects_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/registerObjects_BWD/rootFolderToSystem"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_BWD_SystemModule_0">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_BWD_SystemModule_0/system"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_FWD_Folder_1">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isAppropriate_FWD_Folder_1/rootFolder"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_solveCsp_CC/rootFolder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_solveCsp_CC/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/checkDEC_FWD/rootFolder"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/checkDEC_BWD/system"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/generateModel/ruleEntryContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/RootToSystemRule/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule">
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_FWD/importNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjectsToMatch_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjectsToMatch_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjectsToMatch_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjectsToMatch_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjectsToMatch_FWD/importNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_solveCsp_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_solveCsp_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_solveCsp_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_solveCsp_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_solveCsp_FWD/importNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_FWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_FWD/folderToModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_FWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_FWD/importNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_FWD/module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_FWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_FWD/fileToTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_FWD/folderToModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_FWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_FWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_FWD/importNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_FWD/module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_BWD/module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjectsToMatch_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjectsToMatch_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjectsToMatch_BWD/module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_solveCsp_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_solveCsp_BWD/module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_BWD/folderToModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_BWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_BWD/module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_BWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_BWD/fileToTask"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_BWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_BWD/folderToModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_BWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_BWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_BWD/importNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/registerObjects_BWD/module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_BWD_EMoflonEdge_14">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_BWD_EMoflonEdge_14/_edge_module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_FWD_EMoflonEdge_14">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isAppropriate_FWD_EMoflonEdge_14/_edge_file"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_CC/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_CC/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_CC/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_CC/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_CC/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_CC/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_CC/importNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_CC/module"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkDEC_FWD/invocationNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkDEC_FWD/taskNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkDEC_FWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkDEC_FWD/file"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkDEC_FWD/importNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkDEC_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkDEC_BWD/task"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/checkDEC_BWD/module"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/generateModel/folderToModuleParameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/generateModel_solveCsp_BWD/folderToModule"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/generateModel_solveCsp_BWD/system"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/generateModel_solveCsp_BWD/folder"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/generateModel_solveCsp_BWD/module"/>
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/FileToTaskRule/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/AbstractOtherInvokedTaskRule"/>
+      <genClasses ecoreClass="platform:/plugin/ProcessCodeAdapter/model/ProcessCodeAdapter.ecore#//Rules/AbstractNodeToImportRule"/>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>
