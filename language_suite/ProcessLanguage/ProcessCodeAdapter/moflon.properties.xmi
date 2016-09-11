@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<MoflonPropertyContainer:MoflonPropertiesContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:MoflonPropertyContainer="platform:/plugin/MoflonPropertyContainer/model/MoflonPropertyContainer.ecore" projectName="ProcessCodeAdapter">
+<org.moflon.core.propertycontainer:MoflonPropertiesContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.moflon.core.propertycontainer="platform:/plugin/org.moflon.core.propertycontainer/model/Propertycontainer.ecore" projectName="ProcessCodeAdapter">
   <dependencies value="platform:/plugin/MocaTree/model/MocaTree.ecore"/>
   <dependencies value="platform:/plugin/ProcessDefinition/model/ProcessDefinition.ecore"/>
   <dependencies value="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore"/>
@@ -10,4 +10,4 @@
   <replaceGenModel/>
   <sdmCodegeneratorHandlerId value="DEMOCLES_REVERSE_NAVI"/>
   <tGGBuildMode/>
-</MoflonPropertyContainer:MoflonPropertiesContainer>
+</org.moflon.core.propertycontainer:MoflonPropertiesContainer>
