@@ -1,8 +1,0 @@
-pattern initializeTemp {
-	@this : Card
-	
-	++ temp : Card {
-		temp.face := this.face
-		temp.back := this.back
-	}
-}

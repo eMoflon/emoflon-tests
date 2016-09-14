@@ -1,0 +1,2005 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MocaTree:Folder xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MocaTree="platform:/plugin/MocaTree/model/MocaTree.ecore" name="TGGLanguage">
+  <subFolder name="csp">
+    <file name="__csp.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="Documentation for Subpackage"/>
+          </children>
+        </children>
+      </rootNode>
+    </file>
+    <file name="AttributeVariable.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table">
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="getName"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+          </children>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass AttributeVariable"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table">
+            <links targets="//@subFolder.0/@file.2/@rootNode/@children.0/@children.5"/>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="Variable"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </rootNode>
+    </file>
+    <file name="Variable.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass Variable"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="Literal.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass Literal"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table">
+            <links targets="//@subFolder.0/@file.2/@rootNode/@children.0/@children.5"/>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="Variable"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </rootNode>
+    </file>
+    <file name="CSP.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table">
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="getValue"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="check"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="deriveOperationalCSPs"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="getAttributeVariable"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+          </children>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass CSP"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="OpCSPHelper.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table">
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="handleLocalVars"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="setVariables"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="hasCommonVariable"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+          </children>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass OpCSPHelper"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="TGGConstraint.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass TGGConstraint"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="LocalVariable.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass LocalVariable"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table">
+            <links targets="//@subFolder.0/@file.2/@rootNode/@children.0/@children.5"/>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="Variable"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </rootNode>
+    </file>
+    <file name="Adornment.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass Adornment"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="OperationalCSP.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass OperationalCSP"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="SignatureElement.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass SignatureElement"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+  </subFolder>
+  <subFolder name="algorithm">
+    <file name="__algorithm.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="Documentation for Subpackage"/>
+          </children>
+        </children>
+      </rootNode>
+    </file>
+    <file name="TempOutputContainer.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass TempOutputContainer"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+  </subFolder>
+  <subFolder name="analysis">
+    <subFolder name="decNACs">
+      <file name="__decNACs.html">
+        <rootNode name="html">
+          <children xsi:type="MocaTree:Node" name="body">
+            <children xsi:type="MocaTree:Node" index="1" name="p"/>
+            <children xsi:type="MocaTree:Node" name="h1">
+              <children name="Documentation for Subpackage"/>
+            </children>
+          </children>
+        </rootNode>
+      </file>
+      <file name="DECNACAnalysis.html">
+        <rootNode name="html">
+          <children xsi:type="MocaTree:Node" name="body">
+            <children xsi:type="MocaTree:Node" index="2" name="h3">
+              <children name="Methods of this class: "/>
+            </children>
+            <children xsi:type="MocaTree:Node" index="1" name="p"/>
+            <children xsi:type="MocaTree:Node" index="3" name="table">
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="ovIsSafeWithoutNACforIncomingReference"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="blackOVandOutgoingGreenLVexists"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="newValueConformsToReferenceValue"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="blackOVandIncomingGreenLVexists"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="initialize"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="assignmentsConformToConstraints"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="determineDECovName"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="createNegativeEdgesForOutgoingReference"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="createNegativeLink"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="createDecNacs"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="createNegativeEdgesForIncomingReference"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="ovIsSafeWithoutNACforOutgoingReference"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+            </children>
+            <children xsi:type="MocaTree:Node" index="4" name="h3">
+              <children name="All Known Super Classes: "/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="h1">
+              <children name="EClass DECNACAnalysis"/>
+            </children>
+            <children xsi:type="MocaTree:Node" index="5" name="table"/>
+          </children>
+        </rootNode>
+      </file>
+    </subFolder>
+    <file name="__analysis.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="Documentation for Subpackage"/>
+          </children>
+        </children>
+      </rootNode>
+    </file>
+    <file name="Rule.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass Rule"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="StaticAnalysis.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass StaticAnalysis"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="RulesTable.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass RulesTable"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+  </subFolder>
+  <subFolder name="modelgenerator">
+    <file name="__modelgenerator.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="Documentation for Subpackage"/>
+          </children>
+        </children>
+      </rootNode>
+    </file>
+    <file name="RuleAnalyzerUtil.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table">
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="expressionRefersToGreenOv"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+          </children>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass RuleAnalyzerUtil"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="ModelGenUtil.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table">
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="getEBooleanClass"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="setRuleIsleType"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="findRuleIsle"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="computeIsleEntryObjects"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="computeBindingOperationName"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="fillPatternFromRuleIsle"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="createLvCopy"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="createOvCopy"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="computeRuleContextIsles"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+          </children>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass ModelGenUtil"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="RuleAnalyzer.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table">
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="ovRefersToGreenOv"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+          </children>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass RuleAnalyzer"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="Compiler.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table">
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="fillIsApplicableStoryPattern"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="compileSingleRuleSdm"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="cacheGreenPerformOVsInRuleResultObject"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="deleteLvsNotInPattern"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="fillCheckNacPattern"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="fillPerformStoryPattern"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="compileModelgenerationSdms"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+          </children>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass Compiler"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table">
+            <links targets="//@subFolder.5/@file.1/@rootNode/@children.0/@children.5"/>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="TGGCompiler"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </rootNode>
+    </file>
+    <file name="RuleIsle.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass RuleIsle"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="RuleAnalyzerResult.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass RuleAnalyzerResult"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="RuleEntryList.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass RuleEntryList"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="Precompiler.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table">
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="handleConstraint"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="replaceBuiltInConstraints"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+          </children>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass Precompiler"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="RuleEntryContainer.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass RuleEntryContainer"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="RuleIsleContainer.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass RuleIsleContainer"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+  </subFolder>
+  <subFolder name="precompiler">
+    <file name="__precompiler.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="Documentation for Subpackage"/>
+          </children>
+        </children>
+      </rootNode>
+    </file>
+    <file name="CSPPrecompilerHelper.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table">
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="removeDuplicateVariable"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="removeDuplicateConstraints"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="removeDuplicateVariables"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="mergeCsps"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+          </children>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass CSPPrecompilerHelper"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="CyclicContextMessage.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass CyclicContextMessage"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table">
+            <links targets="//@subFolder.4/@file.8/@rootNode/@children.0/@children.5"/>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="PrecompileMessage"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </rootNode>
+    </file>
+    <file name="RefineableRules.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass RefineableRules"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="PrecompileLog.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table">
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="addObjectSubtypeReplacementWarning"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="addCyclicContextError"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="addObjectNotRefineableError"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+          </children>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass PrecompileLog"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="RuleProcessingMessage.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass RuleProcessingMessage"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table">
+            <links targets="//@subFolder.4/@file.8/@rootNode/@children.0/@children.5"/>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="PrecompileMessage"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </rootNode>
+    </file>
+    <file name="MultiAmalgamationPrecompiler.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table">
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="deriveComplementRules"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+          </children>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass MultiAmalgamationPrecompiler"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="TGGPrecompiler.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table">
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="precompileTGG"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+          </children>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass TGGPrecompiler"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="PrecompileMessage.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table"/>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass PrecompileMessage"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="PrecompilerHelper.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table">
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="convertToConstraint"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="convertAndOptimizeAttributes"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="findLinkType"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="convertToAssignment"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="optimizeConstraints"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="getCommonType"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="checkOVRefinement"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="linkTypeChecker"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="repairBrokenExpression"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="optimizeAssignments"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="addOVsToContainer"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="isSuperType"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="checkForBrokenExpression"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+          </children>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass PrecompilerHelper"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table">
+            <links targets="//@subFolder.5/@subFolder.0/@file.2/@rootNode/@children.0/@children.5"/>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="Helper"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </rootNode>
+    </file>
+    <file name="RefinementPrecompiler.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table">
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="mergeOV"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="handleMerging"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="refineRule"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="refineRule"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="refineRules"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="correctLinks"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="handleEdgeDeletion"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="combineRuleWithParent"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="mergeParents"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="handleEdgeDeletion"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="prepare"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+          </children>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass RefinementPrecompiler"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+  </subFolder>
+  <subFolder name="compiler">
+    <subFolder name="compilerfacade">
+      <file name="__compilerfacade.html">
+        <rootNode name="html">
+          <children xsi:type="MocaTree:Node" name="body">
+            <children xsi:type="MocaTree:Node" index="1" name="p"/>
+            <children xsi:type="MocaTree:Node" name="h1">
+              <children name="Documentation for Subpackage"/>
+            </children>
+          </children>
+        </rootNode>
+      </file>
+      <file name="CspCodeGenerator.html">
+        <rootNode name="html">
+          <children xsi:type="MocaTree:Node" name="body">
+            <children xsi:type="MocaTree:Node" index="2" name="h3">
+              <children name="Methods of this class: "/>
+            </children>
+            <children xsi:type="MocaTree:Node" index="1" name="p"/>
+            <children xsi:type="MocaTree:Node" index="3" name="table">
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="computeUsedAdornments"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="getSolveCSPCode"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="getCheckCode"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="prepareCodeGen"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="performCodeGen"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+            </children>
+            <children xsi:type="MocaTree:Node" index="4" name="h3">
+              <children name="All Known Super Classes: "/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="h1">
+              <children name="EClass CspCodeGenerator"/>
+            </children>
+            <children xsi:type="MocaTree:Node" index="5" name="table"/>
+          </children>
+        </rootNode>
+      </file>
+      <file name="Helper.html">
+        <rootNode name="html">
+          <children xsi:type="MocaTree:Node" name="body">
+            <children xsi:type="MocaTree:Node" index="2" name="h3">
+              <children name="Methods of this class: "/>
+            </children>
+            <children xsi:type="MocaTree:Node" index="1" name="p"/>
+            <children xsi:type="MocaTree:Node" index="3" name="table">
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="FORWARD"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="convertDirectionToInputDomain"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="EQUAL"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="determineOperationSignature"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="NONE"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="determineTypeCheckStatement"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="BACKWARD"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="NEGATIVE"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="MANDATORY"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="getEClassInTGGRuntime"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="copy"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="determineRuleClass"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="DESTROY"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="SUCCESS"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="UNBOUND"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="EACH_TIME"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="CREATE"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="isContainedInGlobalApplicationType"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="END"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="isRuleIgnoreInDirection"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="CHECK_ONLY"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="BOUND"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="FAILURE"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="determineOutputDomain"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="CORRESPONDENCE"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="getEdgeName"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="OPTIONAL"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+            </children>
+            <children xsi:type="MocaTree:Node" index="4" name="h3">
+              <children name="All Known Super Classes: "/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="h1">
+              <children name="EClass Helper"/>
+            </children>
+            <children xsi:type="MocaTree:Node" index="5" name="table"/>
+          </children>
+        </rootNode>
+      </file>
+      <file name="CspCodeGeneratorHelper.html">
+        <rootNode name="html">
+          <children xsi:type="MocaTree:Node" name="body">
+            <children xsi:type="MocaTree:Node" index="2" name="h3">
+              <children name="Methods of this class: "/>
+            </children>
+            <children xsi:type="MocaTree:Node" index="1" name="p"/>
+            <children xsi:type="MocaTree:Node" index="3" name="table">
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="createGetterCall"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="computePerformPattern"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="computeSolveCspReturnPattern"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="getOperationalCSP"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="computeConstraintOrder"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="addObjectToMethodCall"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="updateAttributeVariableBindings"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="reportInconsistentAttributeVariable"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="deriveVarName"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="computeSolveCspMethodCall"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="reportMissingObjectVariable"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="addValueExtractions"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="addCspImportInjections"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="collectVariablesForCodeGeneration"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="computeCheckCspMethodCall"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+            </children>
+            <children xsi:type="MocaTree:Node" index="4" name="h3">
+              <children name="All Known Super Classes: "/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="h1">
+              <children name="EClass CspCodeGeneratorHelper"/>
+            </children>
+            <children xsi:type="MocaTree:Node" index="5" name="table"/>
+          </children>
+        </rootNode>
+      </file>
+      <file name="StoryPatternHelper.html">
+        <rootNode name="html">
+          <children xsi:type="MocaTree:Node" name="body">
+            <children xsi:type="MocaTree:Node" index="2" name="h3">
+              <children name="Methods of this class: "/>
+            </children>
+            <children xsi:type="MocaTree:Node" index="1" name="p"/>
+            <children xsi:type="MocaTree:Node" index="3" name="table">
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="createWrapperEdgeForLV"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="encloseAsStringLiteral"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="determineEdgeWrapperName"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="bindObjectOverMatch"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="createFindContext"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="bindTGGRulePatternToMethodCallAsParameter"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="extractCoreMatchPattern"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="extractContextPattern"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="extractPerformPattern"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="transformAssignmentToConstraint"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="createPerformTransformation"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="deleteOVandIncidentLinks"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+            </children>
+            <children xsi:type="MocaTree:Node" index="4" name="h3">
+              <children name="All Known Super Classes: "/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="h1">
+              <children name="EClass StoryPatternHelper"/>
+            </children>
+            <children xsi:type="MocaTree:Node" index="5" name="table"/>
+          </children>
+        </rootNode>
+      </file>
+      <file name="CSPSearchPlanAdapter.html">
+        <rootNode name="html">
+          <children xsi:type="MocaTree:Node" name="body">
+            <children xsi:type="MocaTree:Node" index="2" name="h3">
+              <children name="Methods of this class: "/>
+            </children>
+            <children xsi:type="MocaTree:Node" index="1" name="p"/>
+            <children xsi:type="MocaTree:Node" index="3" name="table">
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="computeConstraintOrder"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+            </children>
+            <children xsi:type="MocaTree:Node" index="4" name="h3">
+              <children name="All Known Super Classes: "/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="h1">
+              <children name="EClass CSPSearchPlanAdapter"/>
+            </children>
+            <children xsi:type="MocaTree:Node" index="5" name="table"/>
+          </children>
+        </rootNode>
+      </file>
+      <file name="InjectionHelper.html">
+        <rootNode name="html">
+          <children xsi:type="MocaTree:Node" name="body">
+            <children xsi:type="MocaTree:Node" index="2" name="h3">
+              <children name="Methods of this class: "/>
+            </children>
+            <children xsi:type="MocaTree:Node" index="1" name="p"/>
+            <children xsi:type="MocaTree:Node" index="3" name="table">
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="findAttributeAssignment"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="createInjectionForCheckAttributesMethod"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+              <children xsi:type="MocaTree:Node" name="tr">
+                <children xsi:type="MocaTree:Node" name="td">
+                  <children name="createInjectionForCheckTypesMethod"/>
+                </children>
+                <children xsi:type="MocaTree:Node" index="1" name="td"/>
+              </children>
+            </children>
+            <children xsi:type="MocaTree:Node" index="4" name="h3">
+              <children name="All Known Super Classes: "/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="h1">
+              <children name="EClass InjectionHelper"/>
+            </children>
+            <children xsi:type="MocaTree:Node" index="5" name="table"/>
+          </children>
+        </rootNode>
+      </file>
+    </subFolder>
+    <file name="__compiler.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="Documentation for Subpackage"/>
+          </children>
+        </children>
+      </rootNode>
+    </file>
+    <file name="TGGCompiler.html">
+      <rootNode name="html">
+        <children xsi:type="MocaTree:Node" name="body">
+          <children xsi:type="MocaTree:Node" index="2" name="h3">
+            <children name="Methods of this class: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="1" name="p"/>
+          <children xsi:type="MocaTree:Node" index="3" name="table">
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="createMatchedContextPerformOperation"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="createStaticAnalysis"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="createMatchedContextOperationalRules"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="createisAppropriateOperation"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="createIsApplicableOperation"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="createIsAppropriateActivity"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="copyRuleWithEdgeWrapper"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="determineEntryPointLVcandidates"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="transformAssignmentToConstraint"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="deriveOperationalRules"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="createMatchedContextIsAppropriateOperation"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="createMatchTypeCheckOperation"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="createParameterFromObjectVariable"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="getCheckTypeOperation"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="createPostProcessingMethodCallExpression"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="createCheckAttributesOperation"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+            <children xsi:type="MocaTree:Node" name="tr">
+              <children xsi:type="MocaTree:Node" name="td">
+                <children name="determineEntryPointOVcandidates"/>
+              </children>
+              <children xsi:type="MocaTree:Node" index="1" name="td"/>
+            </children>
+          </children>
+          <children xsi:type="MocaTree:Node" index="4" name="h3">
+            <children name="All Known Super Classes: "/>
+          </children>
+          <children xsi:type="MocaTree:Node" name="h1">
+            <children name="EClass TGGCompiler"/>
+          </children>
+          <children xsi:type="MocaTree:Node" index="5" name="table"/>
+        </children>
+      </rootNode>
+    </file>
+  </subFolder>
+  <file name="__TGGLanguage.html">
+    <rootNode name="html">
+      <children xsi:type="MocaTree:Node" name="body">
+        <children xsi:type="MocaTree:Node" index="1" name="p"/>
+        <children xsi:type="MocaTree:Node" name="h1">
+          <children name="Outermost-Package:  Documentation for Project-Root"/>
+        </children>
+      </children>
+    </rootNode>
+  </file>
+  <file name="Domain.html">
+    <rootNode name="html">
+      <children xsi:type="MocaTree:Node" name="body">
+        <children xsi:type="MocaTree:Node" index="2" name="h3">
+          <children name="Methods of this class: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="1" name="p"/>
+        <children xsi:type="MocaTree:Node" index="3" name="table"/>
+        <children xsi:type="MocaTree:Node" index="4" name="h3">
+          <children name="All Known Super Classes: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" name="h1">
+          <children name="EClass Domain"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="5" name="table"/>
+      </children>
+    </rootNode>
+  </file>
+  <file name="Metamodel.html">
+    <rootNode name="html">
+      <children xsi:type="MocaTree:Node" name="body">
+        <children xsi:type="MocaTree:Node" index="2" name="h3">
+          <children name="Methods of this class: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="1" name="p"/>
+        <children xsi:type="MocaTree:Node" index="3" name="table"/>
+        <children xsi:type="MocaTree:Node" index="4" name="h3">
+          <children name="All Known Super Classes: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" name="h1">
+          <children name="EClass Metamodel"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="5" name="table"/>
+      </children>
+    </rootNode>
+  </file>
+  <file name="TGGObjectVariable.html">
+    <rootNode name="html">
+      <children xsi:type="MocaTree:Node" name="body">
+        <children xsi:type="MocaTree:Node" index="2" name="h3">
+          <children name="Methods of this class: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="1" name="p"/>
+        <children xsi:type="MocaTree:Node" index="3" name="table"/>
+        <children xsi:type="MocaTree:Node" index="4" name="h3">
+          <children name="All Known Super Classes: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" name="h1">
+          <children name="EClass TGGObjectVariable"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="5" name="table"/>
+      </children>
+    </rootNode>
+  </file>
+  <file name="TGGRule.html">
+    <rootNode name="html">
+      <children xsi:type="MocaTree:Node" name="body">
+        <children xsi:type="MocaTree:Node" index="2" name="h3">
+          <children name="Methods of this class: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="1" name="p"/>
+        <children xsi:type="MocaTree:Node" index="3" name="table"/>
+        <children xsi:type="MocaTree:Node" index="4" name="h3">
+          <children name="All Known Super Classes: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" name="h1">
+          <children name="EClass TGGRule"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="5" name="table"/>
+      </children>
+    </rootNode>
+  </file>
+  <file name="ObjectLinkContainer.html">
+    <rootNode name="html">
+      <children xsi:type="MocaTree:Node" name="body">
+        <children xsi:type="MocaTree:Node" index="2" name="h3">
+          <children name="Methods of this class: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="1" name="p"/>
+        <children xsi:type="MocaTree:Node" index="3" name="table"/>
+        <children xsi:type="MocaTree:Node" index="4" name="h3">
+          <children name="All Known Super Classes: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" name="h1">
+          <children name="EClass ObjectLinkContainer"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="5" name="table"/>
+      </children>
+    </rootNode>
+  </file>
+  <file name="AbstractTGGLinkVariable.html">
+    <rootNode name="html">
+      <children xsi:type="MocaTree:Node" name="body">
+        <children xsi:type="MocaTree:Node" index="2" name="h3">
+          <children name="Methods of this class: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="1" name="p"/>
+        <children xsi:type="MocaTree:Node" index="3" name="table"/>
+        <children xsi:type="MocaTree:Node" index="4" name="h3">
+          <children name="All Known Super Classes: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" name="h1">
+          <children name="EClass AbstractTGGLinkVariable"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="5" name="table"/>
+      </children>
+    </rootNode>
+  </file>
+  <file name="TGGLinkVariable.html">
+    <rootNode name="html">
+      <children xsi:type="MocaTree:Node" name="body">
+        <children xsi:type="MocaTree:Node" index="2" name="h3">
+          <children name="Methods of this class: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="1" name="p"/>
+        <children xsi:type="MocaTree:Node" index="3" name="table"/>
+        <children xsi:type="MocaTree:Node" index="4" name="h3">
+          <children name="All Known Super Classes: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" name="h1">
+          <children name="EClass TGGLinkVariable"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="5" name="table">
+          <links targets="//@file.6/@rootNode/@children.0/@children.5"/>
+          <children xsi:type="MocaTree:Node" name="tr">
+            <children xsi:type="MocaTree:Node" name="td">
+              <children name="AbstractTGGLinkVariable"/>
+            </children>
+          </children>
+        </children>
+      </children>
+    </rootNode>
+  </file>
+  <file name="TripleGraphGrammar.html">
+    <rootNode name="html">
+      <children xsi:type="MocaTree:Node" name="body">
+        <children xsi:type="MocaTree:Node" index="2" name="h3">
+          <children name="Methods of this class: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="1" name="p"/>
+        <children xsi:type="MocaTree:Node" index="3" name="table"/>
+        <children xsi:type="MocaTree:Node" index="4" name="h3">
+          <children name="All Known Super Classes: "/>
+        </children>
+        <children xsi:type="MocaTree:Node" name="h1">
+          <children name="EClass TripleGraphGrammar"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="5" name="table"/>
+      </children>
+    </rootNode>
+  </file>
+</MocaTree:Folder>

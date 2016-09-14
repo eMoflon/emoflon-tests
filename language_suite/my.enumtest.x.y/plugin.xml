@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?eclipse version="3.0"?><plugin>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="my.enumtest.x.y.YPackage" genModel="model/Y.genmodel" uri="platform:/plugin/my.enumtest.x.y/model/Y.ecore"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="enm.containing.pkg.z.ZPackage" genModel="model/Y.genmodel" uri="platform:/plugin/my.enumtest.x.y/model/Y.ecore#//enm.containing.pkg.z"/>
-  </extension>
-</plugin>

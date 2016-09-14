@@ -1,9 +1,0 @@
-group Dat;
-
-datFile(entries) ::= <<
-<entries; separator="\n">
->>
-
-entry(value) ::= <<
-<value; separator="\t">
->>

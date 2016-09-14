@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?eclipse version="3.0"?><plugin>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="ProductrequirementsToSimulinkprojectIntegration.ProductrequirementsToSimulinkprojectIntegrationPackage" genModel="model/ProductrequirementsToSimulinkprojectIntegration.genmodel" uri="platform:/plugin/ProductrequirementsToSimulinkprojectIntegration/model/ProductrequirementsToSimulinkprojectIntegration.ecore"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="ProductrequirementsToSimulinkprojectIntegration.Rules.RulesPackage" genModel="model/ProductrequirementsToSimulinkprojectIntegration.genmodel" uri="platform:/plugin/ProductrequirementsToSimulinkprojectIntegration/model/ProductrequirementsToSimulinkprojectIntegration.ecore#//Rules"/>
-  </extension>
-</plugin>

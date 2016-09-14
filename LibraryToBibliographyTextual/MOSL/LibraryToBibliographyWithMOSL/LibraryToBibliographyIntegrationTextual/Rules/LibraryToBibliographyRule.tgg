@@ -1,0 +1,17 @@
+rule LibraryToBibliographyRule {
+	source {
+		++ library : Library
+	}
+	
+	correspondence {
+		++ library <- lib2bib : LibraryToBibliography -> bibliography
+	}
+	
+	target {
+		++ bibliography : Bibliography
+	}
+	
+	constraints {[
+		eq(library.location, bibliography.name)
+	]}
+}

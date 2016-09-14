@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.3.3 (12950 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="50.3470000" minlon="8.7217000" maxlat="50.3489000" maxlon="8.7231000"/>
+ <node id="388575062" visible="true" version="3" changeset="3707550" timestamp="2010-01-25T00:02:05Z" user="wolter" uid="46169" lat="50.3486561" lon="8.7161941"/>
+ <node id="388575030" visible="true" version="3" changeset="3707550" timestamp="2010-01-25T00:02:05Z" user="wolter" uid="46169" lat="50.3475192" lon="8.7261843"/>
+ <node id="388575046" visible="true" version="3" changeset="3707550" timestamp="2010-01-25T00:02:06Z" user="wolter" uid="46169" lat="50.3457912" lon="8.7365565"/>
+ <node id="394065691" visible="true" version="1" changeset="1158874" timestamp="2009-05-11T22:29:09Z" user="wolter" uid="46169" lat="50.3489288" lon="8.7200676"/>
+ <node id="394065697" visible="true" version="1" changeset="1158874" timestamp="2009-05-11T22:29:09Z" user="wolter" uid="46169" lat="50.3489297" lon="8.7215883"/>
+ <node id="394065701" visible="true" version="1" changeset="1158874" timestamp="2009-05-11T22:29:10Z" user="wolter" uid="46169" lat="50.3487767" lon="8.7228234"/>
+ <node id="394065705" visible="true" version="1" changeset="1158874" timestamp="2009-05-11T22:29:10Z" user="wolter" uid="46169" lat="50.3486011" lon="8.7233333"/>
+ <node id="394065708" visible="true" version="1" changeset="1158874" timestamp="2009-05-11T22:29:10Z" user="wolter" uid="46169" lat="50.3481053" lon="8.7246903"/>
+ <node id="394065730" visible="true" version="1" changeset="1158874" timestamp="2009-05-11T22:29:10Z" user="wolter" uid="46169" lat="50.3470688" lon="8.7202251"/>
+ <node id="99076755" visible="true" version="4" changeset="2804282" timestamp="2009-10-10T15:41:23Z" user="Walker" uid="165208" lat="50.3470413" lon="8.7200521"/>
+ <node id="99077451" visible="true" version="3" changeset="1158874" timestamp="2009-05-11T22:29:14Z" user="wolter" uid="46169" lat="50.3476312" lon="8.7255866"/>
+ <node id="79689558" visible="true" version="9" changeset="5216018" timestamp="2010-07-14T11:18:33Z" user="wolter" uid="46169" lat="50.3488109" lon="8.7187485"/>
+ <node id="528001007" visible="true" version="1" changeset="2804282" timestamp="2009-10-10T15:28:10Z" user="Walker" uid="165208" lat="50.3454892" lon="8.7274674"/>
+ <node id="549023369" visible="true" version="1" changeset="2999112" timestamp="2009-10-31T16:59:38Z" user="Walker" uid="165208" lat="50.3467917" lon="8.7230966"/>
+ <node id="619344491" visible="true" version="3" changeset="3808326" timestamp="2010-02-06T20:24:13Z" user="kleinholz" uid="40627" lat="50.3485571" lon="8.7136336"/>
+ <node id="619548749" visible="true" version="1" changeset="3707550" timestamp="2010-01-25T00:01:53Z" user="wolter" uid="46169" lat="50.3487993" lon="8.7226777"/>
+ <node id="619548750" visible="true" version="1" changeset="3707550" timestamp="2010-01-25T00:01:53Z" user="wolter" uid="46169" lat="50.3488697" lon="8.7215629"/>
+ <node id="619548751" visible="true" version="1" changeset="3707550" timestamp="2010-01-25T00:01:53Z" user="wolter" uid="46169" lat="50.3458778" lon="8.7309115"/>
+ <node id="619548752" visible="true" version="1" changeset="3707550" timestamp="2010-01-25T00:01:53Z" user="wolter" uid="46169" lat="50.3472666" lon="8.7322748"/>
+ <node id="619548753" visible="true" version="1" changeset="3707550" timestamp="2010-01-25T00:01:53Z" user="wolter" uid="46169" lat="50.3458975" lon="8.7384875"/>
+ <node id="619548754" visible="true" version="1" changeset="3707550" timestamp="2010-01-25T00:01:53Z" user="wolter" uid="46169" lat="50.3458247" lon="8.7440895"/>
+ <node id="528002613" visible="true" version="2" changeset="15919956" timestamp="2013-04-30T11:44:51Z" user="HoloDuke" uid="75317" lat="50.3471502" lon="8.7217568"/>
+ <node id="79691681" visible="true" version="4" changeset="21542614" timestamp="2014-04-06T23:22:47Z" user="HoloDuke" uid="75317" lat="50.3487872" lon="8.7202964"/>
+ <node id="79691680" visible="true" version="3" changeset="15919956" timestamp="2013-04-30T11:44:51Z" user="HoloDuke" uid="75317" lat="50.3487813" lon="8.7193276"/>
+ <node id="79691682" visible="true" version="3" changeset="15919956" timestamp="2013-04-30T11:44:51Z" user="HoloDuke" uid="75317" lat="50.3488827" lon="8.7212379"/>
+ <node id="2048821291" visible="true" version="1" changeset="14145265" timestamp="2012-12-03T21:21:57Z" user="HoloDuke" uid="75317" lat="50.3517493" lon="8.7231463"/>
+ <node id="79690525" visible="true" version="2" changeset="14145265" timestamp="2012-12-03T21:22:05Z" user="HoloDuke" uid="75317" lat="50.3507154" lon="8.7230601"/>
+ <node id="2060587648" visible="true" version="1" changeset="14230929" timestamp="2012-12-10T20:34:10Z" user="HoloDuke" uid="75317" lat="50.3493133" lon="8.7227073"/>
+ <node id="2060587649" visible="true" version="1" changeset="14230929" timestamp="2012-12-10T20:34:10Z" user="HoloDuke" uid="75317" lat="50.3497577" lon="8.7229617"/>
+ <node id="2060587650" visible="true" version="1" changeset="14230929" timestamp="2012-12-10T20:34:10Z" user="HoloDuke" uid="75317" lat="50.3502358" lon="8.7230285"/>
+ <node id="394065700" visible="true" version="2" changeset="14230929" timestamp="2012-12-10T20:34:20Z" user="HoloDuke" uid="75317" lat="50.3488684" lon="8.7223930"/>
+ <node id="2774114596" visible="true" version="1" changeset="21542614" timestamp="2014-04-06T23:22:09Z" user="HoloDuke" uid="75317" lat="50.3475866" lon="8.7258400"/>
+ <node id="2774114597" visible="true" version="1" changeset="21542614" timestamp="2014-04-06T23:22:09Z" user="HoloDuke" uid="75317" lat="50.3479769" lon="8.7245696"/>
+ <node id="2774114598" visible="true" version="1" changeset="21542614" timestamp="2014-04-06T23:22:09Z" user="HoloDuke" uid="75317" lat="50.3487756" lon="8.7188916"/>
+ <node id="2774114600" visible="true" version="1" changeset="21542614" timestamp="2014-04-06T23:22:09Z" user="HoloDuke" uid="75317" lat="50.3488684" lon="8.7218812"/>
+ <node id="585161149" visible="true" version="2" changeset="21542614" timestamp="2014-04-06T23:22:46Z" user="HoloDuke" uid="75317" lat="50.3475652" lon="8.7260698"/>
+ <node id="79691683" visible="true" version="3" changeset="21542614" timestamp="2014-04-06T23:22:47Z" user="HoloDuke" uid="75317" lat="50.3487676" lon="8.7225792"/>
+ <node id="79691684" visible="true" version="4" changeset="21542614" timestamp="2014-04-06T23:22:47Z" user="HoloDuke" uid="75317" lat="50.3484875" lon="8.7233310"/>
+ <way id="34356102" visible="true" version="4" changeset="2999112" timestamp="2009-10-31T17:00:16Z" user="Walker" uid="165208">
+  <nd ref="528001007"/>
+  <nd ref="549023369"/>
+  <nd ref="528002613"/>
+  <nd ref="394065730"/>
+  <nd ref="99076755"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade4"/>
+ </way>
+ <way id="43484703" visible="true" version="2" changeset="2999112" timestamp="2009-10-31T17:01:50Z" user="Walker" uid="165208">
+  <nd ref="528002613"/>
+  <nd ref="79691684"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade4"/>
+ </way>
+ <way id="48815667" visible="true" version="4" changeset="19827702" timestamp="2014-01-05T17:11:30Z" user="Prince Kassad" uid="192278">
+  <nd ref="619344491"/>
+  <nd ref="388575062"/>
+  <nd ref="619548750"/>
+  <nd ref="619548749"/>
+  <nd ref="388575030"/>
+  <nd ref="619548751"/>
+  <nd ref="619548752"/>
+  <nd ref="388575046"/>
+  <nd ref="619548753"/>
+  <nd ref="619548754"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="estimated"/>
+ </way>
+ <way id="9869501" visible="true" version="8" changeset="21542614" timestamp="2014-04-06T23:22:26Z" user="HoloDuke" uid="75317">
+  <nd ref="79689558"/>
+  <nd ref="2774114598"/>
+  <nd ref="79691680"/>
+  <nd ref="79691681"/>
+  <nd ref="79691682"/>
+  <nd ref="2774114600"/>
+  <nd ref="79691683"/>
+  <nd ref="79691684"/>
+  <nd ref="2774114597"/>
+  <nd ref="99077451"/>
+  <nd ref="2774114596"/>
+  <nd ref="585161149"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade3"/>
+ </way>
+ <way id="194366183" visible="true" version="2" changeset="14230929" timestamp="2012-12-10T20:34:16Z" user="HoloDuke" uid="75317">
+  <nd ref="2048821291"/>
+  <nd ref="79690525"/>
+  <nd ref="2060587650"/>
+  <nd ref="2060587649"/>
+  <nd ref="2060587648"/>
+  <nd ref="394065700"/>
+  <tag k="highway" v="track"/>
+  <tag k="source" v="Bing"/>
+  <tag k="surface" v="grass"/>
+ </way>
+ <way id="34356099" visible="true" version="3" changeset="21542614" timestamp="2014-04-06T23:22:37Z" user="HoloDuke" uid="75317">
+  <nd ref="585161149"/>
+  <nd ref="394065708"/>
+  <nd ref="394065705"/>
+  <nd ref="394065701"/>
+  <nd ref="394065700"/>
+  <nd ref="394065697"/>
+  <nd ref="394065691"/>
+  <nd ref="79689558"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade3"/>
+ </way>
+ <relation id="135585" visible="true" version="14" changeset="19502567" timestamp="2013-12-17T17:57:02Z" user="aul2806" uid="208634">
+  <member type="way" ref="67626176" role=""/>
+  <member type="way" ref="7918612" role=""/>
+  <member type="way" ref="55255044" role=""/>
+  <member type="way" ref="38867150" role=""/>
+  <member type="way" ref="252342987" role=""/>
+  <member type="way" ref="27028946" role=""/>
+  <member type="way" ref="34141191" role=""/>
+  <member type="way" ref="5196787" role=""/>
+  <member type="way" ref="27915171" role=""/>
+  <member type="way" ref="5196786" role=""/>
+  <member type="way" ref="117942446" role=""/>
+  <member type="way" ref="27915169" role=""/>
+  <member type="way" ref="8014990" role=""/>
+  <member type="way" ref="8014991" role=""/>
+  <member type="way" ref="26154664" role=""/>
+  <member type="way" ref="8014993" role=""/>
+  <member type="way" ref="55255041" role=""/>
+  <member type="way" ref="33580572" role=""/>
+  <member type="way" ref="33580529" role=""/>
+  <member type="way" ref="8076327" role=""/>
+  <member type="way" ref="8077107" role=""/>
+  <member type="way" ref="30802871" role=""/>
+  <member type="way" ref="190316546" role=""/>
+  <member type="way" ref="8076332" role=""/>
+  <member type="way" ref="67626172" role=""/>
+  <member type="way" ref="67626179" role=""/>
+  <member type="way" ref="26082651" role=""/>
+  <member type="way" ref="26082413" role=""/>
+  <member type="way" ref="67626173" role=""/>
+  <member type="way" ref="42311867" role=""/>
+  <member type="way" ref="34924077" role=""/>
+  <member type="way" ref="67626174" role=""/>
+  <member type="way" ref="34356099" role=""/>
+  <member type="way" ref="34386222" role=""/>
+  <member type="way" ref="28984509" role=""/>
+  <member type="way" ref="34386224" role=""/>
+  <member type="way" ref="24613238" role=""/>
+  <member type="way" ref="34356103" role=""/>
+  <member type="way" ref="34386226" role=""/>
+  <member type="way" ref="34386228" role=""/>
+  <member type="way" ref="24612482" role=""/>
+  <member type="way" ref="8029283" role=""/>
+  <member type="way" ref="38973543" role=""/>
+  <member type="way" ref="38973544" role=""/>
+  <member type="way" ref="24612495" role=""/>
+  <member type="way" ref="34356106" role=""/>
+  <member type="way" ref="34356104" role=""/>
+  <member type="way" ref="24600239" role=""/>
+  <member type="way" ref="34386231" role=""/>
+  <member type="way" ref="29017417" role=""/>
+  <member type="way" ref="34386240" role=""/>
+  <member type="way" ref="27163238" role=""/>
+  <member type="way" ref="34386241" role=""/>
+  <member type="way" ref="79542018" role=""/>
+  <member type="way" ref="39524975" role=""/>
+  <member type="way" ref="26682756" role=""/>
+  <member type="way" ref="26277072" role=""/>
+  <member type="way" ref="34386244" role=""/>
+  <member type="way" ref="105249710" role=""/>
+  <member type="way" ref="26277102" role=""/>
+  <member type="way" ref="34386243" role=""/>
+  <member type="way" ref="59093659" role=""/>
+  <tag k="description" v="Friedberg Bf. - Dicker Turm - Steinernes Kreuz - A5 -Forsthaus Winterstein - Kastell Kaisergrube - Gaulskopf"/>
+  <tag k="distance" v="10.9 km"/>
+  <tag k="name" v="Taunusklub Route 73"/>
+  <tag k="network" v="rwn"/>
+  <tag k="operator" v="Taunusklub"/>
+  <tag k="osmc:symbol" v="red:white:red_cross"/>
+  <tag k="route" v="hiking"/>
+  <tag k="symbol" v="red cross on white ground"/>
+  <tag k="type" v="route"/>
+ </relation>
+ <relation id="393689" visible="true" version="22" changeset="22935575" timestamp="2014-06-14T23:05:28Z" user="FvGordon" uid="161619">
+  <member type="way" ref="48837460" role="outer"/>
+  <member type="way" ref="288118686" role="outer"/>
+  <member type="way" ref="288118687" role="outer"/>
+  <member type="way" ref="261856686" role="outer"/>
+  <member type="way" ref="278537964" role="outer"/>
+  <member type="way" ref="278537968" role="outer"/>
+  <member type="way" ref="255429241" role="outer"/>
+  <member type="way" ref="48815667" role="outer"/>
+  <member type="way" ref="48815665" role="outer"/>
+  <member type="way" ref="48815628" role="outer"/>
+  <member type="way" ref="48837459" role="outer"/>
+  <member type="way" ref="255429244" role="outer"/>
+  <member type="way" ref="255429249" role="outer"/>
+  <member type="way" ref="52294256" role="outer"/>
+  <member type="way" ref="261848547" role="outer"/>
+  <member type="way" ref="261845065" role="outer"/>
+  <member type="way" ref="52294252" role="outer"/>
+  <member type="way" ref="261848549" role="outer"/>
+  <member type="way" ref="52297917" role="outer"/>
+  <member type="way" ref="261848546" role="outer"/>
+  <member type="way" ref="52297913" role="outer"/>
+  <member type="way" ref="261848544" role="outer"/>
+  <member type="way" ref="262866964" role="outer"/>
+  <member type="way" ref="52040039" role="outer"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="de:amtlicher_gemeindeschluessel" v="06440008"/>
+  <tag k="de:plz" v="61169"/>
+  <tag k="de:regionalschluessel" v="064400008008"/>
+  <tag k="name" v="Friedberg"/>
+  <tag k="name:prefix" v="Kreisstadt"/>
+  <tag k="name:suffix" v="(Hessen)"/>
+  <tag k="TMC:cid_58:tabcd_1:Class" v="Area"/>
+  <tag k="TMC:cid_58:tabcd_1:LCLversion" v="8.00"/>
+  <tag k="TMC:cid_58:tabcd_1:LocationCode" v="4198"/>
+  <tag k="type" v="boundary"/>
+  <tag k="wikidata" v="Q516485"/>
+  <tag k="wikipedia" v="de:Friedberg (Hessen)"/>
+ </relation>
+ <relation id="1188771" visible="true" version="12" changeset="22935575" timestamp="2014-06-14T23:05:27Z" user="FvGordon" uid="161619">
+  <member type="way" ref="52294256" role="outer"/>
+  <member type="way" ref="261848547" role="outer"/>
+  <member type="way" ref="261845065" role="outer"/>
+  <member type="way" ref="52294252" role="outer"/>
+  <member type="way" ref="261848549" role="outer"/>
+  <member type="way" ref="52297917" role="outer"/>
+  <member type="way" ref="261848546" role="outer"/>
+  <member type="way" ref="52297913" role="outer"/>
+  <member type="way" ref="261848544" role="outer"/>
+  <member type="way" ref="262866964" role="outer"/>
+  <member type="way" ref="52040039" role="outer"/>
+  <member type="way" ref="48837460" role="outer"/>
+  <member type="way" ref="288118688" role="outer"/>
+  <member type="way" ref="288118687" role="outer"/>
+  <member type="way" ref="261856686" role="outer"/>
+  <member type="way" ref="278537964" role="outer"/>
+  <member type="way" ref="278537966" role="outer"/>
+  <member type="way" ref="255429241" role="outer"/>
+  <member type="way" ref="48815667" role="outer"/>
+  <member type="way" ref="48815665" role="outer"/>
+  <member type="way" ref="48815628" role="outer"/>
+  <member type="way" ref="48837459" role="outer"/>
+  <member type="way" ref="255429244" role="outer"/>
+  <member type="way" ref="255429249" role="outer"/>
+  <tag k="boundary" v="postal_code"/>
+  <tag k="note" v="61169 Friedberg (Hessen)"/>
+  <tag k="postal_code" v="61169"/>
+  <tag k="postal_code_level" v="8"/>
+  <tag k="source" v="http://wiki.openstreetmap.org/wiki/Import/Catalogue/Postleitzahlen_Deutschland_2010"/>
+  <tag k="type" v="boundary"/>
+ </relation>
+ <relation id="2984587" visible="true" version="2" changeset="17212020" timestamp="2013-08-04T09:00:29Z" user="black_bike" uid="18130">
+  <member type="relation" ref="167408" role="part"/>
+  <member type="relation" ref="450123" role="part"/>
+  <member type="relation" ref="385683" role="part"/>
+  <member type="relation" ref="450107" role="part"/>
+  <member type="relation" ref="450115" role="part"/>
+  <member type="relation" ref="393689" role="part"/>
+  <member type="relation" ref="450117" role="part"/>
+  <member type="relation" ref="446510" role="part"/>
+  <member type="relation" ref="450118" role="part"/>
+  <member type="relation" ref="450119" role="part"/>
+  <member type="relation" ref="447064" role="part"/>
+  <member type="relation" ref="450113" role="part"/>
+  <member type="relation" ref="450121" role="part"/>
+  <member type="relation" ref="446620" role="part"/>
+  <member type="relation" ref="450122" role="part"/>
+  <member type="relation" ref="446621" role="part"/>
+  <member type="relation" ref="450114" role="part"/>
+  <tag k="election:parliament" v="Deutscher Bundestag"/>
+  <tag k="election:part" v="Wahlkreis"/>
+  <tag k="election:year" v="2013"/>
+  <tag k="is_in:state_code" v="HE"/>
+  <tag k="name" v="Wetterau I"/>
+  <tag k="ref" v="177"/>
+  <tag k="type" v="election"/>
+  <tag k="wikipedia:de" v="Bundestagswahlkreis Wetterau I"/>
+ </relation>
+ <relation id="3420302" visible="true" version="1" changeset="19827702" timestamp="2014-01-05T17:11:20Z" user="Prince Kassad" uid="192278">
+  <member type="way" ref="48815665" role="outer"/>
+  <member type="way" ref="48815628" role="outer"/>
+  <member type="way" ref="48837459" role="outer"/>
+  <member type="way" ref="255429242" role="outer"/>
+  <member type="way" ref="48815667" role="outer"/>
+  <tag k="admin_level" v="9"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="name" v="Ockstadt"/>
+  <tag k="type" v="boundary"/>
+ </relation>
+ <relation id="1188760" visible="true" version="10" changeset="25186435" timestamp="2014-09-02T16:58:42Z" user="Prince Kassad" uid="192278">
+  <member type="way" ref="48815675" role="outer"/>
+  <member type="way" ref="278539364" role="outer"/>
+  <member type="way" ref="278539363" role="outer"/>
+  <member type="way" ref="48815667" role="outer"/>
+  <member type="way" ref="255429241" role="outer"/>
+  <member type="way" ref="278537966" role="outer"/>
+  <member type="way" ref="278537964" role="outer"/>
+  <member type="way" ref="261856686" role="outer"/>
+  <member type="way" ref="288118687" role="outer"/>
+  <member type="way" ref="288118688" role="outer"/>
+  <member type="way" ref="48837460" role="outer"/>
+  <member type="way" ref="34049251" role="outer"/>
+  <member type="way" ref="33912763" role="outer"/>
+  <member type="way" ref="37296890" role="outer"/>
+  <member type="way" ref="37296891" role="outer"/>
+  <member type="way" ref="301517238" role="outer"/>
+  <member type="way" ref="52034929" role="outer"/>
+  <member type="way" ref="33913507" role="outer"/>
+  <tag k="boundary" v="postal_code"/>
+  <tag k="note" v="61231 Bad Nauheim"/>
+  <tag k="postal_code" v="61231"/>
+  <tag k="postal_code_level" v="8"/>
+  <tag k="source" v="http://wiki.openstreetmap.org/wiki/Import/Catalogue/Postleitzahlen_Deutschland_2010"/>
+  <tag k="type" v="boundary"/>
+ </relation>
+ <relation id="167408" visible="true" version="22" changeset="25186435" timestamp="2014-09-02T16:58:43Z" user="Prince Kassad" uid="192278">
+  <member type="way" ref="301517238" role="outer"/>
+  <member type="way" ref="37296891" role="outer"/>
+  <member type="way" ref="37296890" role="outer"/>
+  <member type="way" ref="33912763" role="outer"/>
+  <member type="way" ref="34049251" role="outer"/>
+  <member type="way" ref="48837460" role="outer"/>
+  <member type="way" ref="288118686" role="outer"/>
+  <member type="way" ref="288118687" role="outer"/>
+  <member type="way" ref="261856686" role="outer"/>
+  <member type="way" ref="278537964" role="outer"/>
+  <member type="way" ref="278537968" role="outer"/>
+  <member type="way" ref="255429241" role="outer"/>
+  <member type="way" ref="48815667" role="outer"/>
+  <member type="way" ref="278539363" role="outer"/>
+  <member type="way" ref="36770640" role="outer"/>
+  <member type="way" ref="48815675" role="outer"/>
+  <member type="way" ref="33913507" role="outer"/>
+  <member type="way" ref="52034929" role="outer"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="de:amtlicher_gemeindeschluessel" v="06440002"/>
+  <tag k="de:plz" v="61231"/>
+  <tag k="de:regionalschluessel" v="064400002002"/>
+  <tag k="name" v="Bad Nauheim"/>
+  <tag k="name:prefix" v="Stadt"/>
+  <tag k="source" v="estimated"/>
+  <tag k="TMC:cid_58:tabcd_1:Class" v="Area"/>
+  <tag k="TMC:cid_58:tabcd_1:LCLversion" v="8.00"/>
+  <tag k="TMC:cid_58:tabcd_1:LocationCode" v="37354"/>
+  <tag k="type" v="boundary"/>
+  <tag k="wikidata" v="Q16105"/>
+  <tag k="wikipedia" v="de:Bad Nauheim"/>
+ </relation>
+ <relation id="2962174" visible="true" version="5" changeset="22063732" timestamp="2014-05-01T13:09:25Z" user="FvGordon" uid="161619">
+  <member type="way" ref="36770639" role="outer"/>
+  <member type="way" ref="36770640" role="outer"/>
+  <member type="way" ref="278539363" role="outer"/>
+  <member type="way" ref="48815667" role="outer"/>
+  <member type="way" ref="255429241" role="outer"/>
+  <member type="way" ref="278537968" role="outer"/>
+  <member type="way" ref="278537964" role="outer"/>
+  <member type="way" ref="36770638" role="outer"/>
+  <member type="way" ref="36770634" role="outer"/>
+  <member type="way" ref="36770633" role="outer"/>
+  <member type="way" ref="33844993" role="outer"/>
+  <member type="way" ref="36770641" role="outer"/>
+  <tag k="admin_level" v="9"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="name" v="Bad Nauheim"/>
+  <tag k="type" v="boundary"/>
+ </relation>
+</osm>

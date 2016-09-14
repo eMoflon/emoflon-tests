@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?eclipse version="3.0"?><plugin>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="ClassInhHier2DB.ClassInhHier2DBPackage" genModel="model/ClassInhHier2DB.genmodel" uri="platform:/plugin/ClassInhHier2DB/model/ClassInhHier2DB.ecore"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="ClassInhHier2DB.Rules.RulesPackage" genModel="model/ClassInhHier2DB.genmodel" uri="platform:/plugin/ClassInhHier2DB/model/ClassInhHier2DB.ecore#//Rules"/>
-  </extension>
-</plugin>

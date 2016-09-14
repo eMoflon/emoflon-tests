@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<CDWithOrderedAttrs:ClazzDiagram
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:CDWithOrderedAttrs="platform:/plugin/CDWithOrderedAttrs/model/CDWithOrderedAttrs.ecore#/">
+  <clazz name="super">
+    <attributes
+        next="#//@clazz.0/@attributes.1"
+        name="first"/>
+    <attributes
+        name="third"/>
+  </clazz>
+  <clazz super="#//@clazz.0"
+      name="sub"/>
+</CDWithOrderedAttrs:ClazzDiagram>

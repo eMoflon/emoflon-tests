@@ -1,0 +1,10 @@
+Job -> [] {
+	@mode[r]
+	@properties[
+		_id!
+		customer_id*
+		machine_id*
+		description-
+		status*
+	]
+}

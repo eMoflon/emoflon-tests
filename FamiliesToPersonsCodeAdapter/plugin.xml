@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><plugin>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="FamiliesToPersonsCodeAdapter.FamiliesToPersonsCodeAdapterPackage" genModel="model/FamiliesToPersonsCodeAdapter.genmodel" uri="platform:/plugin/FamiliesToPersonsCodeAdapter/model/FamiliesToPersonsCodeAdapter.ecore"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="FamiliesToPersonsCodeAdapter.Rules.RulesPackage" genModel="model/FamiliesToPersonsCodeAdapter.genmodel" uri="platform:/plugin/FamiliesToPersonsCodeAdapter/model/FamiliesToPersonsCodeAdapter.ecore#//Rules"/>
+  </extension>
+</plugin>

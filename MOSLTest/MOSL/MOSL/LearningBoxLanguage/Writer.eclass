@@ -1,0 +1,1 @@
+datatype Writer := 'java.io.Writer'

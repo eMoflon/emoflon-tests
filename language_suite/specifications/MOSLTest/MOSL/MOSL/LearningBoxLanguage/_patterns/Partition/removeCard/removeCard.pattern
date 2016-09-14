@@ -1,7 +1,0 @@
-pattern removeCard {
-	@this : Partition {
-		-- -card-> card
-	}
-	
-	-- @card : Card
-}

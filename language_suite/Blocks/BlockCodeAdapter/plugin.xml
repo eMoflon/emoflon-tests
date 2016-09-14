@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?eclipse version="3.0"?><plugin>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="BlockCodeAdapter.BlockCodeAdapterPackage" genModel="model/BlockCodeAdapter.genmodel" uri="platform:/plugin/BlockCodeAdapter/model/BlockCodeAdapter.ecore"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="BlockCodeAdapter.Rules.RulesPackage" genModel="model/BlockCodeAdapter.genmodel" uri="platform:/plugin/BlockCodeAdapter/model/BlockCodeAdapter.ecore#//Rules"/>
-  </extension>
-</plugin>

@@ -1,0 +1,8 @@
+pattern loopOverAllResearchers {
+
+	@bibliography : ../BibliographyLanguage/Bibliography {
+		 -researcher-> aResearcher
+	}
+	
+	aResearcher : ../BibliographyLanguage/Researcher
+}  

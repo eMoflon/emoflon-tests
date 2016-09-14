@@ -1,0 +1,27 @@
+group Db;
+
+main(root) ::= <<
+<root.name> {
+	<invokeTemplatesWithNodeName(root.children)>
+}
+>>
+
+MODE_TOKEN() ::= <<
+@mode[<nameOfFirstChild()>]
+>>
+
+PATH_TOKEN() ::= <<
+@path[<nameOfFirstChild()>]
+>>
+
+URI_TOKEN() ::= <<
+@url[<nameOfFirstChild()>]
+>>
+
+nameOfFirstChild() ::= <<
+<first(it.children).name>
+>>
+
+invokeTemplatesWithNodeName(nodes) ::= <<
+<nodes : {<it : (it.name)()>}; separator="\n">	
+>>

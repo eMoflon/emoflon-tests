@@ -1,6 +1,0 @@
-
-task {
-	run(){ 
-		refresh_visual_studio::run()
-	}
-}

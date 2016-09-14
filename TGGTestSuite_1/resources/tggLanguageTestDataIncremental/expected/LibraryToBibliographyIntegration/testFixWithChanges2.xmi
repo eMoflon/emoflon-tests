@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LibraryLanguage:Library xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:LibraryLanguage="platform:/plugin/LibraryLanguage/model/LibraryLanguage.ecore" location="NewES" id="5">
+  <author name="tony" age="30"/>
+  <author name="erhan" age="25"/>
+</LibraryLanguage:Library>

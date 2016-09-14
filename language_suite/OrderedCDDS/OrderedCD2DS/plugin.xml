@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?eclipse version="3.0"?><plugin>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="OrderedCD2DS.OrderedCD2DSPackage" genModel="model/OrderedCD2DS.genmodel" uri="platform:/plugin/OrderedCD2DS/model/OrderedCD2DS.ecore"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="OrderedCD2DS.Rules.RulesPackage" genModel="model/OrderedCD2DS.genmodel" uri="platform:/plugin/OrderedCD2DS/model/OrderedCD2DS.ecore#//Rules"/>
-  </extension>
-</plugin>

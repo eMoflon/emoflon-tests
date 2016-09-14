@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ProcessDefinition:SystemModule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ProcessDefinition="http://www.moflon.org.ProcessDefinition" allTasks="//@allModules.0/@tasks.0 //@allModules.0/@tasks.1 //@allModules.0/@tasks.2 //@allModules.0/@tasks.3 //@allModules.0/@tasks.4 //@allModules.1/@tasks.0 //@allModules.1/@tasks.1 //@allModules.1/@tasks.2 //@allModules.1/@tasks.3 //@allModules.1/@tasks.4 //@allModules.2/@tasks.0 //@allModules.2/@tasks.1 //@allModules.2/@tasks.2 //@allModules.2/@tasks.3 //@allModules.2/@tasks.4 //@allModules.3/@tasks.0 //@allModules.3/@tasks.1 //@allModules.3/@tasks.2 //@allModules.3/@tasks.3 //@allModules.3/@tasks.4 //@allModules.4/@tasks.0 //@allModules.4/@tasks.1 //@allModules.4/@tasks.2 //@allModules.4/@tasks.3 //@allModules.4/@tasks.4">
+  <allModules description="0">
+    <tasks systemModule="/" id="0"/>
+    <tasks systemModule="/" id="1"/>
+    <tasks systemModule="/" id="2"/>
+    <tasks systemModule="/" id="3"/>
+    <tasks systemModule="/" id="4"/>
+  </allModules>
+  <allModules description="1">
+    <tasks systemModule="/" id="0"/>
+    <tasks systemModule="/" id="1"/>
+    <tasks systemModule="/" id="2"/>
+    <tasks systemModule="/" id="3"/>
+    <tasks systemModule="/" id="4"/>
+  </allModules>
+  <allModules description="2">
+    <tasks systemModule="/" id="0"/>
+    <tasks systemModule="/" id="1"/>
+    <tasks systemModule="/" id="2"/>
+    <tasks systemModule="/" id="3"/>
+    <tasks systemModule="/" id="4"/>
+  </allModules>
+  <allModules description="3">
+    <tasks systemModule="/" id="0"/>
+    <tasks systemModule="/" id="1"/>
+    <tasks systemModule="/" id="2"/>
+    <tasks systemModule="/" id="3"/>
+    <tasks systemModule="/" id="4"/>
+  </allModules>
+  <allModules description="4">
+    <tasks systemModule="/" id="0"/>
+    <tasks systemModule="/" id="1"/>
+    <tasks systemModule="/" id="2"/>
+    <tasks systemModule="/" id="3"/>
+    <tasks systemModule="/" id="4"/>
+  </allModules>
+</ProcessDefinition:SystemModule>

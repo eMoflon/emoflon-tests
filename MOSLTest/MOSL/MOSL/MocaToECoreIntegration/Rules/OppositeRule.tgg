@@ -1,0 +1,42 @@
+rule OppositeRule {
+	source {
+		mref1 : Node {
+			++ -attribute-> mref1OppositeGuid
+		}
+		
+		++ mref1OppositeGuid : Attribute {
+			mref1OppositeGuid.name := "oppositeGuid"
+			
+			 -> mref2
+		}
+		
+		@mref2 : Node {
+			-attribute-> mref2Guid
+		}
+		
+		mref2Guid : Attribute {
+			mref2Guid.name == "guid"
+		}
+	}
+	
+	correspondence {
+		mref1 <- r1 : MReferenceToEReference -> eref1 
+		mref2 <- r2 : MReferenceToEReference -> eref2 
+	}
+	
+	target {
+		eref1 : EReference {
+			++ -eOpposite-> eref2
+		}
+		
+		eref2 : EReference {}
+	}
+	
+	constraints {[
+		eq(mref1OppositeGuid.value, mref2Guid.value)
+	]}
+	
+	operations {
+		bindMref2FromMref1OppositeGuid (mref1OppositeGuid : source/Attribute) : /TGGRuntime/EObjectContainer
+	}
+}

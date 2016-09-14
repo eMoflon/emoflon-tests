@@ -1,0 +1,275 @@
+#import "platform:/plugin/BoardGameLanguage_eMoflonTutorial/model/BoardGameLanguage_eMoflonTutorial.ecore"
+#import "platform:/plugin/MocaTree/model/MocaTree.ecore"
+
+#schema BoardGameTGG_eMoflonTutorial
+
+#source {
+	BoardGameLanguage_eMoflonTutorial
+}
+
+#target {
+	MocaTree
+}
+
+#correspondence {
+	FieldToNode {
+		#src->BoardGameLanguage_eMoflonTutorial.Field
+		#trg->MocaTree.Node
+	}
+	BoardToNode {
+		#src->BoardGameLanguage_eMoflonTutorial.Board
+		#trg->MocaTree.Node
+	}
+}
+
+#attributeConditions {
+	stringToInt(1:EInt, 0:EString) {
+		#sync: BB, FB, BF
+		#gen: BF, FF, FB, BB
+	}
+	addSuffix(0:EString, 2:EString, 1:EString) {
+		#sync: BBB, BBF, FBB, BFB
+		#gen: FBB, BFB, FBF, BBB, FFF, BBF, BFF
+	}
+}
+
+
+#using BoardGameTGG_eMoflonTutorial.*
+
+#rule FieldToNodeAllOther #with BoardGameTGG_eMoflonTutorial
+
+#source {
+	leftNeighbor:BoardGameLanguage_eMoflonTutorial.Field {
+		- board->board
+		++ - right->field
+	}
+	++field:BoardGameLanguage_eMoflonTutorial.Field {
+		++ - board->board
+	}
+	topNeighbor:BoardGameLanguage_eMoflonTutorial.Field {
+		++ - bottom->field
+		- board->board
+	}
+	board:BoardGameLanguage_eMoflonTutorial.Board
+}
+
+#target {
+	rowNode:MocaTree.Node {
+		index != 0
+		name == "ROW"
+		- parentNode->boardNode
+	}
+	++columnNode:MocaTree.Node {
+		name := "COLUMN"
+		++ - parentNode->rowNode
+	}
+	boardNode:MocaTree.Node {
+		name == "BOARD"
+	}
+}
+
+#correspondence {
+	++ fToN :FieldToNode {
+		#src->field
+		#trg->columnNode
+	}
+	bToN :BoardToNode {
+		#src->board
+		#trg->boardNode
+	}
+}
+
+
+#using BoardGameTGG_eMoflonTutorial.*
+
+#rule BoardToBoardNode #with BoardGameTGG_eMoflonTutorial
+
+#source {
+	++board:BoardGameLanguage_eMoflonTutorial.Board
+	++topLeftField:BoardGameLanguage_eMoflonTutorial.Field {
+		col := 0
+		row := 0
+		++ - board->board
+	}
+}
+
+#target {
+	++colsNode:MocaTree.Node {
+		index := 1
+		name := "COLS"
+		++ - parentNode->dimensionNode
+	}
+	++file:MocaTree.File
+	++dimensionNode:MocaTree.Node {
+		index := 0
+		name := "DIMENSIONS"
+		++ - parentNode->boardSpecNode
+	}
+	++columnCountNode:MocaTree.Node {
+		index := 0
+		++ - parentNode->colsNode
+	}
+	++boardNode:MocaTree.Node {
+		name := "BOARD"
+		index := 1
+		++ - parentNode->boardSpecNode
+	}
+	++topLeftFieldNode:MocaTree.Node {
+		index := 0
+		name := "COLUMN"
+		++ - parentNode->topRowNode
+	}
+	++topRowNode:MocaTree.Node {
+		index := 0
+		name := "ROW"
+		++ - parentNode->boardNode
+	}
+	++rowsNode:MocaTree.Node {
+		index := 0
+		name := "ROWS"
+		++ - parentNode->dimensionNode
+	}
+	++rowCountNode:MocaTree.Node {
+		index := 0
+		++ - parentNode->rowsNode
+	}
+	++boardSpecNode:MocaTree.Node {
+		name := "BOARD_SPEC"
+		++ - file->file
+	}
+}
+
+#correspondence {
+	++ fToN :FieldToNode {
+		#src->topLeftField
+		#trg->topLeftFieldNode
+	}
+	++ bToN :BoardToNode {
+		#src->board
+		#trg->boardNode
+	}
+}
+
+#attributeConditions {
+	stringToInt (columnCountNode.name, board.width)
+	stringToInt (rowCountNode.name, board.height)
+	addSuffix (board.name, ".board", file.name)
+}
+
+
+#using BoardGameTGG_eMoflonTutorial.*
+
+#rule CreateFigureNode #with BoardGameTGG_eMoflonTutorial
+
+#source {
+	field:BoardGameLanguage_eMoflonTutorial.Field
+	++place:BoardGameLanguage_eMoflonTutorial.Place {
+		++ - field->field
+	}
+}
+
+#target {
+	fieldNode:MocaTree.Node {
+		name == "COLUMN"
+	}
+	++figureNode:MocaTree.Node {
+		++ - parentNode->fieldNode
+	}
+}
+
+#correspondence {
+	fToN :FieldToNode {
+		#src->field
+		#trg->fieldNode
+	}
+}
+
+
+#using BoardGameTGG_eMoflonTutorial.*
+
+#rule FieldToNodeTopRow #with BoardGameTGG_eMoflonTutorial
+
+#source {
+	++field:BoardGameLanguage_eMoflonTutorial.Field {
+		row := 0
+		++ - board->board
+	}
+	leftNeighbor:BoardGameLanguage_eMoflonTutorial.Field {
+		row == 0
+		- board->board
+		++ - right->field
+	}
+	board:BoardGameLanguage_eMoflonTutorial.Board
+}
+
+#target {
+	rowNode:MocaTree.Node {
+		name == "ROW"
+		index == 0
+		- parentNode->boardNode
+	}
+	boardNode:MocaTree.Node {
+		name == "BOARD"
+	}
+	++columnNode:MocaTree.Node {
+		name := "COLUMN"
+		++ - parentNode->rowNode
+	}
+}
+
+#correspondence {
+	bToN :BoardToNode {
+		#src->board
+		#trg->boardNode
+	}
+	++ fToN :FieldToNode {
+		#src->field
+		#trg->columnNode
+	}
+}
+
+
+#using BoardGameTGG_eMoflonTutorial.*
+
+#rule FieldToNodeLeftColumn #with BoardGameTGG_eMoflonTutorial
+
+#source {
+	topNeighbor:BoardGameLanguage_eMoflonTutorial.Field {
+		col == 0
+		- board->board
+		++ - bottom->field
+	}
+	board:BoardGameLanguage_eMoflonTutorial.Board
+	++field:BoardGameLanguage_eMoflonTutorial.Field {
+		col := 0
+		++ - board->board
+	}
+}
+
+#target {
+	boardNode:MocaTree.Node {
+		name == "BOARD"
+	}
+	++rowNode:MocaTree.Node {
+		name := "ROW"
+		++ - parentNode->boardNode
+	}
+	++columnNode:MocaTree.Node {
+		name := "COLUMN"
+		index := 0
+		++ - parentNode->rowNode
+	}
+}
+
+#correspondence {
+	bToN :BoardToNode {
+		#src->board
+		#trg->boardNode
+	}
+	++ fToN :FieldToNode {
+		#src->field
+		#trg->columnNode
+	}
+}
+
+

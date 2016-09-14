@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<DocumentModel:Documentation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:DocumentModel="platform:/plugin/DocumentModel/model/DocumentModel.ecore">
+  <docs revDirectLinks="//@docs.4" revAllLinks="//@docs.4 //@docs.5 //@docs.2 //@docs.1" name="Observable"/>
+  <docs directLinks="//@docs.5" allLinks="//@docs.5 //@docs.0 //@docs.4 //@docs.3" name="Manager"/>
+  <docs directLinks="//@docs.5" allLinks="//@docs.5 //@docs.4 //@docs.0 //@docs.3" name="Worker"/>
+  <docs revDirectLinks="//@docs.4" revAllLinks="//@docs.4 //@docs.5 //@docs.2 //@docs.1" name="Serializable"/>
+  <docs directLinks="//@docs.0 //@docs.3" revDirectLinks="//@docs.5" allLinks="//@docs.0 //@docs.3" revAllLinks="//@docs.5 //@docs.2 //@docs.1" name="Person"/>
+  <docs directLinks="//@docs.4" revDirectLinks="//@docs.2 //@docs.1" allLinks="//@docs.4 //@docs.3 //@docs.0" revAllLinks="//@docs.2 //@docs.1" name="Emplyoee"/>
+</DocumentModel:Documentation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DoubleLinkedListLanguage="http://www.moflon.org.DoubleLinkedListLanguage" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xsi:schemaLocation="http://www.moflon.org.DoubleLinkedListLanguage ../model/DoubleLinkedListLanguage.ecore" xmi:id="_2Z5uAArXEeCx4rYVy14I4A" type="Xml" name="example.xmi_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_4iGJkArXEeCx4rYVy14I4A" type="1003">
+    <children xmi:type="notation:Node" xmi:id="_4iP6kArXEeCx4rYVy14I4A" type="4002"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_4iGJkQrXEeCx4rYVy14I4A"/>
+    <element xmi:type="DoubleLinkedListLanguage:Node" href="example.xmi#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4iGJkgrXEeCx4rYVy14I4A" x="175" y="445"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_6Fyw8ArXEeCx4rYVy14I4A" type="1003">
+    <children xmi:type="notation:Node" xmi:id="_6Fyw8wrXEeCx4rYVy14I4A" type="4002"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_6Fyw8QrXEeCx4rYVy14I4A"/>
+    <element xmi:type="DoubleLinkedListLanguage:Node" href="example.xmi#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6Fyw8grXEeCx4rYVy14I4A" x="220" y="250"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_7Ro5AArXEeCx4rYVy14I4A" type="1003">
+    <children xmi:type="notation:Node" xmi:id="_7Ro5AwrXEeCx4rYVy14I4A" type="4002"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_7Ro5AQrXEeCx4rYVy14I4A"/>
+    <element xmi:type="DoubleLinkedListLanguage:Node" href="example.xmi#//@elements.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7Ro5AgrXEeCx4rYVy14I4A" x="550" y="340"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_2Z5uAQrXEeCx4rYVy14I4A"/>
+  <element xmi:type="DoubleLinkedListLanguage:List" href="example.xmi#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_9vI2MArXEeCx4rYVy14I4A" type="3003" source="_4iGJkArXEeCx4rYVy14I4A" target="_6Fyw8ArXEeCx4rYVy14I4A">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_9vI2MQrXEeCx4rYVy14I4A"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_9vI2MgrXEeCx4rYVy14I4A"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9vI2MwrXEeCx4rYVy14I4A" points="[39, -19, -193, 79]$[275, -92, 43, 6]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_-Rac0ArXEeCx4rYVy14I4A" type="3003" source="_6Fyw8ArXEeCx4rYVy14I4A" target="_7Ro5AArXEeCx4rYVy14I4A">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_-Rac0QrXEeCx4rYVy14I4A"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-Rac0grXEeCx4rYVy14I4A"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-Rac0wrXEeCx4rYVy14I4A" points="[-22, -8, 128, 49]$[-152, -65, -2, -8]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-Rac1ArXEeCx4rYVy14I4A" id="(0.3488372093023256,0.2)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-Rac1QrXEeCx4rYVy14I4A" id="(0.46835443037974683,0.2)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_KZ6fsArYEeCx4rYVy14I4A" type="3003" source="_6Fyw8ArXEeCx4rYVy14I4A" target="_4iGJkArXEeCx4rYVy14I4A">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_KZ6fsQrYEeCx4rYVy14I4A"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_KZ6fsgrYEeCx4rYVy14I4A"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KZ6fswrYEeCx4rYVy14I4A" points="[-43, 18, 189, -80]$[-193, 81, 39, -17]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_KjJ7QArYEeCx4rYVy14I4A" type="3003" source="_7Ro5AArXEeCx4rYVy14I4A" target="_6Fyw8ArXEeCx4rYVy14I4A">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_KjJ7QQrYEeCx4rYVy14I4A"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_KjJ7QgrYEeCx4rYVy14I4A" fontName="Times New Roman CE"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KjJ7QwrYEeCx4rYVy14I4A" points="[40, 14, -121, -43]$[118, 41, -43, -16]"/>
+  </edges>
+</notation:Diagram>

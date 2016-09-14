@@ -1,0 +1,251 @@
+#import "platform:/plugin/PetriNetLanguage/model/PetriNetLanguage.ecore"
+#import "platform:/plugin/StatechartLanguage/model/StatechartLanguage.ecore"
+
+#schema PetriNetToStatechartIntegration
+
+#source {
+	PetriNetLanguage
+}
+
+#target {
+	StatechartLanguage
+}
+
+#correspondence {
+	TransitionToHyperEdge {
+		#src->PetriNetLanguage.Transition
+		#trg->StatechartLanguage.HyperEdge
+	}
+	NetToStatechart {
+		#src->PetriNetLanguage.Net
+		#trg->StatechartLanguage.Statechart
+	}
+	NetToCompound {
+		#src->PetriNetLanguage.Net
+		#trg->StatechartLanguage.Compound
+	}
+	PlaceToBasic {
+		#src->PetriNetLanguage.Place
+		#trg->StatechartLanguage.Basic
+	}
+}
+
+#attributeConditions {
+	eq(0: , 1: ) {
+		#sync: BF, BB, FB
+		#gen: BB, FF, FB, BF
+	}
+}
+
+
+#using PetriNetToStatechartIntegration.*
+
+#rule TransitionToHyperEdgeRule #with PetriNetToStatechartIntegration
+
+#source {
+	++transition:PetriNetLanguage.Transition {
+		++ - cnet->net
+	}
+	net:PetriNetLanguage.Net
+}
+
+#target {
+	++hyperEdge:StatechartLanguage.HyperEdge {
+		++ - rcontains->compound
+	}
+	compound:StatechartLanguage.Compound
+}
+
+#correspondence {
+	++ transitionToHyperEdge :TransitionToHyperEdge {
+		#src->transition
+		#trg->hyperEdge
+	}
+	netToCompound :NetToCompound {
+		#src->net
+		#trg->compound
+	}
+}
+
+#attributeConditions {
+	eq (transition.name, hyperEdge.name)
+}
+
+
+#using PetriNetToStatechartIntegration.*
+
+#rule ArcToLinkPostpRule #with PetriNetToStatechartIntegration
+
+#source {
+	transition:PetriNetLanguage.Transition {
+		++ - postp->place
+	}
+	place:PetriNetLanguage.Place
+}
+
+#target {
+	basic:StatechartLanguage.Basic {
+		++ - rnext->hyperEdge
+	}
+	hyperEdge:StatechartLanguage.HyperEdge
+}
+
+#correspondence {
+	transitionToHyperEdge :TransitionToHyperEdge {
+		#src->transition
+		#trg->hyperEdge
+	}
+	placeToBasic :PlaceToBasic {
+		#src->place
+		#trg->basic
+	}
+}
+
+
+#using PetriNetToStatechartIntegration.*
+
+#rule CreateAndRule #with PetriNetToStatechartIntegration
+
+#source {
+	net:PetriNetLanguage.Net
+}
+
+#target {
+	compound:StatechartLanguage.Compound
+	++and:StatechartLanguage.AND {
+		++ - rcontains->compound
+	}
+}
+
+#correspondence {
+	++ netToAND :NetToCompound {
+		#src->net
+		#trg->and
+	}
+	netToCompound :NetToCompound {
+		#src->net
+		#trg->compound
+	}
+}
+
+
+#using PetriNetToStatechartIntegration.*
+
+#rule NetToStatechartRule #with PetriNetToStatechartIntegration
+
+#source {
+	++net:PetriNetLanguage.Net
+}
+
+#target {
+	++statechart:StatechartLanguage.Statechart {
+		++ - topState->and
+	}
+	++and:StatechartLanguage.AND {
+		name := "top"
+	}
+}
+
+#correspondence {
+	++ netToStatechart :NetToStatechart {
+		#src->net
+		#trg->statechart
+	}
+	++ netToCompound :NetToCompound {
+		#src->net
+		#trg->and
+	}
+}
+
+
+#using PetriNetToStatechartIntegration.*
+
+#rule PlaceToBasicRule #with PetriNetToStatechartIntegration
+
+#source {
+	++place:PetriNetLanguage.Place {
+		++ - cnet->net
+	}
+	net:PetriNetLanguage.Net
+}
+
+#target {
+	++basic:StatechartLanguage.Basic {
+		++ - rcontains->compound
+	}
+	compound:StatechartLanguage.Compound
+}
+
+#correspondence {
+	netToCompound :NetToCompound {
+		#src->net
+		#trg->compound
+	}
+	++ placeToBasic :PlaceToBasic {
+		#src->place
+		#trg->basic
+	}
+}
+
+#attributeConditions {
+	eq (place.name, basic.name)
+}
+
+
+#using PetriNetToStatechartIntegration.*
+
+#rule ArcToLinkPrepRule #with PetriNetToStatechartIntegration
+
+#source {
+	place:PetriNetLanguage.Place
+	transition:PetriNetLanguage.Transition {
+		++ - prep->place
+	}
+}
+
+#target {
+	hyperEdge:StatechartLanguage.HyperEdge
+	basic:StatechartLanguage.Basic {
+		++ - next->hyperEdge
+	}
+}
+
+#correspondence {
+	placeToBasic :PlaceToBasic {
+		#src->place
+		#trg->basic
+	}
+	transitionToHyperEdge :TransitionToHyperEdge {
+		#src->transition
+		#trg->hyperEdge
+	}
+}
+
+
+#using PetriNetToStatechartIntegration.*
+
+#rule CreateOrRule #with PetriNetToStatechartIntegration
+
+#source {
+	net:PetriNetLanguage.Net
+}
+
+#target {
+	++or:StatechartLanguage.OR {
+		++ - rcontains->compound
+	}
+	compound:StatechartLanguage.Compound
+}
+
+#correspondence {
+	++ netToOR :NetToCompound {
+		#src->net
+		#trg->or
+	}
+	netToCompound :NetToCompound {
+		#src->net
+		#trg->compound
+	}
+}
+
+

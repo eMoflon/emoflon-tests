@@ -1,0 +1,32 @@
+rule RuleConnectionBookToAuthor {
+	source {
+		library : Library {
+			-author-> author
+			-item-> book
+		}
+		
+		author : Author {
+			++ -item-> book
+		}	
+		
+		book : Book
+	}
+	
+	correspondence {
+		author <- authorToResearcher : AuthorToResearcher -> researcher
+		
+		++ book <- bookToPublication : BookToPublication -> publication
+	}
+	
+	target {
+		researcher : Researcher {
+			++ -publication-> publication
+		}
+		
+		++ publication : Publication
+	}
+	
+	constraints {[
+		eq(book.title, publication.citation)
+	]}
+}

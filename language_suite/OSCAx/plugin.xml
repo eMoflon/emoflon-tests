@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?eclipse version="3.0"?><plugin>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="OSCAx.OSCAxPackage" genModel="model/OSCAx.genmodel" uri="platform:/plugin/OSCAx/model/OSCAx.ecore"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="OSCAx.Rules.RulesPackage" genModel="model/OSCAx.genmodel" uri="platform:/plugin/OSCAx/model/OSCAx.ecore#//Rules"/>
-  </extension>
-</plugin>

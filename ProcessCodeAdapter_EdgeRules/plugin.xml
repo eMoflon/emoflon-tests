@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><plugin>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="ProcessCodeAdapter_EdgeRules.ProcessCodeAdapter_EdgeRulesPackage" genModel="model/ProcessCodeAdapter_EdgeRules.genmodel" uri="platform:/plugin/ProcessCodeAdapter_EdgeRules/model/ProcessCodeAdapter_EdgeRules.ecore"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="ProcessCodeAdapter_EdgeRules.Rules.RulesPackage" genModel="model/ProcessCodeAdapter_EdgeRules.genmodel" uri="platform:/plugin/ProcessCodeAdapter_EdgeRules/model/ProcessCodeAdapter_EdgeRules.ecore#//Rules"/>
+  </extension>
+</plugin>

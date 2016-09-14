@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.3.3 (12924 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="50.4011000" minlon="8.6492000" maxlat="50.4084000" maxlon="8.6545000"/>
+ <node id="297320628" visible="true" version="5" changeset="3256560" timestamp="2009-11-30T15:14:26Z" user="wolter" uid="46169" lat="50.4041719" lon="8.6449010"/>
+ <node id="297320632" visible="true" version="4" changeset="4114251" timestamp="2010-03-13T12:47:48Z" user="wolter" uid="46169" lat="50.4064833" lon="8.6446545"/>
+ <node id="299038621" visible="true" version="2" changeset="679740" timestamp="2008-09-22T16:09:54Z" user="wolter" uid="46169" lat="50.4053645" lon="8.6380209"/>
+ <node id="314446802" visible="true" version="9" changeset="1728339" timestamp="2009-07-04T11:06:19Z" user="wolter" uid="46169" lat="50.4040705" lon="8.6512462"/>
+ <node id="314446875" visible="true" version="4" changeset="1728339" timestamp="2009-07-04T11:06:19Z" user="wolter" uid="46169" lat="50.4040909" lon="8.6500405"/>
+ <node id="314446969" visible="true" version="1" changeset="788623" timestamp="2008-11-24T22:32:43Z" user="JeLuF" uid="18675" lat="50.4036769" lon="8.6500238"/>
+ <node id="314446971" visible="true" version="1" changeset="788623" timestamp="2008-11-24T22:32:43Z" user="JeLuF" uid="18675" lat="50.4036714" lon="8.6506675"/>
+ <node id="314446871" visible="true" version="7" changeset="14305600" timestamp="2012-12-17T12:42:36Z" user="HoloDuke" uid="75317" lat="50.3996464" lon="8.6517201"/>
+ <node id="314446825" visible="true" version="4" changeset="15408388" timestamp="2013-03-18T14:07:03Z" user="HoloDuke" uid="75317" lat="50.4038861" lon="8.6601318"/>
+ <node id="314446826" visible="true" version="2" changeset="15408388" timestamp="2013-03-18T14:07:03Z" user="HoloDuke" uid="75317" lat="50.4053032" lon="8.6600023"/>
+ <node id="314446972" visible="true" version="1" changeset="788623" timestamp="2008-11-24T22:32:44Z" user="JeLuF" uid="18675" lat="50.4028618" lon="8.6508306"/>
+ <node id="314446973" visible="true" version="4" changeset="15408388" timestamp="2013-03-18T14:07:04Z" user="HoloDuke" uid="75317" lat="50.4028278" lon="8.6513089"/>
+ <node id="324804873" visible="true" version="3" changeset="4114251" timestamp="2010-03-13T12:47:49Z" user="wolter" uid="46169" lat="50.4080176" lon="8.6643759"/>
+ <node id="324804876" visible="true" version="3" changeset="4114251" timestamp="2010-03-13T12:47:49Z" user="wolter" uid="46169" lat="50.4082833" lon="8.6677293"/>
+ <node id="324805188" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:49Z" user="wolter" uid="46169" lat="50.4086265" lon="8.6714178"/>
+ <node id="370765845" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:49Z" user="wolter" uid="46169" lat="50.4125856" lon="8.6572274"/>
+ <node id="370798011" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:48Z" user="wolter" uid="46169" lat="50.4075798" lon="8.6597614"/>
+ <node id="370798009" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:49Z" user="wolter" uid="46169" lat="50.4072242" lon="8.6590949"/>
+ <node id="370798016" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:49Z" user="wolter" uid="46169" lat="50.4082304" lon="8.6677351"/>
+ <node id="370798015" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:49Z" user="wolter" uid="46169" lat="50.4081770" lon="8.6664520"/>
+ <node id="370798013" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:49Z" user="wolter" uid="46169" lat="50.4081254" lon="8.6664830"/>
+ <node id="370798027" visible="true" version="1" changeset="328593" timestamp="2009-04-08T13:12:14Z" user="wolter" uid="46169" lat="50.4087678" lon="8.6746682"/>
+ <node id="370798017" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:49Z" user="wolter" uid="46169" lat="50.4085582" lon="8.6713571"/>
+ <node id="370798019" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:49Z" user="wolter" uid="46169" lat="50.4086143" lon="8.6715104"/>
+ <node id="370798030" visible="true" version="1" changeset="328593" timestamp="2009-04-08T13:12:14Z" user="wolter" uid="46169" lat="50.4088455" lon="8.6756027"/>
+ <node id="370798024" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:49Z" user="wolter" uid="46169" lat="50.4087537" lon="8.6740677"/>
+ <node id="370798055" visible="true" version="1" changeset="328593" timestamp="2009-04-08T13:12:15Z" user="wolter" uid="46169" lat="50.4089500" lon="8.6764907"/>
+ <node id="370798056" visible="true" version="1" changeset="328593" timestamp="2009-04-08T13:12:15Z" user="wolter" uid="46169" lat="50.4090264" lon="8.6771020"/>
+ <node id="370798057" visible="true" version="1" changeset="328593" timestamp="2009-04-08T13:12:16Z" user="wolter" uid="46169" lat="50.4089359" lon="8.6774559"/>
+ <node id="370798058" visible="true" version="1" changeset="328593" timestamp="2009-04-08T13:12:16Z" user="wolter" uid="46169" lat="50.4089141" lon="8.6778879"/>
+ <node id="370798060" visible="true" version="1" changeset="328593" timestamp="2009-04-08T13:12:16Z" user="wolter" uid="46169" lat="50.4089406" lon="8.6783853"/>
+ <node id="370798061" visible="true" version="1" changeset="328593" timestamp="2009-04-08T13:12:16Z" user="wolter" uid="46169" lat="50.4090482" lon="8.6790948"/>
+ <node id="370798065" visible="true" version="1" changeset="328593" timestamp="2009-04-08T13:12:17Z" user="wolter" uid="46169" lat="50.4091324" lon="8.6799618"/>
+ <node id="370798068" visible="true" version="1" changeset="328593" timestamp="2009-04-08T13:12:17Z" user="wolter" uid="46169" lat="50.4096420" lon="8.6855614"/>
+ <node id="370798075" visible="true" version="1" changeset="328593" timestamp="2009-04-08T13:12:17Z" user="wolter" uid="46169" lat="50.4097239" lon="8.6872928"/>
+ <node id="370798076" visible="true" version="1" changeset="328593" timestamp="2009-04-08T13:12:18Z" user="wolter" uid="46169" lat="50.4105469" lon="8.6908310"/>
+ <node id="370798077" visible="true" version="1" changeset="328593" timestamp="2009-04-08T13:12:18Z" user="wolter" uid="46169" lat="50.4106824" lon="8.6915637"/>
+ <node id="370798078" visible="true" version="1" changeset="328593" timestamp="2009-04-08T13:12:18Z" user="wolter" uid="46169" lat="50.4113473" lon="8.6942810"/>
+ <node id="377836303" visible="true" version="3" changeset="4114251" timestamp="2010-03-13T12:47:48Z" user="wolter" uid="46169" lat="50.4086080" lon="8.6421599"/>
+ <node id="377836312" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:48Z" user="wolter" uid="46169" lat="50.4076389" lon="8.6597839"/>
+ <node id="377894524" visible="true" version="2" changeset="4104163" timestamp="2010-03-12T08:14:32Z" user="wolter" uid="46169" lat="50.4126928" lon="8.6490591"/>
+ <node id="377894514" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:48Z" user="wolter" uid="46169" lat="50.4126428" lon="8.6503776"/>
+ <node id="377894504" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:48Z" user="wolter" uid="46169" lat="50.4125856" lon="8.6571134"/>
+ <node id="431360655" visible="true" version="1" changeset="1696449" timestamp="2009-06-30T22:57:41Z" user="wolter" uid="46169" lat="50.4115625" lon="8.6948174"/>
+ <node id="431360706" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:49Z" user="wolter" uid="46169" lat="50.4121374" lon="8.6733587"/>
+ <node id="431360758" visible="true" version="4" changeset="14306332" timestamp="2012-12-17T13:43:52Z" user="HoloDuke" uid="75317" lat="50.4087894" lon="8.6740307">
+  <tag k="fixme" v="stub"/>
+ </node>
+ <node id="431360865" visible="true" version="3" changeset="14306332" timestamp="2012-12-17T13:43:52Z" user="HoloDuke" uid="75317" lat="50.4125991" lon="8.6732117"/>
+ <node id="433666140" visible="true" version="1" changeset="1728339" timestamp="2009-07-04T11:06:18Z" user="wolter" uid="46169" lat="50.4041661" lon="8.6465882"/>
+ <node id="576070272" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:20Z" user="wolter" uid="46169" lat="50.4018554" lon="8.6451588"/>
+ <node id="576070277" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:20Z" user="wolter" uid="46169" lat="50.4022703" lon="8.6450682"/>
+ <node id="576070292" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:20Z" user="wolter" uid="46169" lat="50.4023339" lon="8.6567181"/>
+ <node id="576070302" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:21Z" user="wolter" uid="46169" lat="50.4020946" lon="8.6514926"/>
+ <node id="576070304" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:21Z" user="wolter" uid="46169" lat="50.4020793" lon="8.6513766"/>
+ <node id="576070307" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:21Z" user="wolter" uid="46169" lat="50.4019870" lon="8.6592712"/>
+ <node id="576070310" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:21Z" user="wolter" uid="46169" lat="50.4019457" lon="8.6594423"/>
+ <node id="576070312" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:21Z" user="wolter" uid="46169" lat="50.4020975" lon="8.6610950"/>
+ <node id="576070339" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:21Z" user="wolter" uid="46169" lat="50.4020879" lon="8.6627219"/>
+ <node id="576070341" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:21Z" user="wolter" uid="46169" lat="50.4021119" lon="8.6628554"/>
+ <node id="576070343" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:21Z" user="wolter" uid="46169" lat="50.4021629" lon="8.6637597"/>
+ <node id="576070345" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:21Z" user="wolter" uid="46169" lat="50.4021465" lon="8.6638500"/>
+ <node id="576070348" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:21Z" user="wolter" uid="46169" lat="50.4020329" lon="8.6640011"/>
+ <node id="576070350" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:22Z" user="wolter" uid="46169" lat="50.4020472" lon="8.6639523"/>
+ <node id="576070411" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:22Z" user="wolter" uid="46169" lat="50.4109604" lon="8.6506121"/>
+ <node id="314446810" visible="true" version="3" changeset="3256560" timestamp="2009-11-30T15:14:27Z" user="wolter" uid="46169" lat="50.4092243" lon="8.6507637"/>
+ <node id="377705367" visible="true" version="2" changeset="4104163" timestamp="2010-03-12T08:14:33Z" user="wolter" uid="46169" lat="50.4136455" lon="8.6647814"/>
+ <node id="377705366" visible="true" version="2" changeset="4104163" timestamp="2010-03-12T08:14:33Z" user="wolter" uid="46169" lat="50.4137063" lon="8.6636168"/>
+ <node id="377705363" visible="true" version="2" changeset="4104163" timestamp="2010-03-12T08:14:33Z" user="wolter" uid="46169" lat="50.4135560" lon="8.6631745"/>
+ <node id="377705369" visible="true" version="2" changeset="4104163" timestamp="2010-03-12T08:14:34Z" user="wolter" uid="46169" lat="50.4136867" lon="8.6664701"/>
+ <node id="377705370" visible="true" version="2" changeset="4104163" timestamp="2010-03-12T08:14:34Z" user="wolter" uid="46169" lat="50.4140954" lon="8.6702576"/>
+ <node id="665139267" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4070400" lon="8.6446056"/>
+ <node id="665139269" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4070071" lon="8.6440001"/>
+ <node id="665139270" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4076433" lon="8.6439451"/>
+ <node id="665139271" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4075760" lon="8.6431028"/>
+ <node id="665139273" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4069703" lon="8.6431538"/>
+ <node id="665139274" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4068419" lon="8.6408288"/>
+ <node id="665139276" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4074047" lon="8.6407819"/>
+ <node id="665139277" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4094666" lon="8.6437411"/>
+ <node id="665139279" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4116875" lon="8.6476914"/>
+ <node id="665139280" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4121280" lon="8.6483502"/>
+ <node id="665139284" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4124217" lon="8.6487234"/>
+ <node id="665139285" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4126501" lon="8.6489763"/>
+ <node id="665139288" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4132968" lon="8.6571440"/>
+ <node id="665139289" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4072646" lon="8.6590691"/>
+ <node id="665139293" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4072079" lon="8.6589195"/>
+ <node id="665139294" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4133047" lon="8.6577029"/>
+ <node id="665139297" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4132823" lon="8.6605152"/>
+ <node id="665139298" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4134495" lon="8.6627871"/>
+ <node id="665139300" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:46Z" user="wolter" uid="46169" lat="50.4133421" lon="8.6730671"/>
+ <node id="665139302" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:47Z" user="wolter" uid="46169" lat="50.4144255" lon="8.6727969"/>
+ <node id="665139304" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:47Z" user="wolter" uid="46169" lat="50.4139896" lon="8.6728886"/>
+ <node id="576070371" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:48Z" user="wolter" uid="46169" lat="50.4077195" lon="8.6405766"/>
+ <node id="576070382" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:48Z" user="wolter" uid="46169" lat="50.4059491" lon="8.6447078"/>
+ <node id="576070378" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:48Z" user="wolter" uid="46169" lat="50.4060180" lon="8.6447359"/>
+ <node id="576070392" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:48Z" user="wolter" uid="46169" lat="50.4064972" lon="8.6510272"/>
+ <node id="314446813" visible="true" version="4" changeset="4114251" timestamp="2010-03-13T12:47:48Z" user="wolter" uid="46169" lat="50.4069339" lon="8.6509471"/>
+ <node id="314446828" visible="true" version="3" changeset="4114251" timestamp="2010-03-13T12:47:48Z" user="wolter" uid="46169" lat="50.4074980" lon="8.6597935"/>
+ <node id="576070434" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:48Z" user="wolter" uid="46169" lat="50.4074714" lon="8.6596795"/>
+ <node id="299038617" visible="true" version="3" changeset="4114251" timestamp="2010-03-13T12:47:49Z" user="wolter" uid="46169" lat="50.4071736" lon="8.6589410"/>
+ <node id="576070436" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:49Z" user="wolter" uid="46169" lat="50.4071750" lon="8.6591590"/>
+ <node id="576070438" visible="true" version="2" changeset="4114251" timestamp="2010-03-13T12:47:49Z" user="wolter" uid="46169" lat="50.4071094" lon="8.6589753"/>
+ <node id="576070262" visible="true" version="3" changeset="13131349" timestamp="2012-09-16T14:39:43Z" user="HoloDuke" uid="75317" lat="50.4002931" lon="8.6433132"/>
+ <node id="431360786" visible="true" version="3" changeset="7941654" timestamp="2011-04-23T09:00:40Z" user="BurnyB" uid="83876" lat="50.4105717" lon="8.6736590"/>
+ <node id="576070269" visible="true" version="2" changeset="10971493" timestamp="2012-03-13T20:26:28Z" user="HoloDuke" uid="75317" lat="50.4010554" lon="8.6452497"/>
+ <node id="576070274" visible="true" version="3" changeset="10971493" timestamp="2012-03-13T20:26:28Z" user="HoloDuke" uid="75317" lat="50.4025098" lon="8.6413777"/>
+ <node id="297077386" visible="true" version="3" changeset="14303995" timestamp="2012-12-17T10:12:50Z" user="HoloDuke" uid="75317" lat="50.4024800" lon="8.6390459"/>
+ <node id="576070289" visible="true" version="4" changeset="14305600" timestamp="2012-12-17T12:42:37Z" user="HoloDuke" uid="75317" lat="50.4012865" lon="8.6515009"/>
+ <node id="1917245100" visible="true" version="1" changeset="13131349" timestamp="2012-09-16T14:39:25Z" user="HoloDuke" uid="75317" lat="50.3994792" lon="8.6398759"/>
+ <node id="1917245121" visible="true" version="2" changeset="15408388" timestamp="2013-03-18T14:07:02Z" user="HoloDuke" uid="75317" lat="50.4026813" lon="8.6572766"/>
+ <node id="1917245122" visible="true" version="2" changeset="15408388" timestamp="2013-03-18T14:07:02Z" user="HoloDuke" uid="75317" lat="50.4027508" lon="8.6543101"/>
+ <node id="1917245124" visible="true" version="2" changeset="15408388" timestamp="2013-03-18T14:07:02Z" user="HoloDuke" uid="75317" lat="50.4040262" lon="8.6542538"/>
+ <node id="1917245127" visible="true" version="2" changeset="15408388" timestamp="2013-03-18T14:07:02Z" user="HoloDuke" uid="75317" lat="50.4066621" lon="8.6539908"/>
+ <node id="1917245128" visible="true" version="2" changeset="15408388" timestamp="2013-03-18T14:07:02Z" user="HoloDuke" uid="75317" lat="50.4069095" lon="8.6569037"/>
+ <node id="576070377" visible="true" version="5" changeset="16420328" timestamp="2013-06-04T14:31:46Z" user="HoloDuke" uid="75317" lat="50.4072560" lon="8.6397746"/>
+ <node id="2208282264" visible="true" version="1" changeset="15408388" timestamp="2013-03-18T14:06:59Z" user="HoloDuke" uid="75317" lat="50.4052684" lon="8.6541332"/>
+ <node id="2208282265" visible="true" version="1" changeset="15408388" timestamp="2013-03-18T14:06:59Z" user="HoloDuke" uid="75317" lat="50.4052741" lon="8.6570597"/>
+ <node id="2208282269" visible="true" version="1" changeset="15408388" timestamp="2013-03-18T14:06:59Z" user="HoloDuke" uid="75317" lat="50.4067591" lon="8.6550683"/>
+ <node id="314446824" visible="true" version="3" changeset="15408388" timestamp="2013-03-18T14:07:03Z" user="HoloDuke" uid="75317" lat="50.4039618" lon="8.6571849"/>
+ <node id="314446840" visible="true" version="2" changeset="15408388" timestamp="2013-03-18T14:07:03Z" user="HoloDuke" uid="75317" lat="50.4026300" lon="8.6602592"/>
+ <node id="314446868" visible="true" version="5" changeset="15408388" timestamp="2013-03-18T14:07:03Z" user="HoloDuke" uid="75317" lat="50.4024869" lon="8.6513396"/>
+ <node id="314446870" visible="true" version="3" changeset="15408388" timestamp="2013-03-18T14:07:03Z" user="HoloDuke" uid="75317" lat="50.4019810" lon="8.6514085"/>
+ <node id="576070396" visible="true" version="4" changeset="15408388" timestamp="2013-03-18T14:07:04Z" user="HoloDuke" uid="75317" lat="50.4068551" lon="8.6550602"/>
+ <node id="576070399" visible="true" version="3" changeset="15408388" timestamp="2013-03-18T14:07:04Z" user="HoloDuke" uid="75317" lat="50.4064163" lon="8.6509822"/>
+ <node id="576070401" visible="true" version="3" changeset="15408388" timestamp="2013-03-18T14:07:04Z" user="HoloDuke" uid="75317" lat="50.4065152" lon="8.6509702"/>
+ <way id="28613510" visible="true" version="3" changeset="13131349" timestamp="2012-09-16T14:39:37Z" user="HoloDuke" uid="75317">
+  <nd ref="314446802"/>
+  <nd ref="1917245124"/>
+  <nd ref="314446824"/>
+  <nd ref="314446825"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade1"/>
+ </way>
+ <way id="28613502" visible="true" version="3" changeset="3256560" timestamp="2009-11-30T15:14:27Z" user="wolter" uid="46169">
+  <nd ref="314446802"/>
+  <nd ref="576070399"/>
+  <nd ref="576070401"/>
+  <nd ref="314446813"/>
+  <nd ref="314446810"/>
+  <nd ref="576070411"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade1"/>
+ </way>
+ <way id="28613500" visible="true" version="4" changeset="3256560" timestamp="2009-11-30T15:14:29Z" user="wolter" uid="46169">
+  <nd ref="297320628"/>
+  <nd ref="433666140"/>
+  <nd ref="314446875"/>
+  <nd ref="314446802"/>
+  <tag k="highway" v="track"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="tracktype" v="grade1"/>
+ </way>
+ <way id="28613504" visible="true" version="2" changeset="3256560" timestamp="2009-11-30T15:14:32Z" user="wolter" uid="46169">
+  <nd ref="297320632"/>
+  <nd ref="314446813"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade5"/>
+ </way>
+ <way id="28613518" visible="true" version="2" changeset="1728339" timestamp="2009-07-04T11:06:23Z" user="wolter" uid="46169">
+  <nd ref="314446875"/>
+  <nd ref="314446969"/>
+  <nd ref="314446971"/>
+  <nd ref="314446972"/>
+  <nd ref="314446973"/>
+  <nd ref="314446802"/>
+  <nd ref="314446875"/>
+  <tag k="created_by" v="Potlatch 0.10f"/>
+  <tag k="landuse" v="farmyard"/>
+  <tag k="name" v="Mittelhof"/>
+  <tag k="place" v="hamlet"/>
+ </way>
+ <way id="28613516" visible="true" version="4" changeset="10971493" timestamp="2012-03-13T20:26:24Z" user="HoloDuke" uid="75317">
+  <nd ref="314446802"/>
+  <nd ref="314446973"/>
+  <nd ref="314446868"/>
+  <nd ref="314446870"/>
+  <nd ref="576070289"/>
+  <nd ref="314446871"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade1"/>
+ </way>
+ <way id="45331377" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:23Z" user="wolter" uid="46169">
+  <nd ref="576070302"/>
+  <nd ref="576070292"/>
+  <nd ref="576070307"/>
+  <nd ref="576070310"/>
+  <nd ref="576070312"/>
+  <nd ref="576070339"/>
+  <nd ref="576070341"/>
+  <nd ref="576070343"/>
+  <nd ref="576070345"/>
+  <nd ref="576070350"/>
+  <nd ref="576070348"/>
+  <tag k="name" v="Riedgraben"/>
+  <tag k="waterway" v="stream"/>
+ </way>
+ <way id="45331382" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:24Z" user="wolter" uid="46169">
+  <nd ref="576070272"/>
+  <nd ref="576070304"/>
+  <tag k="name" v="Riedgraben"/>
+  <tag k="waterway" v="stream"/>
+ </way>
+ <way id="45331387" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:25Z" user="wolter" uid="46169">
+  <nd ref="576070304"/>
+  <nd ref="576070302"/>
+  <tag k="layer" v="-1"/>
+  <tag k="name" v="Riedgraben"/>
+  <tag k="tunnel" v="yes"/>
+  <tag k="waterway" v="stream"/>
+ </way>
+ <way id="45331398" visible="true" version="1" changeset="3256560" timestamp="2009-11-30T15:14:25Z" user="wolter" uid="46169">
+  <nd ref="576070396"/>
+  <nd ref="576070401"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade5"/>
+ </way>
+ <way id="45331390" visible="true" version="2" changeset="15408388" timestamp="2013-03-18T14:07:02Z" user="HoloDuke" uid="75317">
+  <nd ref="314446828"/>
+  <nd ref="576070434"/>
+  <nd ref="576070436"/>
+  <nd ref="576070438"/>
+  <nd ref="1917245128"/>
+  <nd ref="2208282269"/>
+  <nd ref="1917245127"/>
+  <nd ref="576070399"/>
+  <nd ref="576070382"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade1"/>
+ </way>
+ <way id="52252893" visible="true" version="2" changeset="4815733" timestamp="2010-05-26T18:52:45Z" user="HoloDuke" uid="75317">
+  <nd ref="665139302"/>
+  <nd ref="665139304"/>
+  <nd ref="665139300"/>
+  <nd ref="431360865"/>
+  <nd ref="431360706"/>
+  <nd ref="431360786"/>
+  <nd ref="431360758"/>
+  <nd ref="324805188"/>
+  <nd ref="324804876"/>
+  <nd ref="370798015"/>
+  <nd ref="324804873"/>
+  <nd ref="377836312"/>
+  <nd ref="665139289"/>
+  <nd ref="665139293"/>
+  <nd ref="576070401"/>
+  <nd ref="314446813"/>
+  <nd ref="297320632"/>
+  <nd ref="665139267"/>
+  <nd ref="665139269"/>
+  <nd ref="665139270"/>
+  <nd ref="665139271"/>
+  <nd ref="665139273"/>
+  <nd ref="665139274"/>
+  <nd ref="665139276"/>
+  <nd ref="576070377"/>
+  <nd ref="576070371"/>
+  <nd ref="377836303"/>
+  <nd ref="665139277"/>
+  <nd ref="665139279"/>
+  <nd ref="665139280"/>
+  <nd ref="665139284"/>
+  <nd ref="665139285"/>
+  <nd ref="377894524"/>
+  <nd ref="377894514"/>
+  <nd ref="377894504"/>
+  <nd ref="370765845"/>
+  <nd ref="665139288"/>
+  <nd ref="665139294"/>
+  <nd ref="665139297"/>
+  <nd ref="665139298"/>
+  <nd ref="377705363"/>
+  <nd ref="377705366"/>
+  <nd ref="377705367"/>
+  <nd ref="377705369"/>
+  <nd ref="377705370"/>
+  <nd ref="665139302"/>
+  <tag k="landuse" v="farmland"/>
+ </way>
+ <way id="27247042" visible="true" version="9" changeset="10159850" timestamp="2011-12-19T22:35:13Z" user="be-ju" uid="302852">
+  <nd ref="299038621"/>
+  <nd ref="576070378"/>
+  <nd ref="576070392"/>
+  <nd ref="299038617"/>
+  <nd ref="370798009"/>
+  <nd ref="370798011"/>
+  <nd ref="370798013"/>
+  <nd ref="370798016"/>
+  <nd ref="370798017"/>
+  <nd ref="370798019"/>
+  <nd ref="370798024"/>
+  <nd ref="370798027"/>
+  <nd ref="370798030"/>
+  <nd ref="370798055"/>
+  <nd ref="370798056"/>
+  <nd ref="370798057"/>
+  <nd ref="370798058"/>
+  <nd ref="370798060"/>
+  <nd ref="370798061"/>
+  <nd ref="370798065"/>
+  <nd ref="370798068"/>
+  <nd ref="370798075"/>
+  <nd ref="370798076"/>
+  <nd ref="370798077"/>
+  <nd ref="370798078"/>
+  <nd ref="431360655"/>
+  <tag k="name" v="Bitzengraben"/>
+  <tag k="waterway" v="stream"/>
+ </way>
+ <way id="45331381" visible="true" version="2" changeset="10971493" timestamp="2012-03-13T20:26:24Z" user="HoloDuke" uid="75317">
+  <nd ref="297077386"/>
+  <nd ref="576070274"/>
+  <nd ref="576070277"/>
+  <nd ref="314446868"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade4"/>
+ </way>
+ <way id="181291741" visible="true" version="1" changeset="13131349" timestamp="2012-09-16T14:39:29Z" user="HoloDuke" uid="75317">
+  <nd ref="314446840"/>
+  <nd ref="1917245121"/>
+  <nd ref="1917245122"/>
+  <nd ref="314446973"/>
+  <tag k="highway" v="track"/>
+  <tag k="surface" v="grass"/>
+  <tag k="tracktype" v="grade4"/>
+ </way>
+ <way id="45331380" visible="true" version="3" changeset="13131349" timestamp="2012-09-16T14:39:37Z" user="HoloDuke" uid="75317">
+  <nd ref="1917245100"/>
+  <nd ref="576070262"/>
+  <nd ref="576070269"/>
+  <nd ref="576070289"/>
+  <tag k="highway" v="track"/>
+  <tag k="surface" v="grass"/>
+  <tag k="tracktype" v="grade4"/>
+ </way>
+ <way id="181291736" visible="true" version="2" changeset="15408388" timestamp="2013-03-18T14:07:01Z" user="HoloDuke" uid="75317">
+  <nd ref="1917245122"/>
+  <nd ref="1917245124"/>
+  <nd ref="2208282264"/>
+  <nd ref="1917245127"/>
+  <tag k="highway" v="track"/>
+  <tag k="surface" v="grass"/>
+  <tag k="tracktype" v="grade4"/>
+ </way>
+ <way id="210769869" visible="true" version="1" changeset="15408388" timestamp="2013-03-18T14:06:59Z" user="HoloDuke" uid="75317">
+  <nd ref="2208282264"/>
+  <nd ref="2208282265"/>
+  <nd ref="314446826"/>
+  <tag k="highway" v="track"/>
+  <tag k="surface" v="grass"/>
+ </way>
+ <relation id="449414" visible="true" version="1" changeset="4114251" timestamp="2010-03-13T12:47:47Z" user="wolter" uid="46169">
+  <member type="way" ref="52252893" role="outer"/>
+  <member type="way" ref="37104037" role="inner"/>
+  <tag k="landuse" v="farmland"/>
+  <tag k="type" v="multipolygon"/>
+ </relation>
+</osm>

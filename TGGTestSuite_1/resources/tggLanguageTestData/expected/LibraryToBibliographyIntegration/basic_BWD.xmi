@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LibraryLanguage:Library
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:LibraryLanguage="platform:/plugin/LibraryLanguage/model/LibraryLanguage.ecore"
+    xsi:schemaLocation="platform:/plugin/LibraryLanguage/model/LibraryLanguage.ecore ../../../../../LibraryLanguage/model/LibraryLanguage.ecore">
+  <item xsi:type="LibraryLanguage:Book"
+      author="//@author.2"
+      title="kochen"/>
+  <item xsi:type="LibraryLanguage:Book"
+      author="//@author.0 //@author.1"
+      title="foobar"/>
+  <author item="//@item.1"
+      name="tony"/>
+  <author item="//@item.1"
+      name="marius"/>
+  <author item="//@item.0"
+      name="kris"/>
+  <author name="paula"/>
+</LibraryLanguage:Library>

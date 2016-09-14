@@ -1,0 +1,238 @@
+#import "platform:/plugin/CDWithOrderedAttrs/model/CDWithOrderedAttrs.ecore"
+#import "platform:/plugin/DSWithOrderedCols/model/DSWithOrderedCols.ecore"
+
+#schema OrderedCD2DS
+
+#source {
+	CDWithOrderedAttrs
+}
+
+#target {
+	DSWithOrderedCols
+}
+
+#correspondence {
+	AttributeToColumn {
+		#src->CDWithOrderedAttrs.Attribute
+		#trg->DSWithOrderedCols.Column
+	}
+	ClazzToTable {
+		#src->CDWithOrderedAttrs.Clazz
+		#trg->DSWithOrderedCols.Table
+	}
+	ClazzDiagramToDatabase {
+		#src->CDWithOrderedAttrs.ClazzDiagram
+		#trg->DSWithOrderedCols.Database
+	}
+}
+
+#attributeConditions {
+	eq(0: , 1: ) {
+		#sync: FB, BF, BB
+		#gen: FF, BF, BB, FB
+	}
+}
+
+
+#using OrderedCD2DS.*
+
+#abstract #rule OtherColNacRule #with OrderedCD2DS
+
+#source {
+	!otherAttr:CDWithOrderedAttrs.Attribute
+}
+
+#target {
+	!otherCol:DSWithOrderedCols.Column
+}
+
+
+#using OrderedCD2DS.*
+
+#abstract #rule AbstractAttr2ColumnRule #with OrderedCD2DS
+
+#source {
+	clazz:CDWithOrderedAttrs.Clazz {
+		++ - attributes->attribute
+		- attributes->anotherAttr
+		- attributes->otherAttr
+	}
+	anotherAttr:CDWithOrderedAttrs.Attribute {
+		- next->otherAttr
+		++ - next->attribute
+	}
+	otherAttr:CDWithOrderedAttrs.Attribute
+	++attribute:CDWithOrderedAttrs.Attribute
+}
+
+#target {
+	++column:DSWithOrderedCols.Column
+	table:DSWithOrderedCols.Table {
+		- columns->anotherCol
+		- columns->otherCol
+		++ - columns->column
+	}
+	otherCol:DSWithOrderedCols.Column
+	anotherCol:DSWithOrderedCols.Column {
+		- next->otherCol
+		++ - next->column
+	}
+}
+
+
+#using OrderedCD2DS.*
+
+#rule FirstAttr2ColumnRule #extends OtherColNacRule, GlobalFirstAttr2ColumnRule #with OrderedCD2DS
+
+
+#using OrderedCD2DS.*
+
+#rule ClassFirstAttr2ColumnRule #extends GlobalFirstAttr2ColumnRule, AbstractClassFirstAttr2ColumnRule #with OrderedCD2DS
+
+
+#using OrderedCD2DS.*
+
+#rule SubClass2TableRule #with OrderedCD2DS
+
+#source {
+	++subclazz:CDWithOrderedAttrs.Clazz {
+		++ - super->clazz
+	}
+	clazzDiagram:CDWithOrderedAttrs.ClazzDiagram {
+		++ - clazz->subclazz
+		- clazz->clazz
+	}
+	clazz:CDWithOrderedAttrs.Clazz
+}
+
+#target {
+	table:DSWithOrderedCols.Table
+}
+
+#correspondence {
+	++ subclazztotable :ClazzToTable {
+		#src->subclazz
+		#trg->table
+	}
+	clazztotable :ClazzToTable {
+		#src->clazz
+		#trg->table
+	}
+}
+
+
+#using OrderedCD2DS.*
+
+#rule Class2TableRule #with OrderedCD2DS
+
+#source {
+	clazzDiagram:CDWithOrderedAttrs.ClazzDiagram {
+		++ - clazz->clazz
+	}
+	++clazz:CDWithOrderedAttrs.Clazz
+}
+
+#target {
+	database:DSWithOrderedCols.Database {
+		++ - table->table
+	}
+	++table:DSWithOrderedCols.Table
+}
+
+#correspondence {
+	++ clazztotable :ClazzToTable {
+		#src->clazz
+		#trg->table
+	}
+	clazzDiagramToDatabase :ClazzDiagramToDatabase {
+		#src->clazzDiagram
+		#trg->database
+	}
+}
+
+#attributeConditions {
+	eq (clazz.name, table.name)
+}
+
+
+#using OrderedCD2DS.*
+
+#rule ClazzDiagram2DatabaseRule #with OrderedCD2DS
+
+#source {
+	++clazzDiagram:CDWithOrderedAttrs.ClazzDiagram
+}
+
+#target {
+	++database:DSWithOrderedCols.Database
+}
+
+#correspondence {
+	++ clazzDiagramToDatabase :ClazzDiagramToDatabase {
+		#src->clazzDiagram
+		#trg->database
+	}
+}
+
+
+#using OrderedCD2DS.*
+
+#abstract #rule GlobalFirstAttr2ColumnRule #with OrderedCD2DS
+
+#source {
+	otherAttr:CDWithOrderedAttrs.Attribute
+	clazz:CDWithOrderedAttrs.Clazz {
+		- attributes->otherAttr
+		++ - attributes->attribute
+	}
+	++attribute:CDWithOrderedAttrs.Attribute
+}
+
+#target {
+	otherCol:DSWithOrderedCols.Column
+	++column:DSWithOrderedCols.Column
+	table:DSWithOrderedCols.Table {
+		- columns->otherCol
+		++ - columns->column
+	}
+}
+
+#correspondence {
+	++ attributetocolumn :AttributeToColumn {
+		#src->attribute
+		#trg->column
+	}
+	clazztotable :ClazzToTable {
+		#src->clazz
+		#trg->table
+	}
+}
+
+#attributeConditions {
+	eq (attribute.name, column.name)
+}
+
+
+#using OrderedCD2DS.*
+
+#abstract #rule AbstractClassFirstAttr2ColumnRule #with OrderedCD2DS
+
+#source {
+	!otherAttr:CDWithOrderedAttrs.Attribute
+}
+
+#target {
+	otherCol:DSWithOrderedCols.Column {
+		++ - next->column
+		- next->nextOfOther
+	}
+	++column:DSWithOrderedCols.Column
+	!nextOfOther:DSWithOrderedCols.Column
+}
+
+
+#using OrderedCD2DS.*
+
+#rule Attr2ColumnRule #extends GlobalFirstAttr2ColumnRule, OtherColNacRule , AbstractAttr2ColumnRule #with OrderedCD2DS
+
+

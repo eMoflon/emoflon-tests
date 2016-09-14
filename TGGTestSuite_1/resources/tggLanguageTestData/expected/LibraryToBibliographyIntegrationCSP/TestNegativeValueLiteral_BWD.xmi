@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<LibraryLanguageCSP:Library
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:LibraryLanguageCSP="platform:/plugin/LibraryLanguageCSP/model/LibraryLanguageCSP.ecore"
+    location="NotGermany">
+  <author book="//@archive/@book.0 //@archive/@book.1 //@book.0 //@book.1"
+      name="Marin Peterson"/>
+  <author name="Peter Martinson"/>
+  <book author="//@author.0"
+      category="ALGORITHM"
+      title="Test Pub 3"
+      year="1960"/>
+  <book author="//@author.0"
+      category="ALGORITHM"
+      title="Test Pub 4"
+      year="1961"/>
+  <archive>
+    <book author="//@author.0"
+        category="ALGORITHM"
+        title="Test Pub 1"
+        year="1958"/>
+    <book author="//@author.0"
+        category="ALGORITHM"
+        title="Test Pub 2"
+        year="1959"/>
+  </archive>
+</LibraryLanguageCSP:Library>

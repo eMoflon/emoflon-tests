@@ -1,0 +1,236 @@
+#import "platform:/plugin/Families/model/Families.ecore"
+#import "platform:/plugin/Persons/model/Persons.ecore"
+
+#schema FamiliesToPersonsRefinementFlat
+
+#source {
+	Families
+}
+
+#target {
+	Persons
+}
+
+#correspondence {
+	FamilyToFather {
+		#src->Families.Family
+		#trg->Persons.Father
+	}
+	MemberToMother {
+		#src->Families.Member
+		#trg->Persons.Mother
+	}
+	MemberToFather {
+		#src->Families.Member
+		#trg->Persons.Father
+	}
+	MemberToDaughter {
+		#src->Families.Member
+		#trg->Persons.Daughter
+	}
+	MemberToSon {
+		#src->Families.Member
+		#trg->Persons.Son
+	}
+	FamilyToPerson {
+		#src->Families.Family
+		#trg->Persons.Person
+	}
+	FamilyRegisterToPersonsRegister {
+		#src->Families.FamilyRegister
+		#trg->Persons.PersonsRegister
+	}
+}
+
+#attributeConditions {
+	concat(0:EString, 3:EString, 2:EString, 1:EString) {
+		#sync: BBBB, BBFB, BFFB, BBBF, BFBB
+		#gen: BBFF, BBBF, BBBB, BFBF, BFFB, BBFB, BFBB, BFFF
+	}
+}
+
+
+#using FamiliesToPersonsRefinementFlat.*
+
+#rule DaughterToMembersRule #extends FatherCreatedAbstractRule, AbstractDaughterToMembersRule #with FamiliesToPersonsRefinementFlat
+
+
+#using FamiliesToPersonsRefinementFlat.*
+
+#rule FatherToMembersRule #with FamiliesToPersonsRefinementFlat
+
+#source {
+	familyRegister:Families.FamilyRegister {
+		++ - families->family
+	}
+	++family:Families.Family {
+		++ - father->member
+	}
+	++member:Families.Member
+}
+
+#target {
+	++father:Persons.Father
+	personsRegister:Persons.PersonsRegister {
+		++ - person->father
+	}
+}
+
+#correspondence {
+	++ familyToFather :FamilyToFather {
+		#src->family
+		#trg->father
+	}
+	familyRegisterToPersonsRegister :FamilyRegisterToPersonsRegister {
+		#src->familyRegister
+		#trg->personsRegister
+	}
+	++ memberToFather :MemberToFather {
+		#src->member
+		#trg->father
+	}
+}
+
+#attributeConditions {
+	concat (" ", member.firstName, family.lastName, father.fullName)
+}
+
+
+#using FamiliesToPersonsRefinementFlat.*
+
+#rule FamilyRegisterToPersonsRegisterRule #with FamiliesToPersonsRefinementFlat
+
+#source {
+	++familyRegister:Families.FamilyRegister
+}
+
+#target {
+	++personsRegister:Persons.PersonsRegister
+}
+
+#correspondence {
+	++ familyRegisterToPersonsRegister :FamilyRegisterToPersonsRegister {
+		#src->familyRegister
+		#trg->personsRegister
+	}
+}
+
+
+#using FamiliesToPersonsRefinementFlat.*
+
+#rule MotherToMembersRule #extends FatherCreatedAbstractRule, AbstractMotherToMembersRule #with FamiliesToPersonsRefinementFlat
+
+
+#using FamiliesToPersonsRefinementFlat.*
+
+#abstract #rule AbstractSonToMembersRule #with FamiliesToPersonsRefinementFlat
+
+#source {
+	family:Families.Family {
+		++ - sons->member
+	}
+	++member:Families.Member
+}
+
+#target {
+	++person:Persons.Son
+}
+
+#correspondence {
+	++ memberToSon :MemberToSon {
+		#src->member
+		#trg->person
+	}
+}
+
+
+#using FamiliesToPersonsRefinementFlat.*
+
+#rule SonToMembersRule #extends AbstractSonToMembersRule, FatherCreatedAbstractRule #with FamiliesToPersonsRefinementFlat
+
+
+#using FamiliesToPersonsRefinementFlat.*
+
+#abstract #rule FatherCreatedAbstractRule #with FamiliesToPersonsRefinementFlat
+
+#source {
+	++member:Families.Member
+	familyRegister:Families.FamilyRegister {
+		- families->family
+	}
+	family:Families.Family
+}
+
+#target {
+	++person:Persons.Person
+	father:Persons.Father
+	personsRegister:Persons.PersonsRegister {
+		++ - person->person
+		- person->father
+	}
+}
+
+#correspondence {
+	familyRegisterToPersonsRegister :FamilyRegisterToPersonsRegister {
+		#src->familyRegister
+		#trg->personsRegister
+	}
+	familyToFather :FamilyToFather {
+		#src->family
+		#trg->father
+	}
+}
+
+#attributeConditions {
+	concat (" ", member.firstName, family.lastName, person.fullName)
+}
+
+
+#using FamiliesToPersonsRefinementFlat.*
+
+#abstract #rule AbstractMotherToMembersRule #with FamiliesToPersonsRefinementFlat
+
+#source {
+	!noMotherMember:Families.Member
+	family:Families.Family {
+		- mother->noMotherMember
+		++ - mother->member
+	}
+	++member:Families.Member
+}
+
+#target {
+	++person:Persons.Mother
+}
+
+#correspondence {
+	++ memberToMother :MemberToMother {
+		#src->member
+		#trg->person
+	}
+}
+
+
+#using FamiliesToPersonsRefinementFlat.*
+
+#abstract #rule AbstractDaughterToMembersRule #with FamiliesToPersonsRefinementFlat
+
+#source {
+	++member:Families.Member
+	family:Families.Family {
+		++ - daughters->member
+	}
+}
+
+#target {
+	++person:Persons.Daughter
+}
+
+#correspondence {
+	++ memberToDaughter :MemberToDaughter {
+		#src->member
+		#trg->person
+	}
+}
+
+

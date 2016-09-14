@@ -1,9 +1,0 @@
-pattern initialProcessForAllPublicationsOfAResearcher {
-
-	@aResearcher : ../BibliographyLanguage/Researcher {
-		 -publication-> aPublicationOfResearcher
-	}
-	
-	aPublicationOfResearcher : ../BibliographyLanguage/Publication
-	
-} 

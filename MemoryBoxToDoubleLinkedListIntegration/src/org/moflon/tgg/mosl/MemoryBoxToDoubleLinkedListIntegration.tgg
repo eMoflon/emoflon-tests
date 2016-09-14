@@ -1,0 +1,94 @@
+#import "platform:/plugin/MemoryBoxLanguage/model/MemoryBoxLanguage.ecore"
+#import "platform:/plugin/DoubleLinkedListLanguage/model/DoubleLinkedListLanguage.ecore"
+
+#schema MemoryBoxToDoubleLinkedListIntegration
+
+#source {
+	MemoryBoxLanguage
+}
+
+#target {
+	DoubleLinkedListLanguage
+}
+
+#correspondence {
+	BoxToList {
+		#src->MemoryBoxLanguage.Box
+		#trg->DoubleLinkedListLanguage.List
+	}
+	PartitionToNode {
+		#src->MemoryBoxLanguage.Partition
+		#trg->DoubleLinkedListLanguage.Node
+	}
+}
+
+#attributeConditions {
+	eq(1: , 0: ) {
+		#sync: BF, BB, FB
+		#gen: BF, BB, FB, FF
+	}
+	#userDefined determineSize(0:EInt) {
+		#sync: F, B
+		#gen: B, F
+	}
+}
+
+
+#using MemoryBoxToDoubleLinkedListIntegration.*
+
+#rule BoxToListRule #with MemoryBoxToDoubleLinkedListIntegration
+
+#source {
+	++box:MemoryBoxLanguage.Box
+}
+
+#target {
+	++list:DoubleLinkedListLanguage.List
+}
+
+#correspondence {
+	++ boxToList :BoxToList {
+		#src->box
+		#trg->list
+	}
+}
+
+#attributeConditions {
+	eq (box.name, list.name)
+}
+
+
+#using MemoryBoxToDoubleLinkedListIntegration.*
+
+#rule PartitionToNodeRule #with MemoryBoxToDoubleLinkedListIntegration
+
+#source {
+	++partition:MemoryBoxLanguage.Partition {
+		++ - box->box
+	}
+	box:MemoryBoxLanguage.Box
+}
+
+#target {
+	++node:DoubleLinkedListLanguage.Node {
+		++ - container->list
+	}
+	list:DoubleLinkedListLanguage.List
+}
+
+#correspondence {
+	boxToList :BoxToList {
+		#src->box
+		#trg->list
+	}
+	++ partToNode :PartitionToNode {
+		#src->partition
+		#trg->node
+	}
+}
+
+#attributeConditions {
+	determineSize (partition.partitionSize)
+}
+
+

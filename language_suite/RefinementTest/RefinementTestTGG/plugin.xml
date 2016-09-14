@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?eclipse version="3.0"?><plugin>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="RefinementTestTGG.RefinementTestTGGPackage" genModel="model/RefinementTestTGG.genmodel" uri="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="RefinementTestTGG.Rules.RulesPackage" genModel="model/RefinementTestTGG.genmodel" uri="platform:/plugin/RefinementTestTGG/model/RefinementTestTGG.pre.ecore#//Rules"/>
-  </extension>
-</plugin>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><plugin>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="CDtoDocTGG.CDtoDocTGGPackage" genModel="model/CDtoDocTGG.genmodel" uri="platform:/plugin/CDtoDocTGG/model/CDtoDocTGG.ecore"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="CDtoDocTGG.Rules.RulesPackage" genModel="model/CDtoDocTGG.genmodel" uri="platform:/plugin/CDtoDocTGG/model/CDtoDocTGG.ecore#//Rules"/>
+  </extension>
+</plugin>

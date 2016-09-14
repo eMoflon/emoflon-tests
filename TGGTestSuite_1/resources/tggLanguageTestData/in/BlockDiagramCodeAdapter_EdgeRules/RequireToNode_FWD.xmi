@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<BlockDiagram_EdgeRules:BlockSystem xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:BlockDiagram_EdgeRules="platform:/plugin/BlockDiagram_EdgeRules/model/BlockDiagram_EdgeRules.ecore" xsi:schemaLocation="platform:/plugin/BlockDiagram_EdgeRules/model/BlockDiagram_EdgeRules.ecore ../../../../../BlockDiagram_EdgeRules/model/BlockDiagram_EdgeRules.ecore" name="aBlockSystem">
+  <blocks id="A">
+    <ports xsi:type="BlockDiagram_EdgeRules:Require" id="1"/>
+  </blocks>
+</BlockDiagram_EdgeRules:BlockSystem>

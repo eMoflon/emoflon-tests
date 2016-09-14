@@ -1,0 +1,7 @@
+task {
+	run() {
+		ea_extension_svn_update::run()
+		refresh_visual_studio::run()
+		visual_studio_build::run()
+	}
+}

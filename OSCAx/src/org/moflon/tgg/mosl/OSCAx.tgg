@@ -1,0 +1,372 @@
+#import "platform:/plugin/Ortssicht/model/Ortssicht.ecore"
+#import "platform:/plugin/SimaticML/model/SimaticML.ecore"
+
+#schema OSCAx
+
+#source {
+	Ortssicht
+}
+
+#target {
+	SimaticML
+}
+
+#correspondence {
+	ProjectToProjectT {
+		#src->Ortssicht.Project
+		#trg->SimaticML.ProjectT
+	}
+	IOLink {
+		#src->Ortssicht.Module
+		#trg->SimaticML.DeviceItemT
+	}
+	ContextFreeLocationLink {
+		#src->Ortssicht.Location
+		#trg->SimaticML.ProjectT
+	}
+	SubLocationLink #extends ContextFreeLocationLink
+	LocationLink #extends ContextFreeLocationLink
+	CPULink {
+		#src->Ortssicht.Module
+		#trg->SimaticML.DeviceItemT
+	}
+	StationLink {
+		#src->Ortssicht.ControllingDevice
+		#trg->SimaticML.DeviceT
+	}
+	CabinetLink {
+		#src->Ortssicht.ElectricalControlCabinet
+		#trg->SimaticML.ProjectT
+	}
+}
+
+#attributeConditions {
+	#userDefined setAttributeTypeInteger(0:SimaticML.AttributeTypes) {
+		#sync: B, F
+	}
+	#userDefined setAttributeTypeString(0:SimaticML.AttributeTypes) {
+		#sync: F, B
+	}
+	eq(1: , 0: ) {
+		#sync: BB, BF, FB
+		#gen: BB, FF, BF, FB
+	}
+	#userDefined setAttributeTypeAddress(0:SimaticML.AttributeTypes) {
+		#sync: B, F
+	}
+}
+
+
+#using OSCAx.*
+
+#rule Module2DeviceItemCPU #with OSCAx
+
+#source {
+	++module:Ortssicht.Module
+	rack:Ortssicht.Rack {
+		- controllingDevice->controllingDevice
+		++ - module->module
+	}
+	controllingDevice:Ortssicht.ControllingDevice
+}
+
+#target {
+	++deviceItemT:SimaticML.DeviceItemT {
+		++ - attributelist->attributeList
+	}
+	++attributeList:SimaticML.AttributeListT
+	++attributeOrderNumber:SimaticML.AttributeT {
+		name := "OrderNumber"
+		++ - attributeListT->attributeList
+	}
+	++attributeSlot:SimaticML.AttributeT {
+		name := "Slot"
+		++ - attributeListT->attributeList
+	}
+	++valueCpuOrderNo:SimaticML.ValueT {
+		++ - attributeT->attributeOrderNumber
+	}
+	deviceT:SimaticML.DeviceT {
+		- deviceObjectList->deviceObjectListT
+	}
+	deviceObjectListT:SimaticML.DeviceObjectListT {
+		++ - deviceItems->deviceItemT
+	}
+	++value2:SimaticML.ValueT {
+		any := "2"
+		++ - attributeT->attributeSlot
+	}
+}
+
+#correspondence {
+	stationLink :StationLink {
+		#src->controllingDevice
+		#trg->deviceT
+	}
+	++ coreLink :CPULink {
+		#src->module
+		#trg->deviceItemT
+	}
+}
+
+#attributeConditions {
+	setAttributeTypeInteger (attributeSlot.type)
+	setAttributeTypeString (attributeOrderNumber.type)
+	eq (module.name, deviceItemT.name)
+	eq (module.orderNo, valueCpuOrderNo.any)
+}
+
+
+#using OSCAx.*
+
+#rule ElectricalControlCabinet2ProjectT #with OSCAx
+
+#source {
+	++electricalControlCabinet:Ortssicht.ElectricalControlCabinet
+	location:Ortssicht.Location {
+		++ - cabinet->electricalControlCabinet
+	}
+}
+
+#target {
+	projectT:SimaticML.ProjectT
+}
+
+#correspondence {
+	contextFreeLocationLink :ContextFreeLocationLink {
+		#src->location
+		#trg->projectT
+	}
+	++ createCabinetLink :CabinetLink {
+		#src->electricalControlCabinet
+		#trg->projectT
+	}
+}
+
+
+#using OSCAx.*
+
+#rule Location2ProjectT #with OSCAx
+
+#source {
+	++location:Ortssicht.Location
+	project:Ortssicht.Project {
+		++ - location->location
+	}
+}
+
+#target {
+	projectT:SimaticML.ProjectT
+}
+
+#correspondence {
+	projectlink :ProjectToProjectT {
+		#src->project
+		#trg->projectT
+	}
+	++ locationLink :LocationLink {
+		#src->location
+		#trg->projectT
+	}
+}
+
+
+#using OSCAx.*
+
+#rule subLocation2ProjectT #with OSCAx
+
+#source {
+	location:Ortssicht.Location {
+		++ - childLocation->childLocation
+	}
+	++childLocation:Ortssicht.Location
+}
+
+#target {
+	projectT:SimaticML.ProjectT
+}
+
+#correspondence {
+	++ coreLink :SubLocationLink {
+		#src->childLocation
+		#trg->projectT
+	}
+	contextFreeLocationLink :ContextFreeLocationLink {
+		#src->location
+		#trg->projectT
+	}
+}
+
+
+#using OSCAx.*
+
+#rule Module2DeviceItemT #with OSCAx
+
+#source {
+	controllingDevice:Ortssicht.ControllingDevice
+	++module:Ortssicht.Module
+	rack:Ortssicht.Rack {
+		- controllingDevice->controllingDevice
+		++ - module->module
+	}
+}
+
+#target {
+	++valueOrderNumber:SimaticML.ValueT {
+		++ - attributeT->attributeOrderNumber
+	}
+	++deviceItemT:SimaticML.DeviceItemT {
+		type := "Module"
+		++ - attributelist->attributeListT
+	}
+	deviceObjectListT:SimaticML.DeviceObjectListT {
+		++ - deviceItems->deviceItemT
+	}
+	++attributeListT:SimaticML.AttributeListT
+	++valueAddress:SimaticML.ValueT {
+		++ - attributeT->attributeAddress
+	}
+	++valueSubDevice:SimaticML.ValueT {
+		++ - attributeT->attributeSubDevice
+	}
+	deviceT:SimaticML.DeviceT {
+		- deviceObjectList->deviceObjectListT
+	}
+	++valueAssetId:SimaticML.ValueT {
+		++ - attributeT->attributeAssetId
+	}
+	++attributeOrderNumber:SimaticML.AttributeT {
+		name := "OrderNumber"
+		++ - attributeListT->attributeListT
+	}
+	++valueSlot:SimaticML.ValueT {
+		any := "4"
+		++ - attributeT->attributeSlot
+	}
+	++attributeAddress:SimaticML.AttributeT {
+		name := "Address"
+		++ - attributeListT->attributeListT
+	}
+	++attributeAssetId:SimaticML.AttributeT {
+		name := "Asset-ID"
+		++ - attributeListT->attributeListT
+	}
+	++attributeSubDevice:SimaticML.AttributeT {
+		name := "SubDevice"
+		++ - attributeListT->attributeListT
+	}
+	++attributeSlot:SimaticML.AttributeT {
+		name := "Slot"
+		++ - attributeListT->attributeListT
+	}
+}
+
+#correspondence {
+	++ ioLink :IOLink {
+		#src->module
+		#trg->deviceItemT
+	}
+	stationLink :StationLink {
+		#src->controllingDevice
+		#trg->deviceT
+	}
+}
+
+#attributeConditions {
+	eq (module.orderNo, valueOrderNumber.any)
+	setAttributeTypeString (attributeOrderNumber.type)
+	eq (module.name, deviceItemT.name)
+	setAttributeTypeString (attributeAssetId.type)
+	setAttributeTypeInteger (attributeSubDevice.type)
+	setAttributeTypeAddress (attributeAddress.type)
+	setAttributeTypeInteger (attributeSlot.type)
+}
+
+
+#using OSCAx.*
+
+#rule Project2ProjectT #with OSCAx
+
+#source {
+	++project:Ortssicht.Project
+}
+
+#target {
+	++projectT:SimaticML.ProjectT {
+		++ - projectObjects->objectList
+	}
+	++objectList:SimaticML.ProjectObjectListT
+}
+
+#correspondence {
+	++ coreLink :ProjectToProjectT {
+		#src->project
+		#trg->projectT
+	}
+}
+
+#attributeConditions {
+	eq (project.name, projectT.name)
+}
+
+
+#using OSCAx.*
+
+#rule ControllingDevice2DeviceT #with OSCAx
+
+#source {
+	++rack1:Ortssicht.Rack {
+		++ - controllingDevice->controllingDevice
+	}
+	++controllingDevice:Ortssicht.ControllingDevice
+	electricalControlCabinet:Ortssicht.ElectricalControlCabinet {
+		++ - controllingDevice->controllingDevice
+	}
+}
+
+#target {
+	projectT:SimaticML.ProjectT {
+		- projectObjects->projectObjectListT
+	}
+	++deviceItemT:SimaticML.DeviceItemT {
+		name := "Rack"
+		type := "Rack"
+		++ - attributelist->attributeListT
+	}
+	++attributeListT:SimaticML.AttributeListT
+	++deviceObjectListT:SimaticML.DeviceObjectListT {
+		++ - deviceItems->deviceItemT
+	}
+	++attributeT:SimaticML.AttributeT {
+		name := "OrderNumber"
+		++ - attributeListT->attributeListT
+	}
+	++valueT:SimaticML.ValueT {
+		++ - attributeT->attributeT
+	}
+	++deviceT:SimaticML.DeviceT {
+		type := "Central"
+		++ - deviceObjectList->deviceObjectListT
+	}
+	projectObjectListT:SimaticML.ProjectObjectListT {
+		++ - devices->deviceT
+	}
+}
+
+#correspondence {
+	cabinetLink :CabinetLink {
+		#src->electricalControlCabinet
+		#trg->projectT
+	}
+	++ coreLink :StationLink {
+		#src->controllingDevice
+		#trg->deviceT
+	}
+}
+
+#attributeConditions {
+	eq (rack1.orderNo, valueT.any)
+	eq (controllingDevice.name, deviceT.name)
+}
+
+

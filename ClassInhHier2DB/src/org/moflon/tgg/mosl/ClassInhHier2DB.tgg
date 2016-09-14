@@ -1,0 +1,159 @@
+#import "platform:/plugin/ClassInheritanceHierarchy/model/ClassInheritanceHierarchy.ecore"
+#import "platform:/plugin/Database/model/Database.ecore"
+
+#schema ClassInhHier2DB
+
+#source {
+	ClassInheritanceHierarchy
+}
+
+#target {
+	Database
+}
+
+#correspondence {
+	PackageToDatabase {
+		#src->ClassInheritanceHierarchy.ClassPackage
+		#trg->Database.DB
+	}
+	ClazzToTable {
+		#src->ClassInheritanceHierarchy.Clazz
+		#trg->Database.Table
+	}
+	AttributeToColumn {
+		#src->ClassInheritanceHierarchy.Attribute
+		#trg->Database.Column
+	}
+}
+
+#attributeConditions {
+	eq(0: , 1: ) {
+		#sync: BF, FB, BB
+		#gen: FF, BB, BF, FB
+	}
+}
+
+
+#using ClassInhHier2DB.*
+
+#rule ClassToTableRule #with ClassInhHier2DB
+
+#source {
+	classpackage:ClassInheritanceHierarchy.ClassPackage
+	++clazz:ClassInheritanceHierarchy.Clazz {
+		++ - package->classpackage
+	}
+}
+
+#target {
+	db:Database.DB {
+		++ - tables->table
+	}
+	++table:Database.Table
+}
+
+#correspondence {
+	packageToDatabase :PackageToDatabase {
+		#src->classpackage
+		#trg->db
+	}
+	++ clazzToTable :ClazzToTable {
+		#src->clazz
+		#trg->table
+	}
+}
+
+#attributeConditions {
+	eq (clazz.name, table.heading)
+}
+
+
+#using ClassInhHier2DB.*
+
+#rule SubClassToTable #with ClassInhHier2DB
+
+#source {
+	++subClazz:ClassInheritanceHierarchy.Clazz {
+		++ - superClass->clazz
+		++ - package->classpackage
+	}
+	classpackage:ClassInheritanceHierarchy.ClassPackage
+	clazz:ClassInheritanceHierarchy.Clazz {
+		- package->classpackage
+	}
+}
+
+#target {
+	table:Database.Table
+}
+
+#correspondence {
+	clazzToTable :ClazzToTable {
+		#src->clazz
+		#trg->table
+	}
+	++ subClazzToTable :ClazzToTable {
+		#src->subClazz
+		#trg->table
+	}
+}
+
+
+#using ClassInhHier2DB.*
+
+#rule AttributeToColumnRule #with ClassInhHier2DB
+
+#source {
+	clazz:ClassInheritanceHierarchy.Clazz {
+		++ - attributes->attribute
+	}
+	++attribute:ClassInheritanceHierarchy.Attribute
+}
+
+#target {
+	++column:Database.Column
+	table:Database.Table {
+		++ - columns->column
+	}
+}
+
+#correspondence {
+	clazzToTable :ClazzToTable {
+		#src->clazz
+		#trg->table
+	}
+	++ attributeToColumn :AttributeToColumn {
+		#src->attribute
+		#trg->column
+	}
+}
+
+#attributeConditions {
+	eq (attribute.name, column.name)
+}
+
+
+#using ClassInhHier2DB.*
+
+#rule PackageToDatabaseRule #with ClassInhHier2DB
+
+#source {
+	++classpackage:ClassInheritanceHierarchy.ClassPackage
+}
+
+#target {
+	++db:Database.DB
+}
+
+#correspondence {
+	++ packageToDatabase :PackageToDatabase {
+		#src->classpackage
+		#trg->db
+	}
+}
+
+#attributeConditions {
+	eq (classpackage.name, db.title)
+}
+
+

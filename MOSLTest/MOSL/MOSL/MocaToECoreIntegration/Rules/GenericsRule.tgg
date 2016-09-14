@@ -1,0 +1,43 @@
+rule GenericsRule {
+	source {
+		attributeNode : Node {
+			++ -attribute-> typeGuid
+			++ -attribute-> typeNode
+		}
+		
+		++ typeGuid : Attribute {
+			typeGuid.name := "typeGuid"
+			typeGuid.value := ""
+		}
+		
+		++ typeNode : Attribute {
+			typeNode.name := "type"
+		}
+	}
+	
+	correspondence {
+		attributeNode <- m1 : MAttributeToEAttribute -> attribute
+	}
+	
+	target {
+		attribute : EAttribute {
+			-eType-> datatype
+			++ -eGenericType-> egType
+		}
+		
+		++ egType : EGenericType {
+			++ -eClassifier-> datatype
+		}
+		
+		datatype : EDataType {}
+	}
+	
+	constraints {[
+		isEcoreDatatype[B,F](String)
+		isEcoreDatatype(datatype.name)
+	]}
+	
+	operations {
+		postProcessBACKWARD(typeNode : source/Attribute, attribute : target/EAttribute) : void
+	}
+}

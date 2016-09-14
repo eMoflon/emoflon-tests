@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ComponentLanguage_EdgeRules:Specification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ComponentLanguage_EdgeRules="platform:/plugin/ComponentLanguage_EdgeRules/model/ComponentLanguage_EdgeRules.ecore" name="Example">
+  <component name="A" requirement="//@component.1">
+    <version major="1"/>
+  </component>
+  <component name="B">
+    <version major="2" minor="1"/>
+  </component>
+</ComponentLanguage_EdgeRules:Specification>

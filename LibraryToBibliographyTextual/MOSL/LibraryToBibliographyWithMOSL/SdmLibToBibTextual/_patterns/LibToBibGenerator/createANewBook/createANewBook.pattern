@@ -1,0 +1,16 @@
+pattern createANewBook {
+
+	@newAuthor : ../LibraryLanguage/Author {
+		++ -item-> aBook
+	}
+	
+	@newLibrary : ../LibraryLanguage/Library {
+		++  -item-> aBook
+	}
+	
+	@aPublicationOfResearcher : ../BibliographyLanguage/Publication
+	
+	++ aBook : ../LibraryLanguage/Book {
+		aBook.title := aPublicationOfResearcher.citation
+	}
+}   

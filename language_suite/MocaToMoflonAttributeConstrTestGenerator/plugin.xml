@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?eclipse version="3.0"?><plugin>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="MocaToMoflonAttributeConstrTestGenerator.TestLanguage.TestLanguagePackage" genModel="model/MocaToMoflonAttributeConstrTestGenerator.genmodel" uri="platform:/plugin/MocaToMoflonAttributeConstrTestGenerator/model/MocaToMoflonAttributeConstrTestGenerator.ecore#//TestLanguage"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="MocaToMoflonAttributeConstrTestGenerator.TestGenerator.TestGeneratorPackage" genModel="model/MocaToMoflonAttributeConstrTestGenerator.genmodel" uri="platform:/plugin/MocaToMoflonAttributeConstrTestGenerator/model/MocaToMoflonAttributeConstrTestGenerator.ecore#//TestGenerator"/>
-  </extension>
-</plugin>

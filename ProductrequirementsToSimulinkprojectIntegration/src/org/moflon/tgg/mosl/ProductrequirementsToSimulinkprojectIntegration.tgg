@@ -1,0 +1,261 @@
+#import "platform:/plugin/ProductRequirementsLanguage/model/ProductRequirementsLanguage.ecore"
+#import "platform:/plugin/SimulinkProjectLanguage/model/SimulinkProjectLanguage.ecore"
+
+#schema ProductrequirementsToSimulinkprojectIntegration
+
+#source {
+	ProductRequirementsLanguage
+}
+
+#target {
+	SimulinkProjectLanguage
+}
+
+#correspondence {
+	Functionality2System {
+		#src->ProductRequirementsLanguage.Functionality
+		#trg->SimulinkProjectLanguage.SimSystem
+	}
+	Requirement2FunctionBlock {
+		#src->ProductRequirementsLanguage.Requirement
+		#trg->SimulinkProjectLanguage.FunctionBlock
+	}
+	ProductToRootSystem #extends ProductToSystem
+	ProductToSystem {
+		#src->ProductRequirementsLanguage.Product
+		#trg->SimulinkProjectLanguage.SimSystem
+	}
+	Product2Project {
+		#src->ProductRequirementsLanguage.Product
+		#trg->SimulinkProjectLanguage.Project
+	}
+}
+
+#attributeConditions {
+	eq(0: , 1: ) {
+		#sync: FB, BB, BF
+		#gen: BB, BF, FF, FB
+	}
+}
+
+
+#using ProductrequirementsToSimulinkprojectIntegration.*
+
+#rule Requirement2NewFunctionBlock #with ProductrequirementsToSimulinkprojectIntegration
+
+#source {
+	functionality:ProductRequirementsLanguage.Functionality
+	requirement:ProductRequirementsLanguage.Requirement {
+		- functionality->functionality
+	}
+}
+
+#target {
+	++functionBlock:SimulinkProjectLanguage.FunctionBlock
+	existingFunctionBlock:SimulinkProjectLanguage.FunctionBlock
+	system:SimulinkProjectLanguage.SimSystem {
+		++ - blocks->functionBlock
+		- blocks->existingFunctionBlock
+	}
+}
+
+#correspondence {
+	functionality2System :Functionality2System {
+		#src->functionality
+		#trg->system
+	}
+	++ requirement2FunctionBlock1 :Requirement2FunctionBlock {
+		#src->requirement
+		#trg->functionBlock
+	}
+	requirement2FunctionBlock2 :Requirement2FunctionBlock {
+		#src->requirement
+		#trg->existingFunctionBlock
+	}
+}
+
+#attributeConditions {
+	eq (requirement.id, existingFunctionBlock.requirementId)
+}
+
+
+#using ProductrequirementsToSimulinkprojectIntegration.*
+
+#rule Functionality2SubSystemSimple #with ProductrequirementsToSimulinkprojectIntegration
+
+#source {
+	product:ProductRequirementsLanguage.Product {
+		++ - functionality->functionality
+	}
+	++functionality:ProductRequirementsLanguage.Functionality
+}
+
+#target {
+	++subSystemBlock:SimulinkProjectLanguage.SubSystemBlock {
+		++ - subsystem->subSystem
+	}
+	++subSystem:SimulinkProjectLanguage.SubSystem
+	system:SimulinkProjectLanguage.SimSystem {
+		++ - blocks->subSystemBlock
+	}
+}
+
+#correspondence {
+	++ productToSystem2 :ProductToSystem {
+		#src->product
+		#trg->subSystem
+	}
+	++ functionality2System :Functionality2System {
+		#src->functionality
+		#trg->subSystem
+	}
+	productToSystem1 :ProductToSystem {
+		#src->product
+		#trg->system
+	}
+}
+
+
+#using ProductrequirementsToSimulinkprojectIntegration.*
+
+#rule ProductAndFunctionality2ProjectRule #with ProductrequirementsToSimulinkprojectIntegration
+
+#source {
+	++product:ProductRequirementsLanguage.Product {
+		++ - functionality->functionality
+	}
+	++functionality:ProductRequirementsLanguage.Functionality
+}
+
+#target {
+	++rootSystem:SimulinkProjectLanguage.RootSystem {
+		++ - project->project
+	}
+	++project:SimulinkProjectLanguage.Project
+}
+
+#correspondence {
+	++ product2Project :Product2Project {
+		#src->product
+		#trg->project
+	}
+	++ functionality2System :Functionality2System {
+		#src->functionality
+		#trg->rootSystem
+	}
+	++ productToSystem :ProductToSystem {
+		#src->product
+		#trg->rootSystem
+	}
+}
+
+
+#using ProductrequirementsToSimulinkprojectIntegration.*
+
+#rule RuleRequirement2FunctionBlock #with ProductrequirementsToSimulinkprojectIntegration
+
+#source {
+	functionality:ProductRequirementsLanguage.Functionality
+	++requirement:ProductRequirementsLanguage.Requirement {
+		++ - functionality->functionality
+	}
+}
+
+#target {
+	++functionBlock:SimulinkProjectLanguage.FunctionBlock
+	system:SimulinkProjectLanguage.SimSystem {
+		++ - blocks->functionBlock
+	}
+}
+
+#correspondence {
+	++ requirement2FunctionBlock :Requirement2FunctionBlock {
+		#src->requirement
+		#trg->functionBlock
+	}
+	functionality2System :Functionality2System {
+		#src->functionality
+		#trg->system
+	}
+}
+
+#attributeConditions {
+	eq (requirement.id, functionBlock.requirementId)
+}
+
+
+#using ProductrequirementsToSimulinkprojectIntegration.*
+
+#rule Functionality2RootSystem #with ProductrequirementsToSimulinkprojectIntegration
+
+#source {
+	product:ProductRequirementsLanguage.Product {
+		++ - functionality->functionality
+	}
+	++functionality:ProductRequirementsLanguage.Functionality
+}
+
+#target {
+	rootSystem:SimulinkProjectLanguage.RootSystem {
+		- project->project
+	}
+	project:SimulinkProjectLanguage.Project
+}
+
+#correspondence {
+	productToRootSystem :ProductToRootSystem {
+		#src->product
+		#trg->rootSystem
+	}
+	product2Project :Product2Project {
+		#src->product
+		#trg->project
+	}
+	++ functionality2System :Functionality2System {
+		#src->functionality
+		#trg->rootSystem
+	}
+}
+
+
+#using ProductrequirementsToSimulinkprojectIntegration.*
+
+#rule NewRequirement2FunctionBlock #with ProductrequirementsToSimulinkprojectIntegration
+
+#source {
+	++requirement:ProductRequirementsLanguage.Requirement {
+		++ - functionality->functionality
+	}
+	existingRequirement:ProductRequirementsLanguage.Requirement {
+		- functionality->functionality
+	}
+	functionality:ProductRequirementsLanguage.Functionality
+}
+
+#target {
+	functionBlock:SimulinkProjectLanguage.FunctionBlock
+	system:SimulinkProjectLanguage.SimSystem {
+		- blocks->functionBlock
+	}
+}
+
+#correspondence {
+	requirement2FunctionBlock2 :Requirement2FunctionBlock {
+		#src->existingRequirement
+		#trg->functionBlock
+	}
+	functionality2System :Functionality2System {
+		#src->functionality
+		#trg->system
+	}
+	++ requirement2FunctionBlock1 :Requirement2FunctionBlock {
+		#src->requirement
+		#trg->functionBlock
+	}
+}
+
+#attributeConditions {
+	eq (existingRequirement.id, requirement.id)
+}
+
+

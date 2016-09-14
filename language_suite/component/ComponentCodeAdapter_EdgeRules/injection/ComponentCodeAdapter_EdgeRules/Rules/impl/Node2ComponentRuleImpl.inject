@@ -1,6 +1,0 @@
-import ComponentLanguage_EdgeRules.Visibility;
-
-partial class Node2ComponentRuleImpl
-{
-
-}

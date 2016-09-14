@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<OSMLanguage:OSMapContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:OSMLanguage="platform:/plugin/OSMLanguage/model/OSMLanguage.ecore" name="in">
+  <osmap name="single_osmap.osm">
+    <osmbounds maxlat="6.0" maxlon="6.0" minlat="5.0" minlon="5.0"/>
+  </osmap>
+</OSMLanguage:OSMapContainer>

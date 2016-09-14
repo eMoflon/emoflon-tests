@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?eclipse version="3.0"?><plugin>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="CDToCDIntegration.CDToCDIntegrationPackage" genModel="model/CDToCDIntegration.genmodel" uri="platform:/plugin/CDToCDIntegration/model/CDToCDIntegration.ecore"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="CDToCDIntegration.Rules.RulesPackage" genModel="model/CDToCDIntegration.genmodel" uri="platform:/plugin/CDToCDIntegration/model/CDToCDIntegration.ecore#//Rules"/>
-  </extension>
-</plugin>

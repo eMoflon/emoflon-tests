@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MocaTree:Folder
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:MocaTree="platform:/plugin/MocaTree/model/MocaTree.ecore"
+    name="in">
+  <file name="single_osmap.osm">
+    <rootNode
+        name="osm">
+      <children
+          xsi:type="MocaTree:Node"
+          name="bounds">
+        <attribute
+            name="minlat"
+            value="5.0"/>
+        <attribute
+            index="1"
+            name="minlon"
+            value="5.0"/>
+        <attribute
+            index="2"
+            name="maxlat"
+            value="6.0"/>
+        <attribute
+            index="3"
+            name="maxlon"
+            value="6.0"/>
+      </children>
+      <attribute
+          name="version"
+          value="0.6"/>
+      <attribute
+          index="1"
+          name="generator"
+          value="CGImap 0.0.2"/>
+      <attribute
+          index="2"
+          name="copyright"
+          value="OpenStreetMap and contributors"/>
+      <attribute
+          index="3"
+          name="attribution"
+          value="http://www.openstreetmap.org/copyright"/>
+      <attribute
+          index="4"
+          name="license"
+          value="http://opendatacommons.org/licenses/odbl/1-0/"/>
+    </rootNode>
+  </file>
+</MocaTree:Folder>

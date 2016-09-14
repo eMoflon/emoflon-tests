@@ -1,7 +1,0 @@
-/bin
-/src/org/moflon/tie
-/gen/*
-/model/*.ecore
-/model/*.genmodel
-/model/*.xmi
-!/**/.keep*

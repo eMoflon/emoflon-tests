@@ -1,9 +1,0 @@
-pattern authorInTheLibrary {
-
-	@library : ../LibraryLanguage/Library {
-		 -author-> currentAuthor
-	}
-	
-	currentAuthor : ../LibraryLanguage/Author
-
-}

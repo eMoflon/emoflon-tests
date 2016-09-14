@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ClassDiagramLanguage:ClassDiagram
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:ClassDiagramLanguage="platform:/plugin/ClassDiagramLanguage/model/ClassDiagramLanguage.ecore">
+  <classes name="Serializable"/>
+  <classes name="Observable"/>
+  <classes name="Worker"
+      superClasses="//@classes.3"/>
+  <classes name="Employee"
+      superClasses="//@classes.5"/>
+  <classes name="Manager"
+      superClasses="//@classes.3"/>
+  <classes name="Person"
+      superClasses="//@classes.1 //@classes.0"/>
+</ClassDiagramLanguage:ClassDiagram>

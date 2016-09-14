@@ -1,0 +1,12 @@
+pattern promoteCard {
+	@card : Card {
+		-- -cardContainer-> this
+		++ -cardContainer-> nextPartition
+	}
+	
+	@this : Partition {
+		-next-> nextPartition
+	}
+	
+	nextPartition : Partition
+}

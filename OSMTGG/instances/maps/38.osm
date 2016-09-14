@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.3.3 (3065 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="49.8411000" minlon="8.7046800" maxlat="49.8420000" maxlon="8.7056100"/>
+ <node id="955208391" visible="true" version="1" changeset="6072075" timestamp="2010-10-17T21:18:30Z" user="chrissibo" uid="77348" lat="49.8413721" lon="8.7053766"/>
+ <node id="955208415" visible="true" version="1" changeset="6072075" timestamp="2010-10-17T21:18:30Z" user="chrissibo" uid="77348" lat="49.8421460" lon="8.7050840"/>
+ <node id="955208604" visible="true" version="1" changeset="6072075" timestamp="2010-10-17T21:18:41Z" user="chrissibo" uid="77348" lat="49.8414301" lon="8.7054836"/>
+ <node id="955209238" visible="true" version="1" changeset="6072075" timestamp="2010-10-17T21:19:12Z" user="chrissibo" uid="77348" lat="49.8419787" lon="8.7050539"/>
+ <node id="955209454" visible="true" version="1" changeset="6072075" timestamp="2010-10-17T21:19:24Z" user="chrissibo" uid="77348" lat="49.8420640" lon="8.7049384"/>
+ <node id="955209570" visible="true" version="1" changeset="6072075" timestamp="2010-10-17T21:19:28Z" user="chrissibo" uid="77348" lat="49.8412304" lon="8.7051261"/>
+ <node id="955209790" visible="true" version="1" changeset="6072075" timestamp="2010-10-17T21:19:38Z" user="chrissibo" uid="77348" lat="49.8413044" lon="8.7054650"/>
+ <node id="955210463" visible="true" version="1" changeset="6072075" timestamp="2010-10-17T21:19:58Z" user="chrissibo" uid="77348" lat="49.8411031" lon="8.7051221"/>
+ <node id="955210715" visible="true" version="1" changeset="6072075" timestamp="2010-10-17T21:20:07Z" user="chrissibo" uid="77348" lat="49.8411769" lon="8.7050267"/>
+ <node id="955210730" visible="true" version="1" changeset="6072075" timestamp="2010-10-17T21:20:08Z" user="chrissibo" uid="77348" lat="49.8420608" lon="8.7051995"/>
+ <node id="955211448" visible="true" version="1" changeset="6072075" timestamp="2010-10-17T21:20:39Z" user="chrissibo" uid="77348" lat="49.8413624" lon="8.7055719"/>
+ <node id="955212342" visible="true" version="1" changeset="6072075" timestamp="2010-10-17T21:21:04Z" user="chrissibo" uid="77348" lat="49.8411566" lon="8.7052215"/>
+ <node id="963970079" visible="true" version="1" changeset="6163837" timestamp="2010-10-24T21:37:54Z" user="chrissibo" uid="77348" lat="49.8419947" lon="8.7046737"/>
+ <node id="963971487" visible="true" version="1" changeset="6163837" timestamp="2010-10-24T21:38:25Z" user="chrissibo" uid="77348" lat="49.8419539" lon="8.7047860"/>
+ <node id="963972034" visible="true" version="1" changeset="6163837" timestamp="2010-10-24T21:38:39Z" user="chrissibo" uid="77348" lat="49.8416328" lon="8.7048951"/>
+ <node id="963972405" visible="true" version="1" changeset="6163837" timestamp="2010-10-24T21:38:48Z" user="chrissibo" uid="77348" lat="49.8420761" lon="8.7048582"/>
+ <node id="963972491" visible="true" version="1" changeset="6163837" timestamp="2010-10-24T21:38:51Z" user="chrissibo" uid="77348" lat="49.8415345" lon="8.7047084"/>
+ <node id="963972759" visible="true" version="1" changeset="6163837" timestamp="2010-10-24T21:38:58Z" user="chrissibo" uid="77348" lat="49.8415949" lon="8.7046320"/>
+ <node id="963973649" visible="true" version="1" changeset="6163837" timestamp="2010-10-24T21:39:21Z" user="chrissibo" uid="77348" lat="49.8419332" lon="8.7047390"/>
+ <node id="963973982" visible="true" version="1" changeset="6163837" timestamp="2010-10-24T21:39:31Z" user="chrissibo" uid="77348" lat="49.8419692" lon="8.7049716"/>
+ <node id="963974424" visible="true" version="1" changeset="6163837" timestamp="2010-10-24T21:39:43Z" user="chrissibo" uid="77348" lat="49.8419085" lon="8.7048341"/>
+ <node id="963974887" visible="true" version="1" changeset="6163837" timestamp="2010-10-24T21:39:55Z" user="chrissibo" uid="77348" lat="49.8416931" lon="8.7048187"/>
+ <node id="1261459096" visible="true" version="1" changeset="7980486" timestamp="2011-04-26T22:43:21Z" user="chrissibo" uid="77348" lat="49.8413227" lon="8.7051047"/>
+ <node id="1261459175" visible="true" version="1" changeset="7980486" timestamp="2011-04-26T22:43:24Z" user="chrissibo" uid="77348" lat="49.8414213" lon="8.7045909"/>
+ <node id="1261459226" visible="true" version="1" changeset="7980486" timestamp="2011-04-26T22:43:25Z" user="chrissibo" uid="77348" lat="49.8413242" lon="8.7047132"/>
+ <node id="1261459356" visible="true" version="1" changeset="7980486" timestamp="2011-04-26T22:43:29Z" user="chrissibo" uid="77348" lat="49.8411848" lon="8.7052764"/>
+ <node id="1261459460" visible="true" version="1" changeset="7980486" timestamp="2011-04-26T22:43:32Z" user="chrissibo" uid="77348" lat="49.8413511" lon="8.7044569"/>
+ <node id="1261459525" visible="true" version="1" changeset="7980486" timestamp="2011-04-26T22:43:33Z" user="chrissibo" uid="77348" lat="49.8412540" lon="8.7045792"/>
+ <node id="1261459637" visible="true" version="1" changeset="7980486" timestamp="2011-04-26T22:43:37Z" user="chrissibo" uid="77348" lat="49.8412470" lon="8.7053963"/>
+ <node id="1261459714" visible="true" version="1" changeset="7980486" timestamp="2011-04-26T22:43:39Z" user="chrissibo" uid="77348" lat="49.8413848" lon="8.7052247"/>
+ <way id="81988216" visible="true" version="2" changeset="7980486" timestamp="2011-04-26T22:44:23Z" user="chrissibo" uid="77348">
+  <nd ref="955210463"/>
+  <nd ref="955212342"/>
+  <nd ref="955209570"/>
+  <nd ref="955210715"/>
+  <nd ref="955210463"/>
+  <tag k="addr:city" v="Mühltal"/>
+  <tag k="addr:country" v="DE"/>
+  <tag k="addr:housenumber" v="140"/>
+  <tag k="addr:postcode" v="64367"/>
+  <tag k="addr:street" v="Ludwigstraße"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Yahoo Satellite Images"/>
+ </way>
+ <way id="82837971" visible="true" version="2" changeset="7980486" timestamp="2011-04-26T22:44:40Z" user="chrissibo" uid="77348">
+  <nd ref="963974424"/>
+  <nd ref="963973982"/>
+  <nd ref="963972405"/>
+  <nd ref="963970079"/>
+  <nd ref="963973649"/>
+  <nd ref="963971487"/>
+  <nd ref="963974424"/>
+  <tag k="addr:city" v="Mühltal"/>
+  <tag k="addr:country" v="DE"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="64367"/>
+  <tag k="addr:street" v="Weingartenstraße"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Yahoo Satellite Images"/>
+ </way>
+ <way id="82838851" visible="true" version="2" changeset="7980486" timestamp="2011-04-26T22:45:07Z" user="chrissibo" uid="77348">
+  <nd ref="963972491"/>
+  <nd ref="963972034"/>
+  <nd ref="963974887"/>
+  <nd ref="963972759"/>
+  <nd ref="963972491"/>
+  <tag k="addr:city" v="Mühltal"/>
+  <tag k="addr:country" v="DE"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="64367"/>
+  <tag k="addr:street" v="Lindenstraße"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Yahoo Satellite Images"/>
+ </way>
+ <way id="110467947" visible="true" version="1" changeset="7980486" timestamp="2011-04-26T22:43:52Z" user="chrissibo" uid="77348">
+  <nd ref="1261459525"/>
+  <nd ref="1261459226"/>
+  <nd ref="1261459175"/>
+  <nd ref="1261459460"/>
+  <nd ref="1261459525"/>
+  <tag k="addr:city" v="Mühltal"/>
+  <tag k="addr:country" v="DE"/>
+  <tag k="addr:housenumber" v="20d"/>
+  <tag k="addr:postcode" v="64367"/>
+  <tag k="addr:street" v="Lindenstraße"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Yahoo Satellite Images"/>
+ </way>
+ <way id="110467998" visible="true" version="1" changeset="7980486" timestamp="2011-04-26T22:44:00Z" user="chrissibo" uid="77348">
+  <nd ref="1261459714"/>
+  <nd ref="1261459637"/>
+  <nd ref="1261459356"/>
+  <nd ref="1261459096"/>
+  <nd ref="1261459714"/>
+  <tag k="addr:city" v="Mühltal"/>
+  <tag k="addr:country" v="DE"/>
+  <tag k="addr:housenumber" v="142"/>
+  <tag k="addr:postcode" v="64367"/>
+  <tag k="addr:street" v="Ludwigstraße"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Bing Aerial Imagery"/>
+ </way>
+ <way id="81988410" visible="true" version="2" changeset="7980486" timestamp="2011-04-26T22:44:51Z" user="chrissibo" uid="77348">
+  <nd ref="955209238"/>
+  <nd ref="955210730"/>
+  <nd ref="955208415"/>
+  <nd ref="955209454"/>
+  <nd ref="955209238"/>
+  <tag k="addr:city" v="Mühltal"/>
+  <tag k="addr:country" v="DE"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="64367"/>
+  <tag k="addr:street" v="Weingartenstraße"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Yahoo Satellite Images"/>
+ </way>
+ <way id="81988360" visible="true" version="2" changeset="7980486" timestamp="2011-04-26T22:45:16Z" user="chrissibo" uid="77348">
+  <nd ref="955208391"/>
+  <nd ref="955209790"/>
+  <nd ref="955211448"/>
+  <nd ref="955208604"/>
+  <nd ref="955208391"/>
+  <tag k="addr:city" v="Mühltal"/>
+  <tag k="addr:country" v="DE"/>
+  <tag k="addr:housenumber" v="144"/>
+  <tag k="addr:postcode" v="64367"/>
+  <tag k="addr:street" v="Ludwigstraße"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Yahoo Satellite Images"/>
+ </way>
+</osm>

@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: LaunchConfigurationGenerator
-Bundle-SymbolicName: LaunchConfigurationGenerator
-Bundle-Version: 1.0.0.qualifier
-Export-Package: ioutil,
- launchconfig
-Require-Bundle: org.moflon.dependencies;bundle-version="1.0.0"

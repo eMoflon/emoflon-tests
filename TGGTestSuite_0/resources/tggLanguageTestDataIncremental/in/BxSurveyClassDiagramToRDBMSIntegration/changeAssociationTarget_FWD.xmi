@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<BxSurveyClassDiagram:BxClassDiagram
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:BxSurveyClassDiagram="platform:/plugin/BxSurveyClassDiagram/model/BxSurveyClassDiagram.ecore#/"
+     >
+  <elements
+      xsi:type="BxSurveyClassDiagram:BxClazz"
+      name="employee"/>
+  <elements
+      xsi:type="BxSurveyClassDiagram:BxClazz"
+      name="chef"/>
+  <elements
+      xsi:type="BxSurveyClassDiagram:BxClazz"
+      name="CEO"/>
+  <elements
+      xsi:type="BxSurveyClassDiagram:BxAssociation"
+      name="works for"
+      source="//@elements.0"
+      target="//@elements.1"/>
+</BxSurveyClassDiagram:BxClassDiagram>

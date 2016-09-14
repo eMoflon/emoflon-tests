@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: OnlineShopLangTestGen;singleton:=true
+Export-Package: OnlineShopLangTestGen.impl,
+ OnlineShopLangTestGen.util,
+ OnlineShopLangTestGen
+Bundle-Name: OnlineShopLangTestGen
+Bundle-Version: 1.0
+Require-Bundle: OnlineShopLang,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ org.apache.log4j;bundle-version="1.2.15",
+ org.moflon.core.utilities
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TU Darmstadt

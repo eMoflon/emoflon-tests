@@ -1,5 +1,0 @@
-/gen/*
-/model/*.ecore
-/model/*.genmodel
-/model/*.xmi
-!/**/.keep*

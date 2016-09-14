@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?eclipse version="3.0"?><plugin>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="OSMTGG.OSMTGGPackage" genModel="model/OSMTGG.genmodel" uri="platform:/plugin/OSMTGG/model/OSMTGG.ecore"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="OSMTGG.Rules.RulesPackage" genModel="model/OSMTGG.genmodel" uri="platform:/plugin/OSMTGG/model/OSMTGG.ecore#//Rules"/>
-  </extension>
-</plugin>

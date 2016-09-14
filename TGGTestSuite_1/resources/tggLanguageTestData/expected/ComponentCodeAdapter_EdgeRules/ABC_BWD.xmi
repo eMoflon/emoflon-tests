@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MocaTree:File xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MocaTree="platform:/plugin/MocaTree/model/MocaTree.ecore" name="Example.components">
+  <rootNode name="SPEC">
+    <children xsi:type="MocaTree:Node" name="A">
+      <children xsi:type="MocaTree:Node" index="1" name="SPEC"/>
+      <children xsi:type="MocaTree:Node" index="3" name="2.5"/>
+      <children xsi:type="MocaTree:Node" index="4" name="+"/>
+      <children xsi:type="MocaTree:Node" index="2" name="the component A"/>
+      <children xsi:type="MocaTree:Node" name="REQUIRES">
+        <children xsi:type="MocaTree:Node" name="C">
+          <children xsi:type="MocaTree:Node" name="2.5"/>
+        </children>
+      </children>
+    </children>
+    <children xsi:type="MocaTree:Node" name="B">
+      <children xsi:type="MocaTree:Node" index="1" name="SPEC">
+        <children xsi:type="MocaTree:Node" name="C">
+          <children xsi:type="MocaTree:Node" index="1" name="SPEC"/>
+          <children xsi:type="MocaTree:Node" index="3" name="1.1"/>
+          <children xsi:type="MocaTree:Node" index="4" name="+"/>
+          <children xsi:type="MocaTree:Node" index="2" name="the component C 1.1"/>
+          <children xsi:type="MocaTree:Node" name="REQUIRES"/>
+        </children>
+        <children xsi:type="MocaTree:Node" name="C">
+          <children xsi:type="MocaTree:Node" index="1" name="SPEC"/>
+          <children xsi:type="MocaTree:Node" index="3" name="2.5"/>
+          <children xsi:type="MocaTree:Node" index="4" name="+"/>
+          <children xsi:type="MocaTree:Node" index="2" name="the component C 2.5"/>
+          <children xsi:type="MocaTree:Node" name="REQUIRES"/>
+        </children>
+      </children>
+      <children xsi:type="MocaTree:Node" index="3" name="1.0"/>
+      <children xsi:type="MocaTree:Node" index="4" name="+"/>
+      <children xsi:type="MocaTree:Node" index="2" name="the component B"/>
+      <children xsi:type="MocaTree:Node" name="REQUIRES"/>
+    </children>
+  </rootNode>
+</MocaTree:File>

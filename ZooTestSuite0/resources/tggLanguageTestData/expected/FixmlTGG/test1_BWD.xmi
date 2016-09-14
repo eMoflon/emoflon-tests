@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MocaTree:File xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MocaTree="platform:/plugin/MocaTree/model/MocaTree.ecore" name="default">
+  <rootNode name="FIXML">
+    <children xsi:type="MocaTree:Node" name="PosRpt">
+      <attribute name="RptID" value="541386431"/>
+      <attribute name="Rslt" value="0"/>
+      <attribute name="BizDt" value="2003-09-10T00:00:00"/>
+      <attribute name="Acct" value="1"/>
+      <attribute name="AcctTyp" value="1"/>
+      <attribute name="SetPx" value="0.00"/>
+      <attribute name="SetPxTyp" value="1"/>
+      <attribute name="PriSetPx" value="0.00"/>
+      <attribute name="ReqTyp" value="0"/>
+      <attribute name="Ccy" value="USD"/>
+      <children xsi:type="MocaTree:Node" name="Hdr">
+        <attribute name="Snt" value="2001-12-17T09:30:47-05:00"/>
+        <attribute name="PosDup" value="N"/>
+        <attribute name="PosRsnd" value="N"/>
+        <attribute name="SeqNum" value="1002"/>
+        <children xsi:type="MocaTree:Node" name="Sndr">
+          <attribute name="ID" value="String"/>
+          <attribute name="Sub" value="String"/>
+          <attribute name="Loc" value="String"/>
+        </children>
+        <children xsi:type="MocaTree:Node" name="Tgt">
+          <attribute name="ID" value="String"/>
+          <attribute name="Sub" value="String"/>
+          <attribute name="Loc" value="String"/>
+        </children>
+        <children xsi:type="MocaTree:Node" name="OnBhlfOf">
+          <attribute name="ID" value="String"/>
+          <attribute name="Sub" value="String"/>
+          <attribute name="Loc" value="String"/>
+        </children>
+        <children xsi:type="MocaTree:Node" name="DlvrTo">
+          <attribute name="ID" value="String"/>
+          <attribute name="Sub" value="String"/>
+          <attribute name="Loc" value="String"/>
+        </children>
+      </children>
+      <children xsi:type="MocaTree:Node" name="Pty">
+        <attribute name="ID" value="OCC"/>
+        <attribute name="R" value="21"/>
+      </children>
+      <children xsi:type="MocaTree:Node" name="Pty">
+        <attribute name="ID" value="99999"/>
+        <attribute name="R" value="4"/>
+      </children>
+      <children xsi:type="MocaTree:Node" name="Pty">
+        <attribute name="ID" value="C"/>
+        <attribute name="R" value="38"/>
+        <children xsi:type="MocaTree:Node" name="Sub">
+          <attribute name="ID" value="ZZZ"/>
+          <attribute name="Typ" value="2"/>
+        </children>
+      </children>
+      <children xsi:type="MocaTree:Node" name="Qty">
+        <attribute name="Typ" value="SOD"/>
+        <attribute name="Long" value="35"/>
+        <attribute name="Short" value="0"/>
+      </children>
+      <children xsi:type="MocaTree:Node" name="Qty">
+        <attribute name="Typ" value="FIN"/>
+        <attribute name="Long" value="20"/>
+        <attribute name="Short" value="10"/>
+      </children>
+      <children xsi:type="MocaTree:Node" name="Qty">
+        <attribute name="Typ" value="IAS"/>
+        <attribute name="Long" value="10"/>
+      </children>
+      <children xsi:type="MocaTree:Node" name="Amt">
+        <attribute name="Typ" value="FMTM"/>
+        <attribute name="Amt" value="0.00"/>
+      </children>
+      <children xsi:type="MocaTree:Node" name="Instrmt">
+        <attribute name="Sym" value="AOL"/>
+        <attribute name="ID" value="KW"/>
+        <attribute name="IDSrc" value="J"/>
+        <attribute name="CFI" value="OCASPS"/>
+        <attribute name="MMY" value="20031122"/>
+        <attribute name="Mat" value="2003-11-22T00:00:00"/>
+        <attribute name="Strk" value="47.50"/>
+        <attribute name="StrkCcy" value="USD"/>
+        <attribute name="Mult" value="100"/>
+      </children>
+    </children>
+  </rootNode>
+</MocaTree:File>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?eclipse version="3.0"?><plugin>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="ComponentCodeAdapter_EdgeRules.ComponentCodeAdapter_EdgeRulesPackage" genModel="model/ComponentCodeAdapter_EdgeRules.genmodel" uri="platform:/plugin/ComponentCodeAdapter_EdgeRules/model/ComponentCodeAdapter_EdgeRules.ecore"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="ComponentCodeAdapter_EdgeRules.Rules.RulesPackage" genModel="model/ComponentCodeAdapter_EdgeRules.genmodel" uri="platform:/plugin/ComponentCodeAdapter_EdgeRules/model/ComponentCodeAdapter_EdgeRules.ecore#//Rules"/>
-  </extension>
-</plugin>

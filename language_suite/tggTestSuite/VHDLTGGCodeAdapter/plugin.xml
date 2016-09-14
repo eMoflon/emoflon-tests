@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?eclipse version="3.0"?><plugin>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="VHDLTGGCodeAdapter.VHDLTGGCodeAdapterPackage" genModel="model/VHDLTGGCodeAdapter.genmodel" uri="platform:/plugin/VHDLTGGCodeAdapter/model/VHDLTGGCodeAdapter.ecore"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="VHDLTGGCodeAdapter.Rules.RulesPackage" genModel="model/VHDLTGGCodeAdapter.genmodel" uri="platform:/plugin/VHDLTGGCodeAdapter/model/VHDLTGGCodeAdapter.ecore#//Rules"/>
-  </extension>
-</plugin>

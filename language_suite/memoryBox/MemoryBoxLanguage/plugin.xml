@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?eclipse version="3.0"?><plugin>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="MemoryBoxLanguage.MemoryBoxLanguagePackage" genModel="model/MemoryBoxLanguage.genmodel" uri="platform:/plugin/MemoryBoxLanguage/model/MemoryBoxLanguage.ecore"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="MemoryBoxLanguage.facade.FacadePackage" genModel="model/MemoryBoxLanguage.genmodel" uri="platform:/plugin/MemoryBoxLanguage/model/MemoryBoxLanguage.ecore#//facade"/>
-  </extension>
-</plugin>

@@ -1,0 +1,4 @@
+opposites {
+	devices : Network <-> network : Device
+
+}

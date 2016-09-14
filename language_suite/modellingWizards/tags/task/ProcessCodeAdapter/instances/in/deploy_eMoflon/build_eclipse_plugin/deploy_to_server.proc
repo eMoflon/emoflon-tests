@@ -1,8 +1,0 @@
-import build_ea_extension
-
-task {
-	run(){ 
-		visual_studio_project::run()
-		build_update_site::run()
-	}
-}

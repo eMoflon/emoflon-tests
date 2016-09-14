@@ -1,7 +1,0 @@
-pattern checkForDoubleBooktitleEnforcement {
-
-	@this : LibToBibGenerator {
-		this.enforceDoubleBooktitlePerTest == true
-	}
-
-}  

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ClassDiagramLanguage:ClassDiagram xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ClassDiagramLanguage="platform:/plugin/ClassDiagramLanguage/model/ClassDiagramLanguage.ecore#/"   name="example">
-  <elements xsi:type="ClassDiagramLanguage:Clazz" id="1" name="myClazz"/>
-</ClassDiagramLanguage:ClassDiagram>

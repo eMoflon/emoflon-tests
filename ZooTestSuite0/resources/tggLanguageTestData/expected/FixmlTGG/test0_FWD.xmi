@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fixmlPackage:CompilationUnit xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:fixmlPackage="platform:/plugin/fixmlPackage/model/FixmlPackage.ecore">
+  <fixmlClass attribute="//@fixmlAttribute.0 //@fixmlAttribute.1 //@fixmlAttribute.2 //@fixmlAttribute.3 //@fixmlAttribute.4 //@fixmlAttribute.5" name="Order">
+    <fixmlObjectAttribute refClass="//@fixmlClass.1" type="Hdr">
+      <fixmlObjectAttributeAttribute name="Snt" value="2001-09-11T09:30:47-05:00"/>
+      <fixmlObjectAttributeAttribute name="PosDup" value="N"/>
+      <fixmlObjectAttributeAttribute name="PosRsnd" value="N"/>
+      <fixmlObjectAttributeAttribute name="SeqNum" value="521"/>
+      <fixmlObjectAttributeElement refClass="//@fixmlClass.2" type="Sndr">
+        <fixmlObjectAttributeAttribute name="ID" value="AFUNDMGR"/>
+      </fixmlObjectAttributeElement>
+      <fixmlObjectAttributeElement refClass="//@fixmlClass.3" type="Tgt">
+        <fixmlObjectAttributeAttribute name="ID" value="ABROKER"/>
+      </fixmlObjectAttributeElement>
+    </fixmlObjectAttribute>
+    <fixmlObjectAttribute refClass="//@fixmlClass.4" type="Instrmt">
+      <fixmlObjectAttributeAttribute name="Sym" value="IBM"/>
+      <fixmlObjectAttributeAttribute name="ID" value="459200101"/>
+      <fixmlObjectAttributeAttribute name="IDSrc" value="1"/>
+    </fixmlObjectAttribute>
+    <fixmlObjectAttribute refClass="//@fixmlClass.5" type="OrdQty">
+      <fixmlObjectAttributeAttribute name="Qty" value="1000"/>
+    </fixmlObjectAttribute>
+  </fixmlClass>
+  <fixmlClass refObjectAttribute="//@fixmlClass.0/@fixmlObjectAttribute.0" attribute="//@fixmlAttribute.6 //@fixmlAttribute.7 //@fixmlAttribute.8 //@fixmlAttribute.9" name="Hdr" level="1">
+    <fixmlObjectAttribute refClass="//@fixmlClass.2" type="Sndr"/>
+    <fixmlObjectAttribute refClass="//@fixmlClass.3" type="Tgt"/>
+  </fixmlClass>
+  <fixmlClass refObjectAttribute="//@fixmlClass.0/@fixmlObjectAttribute.0/@fixmlObjectAttributeElement.0 //@fixmlClass.1/@fixmlObjectAttribute.0" attribute="//@fixmlAttribute.10" name="Sndr" level="2"/>
+  <fixmlClass refObjectAttribute="//@fixmlClass.0/@fixmlObjectAttribute.0/@fixmlObjectAttributeElement.1 //@fixmlClass.1/@fixmlObjectAttribute.1" attribute="//@fixmlAttribute.11" name="Tgt" level="2"/>
+  <fixmlClass refObjectAttribute="//@fixmlClass.0/@fixmlObjectAttribute.1" attribute="//@fixmlAttribute.12 //@fixmlAttribute.13 //@fixmlAttribute.14" name="Instrmt" level="1"/>
+  <fixmlClass refObjectAttribute="//@fixmlClass.0/@fixmlObjectAttribute.2" attribute="//@fixmlAttribute.15" name="OrdQty" level="1"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.0" name="ClOrdID" value="123456"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.0" name="Side" value="2"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.0" name="TransactTm" value="2001-09-11T09:30:47-05:00"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.0" name="OrdTyp" value="2"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.0" name="Px" value="93.25"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.0" name="Acct" value="26522154"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.1" name="Snt" value="2001-09-11T09:30:47-05:00"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.1" name="PosDup" value="N"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.1" name="PosRsnd" value="N"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.1" name="SeqNum" value="521"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.2" name="ID" value="AFUNDMGR"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.3" name="ID" value="ABROKER"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.4" name="Sym" value="IBM"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.4" name="ID" value="459200101"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.4" name="IDSrc" value="1"/>
+  <fixmlAttribute fixmlClass="//@fixmlClass.5" name="Qty" value="1000"/>
+</fixmlPackage:CompilationUnit>

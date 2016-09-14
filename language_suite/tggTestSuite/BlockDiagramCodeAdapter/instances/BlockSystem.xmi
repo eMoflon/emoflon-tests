@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<BlockDiagram:BlockSystem xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:BlockDiagram="http://www.moflon.org/BlockDiagram" xsi:schemaLocation="http://www.moflon.org/BlockDiagram ../../BlockDiagram/model/BlockDiagram.ecore" name="System">
-  <blocks id="A"/>
-  <blocks id="B"/>
-  <blocks id="C"/>
-</BlockDiagram:BlockSystem>

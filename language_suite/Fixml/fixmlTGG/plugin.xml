@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?eclipse version="3.0"?><plugin>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="fixmlTGG.FixmlTGGPackage" genModel="model/FixmlTGG.genmodel" uri="platform:/plugin/fixmlTGG/model/FixmlTGG.ecore"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="fixmlTGG.Rules.RulesPackage" genModel="model/FixmlTGG.genmodel" uri="platform:/plugin/fixmlTGG/model/FixmlTGG.ecore#//Rules"/>
-  </extension>
-</plugin>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<DocumentationLanguage:Documentation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:DocumentationLanguage="platform:/plugin/DocumentationLanguage/model/DocumentationLanguage.ecore">
+  <docs name="Person">
+    <links name="Serializable" ref="//@docs.2"/>
+  </docs>
+  <docs name="Worker">
+    <links name="Employee" ref="//@docs.3"/>
+    <links name="Person" ref="//@docs.0"/>
+    <links name="Serializable" ref="//@docs.2"/>
+  </docs>
+  <docs name="Serializable"/>
+  <docs name="Employee">
+    <links name="Person" ref="//@docs.0"/>
+    <links name="Serializable" ref="//@docs.2"/>
+  </docs>
+</DocumentationLanguage:Documentation>

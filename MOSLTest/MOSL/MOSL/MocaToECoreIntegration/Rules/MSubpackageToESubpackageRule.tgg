@@ -1,0 +1,27 @@
+rule MSubpackageToESubpackageRule {
+	source {
+		superPackageNode : Node {
+			-children-> packages
+		}
+		
+		packages : Node {
+			packages.name == "packages"
+			++ -children-> packageNode
+		}
+		
+		packageNode : Node {}
+	}
+	 
+	correspondence {
+		superPackageNode <- mPackageToEPackage : MPackageToEPackage -> esuperPackage
+		packageNode <- mPackageToEPackage2 : MPackageToEPackage -> ePackage
+	}
+	
+	target {
+		esuperPackage : EPackage {
+			++ -eSubpackages-> ePackage
+		}
+		
+		ePackage : EPackage {}
+	}
+}

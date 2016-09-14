@@ -1,0 +1,7 @@
+pattern generateBibliography {
+
+	++ bibliography : ../BibliographyLanguage/Bibliography {
+		bibliography.name := library.location
+	}
+
+}  

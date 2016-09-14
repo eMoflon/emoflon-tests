@@ -1,0 +1,7 @@
+pattern generateNewLibrary {
+	@bibliography : ../LibraryLanguage/Library 
+
+	++ newLibrary : ../LibraryLanguage/Library {
+		newLibrary.location := bibliography.name	
+	}
+}   
