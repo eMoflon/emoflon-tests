@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: MocaToMoflonAttributeConstrTestGenerator;singleto
+ n:=true
+Export-Package: MocaToMoflonAttributeConstrTestGenerator.TestLanguage,
+ MocaToMoflonAttributeConstrTestGenerator.TestLanguage.util,
+ MocaToMoflonAttributeConstrTestGenerator.TestLanguage.impl,
+ MocaToMoflonAttributeConstrTestGenerator.TestGenerator.util,
+ MocaToMoflonAttributeConstrTestGenerator.TestGenerator.impl,
+ MocaToMoflonAttributeConstrTestGenerator.TestGenerator
+Bundle-Name: MocaToMoflonAttributeConstrTestGenerator
+Bundle-Version: 1.0
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ org.moflon.core.utilities
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TU Darmstadt
