@@ -1,7 +1,0 @@
-opposites {
-	dictionary : Shelf <-> shelf : Dictionary
-	
-	author : Library <-> library : Author
-	
-	dictionary : Author <-> author : Dictionary
-}

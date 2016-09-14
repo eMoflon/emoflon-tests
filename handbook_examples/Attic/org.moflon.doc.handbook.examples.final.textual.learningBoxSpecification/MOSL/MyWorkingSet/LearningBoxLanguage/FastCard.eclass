@@ -1,4 +1,0 @@
-class FastCard extends Card {
-
-
-}

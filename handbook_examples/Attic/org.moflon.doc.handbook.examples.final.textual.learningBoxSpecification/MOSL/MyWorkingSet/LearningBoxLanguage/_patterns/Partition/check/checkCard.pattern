@@ -1,6 +1,0 @@
-pattern checkCard {
-		
-	@card : Card {
-		card.face == $guess
-	}
-}
