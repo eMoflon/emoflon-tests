@@ -4,3 +4,12 @@
 /model/*.genmodel
 /model/*.xmi
 !/**/.keep*
+
+/**/*Lexer.java
+/**/*Parser.java
+/**/*Lexer.tokens
+/**/*Parser.tokens
+/**/*Grammar.java
+/**/*Grammar.tokens
+
+/src/org/moflon/tie/

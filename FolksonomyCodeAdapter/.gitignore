@@ -4,3 +4,7 @@
 /model/*.genmodel
 /model/*.xmi
 !/**/.keep*
+/**/*Grammar.java
+/**/*Grammar.tokens
+
+/src/org/moflon/tie/

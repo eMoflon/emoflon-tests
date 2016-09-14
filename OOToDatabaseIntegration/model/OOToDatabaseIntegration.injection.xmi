@@ -48,7 +48,7 @@
   <compilerInjectionEntries content="return csp.check();">
     <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/isApplicable_checkCsp_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="ruleresult.registerObject(&quot;cls&quot;, cls);&#xA;ruleresult.registerObject(&quot;table&quot;, table);&#xA;ruleresult.registerObject(&quot;classToTable&quot;, classToTable);&#xA;">
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;table&quot;, table);&#xA;ruleresult.registerObject(&quot;cls&quot;, cls);&#xA;ruleresult.registerObject(&quot;classToTable&quot;, classToTable);&#xA;">
     <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/registerObjects_FWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;cls&quot;).eClass()).equals(&quot;ObjectOrientedLanguage.Class.&quot;);">
@@ -69,7 +69,7 @@
   <compilerInjectionEntries content="return csp.check();">
     <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/isApplicable_checkCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="ruleresult.registerObject(&quot;cls&quot;, cls);&#xA;ruleresult.registerObject(&quot;table&quot;, table);&#xA;ruleresult.registerObject(&quot;classToTable&quot;, classToTable);&#xA;">
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;table&quot;, table);&#xA;ruleresult.registerObject(&quot;cls&quot;, cls);&#xA;ruleresult.registerObject(&quot;classToTable&quot;, classToTable);&#xA;">
     <eOperation href="platform:/plugin/OOToDatabaseIntegration/model/OOToDatabaseIntegration.ecore#//Rules/RuleClassToTable/registerObjects_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;table&quot;).eClass()).equals(&quot;DatabaseLanguage.Table.&quot;);">
