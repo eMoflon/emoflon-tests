@@ -1,0 +1,4 @@
+/bin
+/gen/*
+/model/*.ecore/model/*.xmi
+!/**/.keep*
