@@ -2,12 +2,12 @@ Manifest-Version: 1.0
 Bundle-SymbolicName: de.tudarmstadt.maki.modeling.graphmodel;singleton
  :=true
 Export-Package: de.tudarmstadt.maki.modeling.graphmodel,
+ de.tudarmstadt.maki.modeling.graphmodel.constraints,
+ de.tudarmstadt.maki.modeling.graphmodel.constraints.impl,
+ de.tudarmstadt.maki.modeling.graphmodel.constraints.util,
  de.tudarmstadt.maki.modeling.graphmodel.impl,
  de.tudarmstadt.maki.modeling.graphmodel.listener,
- de.tudarmstadt.maki.modeling.graphmodel.util,
- de.tudarmstadt.maki.modeling.graphmodel.constraints,
- de.tudarmstadt.maki.modeling.graphmodel.constraints.util,
- de.tudarmstadt.maki.modeling.graphmodel.constraints.impl
+ de.tudarmstadt.maki.modeling.graphmodel.util
 Bundle-Name: de.tudarmstadt.maki.modeling.graphmodel.api
 Bundle-Version: 1.0
 Require-Bundle: org.eclipse.emf.ecore,

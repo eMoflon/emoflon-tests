@@ -1,8 +1,9 @@
 Manifest-Version: 1.0
 Bundle-SymbolicName: de.tudarmstadt.maki.modeling.jvlc;singleton:=true
-Export-Package: de.tudarmstadt.maki.modeling.jvlc.util,
+Export-Package: de.tudarmstadt.maki.modeling.jvlc,
  de.tudarmstadt.maki.modeling.jvlc.impl,
- de.tudarmstadt.maki.modeling.jvlc
+ de.tudarmstadt.maki.modeling.jvlc.io,
+ de.tudarmstadt.maki.modeling.jvlc.util
 Bundle-Name: de.tudarmstadt.maki.modeling.jvlc
 Bundle-Version: 1.0.0.qualifier
 Require-Bundle: org.eclipse.emf.ecore,
