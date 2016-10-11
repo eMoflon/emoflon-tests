@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: de.tudarmstadt.maki.modeling.graphmodel;singleton
+ :=true
+Export-Package: de.tudarmstadt.maki.modeling.graphmodel,
+ de.tudarmstadt.maki.modeling.graphmodel.impl,
+ de.tudarmstadt.maki.modeling.graphmodel.listener,
+ de.tudarmstadt.maki.modeling.graphmodel.util,
+ de.tudarmstadt.maki.modeling.graphmodel.constraints,
+ de.tudarmstadt.maki.modeling.graphmodel.constraints.util,
+ de.tudarmstadt.maki.modeling.graphmodel.constraints.impl
+Bundle-Name: de.tudarmstadt.maki.modeling.graphmodel.api
+Bundle-Version: 1.0
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ org.junit;bundle-version="4.11.0";resolution:=optional,
+ org.apache.log4j;bundle-version="1.2.15",
+ org.moflon.core.utilities
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TU Darmstadt

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><plugin>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="de.tudarmstadt.maki.modeling.graphmodel.GraphmodelPackage" genModel="model/Graphmodel.genmodel" uri="platform:/plugin/de.tudarmstadt.maki.modeling.graphmodel/model/Graphmodel.ecore"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="de.tudarmstadt.maki.modeling.graphmodel.constraints.ConstraintsPackage" genModel="model/Graphmodel.genmodel" uri="platform:/plugin/de.tudarmstadt.maki.modeling.graphmodel/model/Graphmodel.ecore#//constraints"/>
+  </extension>
+</plugin>
