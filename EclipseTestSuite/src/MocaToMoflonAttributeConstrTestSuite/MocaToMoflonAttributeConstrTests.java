@@ -80,8 +80,8 @@ public class MocaToMoflonAttributeConstrTests {
 				.getConstraints().stream()
 				.filter(x -> x instanceof CspConstraint).findFirst().get();
 		Assert.assertTrue("X", csp1.getName().equals("<")
-				&& csp1.getParameters().get(0).getName().equals("a_x")
-				&& csp1.getParameters().get(1).getName().equals("5"));
+				&& csp1.getParameters().get(0).getAttributeConstraintVariable().getName().equals("a_x")
+				&& csp1.getParameters().get(1).getAttributeConstraintVariable().getName().equals("5"));
 
 	}
 
@@ -174,11 +174,11 @@ public class MocaToMoflonAttributeConstrTests {
 						.anyMatch(
 								x -> x.getParameters().size() == 3
 										&& x.getName().equals("+")
-										&& x.getParameters().get(0).getName()
+										&& x.getParameters().get(0).getAttributeConstraintVariable().getName()
 												.equals("a_x_prime")
-										&& x.getParameters().get(1).getName()
+										&& x.getParameters().get(1).getAttributeConstraintVariable().getName()
 												.equals("b_x")
-										&& x.getParameters().get(2).getName()
+										&& x.getParameters().get(2).getAttributeConstraintVariable().getName()
 												.equals("a_x")));
 
 	}
@@ -255,11 +255,11 @@ public class MocaToMoflonAttributeConstrTests {
 						.anyMatch(
 								x -> x.getParameters().size() == 3
 										&& x.getName().equals("+")
-										&& x.getParameters().get(0).getName()
+										&& x.getParameters().get(0).getAttributeConstraintVariable().getName()
 												.equals("a_x_prime")
-										&& x.getParameters().get(1).getName()
+										&& x.getParameters().get(1).getAttributeConstraintVariable().getName()
 												.equals("2")
-										&& x.getParameters().get(2).getName()
+										&& x.getParameters().get(2).getAttributeConstraintVariable().getName()
 												.equals("a_x")));
 
 	}
@@ -338,9 +338,9 @@ public class MocaToMoflonAttributeConstrTests {
 						.anyMatch(
 								x -> x.getParameters().size() == 2
 										&& x.getName().equals("=")
-										&& x.getParameters().get(0).getName()
+										&& x.getParameters().get(0).getAttributeConstraintVariable().getName()
 												.equals("a_x_prime")
-										&& x.getParameters().get(1).getName()
+										&& x.getParameters().get(1).getAttributeConstraintVariable().getName()
 												.equals("b_x")));
 
 	}
@@ -419,9 +419,9 @@ public class MocaToMoflonAttributeConstrTests {
 						.anyMatch(
 								x -> x.getParameters().size() == 2
 										&& x.getName().equals("=")
-										&& x.getParameters().get(0).getName()
+										&& x.getParameters().get(0).getAttributeConstraintVariable().getName()
 												.equals("a_x_prime")
-										&& x.getParameters().get(1).getName()
+										&& x.getParameters().get(1).getAttributeConstraintVariable().getName()
 												.equals("c_x")));
 
 	}
@@ -500,9 +500,9 @@ public class MocaToMoflonAttributeConstrTests {
 						.anyMatch(
 								x -> x.getParameters().size() == 2
 										&& x.getName().equals("=")
-										&& x.getParameters().get(0).getName()
+										&& x.getParameters().get(0).getAttributeConstraintVariable().getName()
 												.equals("c_x_prime")
-										&& x.getParameters().get(1).getName()
+										&& x.getParameters().get(1).getAttributeConstraintVariable().getName()
 												.equals("a_x")));
 
 	}
