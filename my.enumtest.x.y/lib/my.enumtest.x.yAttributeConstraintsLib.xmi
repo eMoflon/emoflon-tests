@@ -10,11 +10,8 @@
       constraintSpecifications="//@constraintSpecifications.0"
       operationIdentifier="eq">
     <operationSpecifications
-        specification="$a$ =$b$"
+        specification="$a$ = $b$"
         adornmentString="FB"/>
-    <operationSpecifications
-        specification="$a$ == $b$"
-        adornmentString="BB"/>
     <parameterIDs
         identifier="a"/>
     <parameterIDs
@@ -26,12 +23,12 @@
     <parameterTypes>
       <type
           xsi:type="ecore:EEnum"
-          href="../model/Y.ecore#//z/State"/>
+          href="../model/Y.ecore#//TopLevelState"/>
     </parameterTypes>
     <parameterTypes>
       <type
           xsi:type="ecore:EEnum"
-          href="../model/Y.ecore#//z/State"/>
+          href="../model/Y.ecore#//TopLevelState"/>
     </parameterTypes>
   </constraintSpecifications>
 </org.moflon.sdm.constraints.operationspecification:AttributeConstraintLibrary>
