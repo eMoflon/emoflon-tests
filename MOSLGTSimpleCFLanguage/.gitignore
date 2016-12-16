@@ -3,6 +3,15 @@
 /model/*.ecore
 /model/*.genmodel
 /model/*.xmi
+/model/*.black
+/model/*.binding
+/model/*.bindingAndBlack
+/model/*.expression
+/model/*.green
+/model/*.red
+/model/*.sdm
+/model/*.cf
+/model/*.dfs
 # The file AttrCondDefLibrary.tgg is not meant to be edited
 /**/AttrCondDefLibrary.tgg
 !/**/.keep*
