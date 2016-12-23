@@ -1,6 +1,6 @@
 /bin
 /gen/*
-/model/*.ecore
+#/model/*.ecore
 /model/*.genmodel
 /model/*.xmi
 /model/*.black
