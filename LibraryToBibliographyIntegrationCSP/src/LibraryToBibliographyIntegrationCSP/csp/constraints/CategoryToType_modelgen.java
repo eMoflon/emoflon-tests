@@ -1,4 +1,4 @@
-package csp.constraints;
+package LibraryToBibliographyIntegrationCSP.csp.constraints;
 
 import org.moflon.tgg.language.csp.Variable;
 

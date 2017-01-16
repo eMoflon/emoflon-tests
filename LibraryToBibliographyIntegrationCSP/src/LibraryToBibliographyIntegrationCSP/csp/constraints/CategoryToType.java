@@ -1,4 +1,4 @@
-package csp.constraints;
+package LibraryToBibliographyIntegrationCSP.csp.constraints;
 
 import BibliographyLanguageCSP.PaperTypes;
 import org.moflon.tgg.language.csp.Variable;
