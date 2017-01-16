@@ -1,6 +1,8 @@
-package csp.constraints;
+package BxSurveyClassDiagramToRDBMSIntegration.csp.constraints;
 
 import org.moflon.tgg.language.csp.Variable;
+
+import csp.constraints.*;
 import csp.constraints.generator.Generator;
 
 public class Concat_specific extends Concat
