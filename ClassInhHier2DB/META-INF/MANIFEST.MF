@@ -6,7 +6,7 @@ Export-Package: ClassInhHier2DB.util,
  ClassInhHier2DB.Rules,
  ClassInhHier2DB.Rules.util,
  ClassInhHier2DB.Rules.impl,
- org.moflon.tie
+ ClassInhHier2DB.org.moflon.tie
 Bundle-Name: ClassInhHier2DB
 Bundle-Version: 1.0
 Require-Bundle: ClassInheritanceHierarchy,

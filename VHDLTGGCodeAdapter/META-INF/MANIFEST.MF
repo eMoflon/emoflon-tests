@@ -4,8 +4,8 @@ Export-Package: VHDLTGGCodeAdapter.impl,
  VHDLTGGCodeAdapter.Rules.impl,
  VHDLTGGCodeAdapter.util,
  VHDLTGGCodeAdapter.Rules.util,
- csp.constraints,
- org.moflon.tie,
+ VHDLTGGCodeAdapter.org.moflon.tie,
+ VHDLTGGCodeAdapter.csp.constraints,
  VHDLTGGCodeAdapter,
  VHDLTGGCodeAdapter.Rules
 Bundle-Name: VHDLTGGCodeAdapter

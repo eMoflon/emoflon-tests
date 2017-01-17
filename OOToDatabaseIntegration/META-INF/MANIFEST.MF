@@ -4,7 +4,7 @@ Export-Package: OOToDatabaseIntegration.Rules.util,
  OOToDatabaseIntegration.util,
  OOToDatabaseIntegration,
  OOToDatabaseIntegration.Rules,
- org.moflon.tie,
+ OOToDatabaseIntegration.org.moflon.tie,
  OOToDatabaseIntegration.impl,
  OOToDatabaseIntegration.Rules.impl
 Bundle-Name: OOToDatabaseIntegration
