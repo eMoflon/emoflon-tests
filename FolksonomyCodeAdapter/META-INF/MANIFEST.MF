@@ -8,7 +8,7 @@ Export-Package: org.moflon.moca.dat.unparser,
  FolksonomyCodeAdapter,
  FolksonomyCodeAdapter.util,
  FolksonomyCodeAdapter.impl,
- org.moflon.tie
+ FolksonomyCodeAdapter.org.moflon.tie
 Bundle-Name: FolksonomyCodeAdapter
 Bundle-Version: 1.0
 Require-Bundle: MocaTree,

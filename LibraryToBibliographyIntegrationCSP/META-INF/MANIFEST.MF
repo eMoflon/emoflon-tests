@@ -5,9 +5,9 @@ Export-Package: LibraryToBibliographyIntegrationCSP.Rules.impl,
  LibraryToBibliographyIntegrationCSP.Rules.util,
  LibraryToBibliographyIntegrationCSP.util,
  LibraryToBibliographyIntegrationCSP.Rules,
- csp.constraints,
+ LibraryToBibliographyIntegrationCSP.csp.constraints,
  LibraryToBibliographyIntegrationCSP,
- org.moflon.tie,
+ LibraryToBibliographyIntegrationCSP.org.moflon.tie,
  LibraryToBibliographyIntegrationCSP.impl
 Bundle-Name: LibraryToBibliographyIntegrationCSP
 Bundle-Version: 1.0
