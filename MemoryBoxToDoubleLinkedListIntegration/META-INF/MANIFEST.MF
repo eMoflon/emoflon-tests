@@ -6,7 +6,7 @@ Export-Package: MemoryBoxToDoubleLinkedListIntegration,
  MemoryBoxToDoubleLinkedListIntegration.impl,
  MemoryBoxToDoubleLinkedListIntegration.Rules,
  MemoryBoxToDoubleLinkedListIntegration.Rules.impl,
- csp.constraints,
+ MemoryBoxToDoubleLinkedListIntegration.csp.constraints,
  MemoryBoxToDoubleLinkedListIntegration.util
 Bundle-Name: MemoryBoxToDoubleLinkedListIntegration
 Bundle-Version: 1.0
