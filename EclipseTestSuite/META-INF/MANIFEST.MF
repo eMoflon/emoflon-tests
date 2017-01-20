@@ -25,5 +25,6 @@ Require-Bundle: org.eclipse.emf.compare;bundle-version="1.2.0",
  MocaToMoflonAttributeConstrTestGenerator,
  org.moflon.core.utilities,
  org.moflon.core.moca.processing;bundle-version="2.0.0",
- org.moflon.core.propertycontainer
+ org.moflon.core.propertycontainer,
+ org.moflon.tgg.language;bundle-version="2.1.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
