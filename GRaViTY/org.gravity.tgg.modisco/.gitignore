@@ -3,4 +3,5 @@
 /model/*.ecore
 /model/*.genmodel
 /model/*.xmi
+/**/org/moflon/tie
 !/**/.keep*

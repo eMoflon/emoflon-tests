@@ -1,4 +1,4 @@
-package csp.constraints;
+package org.gravity.tgg.modisco.csp.constraints;
 
 import org.moflon.tgg.language.csp.Variable;
 import org.moflon.tgg.language.csp.impl.TGGConstraintImpl;
