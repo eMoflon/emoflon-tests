@@ -4,7 +4,7 @@
 /model/*.genmodel
 /model/*.xmi
 !/**/.keep*
-/src/org/moflon/tie/
+/**/org/moflon/tie
 /src/org/moflon/tie/
 /src/org/moflon/tie/
 /src/org/moflon/tie/
