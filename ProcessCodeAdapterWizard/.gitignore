@@ -12,6 +12,6 @@
 /**/*Grammar.java
 /**/*Grammar.tokens
 
-/src/org/moflon/tie/
+/**/org/moflon/tie/
 
 /src/org/moflon/tgg/mosl/csp
