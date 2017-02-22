@@ -1,5 +1,5 @@
 /bin
-/src/org/moflon/tie
+/**/org/moflon/tie
 /gen/*
 /model/*.ecore
 /model/*.genmodel
