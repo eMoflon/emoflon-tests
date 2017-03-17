@@ -1,8 +1,7 @@
 package LibraryToBibliographyIntegrationCSP.csp.constraints;
 
+import org.moflon.tgg.csp.constraints.Eq;
 import org.moflon.tgg.language.csp.Variable;
-
-import csp.constraints.Eq;
 
 public class NotEq extends Eq
 {
