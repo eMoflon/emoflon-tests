@@ -1,9 +1,8 @@
 package ClassDiagramToRDBMSIntegration.csp.constraints;
 
+import org.moflon.tgg.csp.constraints.Concat;
+import org.moflon.tgg.csp.constraints.generator.Generator;
 import org.moflon.tgg.language.csp.Variable;
-
-import csp.constraints.Concat;
-import csp.constraints.generator.Generator;
 
 public class Concat_specific extends Concat {
 	public void solve(Variable var_0, Variable var_1, Variable var_2,
