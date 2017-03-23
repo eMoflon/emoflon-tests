@@ -6,4 +6,4 @@
 /model/*.xmi
 !/**/.keep*
 
-/src/org/moflon/tgg/mosl/csp
+/src/**/org/moflon/tgg/mosl/csp
