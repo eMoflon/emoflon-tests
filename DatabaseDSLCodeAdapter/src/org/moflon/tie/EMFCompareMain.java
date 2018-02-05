@@ -51,9 +51,9 @@ public class EMFCompareMain {
 		
 		ResourceSet set = new ResourceSetImpl();
 		
-		eMoflonEMFUtil.addToResourceSet(set, original);
-		eMoflonEMFUtil.addToResourceSet(set, changed);
-		eMoflonEMFUtil.addToResourceSet(set, mc);
+		eMoflonEMFUtil.createParentResourceAndInsertIntoResourceSet(set, original);
+		eMoflonEMFUtil.createParentResourceAndInsertIntoResourceSet(set, changed);
+		eMoflonEMFUtil.createParentResourceAndInsertIntoResourceSet(set, mc);
 		
 		long start = System.currentTimeMillis();
 		
