@@ -56,3 +56,4 @@ Require-Bundle: org.eclipse.emf.ecore.xmi;bundle-version="2.10.1",
  org.moflon.tgg.runtime;bundle-version="2.0.0",
  org.moflon.core.moca.processing;bundle-version="2.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: TGGTestSuite_0
